@@ -91,3 +91,24 @@ Pull the [BOM](https://manual.asimov.inc/v1/bom), source the parts, fabricate wh
 - **Deploying Asimov?**: [Talk to us →](mailto:bd@menlo.ai)
 - **Supply chain partner?**: If you manufacture actuators, structural components, or electronics and want to be part of the Asimov supply chain, reach out.
 [bd@menlo.ai](mailto:bd@menlo.ai)
+
+
+---
+
+## Fork additions — concept-phase engineering package
+
+This fork (`jherrodthomas/asimov-v1`) adds an independent **concept-phase engineering package** — not produced or endorsed by upstream. See `_docs_README.md` for the full index. Headline contents at the repo root:
+
+| File | Purpose |
+|---|---|
+| `Asimov_v1_Safety_Case.xlsx` | 15-tab safety case (ISO 12100/10218/13849/13482/9001) — 32 hazards, 25 SFs, 28 gaps |
+| `Asimov_v1_Safety_Case_Report.docx` | Narrative safety case |
+| `Asimov_v1_Safety_Case_Summary.pdf` | 2-page executive summary |
+| `Asimov_v1_DFMEA.xlsx` | AIAG-VDA 2019 DFMEA — 32 failure modes (19 High-AP) |
+| `Asimov_v1_Requirements.xlsx` | SyRS+SRS+HwRS, 120 requirements, fully traced |
+| `Asimov_v1_Architecture.docx` | 5 architectural views with embedded diagrams |
+| `Asimov_v1_TestPlan.xlsx` | V-model test plan — 139 cases, ISO 13849-2 / ISO 13482 §7 matrices |
+| `Asimov_v1_Trace_Memo.docx` | Cross-package traceability verification |
+| `Asimov_v1_Engineering_Bundle.pdf` | Single-file stakeholder bundle |
+
+> **Important.** This is a *preliminary* analysis. Provisional acceptance applies only to OE-1 (research lab, supervised, tethered). Deployment to industrial cobot, home, or public-space envelopes is blocked pending closure of the gaps tracked in the safety-case workbook.
