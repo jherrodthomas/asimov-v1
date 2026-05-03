@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="01_hero_banner.png" alt="Asimov v1 — Concept-Phase Engineering Package" width="100%"/>
+</p>
+
 # Asimov v1: Open-Source Humanoid Robot
 
 [![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue)](HARDWARE-LICENSE.txt)
@@ -112,3 +116,16 @@ This fork (`jherrodthomas/asimov-v1`) adds an independent **concept-phase engine
 | `Asimov_v1_Engineering_Bundle.pdf` | Single-file stakeholder bundle |
 
 > **Important.** This is a *preliminary* analysis. Provisional acceptance applies only to OE-1 (research lab, supervised, tethered). Deployment to industrial cobot, home, or public-space envelopes is blocked pending closure of the gaps tracked in the safety-case workbook.
+
+
+### Headline numbers
+
+<p align="center">
+  <img src="02_kpi_infographic.png" alt="Engineering package KPIs" width="100%"/>
+</p>
+
+### Provisional deployment guidance
+
+<p align="center">
+  <img src="03_op_envelope.png" alt="Operating envelope acceptance" width="100%"/>
+</p>
