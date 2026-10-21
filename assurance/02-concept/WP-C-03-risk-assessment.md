@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-03 Risk assessment (ISO 12100) and determination of the required Performance Level per safety function (ISO 13849-1) |
 | Standard reference | ISO 12100:2010 §5.4–§5.6, Annex B; ISO 13482:2014 §5, Annex A; ISO 10218-1:2011 §5, Annex A; ISO 13849-1:2023 §5, Annex A (risk graph); ISO 13850:2015; IEC 60204-1:2018 §9.2.2 (stop categories); Regulation (EU) 2023/1230 Annex III §1.1.2 |
-| Version | 0.3 (2026-10-21): DQ-025 A (residual pinch risk accepted for OE-1) and DQ-031 A (assembly hazards in the item) applied to §4 and §8. 0.2 (2026-10-21): DQ-004 A (PL d), DQ-005 A (safe state), DQ-006 A (SF-01 withdrawn), DQ-007 A, DQ-008 A, DQ-009 A applied to §6 and §7. 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
+| Version | 0.4 (2026-10-21): DQ-041 A (the tether's own hazards accepted for OE-1) applied to §8. 0.3 (2026-10-21): DQ-025 A (residual pinch risk accepted for OE-1) and DQ-031 A (assembly hazards in the item) applied to §4 and §8. 0.2 (2026-10-21): DQ-004 A (PL d), DQ-005 A (safe state), DQ-006 A (SF-01 withdrawn), DQ-007 A, DQ-008 A, DQ-009 A applied to §6 and §7. 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
 | Status | Draft |
 | PL / scope | Highest PLr in OE-1: **d** (DQ-004 A, decided 2026-10-21, with the gantry and tether as the complementary measure); the inherited HARA reads **e** for nine rows in OE-2…OE-4, which stay excluded rather than argued down; CFG-001 |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -240,7 +240,10 @@ residual risk of OE-1 is dominated by the bench technician's exposure to pinches
 H-04, H-05; OE-1 reading c) and by the tether's own integrity (a new hazard the gantry introduces, to be rated in
 WP-C-05 §3.3). **The lead accepted the first on 2026-10-21 (DQ-025 A), for OE-1 only and until the guarding and the
 measured contact limits exist at G2:** no hand on a powered limb, the rail off at the bench supply and the E-stop
-pressed before any adjustment, enforced through the session log of WP-V-07. The tether's own hazards are DQ-041.
+pressed before any adjustment, enforced through the session log of WP-V-07. **The tether's own hazards (a snag on a limb,
+a swing into the operator, a tether or shackle failure) were accepted for OE-1 on 2026-10-21 (DQ-041 A)** with the
+rigging checks of WP-V-07 §4, a tether route above the shoulders, the quick-release, and the swing radius added to the
+cleared area (WP-C-02 §6); the adequacy argument is WP-C-05 §2.
 
 ## 9. Hazard log cross-references
 

@@ -30,7 +30,7 @@ The authoritative, machine-readable copy is [`safety-relevant-paths.txt`](safety
 
 ## 4. Baselines
 
-`BL-nnn` records in the Living Safety Case (`case/baselines/`) at each gate and release; tags once the repository rules allow.
+`BL-nnn` records in the Living Safety Case (`case/baselines/`) at each gate and release; tags once the repository rules allow. Session records: the telemetry of every powered session is kept with the session record under `06-validation/test-sites/`; room video is kept for the campaign plus one gate, then deleted unless an anomaly report refers to it (DQ-040 A, 2026-10-21).
 
 ## 5. Branch and review rules
 

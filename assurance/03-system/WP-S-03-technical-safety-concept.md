@@ -30,7 +30,7 @@ E-nn elements (E-stop devices and receiver, motor-rail contactors, the MCB safet
 
 ## 4. Architecture
 
-Per function: Category B to 4 designated architecture, diagnostics, fault reaction, reset. The wired dual-channel pendant on the tether plus the kit's wireless device with heartbeat surveillance (DQ-008 A, decided 2026-10-21); stop category 0 (DQ-005 A).
+Per function: Category B to 4 designated architecture, diagnostics, fault reaction, reset. The wired dual-channel pendant on the tether plus the kit's wireless device with heartbeat surveillance (DQ-008 A, decided 2026-10-21); stop category 0 (DQ-005 A); a certified safety relay module with monitored reset driving two contactors with mirror contacts (DQ-036 A).
 
 ## 5. Command arbitration and modes
 

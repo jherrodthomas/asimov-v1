@@ -22,7 +22,7 @@ Information for use, markings and warnings for builders, operators and bystander
 
 ## 2. Manual structure
 
-Builder manual, operator manual, quick start, safety page; what each must contain (SYRS-035).
+Builder manual, operator manual, quick start, safety page; what each must contain (SYRS-035). The operator manual states that every powered session is recorded, with telemetry kept and video kept for a bounded time (DQ-040 A, 2026-10-21).
 
 ## 3. Markings and warnings
 

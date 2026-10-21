@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-04 Safety functions specification with required Performance Level, stop category and response time |
 | Standard reference | ISO 13849-1:2023 §5 (safety requirements specification of each safety function), Annex A (PLr); ISO 10218-1:2011 §5.4 (safety-related control system performance), §5.5 (robot stopping functions), §5.6 (speed control), §5.10 (collaborative operation); ISO 13482:2014 §5.16 (emergency stop), §6 (safety-related control system); ISO 13850:2015 §4; IEC 60204-1:2018 §9.2.2 (stop categories); ISO/TS 15066:2016 §5.5 |
-| Version | 0.4 (2026-10-21): DQ-028 A (contact limits) and DQ-034 A (second IMU) applied. 0.3 (2026-10-21): DQ-014 A applied to SF-03. 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
+| Version | 0.5 (2026-10-21): DQ-036 A (safety relay), DQ-038 A (heartbeat 250 ms), DQ-039 A (wireless heartbeat a warning in OE-1), DQ-042 A (60 °C) applied. 0.4 (2026-10-21): DQ-028 A (contact limits) and DQ-034 A (second IMU) applied. 0.3 (2026-10-21): DQ-014 A applied to SF-03. 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); CFG-001 in OE-1; the collaborative functions SF-04, SF-06, SF-20 specified but not claimed in the first item |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -56,7 +56,7 @@ The contact limits behind SF-03, SF-04 and SF-20 are the ISO/TS 15066 Annex A bo
 | SF-11 | Overcurrent protection on each motor branch | Branch current above the fuse rating | The branch is opened | c | 2 | — | ≤ 50 ms | per-rail fuse, MCB current sense | H-09 |
 | SF-12 | ESD-safe assembly process | — (procedure) | — | — | — | — | — | assembly process | H-10 |
 | SF-13 | Emergency-stop devices and wireless link surveillance | A person actuates the wired pendant (OE-1) or the wireless transmitter; the wireless heartbeat is lost; a channel fault | Motor power removed by two independent paths; latched until a deliberate re-arm; the tether carries the fall (DQ-016) | d | 3 | 0 **(DQ-016)** | ≤ 500 ms (package); ≤ 200 ms proposed for the wired device | E-stop devices, receiver, motor-rail contactors **(DQ-008)** | H-11, H-28, every limb hazard |
-| SF-14 | Stator over-temperature shutdown | Stator thermistor above the limit | The joint is de-rated, then stopped; a hardware cut-off backs the firmware | c | 2 | 1 | ≤ 200 ms | thermistor, MCB, PTC backup | H-12 |
+| SF-14 | Stator over-temperature shutdown | Stator thermistor above the limit (60 °C until the actuator data sheet or a measurement gives a better figure, DQ-042 A) | The joint is de-rated, then stopped; a hardware cut-off backs the firmware | c | 2 | 1 | ≤ 200 ms | thermistor, MCB, PTC backup | H-12 |
 | SF-15 | Battery thermal and cell-voltage protection by the BMS | Cell voltage, temperature or current outside the safe operating area; no BMS handshake on C5 | The pack is isolated; the motor rails are not enabled without the handshake | e (package) | 4 | 0 | ≤ 1 s | BMS (user-supplied), rail interlock **(DQ-009)** | H-13, H-23 |
 | SF-16 | Audio limiter at or below 80 dBA at 1 m | — (continuous) | Output bounded | b | 1 | — | static | MCB firmware, hardware limiter | H-14 |
 | SF-17 | Respiratory protection during MJF dust generation | — (procedure) | — | — | — | — | — | information for use | H-17 |
@@ -123,7 +123,7 @@ WP-C-05 and WP-O-03 and verified by inspection.
 
 | Item | Specification |
 |---|---|
-| Demand | No tele-operation heartbeat for 250 ms (package SRS-004); a control-loop deadline missed (SF-24); a CAN bus-off on a leg bus (package SYRS-023); a fault classified critical (package SRS-013) |
+| Demand | No tele-operation heartbeat for 250 ms (package SRS-004); a control-loop deadline missed (SF-24); a CAN bus-off on a leg bus (package SYRS-023); a fault classified critical (package SRS-013). The heartbeat timeout is 250 ms with a one-sample grace for jitter (DQ-038 A, decided 2026-10-21); a link-loss statistic from the first sessions precedes any change |
 | Safe state | The controlled descent of DQ-005 A reached as a stop category 1 (SF-02's descent), power removed when reached; latched until a deliberate re-arm with the cause cleared |
 | Response time | ≤ 100 ms to the start of the stop (package) |
 | PLr | d |
@@ -136,12 +136,12 @@ WP-C-05 and WP-O-03 and verified by inspection.
 
 | Item | Specification |
 |---|---|
-| Demand | A person actuates the wired, dual-channel pendant device on the tether (OE-1, DQ-008 A) or the kit's wireless transmitter (ISO 13850 devices: red mushroom on yellow, positive-opening contacts, latching); the wireless heartbeat is missed for **(TBC)** periods; a channel fault |
+| Demand | A person actuates the wired, dual-channel pendant device on the tether (OE-1, DQ-008 A) or the kit's wireless transmitter (ISO 13850 devices: red mushroom on yellow, positive-opening contacts, latching); a channel fault. A missed wireless heartbeat is a warning shown to the operator and logged in OE-1, where the wired pendant is the operator's device; it is a stop demand only in an envelope where the wireless device is the operator's device (DQ-039 A, decided 2026-10-21) |
 | Safe state | Motor power removed from every actuator by two independent paths (motor-rail contactors in series and the drive enables); latched until a deliberate re-arm at the robot or the pendant with every device released (no automatic re-arm, DFMEA FM-20); the tether carries the fall in OE-1 |
 | Response time | ≤ 500 ms (package SYRS-003); ≤ 200 ms proposed for the wired device to power removal |
 | Stop category | 0 (DQ-005 A, decided 2026-10-21; DQ-016 withdrawn as settled): no software in the path, power removed at once, the tether carries the fall in OE-1; a category 1 E-stop would run through the controller the operator may be stopping |
 | PLr | d |
-| Category, DC | 3, medium or better: dual channel, cross-monitored, contactor feedback in the re-arm loop; the wireless receiver counts only with heartbeat surveillance that fails safe (SF-13's own diagnostic) |
+| Category, DC | 3, medium or better: a certified safety relay module (Category 3 or better, monitored reset, PL d or e on its data sheet) driving two contactors with mirror contacts, contactor feedback in the re-arm loop (DQ-036 A, decided 2026-10-21); the wireless receiver counts only with heartbeat surveillance that fails safe (SF-13's own diagnostic) |
 | Modes | Every mode |
 | Priority | Highest; overrides every other command and function |
 | Fault reaction | A single fault in either channel, a welded contactor or a lost heartbeat is detected at or before the next demand and prevents re-arm |

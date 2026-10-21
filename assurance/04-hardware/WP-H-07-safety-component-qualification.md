@@ -22,7 +22,7 @@ Qualification of safety components: certificates, well-tried-component arguments
 
 ## 2. Component list
 
-Per element of WP-S-03: part, supplier, certificate or standard, B10d or MTTFD, where used.
+Per element of WP-S-03: part, supplier, certificate or standard, B10d or MTTFD, where used. The first certified components are the safety relay module of the E-stop chain (DQ-036 A, 2026-10-21) and the rated gantry crane, winch and tether (DQ-027 A); their certificates and data sheets are filed here from the [bench-equipment change record](../07-supporting/impact/change-2026-10-21-bench-equipment.md).
 
 ## 3. Arguments
 

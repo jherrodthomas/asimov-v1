@@ -22,7 +22,7 @@ Emergency stop and safety-chain validation: each device (wired tether E-stop, wi
 
 ## 2. Test specification
 
-ES-nn per device and fault; timing from press to motor-rail removal (≤ 500 ms, SYRS-003); heartbeat loss to fail-safe (SF-13).
+ES-nn per device and fault; timing from press to motor-rail removal (≤ 500 ms, SYRS-003); heartbeat loss to fail-safe (SF-13). In OE-1 a lost wireless heartbeat is a warning, not a stop demand (DQ-039 A, 2026-10-21): the test shows the warning and the log entry, and the wired pendant stops the robot; the safety relay module's monitored reset and the contactors' mirror contacts (DQ-036 A) are tested with a simulated welded contact.
 
 ## 3. Report
 

@@ -977,7 +977,9 @@
       title: "Approve nothing yet; collect quotes and ask again with numbers"
       detail: "No commitment. Cost: a second round for the same question; every powered test waits."
   sources: ["DQ-007, DQ-008, DQ-009, DQ-027 (decided)", "WP-V-07 §2", "WP-M-02 §4.1 (early implementation of at-risk work)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "07-supporting/impact/change-2026-10-21-bench-equipment.md (the purchase as one change record, quotes to be entered before ordering); WP-V-07 OI-1, OI-2; WP-M-03 §4", at: 2026-10-21}
 
 - id: DQ-036
   ref: GAP-07
@@ -1006,7 +1008,9 @@
       title: "A single contactor driven directly by the pendant, no monitoring"
       detail: "Simplest. Cost: Category 1 at best; cannot reach PL d; a welded contact is undetected."
   sources: ["DQ-008 (decided)", "WP-C-04 SF-13 (Category 3)", "ISO 13849-1:2023 §6 (designated architectures), to be checked", "DFMEA FM-19, FM-20"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.5 SF-13 (a certified safety relay module, Category 3 or better with monitored reset, driving two contactors with mirror contacts); WP-S-03 §4; WP-H-02 §3; WP-H-07 §2", at: 2026-10-21}
 
 - id: DQ-037
   ref: GAP-08
@@ -1036,7 +1040,9 @@
       title: "A battery of the certified-pack list after all, through the BMS interlock"
       detail: "Closest to the product. Cost: the interlock does not exist (DQ-009 A), and a battery on the bench robot removes the one hazard the laboratory excluded."
   sources: ["DQ-009 (decided)", "WP-V-07 §2 C-3", "gap assessment GAP-08, GAP-23", "electrical/README.md (rail and port map)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.5 condition C-3 (a laboratory supply at the rail voltage with an adjustable current limit and an output switch in reach; the limit per test in the session log); WP-H-05 §2; WP-C-01 §1.1", at: 2026-10-21}
 
 - id: DQ-038
   ref: GAP-10
@@ -1066,7 +1072,9 @@
       title: "500 ms"
       detail: "Fewer nuisance stops. Cost: half a second of motion on stale commands; the fall-arrest budget grows by the same amount."
   sources: ["concept package 09_FSC SF-08", "WP-C-04 SF-08", "WP-S-04 §2", "DFMEA FM-10"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.5 SF-08 (250 ms with a one-sample grace; link-loss statistic from the first sessions before any change); WP-W-09 §2; WP-S-04 §2", at: 2026-10-21}
 
 - id: DQ-039
   ref: GAP-11
@@ -1093,7 +1101,9 @@
       title: "A stop demand everywhere: loss of either device's integrity ends the session in a controlled descent"
       detail: "Strictest. Cost: nuisance descents from a consumer radio; the test campaign slows and the tether takes more loads."
   sources: ["DQ-008 (decided)", "WP-C-04 SF-13", "gap assessment GAP-11", "DFMEA FM-19"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.5 SF-13 (a lost wireless heartbeat is a warning in OE-1, a stop demand only where the wireless device is the operator's device); WP-V-07 §3; WP-V-04 §2", at: 2026-10-21}
 
 - id: DQ-040
   ref: GAP-27
@@ -1123,7 +1133,9 @@
       title: "Record only the tests of WP-V-01…V-05, not every session"
       detail: "Less data. Cost: the anomaly that happens in an ordinary session has no record."
   sources: ["WP-V-07 §5", "gap assessment GAP-27", "WP-O-04 (skeleton)", "ISO 13849-2:2012 §4 (validation records), to be checked"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.5 §5 (every powered session: telemetry kept with the session record; room video kept for the campaign plus one gate, then deleted unless an anomaly refers to it); WP-P-01 §3; WP-O-03 §2", at: 2026-10-21}
 
 - id: DQ-041
   ref: GAP-03
@@ -1149,7 +1161,9 @@
       title: "Do not accept until a second, independent catch (a safety net or a second tether) exists"
       detail: "Belt and braces. Cost: more rigging, more snag points, and the first hang test waits again."
   sources: ["WP-C-03 §8 (tether integrity)", "WP-V-07 §2 C-1, §4", "DQ-007, DQ-027 (decided)", "ISO 12100:2010 §5.4 (hazards introduced by measures), to be checked"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-03 v0.4 §8 (the tether's own hazards accepted for OE-1 with the rigging checks, a tether route above the shoulders, the quick-release and the swing radius added to the cleared area); WP-C-02 §6; WP-V-07 §4; WP-C-05 §2", at: 2026-10-21}
 
 - id: DQ-042
   ref: GAP-25
@@ -1176,7 +1190,9 @@
       title: "80 °C, closer to a typical winding limit"
       detail: "Longer sessions. Cost: no data for these actuators; a thermal runaway starts from a warm stator."
   sources: ["WP-V-07 §3", "WP-C-03 H-12", "gap assessment GAP-25", "WP-C-04 SF-14"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.5 §3 (stator cut-off 60 °C, readout every ten minutes, sessions end at the cut-off); WP-C-04 SF-14; WP-W-09 §2", at: 2026-10-21}
 
 - id: DQ-043
   ref: GAP-03
@@ -1203,7 +1219,9 @@
       title: "Slack to the floor: the tether catches only a fall faster than the descent"
       detail: "Lets the descent be tested as designed. Cost: a failed descent reaches the floor; the tether must be set per test by someone who knows the descent's path."
   sources: ["WP-V-07 §3", "WP-V-02 (skeleton)", "DQ-005, DQ-024 (decided)", "WP-S-04 §2"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.5 §3 (tether catch at knee height, about 0.4 m at the centre of mass, until the controlled descent is verified); WP-V-02 §2; WP-S-04 §2", at: 2026-10-21}
 
 - id: DQ-044
   ref: GAP-00
@@ -1232,6 +1250,287 @@
       title: "Undecided; no site until the equipment is bought"
       detail: "No commitment. Cost: the gantry choice, the floor assumption and the two-person rule all depend on the room."
   sources: ["WP-C-02 §6", "06-validation/test-sites/README.md (empty)", "WP-V-07 §2 C-4", "DQ-022, DQ-027 (decided)"]
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "06-validation/test-sites/site-01-own-premises.md (the first site record, dimensions to be filled); WP-C-02 §6; WP-V-07 condition C-4", at: 2026-10-21}
+
+- id: DQ-045
+  ref: GAP-00
+  question: "How many hours per week does the project get from you, so the project plan can put dates on the gates?"
+  context: >-
+    Every schedule line in the project plan (WP-M-03) is empty because the one resource is undefined. The concept
+    phase, the fork's minimal firmware (DQ-023 A), the bench equipment and the first hang test are all your hours;
+    the reviewer you are recruiting (DQ-029 A) adds a few per document. A number, even a rough one, turns the gate
+    roadmap from a list into dates and tells the record what is realistic to promise before G1.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-03 §4 and §5 (effort, schedule, gate dates); WP-M-07 schedule risk"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "About eight hours a week on average, planned as two sessions, with the record saying so"
+      detail: "A side-project cadence the plan can be honest about: G1 some months out, the firmware and the first hang test after it. Cost: slow; the plan must defer anything that is not on the critical path."
+    - key: B
+      title: "About twenty hours a week"
+      detail: "A half-time effort. Cost: the plan can promise G1 within weeks of the gantry arriving, which is only true if the hours are real."
+    - key: C
+      title: "Unplanned: whatever time is available, no dates in the plan"
+      detail: "No commitment. Cost: the project plan stays a skeleton and the gate roadmap has no dates to be wrong about."
+  sources: ["WP-M-03 §4 (hours per week are a decision for the register)", "WP-M-02 §3.1 (roles)", "DQ-023, DQ-029 (decided)"]
+  status: open
+
+- id: DQ-046
+  ref: GAP-00
+  question: "Where is the call for a verification reviewer posted beyond this repository: the upstream community channels, a robotics or functional-safety forum, or nowhere else?"
+  context: >-
+    You decided to look for a reviewer now (DQ-029 A) and the call is written in CONTRIBUTING.md. Nobody reads a
+    fork's contributing page unprompted. Upstream's Discord, forum and X account reach the people who own the same
+    kit; a functional-safety or robotics forum reaches people who can review a risk assessment; either is a public
+    post in your name. The record cannot post on your behalf, so this fixes what you do, not what I do.
+  reversibility: easy
+  decider: lead
+  blocks: "Whether the reviewer role (G0 condition C-2) can be filled before G1; WP-M-02 §3.1"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  options:
+    - key: A
+      recommended: true
+      title: "Upstream's Discord and forum, with a link to the contributing page and the two documents to review"
+      detail: "Reaches builders of the same robot, who can also catch mistakes about the hardware. Cost: a public post in the upstream community about a fork that assesses their design; wording that makes clear it is independent of upstream."
+    - key: B
+      title: "A functional-safety or robotics-safety forum or mailing list"
+      detail: "Reaches reviewers with the right training. Cost: they do not know the robot; a longer briefing."
+    - key: C
+      title: "Both"
+      detail: "Widest reach. Cost: two posts to write and answer."
+    - key: D
+      title: "Nowhere else; wait for someone to find the repository"
+      detail: "No posting. Cost: the role most likely stays unfilled through G1."
+  sources: ["DQ-029 (decided)", "CONTRIBUTING.md (the call)", "README (upstream community links)", "G0 gate record condition C-2"]
+  status: open
+
+- id: DQ-047
+  ref: GAP-14
+  question: "Do we ask upstream, in public, for the actuator and encoder failure-rate data, the E-stop design and the mode-machine specification, or wait for them to publish?"
+  context: >-
+    The PL calculation needs MTTFD, DC and CCF inputs that upstream does not publish (GAP-14); the stop chain
+    design needs to know what the kit's wireless E-stop and receiver are (GAP-07); the safety layer needs the
+    mode-machine behaviour the manual only describes. The gap assessment's action 8 is to ask. A public issue or
+    discussion on the upstream repository is a courteous, visible request that also tells upstream the fork exists;
+    their silence or answer both become design inputs the record can cite.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-H-04 §2 reliability data; WP-H-02 §3 E-stop design; WP-M-10 upstream management; the gap assessment's action 8"
+  gate: G2
+  asked: 2026-10-21
+  batch: 5
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "One public discussion on the upstream repository, drafted in the record first (WP-M-10), asking for the three things and offering the fork's findings in return"
+      detail: "Visible, polite, citable. Cost: a drafted text for you to post; upstream may decline or not answer, which the record then states."
+    - key: B
+      title: "A private message to Asimov Inc"
+      detail: "Less public. Cost: an answer the record cannot cite without permission; the fork stays unknown to the community."
+    - key: C
+      title: "Do not ask; substitute certified components and the fork's own measurements"
+      detail: "Independent of upstream. Cost: the actuators cannot be substituted; their failure rates would be estimated from generic data, which an assessor will discount."
+  sources: ["gap assessment GAP-07, GAP-14 and action 8", "WP-M-10 (skeleton)", "WP-H-04 (skeleton)", "CLAUDE.md (upstream is quoted, not restated)"]
+  status: open
+
+- id: DQ-048
+  ref: GAP-07
+  question: "After an emergency stop, is the robot re-armed only from the pendant's reset with the button released, or also from the operator app?"
+  context: >-
+    A stop that can be cleared from software is a stop that software can clear by mistake; ISO 13850 expects a
+    deliberate manual reset at the device before anything can restart, and a separate start command. The pendant
+    you chose (DQ-008 A) can carry a reset button; the operator app is a network client (SL 2, DQ-012 A). Re-arming
+    only at the pendant means walking to it after every stop, which in the laboratory is the operator's own hand.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-C-04 SF-13 reset; WP-S-03 §4; WP-S-05 safety chain I/O; WP-V-04 test cases"
+  gate: G2
+  asked: 2026-10-21
+  batch: 5
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Pendant reset only, with the button released, then a separate start command from the operator app; the app can never re-arm"
+      detail: "What ISO 13850 and the safety relay's own reset input expect. Cost: nothing in the laboratory; in a later envelope the pendant must be where the person who re-arms stands."
+    - key: B
+      title: "Reset from either the pendant or the app"
+      detail: "Convenient. Cost: a network client in the re-arm path of a PL d chain; the safety relay's monitored reset is bypassed."
+  sources: ["ISO 13850:2015 §4.1.4 (reset), to be checked", "WP-C-04 SF-13", "DQ-008, DQ-012, DQ-036 (decided)"]
+  status: open
+
+- id: DQ-049
+  ref: GAP-06
+  question: "Is the laboratory joint velocity ceiling set at 1.0 rad/s for every joint until the fall-arrest budget replaces it?"
+  context: >-
+    You set the torque limit at half the MuJoCo range (DQ-014 A) and left the velocity ceiling to the fall-arrest
+    budget (WP-S-04), which does not exist yet. The hold point and the first firmware need a number now. 1.0 rad/s
+    is slow enough that a limb sweep at the shoulder moves the hand at under 1 m/s and fast enough to stand and step
+    in place; it is a placeholder a measurement will replace, which is why this is a reversible technical choice.
+  reversibility: easy
+  decider: claude
+  blocks: "WP-W-09 PAR-nn; WP-V-07 condition C-5; WP-C-04 SF-03"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  proceed_after: 2026-10-28
+  options:
+    - key: A
+      recommended: true
+      title: "1.0 rad/s on every joint in OE-1 until WP-S-04 sets a per-joint value"
+      detail: "Simple, conservative, enough to stand. Cost: stepping in place may feel slow; the value is replaced at G2."
+    - key: B
+      title: "2.0 rad/s"
+      detail: "Livelier motion. Cost: a hand speed near 2 m/s at the shoulder, above what ISO/TS 15066 contemplates for transient contact."
+  sources: ["DQ-014 (decided)", "WP-V-07 §2 C-5", "sim-model/xmls/asimov.xml (joint ranges)", "ISO/TS 15066:2016 (speed and contact), to be checked"]
+  status: open
+
+- id: DQ-050
+  ref: GAP-17
+  question: "Does the fork ask upstream for the locomotion policy's weights and training description under an agreement, or treat the policy as a black box it never sees?"
+  context: >-
+    You withdrew balance as a safety function (DQ-006 A), so the policy is a functional component whose commands
+    the safety layer bounds. Even so, the insufficiency analysis (WP-C-10), the ML plan and the second item need to
+    know what the policy was trained on and how it behaves at the edges (GAP-17, GAP-21). Weights under an agreement
+    would let the fork test the policy in the MuJoCo model; a black box means every statement about it stays a
+    claim to verify on the real robot, later, on the tether.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-C-09 §3; WP-C-10 §2; WP-M-09 §3; WP-W-10 scope"
+  gate: G2
+  asked: 2026-10-21
+  batch: 5
+  options:
+    - key: A
+      recommended: true
+      title: "Black box for the first item: no request; the record states what the policy must satisfy at its interface and tests it on the tether when it is public"
+      detail: "No dependency on upstream's goodwill, no agreement to negotiate. Cost: no simulation evidence about the policy; the second item inherits the question."
+    - key: B
+      title: "Ask upstream for the weights and training description under a non-disclosure agreement"
+      detail: "Simulation evidence becomes possible. Cost: an agreement a one-person project has to negotiate and honour; findings under it cannot be published in the record."
+  sources: ["DQ-006 (decided)", "gap assessment GAP-17, GAP-21", "WP-C-09 (skeleton)", "WP-M-09 (skeleton)"]
+  status: open
+
+- id: DQ-051
+  ref: GAP-27
+  question: "Are safety anomalies, test results and test videos published in the repository as they happen, or kept private until a gate review?"
+  context: >-
+    The record is public and publishes its own counter-evidence; the session recordings you approved (DQ-040 A)
+    will show falls, failures and people. Publishing anomalies as they happen is the open-record principle the
+    README states and lets reviewers see the raw evidence; it also shows the robot failing, with the lab and the
+    people in it, before anyone has analysed why. Keeping them until a gate review trades openness for a considered
+    account. Video of people needs their consent either way.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-P-04 documentation management; WP-O-04 field monitoring; WP-V-07 §6; the test-sites folder"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  options:
+    - key: A
+      recommended: true
+      title: "Anomaly reports, logs and results published as issues and records as they happen; video published only when an anomaly report cites it and the people in it have agreed"
+      detail: "The open record, with video behind consent. Cost: the repository shows every failure in near real time; wording that says a failure under test is the point of testing."
+    - key: B
+      title: "Everything held until the next gate review, then published with the gate record"
+      detail: "A considered account. Cost: weeks of silence after a fall; reviewers see only what the gate record selects."
+    - key: C
+      title: "Logs and results public; no video ever"
+      detail: "No faces, no consent questions. Cost: the one record that shows what a fall looked like stays private."
+  sources: ["README (the project publishes its own counter-evidence)", "WP-V-07 §6 (anomalies)", "DQ-040 (decided)", "WP-O-04 (skeleton)"]
+  status: open
+
+- id: DQ-052
+  ref: GAP-00
+  question: "Who may be the observer in a powered test: any briefed adult, or only a person trained as a test operator?"
+  context: >-
+    You made two people mandatory for every powered test (DQ-022 A). The observer's job is to watch the robot and
+    the operator, stay at the station outside the area, press the wireless E-stop if fitted, and call a halt. If only
+    trained operators qualify, the first hang test waits for a second trained person; if any briefed adult qualifies,
+    a household member or colleague with a ten-minute briefing and a signed line in the log can fill the role, which
+    is what laboratories commonly accept for an observer who does not touch the equipment.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-V-07 §2 C-8; WP-M-04 competence requirements; WP-O-02 operating rules"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Any briefed adult: the briefing of WP-V-07 read aloud, the stations and the E-stop shown, a signed line in the log; the observer never enters the area or touches the robot"
+      detail: "The first hang test can happen with the people you have. Cost: the observer's only tool is their voice and the wireless E-stop; the competence record (WP-M-04) must define the briefing."
+    - key: B
+      title: "A trained test operator only"
+      detail: "Two competent people at every test. Cost: no powered test until a second person is trained, which is months."
+  sources: ["DQ-022 (decided)", "WP-V-07 §2 C-8 and §4", "WP-M-04 (skeleton)", "WP-C-03 DM-04"]
+  status: open
+
+- id: DQ-053
+  ref: GAP-00
+  question: "Do powered tests on your own premises go ahead without specific liability insurance for the robot, or does cover come first?"
+  context: >-
+    You chose your own premises as the laboratory (DQ-044 A). A 35 kg machine on a gantry that can fall, swing or
+    pinch is a liability your household or business policy may exclude as machinery under test; a visitor-observer
+    (DQ-052) is the person most likely to be hurt. Cover is a cost and a conversation with an insurer who will ask
+    what the record says; going ahead without it is a risk you carry personally. The record cannot decide this, only
+    note what you decided and why.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-V-07 condition C-4 (the site); the first site record; WP-M-07 project risk register"
+  gate: G1
+  asked: 2026-10-21
+  batch: 5
+  options:
+    - key: A
+      recommended: true
+      title: "Check the existing policy first; go ahead with hang tests (feet off the floor, observer outside the area) under it if machinery under test is not excluded, and obtain cover before the first floor test"
+      detail: "The low-energy tests start; the floor tests, where the hazards are, wait for cover. Cost: one call to the insurer and a written answer filed with the site record."
+    - key: B
+      title: "Cover before any powered test"
+      detail: "Clean. Cost: a quote for a one-off research robot takes time and may be refused; every test waits."
+    - key: C
+      title: "No specific cover; accept the risk personally and record it"
+      detail: "Nothing to arrange. Cost: a fall onto a visitor-observer is uninsured; the record carries a personal risk acceptance an assessor will remark on."
+  sources: ["DQ-044, DQ-052 (decided or open)", "WP-V-07 §2", "WP-M-07 (skeleton)"]
+  status: open
+
+- id: DQ-054
+  ref: GAP-00
+  question: "When does the second item (OE-2, the industrial cell with the battery and the policy) start: after the first item's release gate, or in parallel once upstream publishes the firmware and policy?"
+  context: >-
+    The first item is the tethered laboratory robot (DQ-002 A, DQ-003 A). OE-2 needs the firmware, the policy, the
+    battery interlock, power-and-force limiting and a Category 3 chain, none of which exist, and twelve package gaps
+    to close. Starting it in parallel when upstream publishes splits one person's hours and reopens the risk
+    assessment while the first case is still being argued; starting it after G5 means the first item's evidence
+    (firmware, chain, tests) is reused rather than duplicated.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-M-03 §2 scope and §5 roadmap; WP-M-01 §7; the second item's register entries"
+  gate: G2
+  asked: 2026-10-21
+  batch: 5
+  options:
+    - key: A
+      recommended: true
+      title: "After the first item's release gate G5; until then OE-2 appears only as the interface assumptions the first case states"
+      detail: "One item at a time with one person. Cost: the walking, battery and collaborative claims are years out; upstream's firmware, when it arrives, is assessed inside the first item's scope only."
+    - key: B
+      title: "In parallel from the moment upstream publishes the firmware and policy"
+      detail: "Follows upstream's pace. Cost: the hours are split, the risk assessment is re-rated for OE-2 mid-phase, and the first case slows."
+  sources: ["DQ-002, DQ-003, DQ-032 (decided)", "WP-C-02 §2 OE-2", "WP-M-01 §7", "concept package 12_Gaps (12 gaps for OE-2)"]
   status: open
 
 - id: DQ-017

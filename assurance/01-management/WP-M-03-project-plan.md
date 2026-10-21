@@ -30,7 +30,7 @@ One element per phase P0…P6 and per work-product group, following [WP-M-01 §7
 
 ## 4. Effort and staffing
 
-Hours per element against the roles of WP-M-02 §3.1; the lead's available hours per week are a decision for the register. Budget lines decided so far: the spares for the fall campaign (DQ-026 A: two leg actuators, printed shell parts, a harness repair kit) and the bench equipment of DQ-035.
+Hours per element against the roles of WP-M-02 §3.1; the lead's available hours per week are a decision for the register. Budget lines decided so far: the spares for the fall campaign (DQ-026 A: two leg actuators, printed shell parts, a harness repair kit) and the bench equipment approved as one purchase on 2026-10-21 (DQ-035 A; quotes in the [change record](../07-supporting/impact/change-2026-10-21-bench-equipment.md)).
 
 ## 5. Schedule and gate roadmap
 

@@ -22,7 +22,7 @@ Stability, fall and controlled-descent tests: tip-over margin standing and walki
 
 ## 2. Test specification
 
-The fall campaign is approved and bounded (DQ-024 A, 2026-10-21): power-cut and loss-of-balance tests from standing on the gantry, caught by the tether above knee height, an inspection after each test, the spares and the stop rule decided on 2026-10-21 (DQ-026 A: two spare leg actuators, one set of printed shell parts and a harness repair kit on hand before the first drop; the campaign stops at the first structural aluminium damage); the number of repetitions is set here. Walking is not in the first item (DQ-032 A), so the campaign tests standing and stepping in place only.
+The fall campaign is approved and bounded (DQ-024 A, 2026-10-21): power-cut and loss-of-balance tests from standing on the gantry, caught by the tether above knee height, an inspection after each test, the spares and the stop rule decided on 2026-10-21 (DQ-026 A: two spare leg actuators, one set of printed shell parts and a harness repair kit on hand before the first drop; the campaign stops at the first structural aluminium damage); the number of repetitions is set here; outside the descent tests the tether catches the robot at knee height, about 0.4 m at the centre of mass (DQ-043 A). Walking is not in the first item (DQ-032 A), so the campaign tests standing and stepping in place only.
 
 ST-nn: mode, load, floor, stop type (E-stop, watchdog, loss of power, commanded descent), tether slack, repetitions, measurement method (motion capture or video, IMU log, force plate).
 

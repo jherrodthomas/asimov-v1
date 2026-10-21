@@ -26,7 +26,7 @@ Response targets of WP-C-04 §2 (≤ 10 ms torque limit, ≤ 20 ms balance, ≤ 
 
 ## 3. Response time budget per safety function
 
-Sensor, bus, controller, actuator and contactor contributions per function; the E-stop link heartbeat period.
+Sensor, bus, controller, actuator and contactor contributions per function; the tele-operation heartbeat timeout of 250 ms with a one-sample grace (DQ-038 A, 2026-10-21) is the first term of the SF-08 budget; the tether catches the robot at knee height, about 0.4 m at the centre of mass, until the controlled descent is verified (DQ-043 A), which bounds the fall energy the budget must cover.
 
 ## 4. Fall-arrest and controlled-descent model
 

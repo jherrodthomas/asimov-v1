@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.5 (2026-10-21): batch 4 applied and batch 5 opened in §8. 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -265,16 +265,26 @@ index, the register entry is the question.
 | D-29 | Walking in the first item | DQ-032 | Decided 2026-10-21: A, not in the first item |
 | D-30 | The UART debug port in the reference build | DQ-033 | Decided 2026-10-21: A, closed in the reference build |
 | D-31 | A second IMU for SF-23 | DQ-034 | Decided 2026-10-21: A |
-| D-32 | The bench equipment purchase | DQ-035 | Open, batch 4 |
-| D-33 | Certified safety relay or plain relays | DQ-036 | Open, batch 4 |
-| D-34 | What feeds the actuator rail on the bench | DQ-037 | Open, batch 4 |
-| D-35 | Tele-operation heartbeat timeout | DQ-038 | Open, batch 4 |
-| D-36 | Lost wireless heartbeat: stop demand or warning in OE-1 | DQ-039 | Open, batch 4 |
-| D-37 | Session recording and retention | DQ-040 | Open, batch 4 |
-| D-38 | The tether's own hazards accepted with rigging checks | DQ-041 | Open, batch 4 |
-| D-39 | Stator temperature cut-off and session readout | DQ-042 | Open, batch 4 |
-| D-40 | Tether catch height | DQ-043 | Open, batch 4 |
-| D-41 | Where the laboratory is | DQ-044 | Open, batch 4 |
+| D-32 | The bench equipment purchase | DQ-035 | Decided 2026-10-21: A, one purchase |
+| D-33 | Certified safety relay or plain relays | DQ-036 | Decided 2026-10-21: A, certified module |
+| D-34 | What feeds the actuator rail on the bench | DQ-037 | Decided 2026-10-21: A, a current-limited laboratory supply |
+| D-35 | Tele-operation heartbeat timeout | DQ-038 | Decided 2026-10-21: A, 250 ms |
+| D-36 | Lost wireless heartbeat: stop demand or warning in OE-1 | DQ-039 | Decided 2026-10-21: A, a warning |
+| D-37 | Session recording and retention | DQ-040 | Decided 2026-10-21: A |
+| D-38 | The tether's own hazards accepted with rigging checks | DQ-041 | Decided 2026-10-21: A, accepted for OE-1 |
+| D-39 | Stator temperature cut-off and session readout | DQ-042 | Decided 2026-10-21: A, 60 °C |
+| D-40 | Tether catch height | DQ-043 | Decided 2026-10-21: A, knee height |
+| D-41 | Where the laboratory is | DQ-044 | Decided 2026-10-21: A, the lead's own premises |
+| D-42 | Hours per week | DQ-045 | Open, batch 5 |
+| D-43 | Where the reviewer call is posted | DQ-046 | Open, batch 5 |
+| D-44 | Ask upstream in public for reliability data and the E-stop design | DQ-047 | Open, batch 5 |
+| D-45 | Re-arm after an E-stop: pendant only | DQ-048 | Open, batch 5 |
+| D-46 | Laboratory joint velocity ceiling (decider: claude) | DQ-049 | Open, batch 5 |
+| D-47 | The policy as a black box or weights under agreement | DQ-050 | Open, batch 5 |
+| D-48 | Publishing anomalies, results and video | DQ-051 | Open, batch 5 |
+| D-49 | Who may be the observer | DQ-052 | Open, batch 5 |
+| D-50 | Liability insurance before powered tests | DQ-053 | Open, batch 5 |
+| D-51 | When the second item starts | DQ-054 | Open, batch 5 |
 
 ## 9. Top risks to the assurance path
 

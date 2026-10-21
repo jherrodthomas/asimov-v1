@@ -22,7 +22,7 @@ Electrical and battery safety of the robot: supply disconnection, overcurrent pr
 
 ## 2. Supply and disconnection
 
-A lockable disconnector on the battery rail (GAP-08); the XT30 5 V input; the charger interface.
+A lockable disconnector on the battery rail (GAP-08); the XT30 5 V input; the charger interface. On CFG-001 the actuator rail is fed by a laboratory supply at the rail voltage with an adjustable current limit and an output switch within the operator's reach (DQ-037 A, 2026-10-21); the supply's current limit is the overcurrent protection of the bench configuration until the fused distribution board exists.
 
 ## 3. Overcurrent and short-circuit protection
 
