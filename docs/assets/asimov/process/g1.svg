@@ -141,19 +141,19 @@
 <path d="M316.0,548.0 L684.0,656.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
 <rect x="479.5" y="593" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
 <text x="500" y="605" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-01</text>
-<path d="M500.0,616.0 L408.0,600.0 L316.0,616.0" fill="none" stroke="#D64535" stroke-width="1.2" stroke-dasharray="3 4"/>
-<rect x="372" y="591" width="72" height="16" rx="8" fill="#FFFFFF" stroke="#D64535" stroke-width="1"/>
-<text x="408" y="603" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">IX-02 OPEN</text>
-<path d="M500.0,656.0 L868.0,764.0" fill="none" stroke="#D64535" stroke-width="1.2" stroke-dasharray="3 4"/>
-<rect x="648" y="701" width="72" height="16" rx="8" fill="#FFFFFF" stroke="#D64535" stroke-width="1"/>
-<text x="684" y="713" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">IX-03 OPEN</text>
+<path d="M500.0,616.0 L408.0,600.0 L316.0,616.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="387.5" y="591" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="408" y="603" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-02</text>
+<path d="M500.0,656.0 L868.0,764.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="663.5" y="701" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="684" y="713" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-03</text>
 <path d="M316.0,332.0 L316.0,440.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
 <rect x="295.5" y="377" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
 <text x="316" y="389" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-04</text>
 <rect x="40" y="946" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
 <rect x="40" y="946" width="5" height="62" rx="2" fill="#A88A00"/>
 <text x="56" y="966" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
-<text x="948" y="966" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<text x="948" y="966" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1</text>
 <rect x="56" y="978" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
 <text x="95" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-02 · I3</text>
 <rect x="142" y="978" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>

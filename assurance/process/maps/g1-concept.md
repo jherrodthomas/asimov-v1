@@ -82,8 +82,8 @@ flowchart LR
   cs(["Cybersecurity (IEC 62443)"])
   ml(["Machine learning (ISO/IEC TR 5469)"])
   cs -. "IX-01" .- risk
-  risk -. "IX-02 OPEN" .- srpcs
-  ml -. "IX-03 OPEN" .- srpcs
+  risk -. "IX-02" .- srpcs
+  ml -. "IX-03" .- srpcs
   risk -. "IX-04" .- risk
 ```
 
@@ -113,8 +113,8 @@ Each interface is anchored to text in the work products; the checker fails if an
 | ID | Pattern | Between | Topic | Status | Open item | Due |
 |---|---|---|---|---|---|---|
 | IX-01 | Safety-Security | [WP-C-03](../../02-concept/WP-C-03-risk-assessment.md), [WP-C-07](../../02-concept/WP-C-07-cybersecurity-threat-and-risk-assessment.md) (Machinery and robot risk assessment / Cybersecurity) | Threat scenarios that can cause a hazard are rated against the hazard list; cyber-induced hazards appear in the risk assessment | Documented | — | G1 |
-| IX-02 | Safety-Performance limits | [WP-C-04](../../02-concept/WP-C-04-safety-functions-and-plr.md), [WP-C-10](../../02-concept/WP-C-10-functional-insufficiency-analysis.md) (Safety-related control system / Machinery and robot risk assessment) | The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims are bounded by what the IMU and the camera can detect and by the safe state the biped can reach | Open | DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing | G1 |
-| IX-03 | Safety-ML | [WP-C-04](../../02-concept/WP-C-04-safety-functions-and-plr.md), [WP-C-09](../../02-concept/WP-C-09-ml-component-definition-and-safety-requirements.md) (Safety-related control system / Machine learning) | Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability in OE-1 rests on the tether and gantry with the policy as a functional component | Open | DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1 | G1 |
+| IX-02 | Safety-Performance limits | [WP-C-04](../../02-concept/WP-C-04-safety-functions-and-plr.md), [WP-C-10](../../02-concept/WP-C-10-functional-insufficiency-analysis.md) (Safety-related control system / Machinery and robot risk assessment) | The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims are bounded by what the IMU and the camera can detect and by the safe state the biped can reach | Documented | — | G1 |
+| IX-03 | Safety-ML | [WP-C-04](../../02-concept/WP-C-04-safety-functions-and-plr.md), [WP-C-09](../../02-concept/WP-C-09-ml-component-definition-and-safety-requirements.md) (Safety-related control system / Machine learning) | Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability in OE-1 rests on the tether and gantry with the policy as a functional component | Documented | — | G1 |
 | IX-04 | Environment-Interaction | [WP-C-02](../../02-concept/WP-C-02-operating-environment-and-tasks.md), [WP-C-06](../../02-concept/WP-C-06-human-robot-interaction-and-misuse.md) (Machinery and robot risk assessment / Machinery and robot risk assessment) | People presence per operating envelope drives the interaction scenarios, the contact limits that apply and the misuse analysis | Documented | — | G1 |
 
 ## 4. Clause coverage by standard
@@ -142,9 +142,9 @@ Which activity answers each clause reference listed in the register. One activit
 | Safety-related control system (ISO 13849-1) | Safety-related control system engineer | Jherrod Thomas (acting); additional contributors TBD | G2 |
 | Cybersecurity (IEC 62443) | Cybersecurity manager | Jherrod Thomas (acting); permanent holder TBD | G1 |
 | Machine learning (ISO/IEC TR 5469) | ML safety lead | Jherrod Thomas (acting); permanent holder TBD | G1 |
-| Independent confirmation | External functional safety assessor | TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled) | G1 (revisit) |
+| Independent confirmation | External functional safety assessor | None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1 | G1 (revisit) |
 
-**Other roles WP-M-02 §3.1 needs by G1:** Verification reviewer(s) (TBD (at least one person other than the author); needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test operator(s) (TBD (trained per WP-M-04)).
+**Other roles WP-M-02 §3.1 needs by G1:** Verification reviewer(s) (TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21), starting with WP-C-03 and WP-C-04; needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test operator(s) (TBD (trained per WP-M-04)).
 
 **Confirmation measures (WP-M-06 §9):**
 
@@ -159,4 +159,4 @@ Which activity answers each clause reference listed in the register. One activit
 
 **Work products with no confirmation measure at this gate** (verification review only): WP-C-02, WP-V-07, WP-T-01, WP-K-01.
 
-**Open interfaces due by this gate** (from this or an earlier phase): IX-02 (DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing), IX-03 (DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1).
+**Open interfaces due by this gate** (from this or an earlier phase): none.

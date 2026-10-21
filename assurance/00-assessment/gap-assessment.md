@@ -141,13 +141,14 @@ is recorded here as a strength of the package (§9) and the gap stays a gap.
 
 ## 10. Priority actions (feed into the G0/G1 plan)
 
-1. **Decide the frame, the envelopes and the reference configuration** (register DQ-001, DQ-002, DQ-003): EU
-   machinery frame, OE-1 laboratory only, the kit robot as published, tethered and bench-powered. Everything below
-   assumes those answers.
-2. **Decide the safe state and the policy position** (DQ-005, DQ-006): a controlled descent as the safe state, and
-   no safety function on the learned policy until it is public. These two decisions fix SF-01, SF-02, SF-08, the
+1. **Decide the frame, the envelopes and the reference configuration** (register DQ-001, DQ-002, DQ-003): decided
+   2026-10-21: both frames with one EU technical file and a US cross-reference (C), OE-1 laboratory only (A), the kit
+   robot as published, tethered and bench-powered (A). Everything below assumes those answers.
+2. **Decide the safe state and the policy position** (DQ-005, DQ-006): decided 2026-10-21: a controlled descent to a
+   kneel or crouch, then power removal, with the E-stop removing power at once (A); no safety function on the
+   learned policy, SF-01 withdrawn (A). These two decisions fix SF-01, SF-02, SF-08, the
    E-stop's stop category and the fall-arrest budget.
-3. **Buy or build the laboratory complementary measures before any powered floor test** (DQ-007, DQ-008): a gantry
+3. **Buy or build the laboratory complementary measures before any powered floor test** (DQ-007 A, DQ-008 A, decided 2026-10-21): a gantry
    and rated tether sized for a 35 kg dynamic load, a wired dual-channel E-stop in the operator's hand that removes
    the motor rail, a bench supply in place of a battery, a cleared and marked area. This is bench equipment, not the
    product design; it is what makes the next months of testing defensible ([WP-V-07](../06-validation/WP-V-07-test-operations.md)).
@@ -158,13 +159,13 @@ is recorded here as a strength of the package (§9) and the gap stays a gap.
    the hip-yoke FEA and material certificates the DFMEA asks for.
 6. **Specify the stop chain** (GAP-07, GAP-08, GAP-11): E-stop devices, a surveilled wireless receiver, motor-rail
    contactors, a power distribution board with a fuse table and a disconnection device, the BMS handshake interlock
-   (DQ-009); map SF-13, SF-08 and SF-15 onto it and record the open items as defeaters.
+   (DQ-009 A, decided 2026-10-21); map SF-13, SF-08 and SF-15 onto it and record the open items as defeaters.
 7. **Specify the safety layer ahead of the firmware** (GAP-16): WP-W-02 and WP-W-03 against the interface the
    manual describes, so that upstream's firmware, when it arrives, is assessed against a specification rather than
-   read for one.
+   read for one. Decided 2026-10-21 (DQ-023 A): the fork also writes a minimal firmware of its own for the hang tests.
 8. **Ask upstream for reliability data and the plan documents** (GAP-14, GAP-07): actuator and encoder failure
    rates, the E-stop design, the mode-machine specification; record their absence as the fork's design input.
-9. **Set the limits and the security target** (DQ-012, DQ-014): joint torque and velocity limits the firmware
-   enforces, and the security level for the tele-operation channel.
+9. **Set the limits and the security target** (DQ-012, DQ-014): decided 2026-10-21: half the MuJoCo range per joint
+   until measured (A), and SL 2 for identification, integrity, data flow and availability (A).
 10. **Build the Living Safety Case tooling** and register GAP-01…GAP-34 as the first defeaters against the
     top-level claim (done at v0.1).

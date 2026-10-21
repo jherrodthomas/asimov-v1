@@ -22,11 +22,13 @@ Assembly, installation and commissioning instructions for a DIY-kit build: mater
 
 ## 2. Build
 
+The kit-assembly hazards are inside the item (DQ-031 A, 2026-10-21): ESD during board handling (H-10, SF-12), MJF PA12 dust during post-processing and repair (H-17, SF-17), and the two-person lift of the 35 kg robot (H-18, SF-18) are procedural measures of this document, rated in WP-C-03, with no Performance Level.
+
 Per subassembly ASV1_100…ASV1_700; torque and threadlocker tables (FM-03); mill certificates for 7075-T6 (FM-02); pre-crimped harness or pull-test (FM-18).
 
 ## 3. Commissioning checks
 
-Watchdog self-test, E-stop test from every device, BMS handshake, encoder direction, IMU plausibility, thermistor readout, CAN termination.
+Watchdog self-test, E-stop test from every device, BMS handshake, encoder direction, IMU plausibility, thermistor readout, CAN termination. After every deliberate fall test: the inspection of the fall campaign (DQ-026 A): yokes, printed shells, harness connectors, actuator free play; structural aluminium damage ends the campaign.
 
 ## 4. Acceptance record
 

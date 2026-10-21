@@ -1,4 +1,4 @@
-![Asimov v1 assurance. An open humanoid. Engineered for safety. A geometric amber biped hanging from a gantry on a cyan tether, with a camera head, a red emergency-stop pendant on a lead and a dashed fall radius on a perspective floor grid, beside the project name and the standards it follows.](../docs/assets/asimov/hero.svg)
+![Asimov v1 assurance. An open humanoid. Engineered for safety. Upstream's photograph of the robot, a dark humanoid with a camera in its chest against an orange background, beside the project name and the standards it follows.](../docs/assets/asimov/hero.svg)
 
 # Asimov v1 assurance, explained
 

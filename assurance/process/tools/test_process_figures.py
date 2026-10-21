@@ -55,7 +55,7 @@ class FigureTests(unittest.TestCase):
     for ix in self.view.model.interfaces.values():
       self.assertIn(f">{ix['id']}<", s)
       self.assertIn(ix["pattern"], s)
-    self.assertIn(">OPEN<", s)
+      self.assertIn(f">{ix['status'].upper()}<", s)
 
   def test_write_then_check_round_trips_and_detects_staleness(self):
     with tempfile.TemporaryDirectory() as d:

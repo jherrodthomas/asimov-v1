@@ -22,11 +22,11 @@ Cybersecurity requirements CSR-nn and the security level target per foundational
 
 ## 2. Security level target
 
-SL-T per FR 1–7, decided by the lead (DQ-012); planning assumption SL 2 for identification, integrity, data flow and availability, SL 1 otherwise.
+SL-T per FR 1–7, decided by the lead on 2026-10-21 (DQ-012 A): SL 2 for FR 1 identification and authentication control, FR 3 system integrity, FR 5 restricted data flow and FR 7 resource availability; SL 1 for FR 2 use control, FR 4 data confidentiality and FR 6 timely response to events. The target defends against an intentional attacker with simple means, which is who can reach a Wi-Fi robot. The UART debug port is DQ-033.
 
 ## 3. Requirements
 
-CSR-nn per CR: DTLS and TLS 1.3 on the tele-operation channel, session tokens with expiry, idle lock, audit logging, signed images, a closed UART debug port in the reference build, CAN message authentication where a safety signal crosses a bus, E-stop link heartbeat and encryption.
+CSR-nn per CR: DTLS and TLS 1.3 on the tele-operation channel, session tokens with expiry, idle lock, audit logging, signed images, a UART debug port that is open during development and closed in the reference build: behind a cover with a tamper label and disabled in firmware unless a maintenance mode is armed from the pendant with the rail off (DQ-033 A, decided 2026-10-21), CAN message authentication where a safety signal crosses a bus, E-stop link heartbeat and encryption.
 
 ## 4. Traceability
 

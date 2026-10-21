@@ -18,7 +18,7 @@
 
 ## 1. Purpose
 
-The AI Act conformity record: the position on whether the learned locomotion policy is a safety component of machinery (WP-M-13 §5, DQ-006) with its evidence, reviewed at G5 (ML-R3); rewritten as a full Annex IV technical documentation if the lead allocates SF-01 to the policy. Technical documentation is held once, in WP-K-02.
+The AI Act conformity record: the position on whether the learned locomotion policy is a safety component of machinery (WP-M-13 §5; DQ-006 A, decided 2026-10-21: not a safety component) with its evidence, reviewed at G5 (ML-R3); rewritten as a full Annex IV technical documentation if the lead allocates SF-01 to the policy. Technical documentation is held once, in WP-K-02.
 
 ## 2. Position and evidence
 

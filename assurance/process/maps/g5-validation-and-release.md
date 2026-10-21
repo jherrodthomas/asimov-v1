@@ -139,9 +139,9 @@ Which activity answers each clause reference listed in the register. One activit
 | Safety-related control system (ISO 13849-1) | Safety-related control system engineer | Jherrod Thomas (acting); additional contributors TBD | G2 |
 | Cybersecurity (IEC 62443) | Cybersecurity manager | Jherrod Thomas (acting); permanent holder TBD | G1 |
 | Machine learning (ISO/IEC TR 5469) | ML safety lead | Jherrod Thomas (acting); permanent holder TBD | G1 |
-| Independent confirmation | External functional safety assessor | TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled) | G1 (revisit) |
+| Independent confirmation | External functional safety assessor | None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1 | G1 (revisit) |
 
-**Other roles WP-M-02 §3.1 needs by G5:** Electrical and mechanical engineer (TBD (likely external); needed by G2, still unassigned); Verification reviewer(s) (TBD (at least one person other than the author); needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD; needed by G3, still unassigned); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned); External cybersecurity assessor (TBD); Notified body (TBD).
+**Other roles WP-M-02 §3.1 needs by G5:** Electrical and mechanical engineer (TBD (likely external); needed by G2, still unassigned); Verification reviewer(s) (TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21), starting with WP-C-03 and WP-C-04; needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD; needed by G3, still unassigned); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned); External cybersecurity assessor (TBD); Notified body (TBD).
 
 **Confirmation measures (WP-M-06 §9):**
 
@@ -155,4 +155,4 @@ Which activity answers each clause reference listed in the register. One activit
 
 **Work products with no confirmation measure at this gate** (verification review only): WP-O-01, WP-O-02, WP-O-03, WP-V-08, WP-P-10, WP-T-01.
 
-**Open interfaces due by this gate** (from this or an earlier phase): IX-02 (DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing), IX-03 (DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1).
+**Open interfaces due by this gate** (from this or an earlier phase): none.

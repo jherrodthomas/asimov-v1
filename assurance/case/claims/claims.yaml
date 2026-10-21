@@ -45,8 +45,8 @@
 
 - id: G1.1
   kind: claim
-  title: "SF-01 bipedal stability is maintained at PL d"
-  description: "The robot keeps its balance while standing and moving within its limits; whether the learned locomotion policy may carry this function, or stability in OE-1 rests on the tether and gantry, is decision DQ-006."
+  title: "The locomotion policy carries no safety function: its commands are bounded by SF-03 and SF-23 and a loss of balance ends in the tether"
+  description: "SF-01 bipedal stability was withdrawn as a safety function on 2026-10-21 (DQ-006 A). The learned locomotion policy is a functional component; every command it issues passes the torque and velocity clamps SF-03 and the IMU plausibility check SF-23 of the deterministic safety layer, and a loss of balance ends in the controlled descent SF-02 or in the tether of OE-1 (G2.4), never in a free fall."
   parent: G1
   argument: S1
   lifecycle_status: draft

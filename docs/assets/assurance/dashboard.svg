@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="dash-t dash-d">
   <title id="dash-t">Asimov v1 assurance Living Safety Case dashboard</title>
-  <desc id="dash-d">Assurance state Development. Baseline BL-001 at 3d4ec9d. 29 safety claims registered, 0 with accepted supporting evidence. 22 evidence items: 0 available, 15 partial, 7 missing; 15 require review. 10 open assurance actions, 34 open defeaters. 1 evaluated configuration(s), 0 assurance-supported.</desc>
+  <desc id="dash-d">Assurance state Development. Baseline BL-001 at 3d4ec9d. 29 safety claims registered, 0 with accepted supporting evidence. 22 evidence items: 0 available, 15 partial, 7 missing; 15 require review. 8 open assurance actions, 34 open defeaters. 1 evaluated configuration(s), 0 assurance-supported.</desc>
   <defs>
     <linearGradient id="dash-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/>
@@ -18,7 +18,7 @@
     <rect x="824" y="38" width="136" height="31" rx="15.5" fill="#1F6FD0" fill-opacity="0.12" stroke="#1F6FD0"/>
     <text x="892.0" y="56" font-size="15" font-weight="600" fill="#1F6FD0" text-anchor="middle" letter-spacing="1.2">DEVELOPMENT</text>
     <text x="960" y="100" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="end">Baseline BL-001 · 3d4ec9d · under development</text>
-    <text x="960" y="124" font-size="15" font-weight="400" fill="#8A9AA2" text-anchor="end">Records digest d9cd5af97b39</text>
+    <text x="960" y="124" font-size="15" font-weight="400" fill="#8A9AA2" text-anchor="end">Records digest 8c27b71e21dd</text>
     <rect x="40" y="160" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
     <rect x="40" y="182" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
     <text x="62" y="218" font-size="44" font-weight="700" fill="#122026" text-anchor="start">29</text>
@@ -41,7 +41,7 @@
     <text x="764" y="272" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">drafted, not yet accepted</text>
     <rect x="40" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
     <rect x="40" y="326" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
-    <text x="62" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">10</text>
+    <text x="62" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">8</text>
     <text x="62" y="394" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Open actions</text>
     <text x="62" y="416" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">safety-case open items</text>
     <rect x="274" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>

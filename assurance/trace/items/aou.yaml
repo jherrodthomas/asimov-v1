@@ -11,7 +11,7 @@
 - id: AOU-02
   kind: aou
   text: "The battery, when fitted, is a UN 38.3 and IEC 62133-2 compliant lithium pack with an integrated BMS"
-  aou_status: "Not enforced: the kit ships without a battery (A-02; DQ-009)"
+  aou_status: "Policy set 2026-10-21 (DQ-009 A: certified-pack list in WP-O-03 and a BMS handshake interlock on C5); the interlock does not exist yet; no battery on CFG-001"
   status: proposed
   source: WP-C-01
 

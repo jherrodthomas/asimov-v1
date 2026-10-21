@@ -22,6 +22,8 @@ The software architecture: the motion-control-board safety layer and its separat
 
 ## 2. Firmware architecture
 
+The lead decided on 2026-10-21 (DQ-023 A) that the fork writes a minimal firmware of its own for the motion control board before upstream's is public: CAN actuator control with the clamps SF-03, the watchdog SF-24, the E-stop input and a DAMP-only fallback, enough for the hang tests of WP-V-07; the controlled descent SF-02 waits for a controller. This section describes that firmware first and upstream's, when it arrives, against it.
+
 Command intake (policy or tele-operation) → validation and clamps → mode machine → joint controllers → CAN; watchdog; fault handling; status publication.
 
 ## 3. Edge architecture

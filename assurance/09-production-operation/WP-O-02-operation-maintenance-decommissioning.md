@@ -26,7 +26,7 @@ Operating envelope OE-1 only; the hold point WP-V-07; operator duties; modes.
 
 ## 3. Maintenance
 
-Fastener and hip-yoke inspection, harmonic gear replacement interval (FM-04), toe joint, cover embrittlement (FM-26), encoder and IMU checks, battery care.
+Maintenance access to the UART debug port only with the maintenance mode armed from the pendant and the rail off (DQ-033 A, 2026-10-21). Fastener and hip-yoke inspection, harmonic gear replacement interval (FM-04), toe joint, cover embrittlement (FM-26), encoder and IMU checks, battery care.
 
 ## 4. Decommissioning
 

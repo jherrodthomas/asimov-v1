@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="life-t life-d">
   <title id="life-t">Asimov v1 assurance lifecycle</title>
-  <desc id="life-d">The seven phases P0 to P6, each closed by its gate: G0 Governance; G1 Concept; G2 System design; G3 HW/SW development; G4 Integration and verification; G5 Validation and release; G6 Operation. Today is P0; no gate is passed. Hold points at G1 and G4.</desc>
+  <desc id="life-d">The seven phases P0 to P6, each closed by its gate: G0 Governance; G1 Concept; G2 System design; G3 HW/SW development; G4 Integration and verification; G5 Validation and release; G6 Operation. Today is P1; the gates before it are passed by their records. Hold points at G1 and G4.</desc>
   <defs>
 <linearGradient id="life-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
 <linearGradient id="life-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
@@ -10,14 +10,14 @@
 <text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">LIFECYCLE</text>
 <text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">Seven phases, seven gates, none passed</text>
 <line x1="60" y1="170" x2="940" y2="170" stroke="#D3DDE2" stroke-width="3"/>
-<circle cx="60" cy="170" r="16" fill="#F3F7F8" stroke="#D4821A" stroke-width="2.5"/>
-<text x="60" y="175" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G0</text>
-<text x="60" y="208" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#122026" text-anchor="middle">Governance</text>
-<rect x="16" y="118" width="88" height="22" rx="11" fill="#D4821A" stroke="#D4821A" stroke-width="1" fill-opacity="0.15"/>
-<text x="60" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle" letter-spacing="1">TODAY · P0</text>
-<circle cx="206.667" cy="170" r="16" fill="#F3F7F8" stroke="#7E949B" stroke-width="2.5"/>
-<text x="206.667" y="175" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">G1</text>
-<text x="206.667" y="208" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="middle">Concept</text>
+<circle cx="60" cy="170" r="16" fill="#F3F7F8" stroke="#7E949B" stroke-width="2.5"/>
+<text x="60" y="175" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">G0</text>
+<text x="60" y="208" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="middle">Governance</text>
+<circle cx="206.667" cy="170" r="16" fill="#F3F7F8" stroke="#D4821A" stroke-width="2.5"/>
+<text x="206.667" y="175" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G1</text>
+<text x="206.667" y="208" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#122026" text-anchor="middle">Concept</text>
+<rect x="162.667" y="118" width="88" height="22" rx="11" fill="#D4821A" stroke="#D4821A" stroke-width="1" fill-opacity="0.15"/>
+<text x="206.667" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle" letter-spacing="1">TODAY · P1</text>
 <path d="M197.667,150 L215.667,150 L206.667,136 Z" fill="#D64535"/>
 <circle cx="353.333" cy="170" r="16" fill="#F3F7F8" stroke="#7E949B" stroke-width="2.5"/>
 <text x="353.333" y="175" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">G2</text>

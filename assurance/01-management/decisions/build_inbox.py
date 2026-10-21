@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Build the decision inbox page from register.yaml.
 
-The page is published as a claude.ai artifact with the `db` and `user` capabilities. Answers and
-requests for more explanation are saved in its store (collections `answers` and `explain`, keyed
-by register id) and copied back into register.yaml by Claude; see README.md.
+The page is published as a claude.ai artifact with the `db`, `user` and `comments` (composer only)
+capabilities. Answers and requests for more explanation are saved in its store (collections `answers`
+and `explain`, keyed by register id) and copied back into register.yaml by Claude; the "I'm done"
+button writes `signals/done` and opens the comment composer so the lead can send the note to Claude,
+which wakes the session; see README.md.
 
 Usage: python3 assurance/01-management/decisions/build_inbox.py --out PATH
 """
@@ -139,6 +141,8 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background
 .top .sub{color:var(--muted);font-size:14px;margin:0;max-width:65ch}
 .counts{display:flex;flex-wrap:wrap;gap:6px 14px;font:500 12.5px var(--font-mono);color:var(--muted);font-variant-numeric:tabular-nums}
 .counts b{color:var(--ink);font-weight:500}
+.done{margin-top:12px}
+.done .msg{color:var(--muted);font-size:13px}
 .group{display:flex;flex-direction:column;gap:14px}
 .group>h2{font:700 13px/1 var(--font-body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:8px 0 0}
 .empty{color:var(--muted);font-size:15px;margin:0;border:1px dashed var(--line);border-radius:8px;padding:12px}
@@ -210,6 +214,7 @@ svg text{font-family:var(--font-body)} svg .mono{font-family:var(--font-mono)}
     <h1>Decisions waiting on you</h1>
     <p class="sub">Pick an option and press Save. Claude copies your answer into the decision register at the start of the next session, applies it, and links the change here.</p>
     <div class="counts" id="counts"></div>
+    <div class="row done" id="doneRow"><button id="doneBtn" disabled>I'm done for now</button><span class="msg" id="doneMsg">Press when you have answered what you can: it records the time and opens a note to Claude.</span></div>
   </header>
   <div class="notice" id="storeNote" hidden>Answers can't be saved in this view (signed out or a preview). You can still read every card; open the page from claude.ai to answer.</div>
   <section class="group" id="g-you"><h2>Needs you</h2></section>
@@ -443,6 +448,21 @@ renderQueue();
       S[name] = next; render();
     }, () => { $('#storeNote').hidden = false; });
     sub('answers'); sub('explain');
+    const btn = $('#doneBtn'); btn.disabled = false;
+    btn.addEventListener('click', async () => {
+      btn.disabled = true;
+      const answered = Object.keys(S.answers).length;
+      try{
+        await db.collection('signals').doc('done').set({at: new Date().toISOString(), by: S.uid, answered});
+        $('#doneMsg').textContent = 'Recorded. If a note to Claude opened, write "done" and send it; otherwise Claude reads this at the start of the next session.';
+        $('#doneMsg').className = 'msg ok';
+        const comments = await window.claude?.use?.('comments');
+        if (comments){ try{ await comments.openComposer({element: $('#doneRow')}); }catch(_){ } }
+      }catch(err){
+        $('#doneMsg').textContent = err && err.code === 'permission_denied' ? 'You can read this page but not save to it. Ask the owner for edit access.' : 'Not recorded. Check your connection and press again.';
+        $('#doneMsg').className = 'msg err'; btn.disabled = false;
+      }
+    });
   }catch(_){ $('#storeNote').hidden = false; }
 })();
 </script>

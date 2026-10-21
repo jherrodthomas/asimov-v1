@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="726" viewBox="0 0 1000 726" role="img" aria-labelledby="ix-t ix-d">
   <title id="ix-t">Cross-domain interfaces of the process model</title>
-  <desc id="ix-d">Cross-domain interfaces: IX-01 (G1, Safety-Security, documented) between WP-C-03 and WP-C-07; IX-02 (G1, Safety-Performance limits, open) between WP-C-04 and WP-C-10; IX-03 (G1, Safety-ML, open) between WP-C-04 and WP-C-09; IX-04 (G1, Environment-Interaction, documented) between WP-C-02 and WP-C-06; IX-05 (G2, Safety-Security, documented) between WP-S-03 and WP-S-07; IX-06 (G2, Control-Mechanical, documented) between WP-S-04 and WP-H-08; IX-07 (G3, Safety-Security, documented) between WP-W-09 and WP-W-11; IX-08 (G3, Software-Hardware, documented) between WP-W-03 and WP-H-02; IX-09 (G4, Test-Test, documented) between WP-V-02 and WP-V-03; IX-10 (G5, Safety-Security, documented) between WP-K-01 and WP-K-03; IX-11 (G5, Regulatory-ML, documented) between WP-K-02 and WP-K-07.</desc>
+  <desc id="ix-d">Cross-domain interfaces: IX-01 (G1, Safety-Security, documented) between WP-C-03 and WP-C-07; IX-02 (G1, Safety-Performance limits, documented) between WP-C-04 and WP-C-10; IX-03 (G1, Safety-ML, documented) between WP-C-04 and WP-C-09; IX-04 (G1, Environment-Interaction, documented) between WP-C-02 and WP-C-06; IX-05 (G2, Safety-Security, documented) between WP-S-03 and WP-S-07; IX-06 (G2, Control-Mechanical, documented) between WP-S-04 and WP-H-08; IX-07 (G3, Safety-Security, documented) between WP-W-09 and WP-W-11; IX-08 (G3, Software-Hardware, documented) between WP-W-03 and WP-H-02; IX-09 (G4, Test-Test, documented) between WP-V-02 and WP-V-03; IX-10 (G5, Safety-Security, documented) between WP-K-01 and WP-K-03; IX-11 (G5, Regulatory-ML, documented) between WP-K-02 and WP-K-07.</desc>
   <defs>
 <linearGradient id="ix-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
 <linearGradient id="ix-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
@@ -11,7 +11,7 @@
 <rect x="40" y="0" width="920" height="3" fill="url(#ix-amber)"/>
 <text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">CROSS-DOMAIN INTERFACES</text>
 <text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">Where one discipline's analysis depends on another's</text>
-<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">11 interfaces · 2 open · each anchored to text in both work products</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">11 interfaces · 0 open · each anchored to text in both work products</text>
 <text x="40" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">ID · PHASE</text>
 <text x="110" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">BETWEEN (PRODUCING LANE AND WORK PRODUCT)</text>
 <text x="640" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">PATTERN</text>
@@ -34,25 +34,25 @@
 <text x="40" y="225" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
 <rect x="110" y="200" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
 <text x="212.24" y="212.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-C-04</text>
-<path d="M318.48,209 L340.48,209" fill="none" stroke="#D64535" stroke-width="1.6" stroke-dasharray="3 3"/>
+<path d="M318.48,209 L340.48,209" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
 <rect x="344.48" y="200" width="163.25" height="18" rx="9" fill="#D4821A" fill-opacity="0.18"/>
 <text x="426.105" y="212.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment · WP-C-10</text>
 <text x="110" y="232" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims ar…</text>
 <text x="640" y="210" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Performance limits</text>
-<rect x="840" y="200" width="39.56" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
-<text x="859.78" y="212.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">OPEN</text>
+<rect x="840" y="200" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="212.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
 <text x="935" y="212" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
 <text x="40" y="256" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-03</text>
 <text x="40" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
 <rect x="110" y="246" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
 <text x="212.24" y="258.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-C-04</text>
-<path d="M318.48,255 L340.48,255" fill="none" stroke="#D64535" stroke-width="1.6" stroke-dasharray="3 3"/>
+<path d="M318.48,255 L340.48,255" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
 <rect x="344.48" y="246" width="169.14" height="18" rx="9" fill="#C2399A" fill-opacity="0.18"/>
 <text x="429.05" y="258.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning · WP-C-09</text>
 <text x="110" y="278" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability i…</text>
 <text x="640" y="256" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-ML</text>
-<rect x="840" y="246" width="39.56" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
-<text x="859.78" y="258.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">OPEN</text>
+<rect x="840" y="246" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="258.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
 <text x="935" y="258" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
 <rect x="32" y="282" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
 <text x="40" y="302" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-04</text>

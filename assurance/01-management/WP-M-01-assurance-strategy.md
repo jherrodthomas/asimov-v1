@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -53,11 +53,11 @@ From the [baseline gap assessment](../00-assessment/gap-assessment.md), at the c
 - **Balance is a learned function.** The package allocates the stability function SF-01 to the locomotion policy,
   a neural network trained in simulation that nobody outside upstream has seen (GAP-13). Whether a learned
   component may carry a safety function, and what that means under ISO/IEC TR 5469 and the AI Act, is the
-  strategic question of this record (DQ-006).
+  strategic question of this record (DQ-006; answered A on 2026-10-21: the policy carries no safety function).
 - **The risk graph reads PL e for the worst rows.** A 35 kg body falling onto a person is S2 F2 P2 in the inherited
   HARA, which gives PL e for tip-over, loss of balance, arm sweep, pinch, policy edge cases and communication loss.
   PL e is not reachable with single-channel actuators and an unreleased controller; a complementary measure that
-  removes the fall (a gantry and tether in the laboratory) is what makes PL d a defensible target (DQ-004, DQ-007).
+  removes the fall (a gantry and tether in the laboratory) is what makes PL d a defensible target (DQ-004 A and DQ-007 A, decided 2026-10-21).
 - **The battery is somebody else's.** The kit ships without one; what a builder installs is uncontrolled, and the
   DFMEA rates the missing BMS as the one failure mode with no detection at all (GAP-12).
 - **Process is honest and thin.** Upstream publishes its hardware under CERN-OHL-S-2.0 and its software under
@@ -76,8 +76,10 @@ From the [baseline gap assessment](../00-assessment/gap-assessment.md), at the c
 | Operating environment | Defined in [WP-C-02](../02-concept/WP-C-02-operating-environment-and-tasks.md): operating envelope OE-1, a laboratory with a level dry floor, a cleared and marked area, a trained operator and at most one observer, nobody within reach of a limb while powered |
 | Operator | A trained test operator with a hand on the wired E-stop during development ([WP-V-07](../06-validation/WP-V-07-test-operations.md)). After release: personnel briefed per [WP-O-03](../09-production-operation/WP-O-03-information-for-use.md) |
 
-The choice of the kit robot as published over waiting for upstream's software is decision DQ-003 (recommended A,
-open). The battery-powered, free-standing robot under the locomotion policy is tracked as `CFG-002`, every statement
+The choice of the kit robot as published over waiting for upstream's software is decision DQ-003 (A, decided
+2026-10-21). Because no firmware exists in public, the fork writes a minimal firmware of its own for the motion
+control board (DQ-023 A, decided 2026-10-21): CAN actuator control with the clamps, the watchdog, the E-stop input
+and a DAMP-only fallback, enough for the hang tests; the controlled descent waits for a controller. The battery-powered, free-standing robot under the locomotion policy is tracked as `CFG-002`, every statement
 about it a claim to verify, never evidence, until its code is public.
 
 Any other configuration, including OE-2 (an industrial cell), OE-3 (a home) and OE-4 (public space), needs an impact
@@ -113,15 +115,15 @@ a Living Safety Case; the standards that feed it are these.
 | Question | Answered with | Where |
 |---|---|---|
 | What are the hazards and how much risk reduction does each need? | **ISO 12100** risk assessment (three-step method) on the hazard catalogues of **ISO 12100 Annex B** and **ISO 13482 Annex A** (the only standard with a personal-care hazard list: falls, contact, restraint, autonomous decisions); **ISO 10218-1** Annex A for the robot-system hazards; required **Performance Level** from the ISO 13849-1 Annex A risk graph | WP-C-01, C-03, C-04, C-05 |
-| Which safety functions must the robot have? | **ISO 10218-1 §5**: emergency stop, protective stop, speed and force limits, singularity and axis limits; **ISO 13482 §5 and §6**: stability, contact force and energy, E-stop, safety-related control; **ISO 13850** for the emergency stop; **EN 60204-1 §9** for stop categories | WP-C-04 |
-| How much contact is allowed? | **ISO/TS 15066** Annex A body-region limits for transient and quasi-static contact; **ISO 13482 §5.7** limits to forces, pressures and energies; **ISO 13857** reach and gap distances | WP-C-06, S-04, V-03 |
+| Which safety functions must the robot have? | **ISO 10218-1:2025 §5** (the 2025 editions are cited, DQ-015 A; the package's 2011 clause references are remapped under WP-M-06 OI-1): emergency stop, protective stop, speed and force limits, singularity and axis limits; **ISO 13482 §5 and §6**: stability, contact force and energy, E-stop, safety-related control; **ISO 13850** for the emergency stop; **EN 60204-1 §9** for stop categories | WP-C-04 |
+| How much contact is allowed? | **ISO/TS 15066** Annex A body-region limits (the source of the limits until the 2025 annex of ISO 10218-2 is checked, DQ-015 A) for transient and quasi-static contact; **ISO 13482 §5.7** limits to forces, pressures and energies; **ISO 13857** reach and gap distances | WP-C-06, S-04, V-03 |
 | How good must the control system be, and how is that shown? | **ISO 13849-1** categories B to 4, MTTFD, DCavg, CCF, PL a to e; **ISO 13849-2** validation and fault lists; **IEC 62061 / IEC 61508** where 13849 runs out (software beyond 13849-1 §7, management, assessment) | WP-S-02…S-05, WP-H-01…H-07, WP-W-01…W-09, WP-V-01…V-05 |
 | Is the electrical installation and the battery safe? | **IEC 60204-1**: supply disconnecting device, overcurrent protection, protection against electric shock, control circuits, verification; **IEC 62133-2** and UN 38.3 for the lithium pack | WP-H-02, H-05 |
 | What if nothing fails but the policy or the perception gets it wrong? | No machinery standard covers performance limits of a learned balance controller. **ISO 21448 is used as an informative method** (triggering conditions, known and unknown scenarios) inside WP-C-10 and WP-V-08; the resulting limits become operating-environment limits or safety functions | WP-C-10, V-08 |
 | What if someone attacks it? | **IEC 62443-4-1** (secure development lifecycle) and **62443-4-2** (component requirements, security level target); 62443-3-2 for the zone and conduit model | WP-M-08, C-07, C-08, S-07, W-11, V-06, O-05 |
 | How far can a learned component be trusted? | **ISO/IEC TR 5469**: AI technology class and usage level; the fork's position until DQ-006 is answered is that no learned component implements a safety function. **AI Act** Annex I lists the Machinery Regulation, so a learned safety component would be a high-risk AI system | WP-M-09, C-09, W-10, K-07 |
 | Is the whole argument convincing? | **UL 4600** principles for the safety case; the Living Safety Case records and generators | WP-K-01, `case/` |
-| What does the law require? | **Regulation (EU) 2023/1230** (Machinery Regulation, applies from 20 January 2027): essential health and safety requirements (Annex III), technical documentation (Annex IV), conformity assessment (Art. 25, Annexes VI–X) with third-party assessment mandatory for machinery with self-evolving safety behaviour (Annex I Part A); **Regulation (EU) 2024/1689** (AI Act) for a learned safety component; the US frame if the lead chooses it (DQ-001) | WP-M-13, K-02, K-06, K-07 |
+| What does the law require? | **Regulation (EU) 2023/1230** (Machinery Regulation, applies from 20 January 2027): essential health and safety requirements (Annex III), technical documentation (Annex IV), conformity assessment (Art. 25, Annexes VI–X) with third-party assessment mandatory for machinery with self-evolving safety behaviour (Annex I Part A); **Regulation (EU) 2024/1689** (AI Act) for a learned safety component; and, since the lead chose both frames (DQ-001 C), the US workplace frame as a cross-reference: ANSI/RIA R15.06, ANSI/A3 R15.08, NFPA 79, OSHA (WP-M-13 §6) | WP-M-13, K-02, K-06, K-07 |
 | Are the processes capable? | **ASPICE 4.0** kept as the process capability frame (self-assessment); **ISO 9001** cited by the package for design control and records, used informatively in WP-M-05 | WP-M-12, WP-M-05 |
 
 How each standard is cited: work products are structured after these standards and cite their clauses. **No
@@ -232,22 +234,47 @@ index, the register entry is the question.
 
 | # | Decision | Register | Status |
 |---|---|---|---|
-| D-01 | Regulatory frame: EU machinery, US, or both | DQ-001 | Open, batch 1 |
-| D-02 | Operating envelopes in the first item: OE-1 only | DQ-002 | Open, batch 1 |
-| D-03 | Reference configuration: the kit robot as published, tethered and bench-powered | DQ-003 | Open, batch 1 |
-| D-04 | Required PL for the stop and fall functions: PL d with the tether as complementary measure | DQ-004 | Open, batch 1 |
-| D-05 | Safe state of the biped: controlled descent, hold, or power removal | DQ-005 | Open, batch 1 |
-| D-06 | Allocation of the stability function SF-01 to the learned policy | DQ-006 | Open, batch 1 |
-| D-07 | Fall protection for the laboratory: gantry and tether | DQ-007 | Open, batch 1 |
-| D-08 | Emergency-stop devices: wired tether E-stop plus the surveilled wireless device | DQ-008 | Open, batch 1 |
-| D-09 | Battery policy: certified-pack list and BMS handshake interlock | DQ-009 | Open, batch 1 |
-| D-10 | Independent assessor: when | DQ-010 | Open, batch 1 |
-| D-11 | Roles and self-approval while the project has one person | DQ-011 | Queued |
-| D-12 | Cybersecurity security level target | DQ-012 | Queued |
-| D-13 | Buying the standards | DQ-013 | Queued |
-| D-14 | Joint torque and velocity limits in the laboratory | DQ-014 | Queued |
-| D-15 | Editions of ISO 10218 to cite | DQ-015 | Queued |
-| D-16 | Stop category of the emergency stop on a biped | DQ-016 | Queued |
+| D-01 | Regulatory frame: EU machinery, US, or both | DQ-001 | Decided 2026-10-21: C, both; one EU technical file with a US cross-reference (WP-M-13 §6) |
+| D-02 | Operating envelopes in the first item: OE-1 only | DQ-002 | Decided 2026-10-21: A |
+| D-03 | Reference configuration: the kit robot as published, tethered and bench-powered | DQ-003 | Decided 2026-10-21: A (CFG-001) |
+| D-04 | Required PL for the stop and fall functions: PL d with the tether as complementary measure | DQ-004 | Decided 2026-10-21: A |
+| D-05 | Safe state of the biped: controlled descent, hold, or power removal | DQ-005 | Decided 2026-10-21: A, controlled descent then power removal; the E-stop removes power at once |
+| D-06 | Allocation of the stability function SF-01 to the learned policy | DQ-006 | Decided 2026-10-21: A, not allocated; SF-01 withdrawn |
+| D-07 | Fall protection for the laboratory: gantry and tether | DQ-007 | Decided 2026-10-21: A |
+| D-08 | Emergency-stop devices: wired tether E-stop plus the surveilled wireless device | DQ-008 | Decided 2026-10-21: A |
+| D-09 | Battery policy: certified-pack list and BMS handshake interlock | DQ-009 | Decided 2026-10-21: A |
+| D-10 | Independent assessor: when | DQ-010 | Decided 2026-10-21: A, not for now; revisit at G1 |
+| D-11 | Roles and self-approval while the project has one person | DQ-011 | Decided 2026-10-21: A |
+| D-12 | Cybersecurity security level target | DQ-012 | Decided 2026-10-21: A, SL 2 for FR 1, 3, 5, 7; SL 1 otherwise |
+| D-13 | Buying the standards | DQ-013 | Decided 2026-10-21: A, not until an assessor is engaged |
+| D-14 | Joint torque and velocity limits in the laboratory | DQ-014 | Decided 2026-10-21: A, half the MuJoCo range until measured |
+| D-15 | Editions of ISO 10218 to cite | DQ-015 | Decided 2026-10-21: A, the 2025 editions |
+| D-16 | Stop category of the emergency stop on a biped | DQ-016 | Withdrawn 2026-10-21: settled by D-05 (category 0) |
+| D-17 | Hold or pass G0 with the confirmation measures scheduled, not performed | DQ-020 | Decided 2026-10-21: A, passed with conditions ([G0 record](../10-safety-case/gates/G0-2026-10-21.md)) |
+| D-18 | The environmental limits of the laboratory envelope OE-1 | DQ-021 | Decided 2026-10-21: A |
+| D-19 | Two-person rule for every powered test | DQ-022 | Decided 2026-10-21: A |
+| D-20 | Write the fork's own safety layer for the motion control board before upstream's firmware is public | DQ-023 | Decided 2026-10-21: A, a minimal fork firmware for the hang tests |
+| D-21 | Deliberate fall and power-cut tests on the kit robot | DQ-024 | Decided 2026-10-21: A, a bounded campaign |
+| D-22 | Residual pinch and crush risk to the bench technician in OE-1 | DQ-025 | Decided 2026-10-21: A, accepted for OE-1 until G2 |
+| D-23 | Spares budget and damage limit for the fall campaign | DQ-026 | Decided 2026-10-21: A, parts-based |
+| D-24 | Buy a rated gantry crane or build a frame | DQ-027 | Decided 2026-10-21: A, buy |
+| D-25 | ISO/TS 15066 contact limits as design targets | DQ-028 | Decided 2026-10-21: A, with a 0.75 factor on arm and hand values |
+| D-26 | Recruit a second contributor as verification reviewer | DQ-029 | Decided 2026-10-21: A, public call open |
+| D-27 | When G1 is held | DQ-030 | Decided 2026-10-21: A, after the first hang test |
+| D-28 | Kit-assembly hazards in or out of the item | DQ-031 | Decided 2026-10-21: A, in |
+| D-29 | Walking in the first item | DQ-032 | Decided 2026-10-21: A, not in the first item |
+| D-30 | The UART debug port in the reference build | DQ-033 | Decided 2026-10-21: A, closed in the reference build |
+| D-31 | A second IMU for SF-23 | DQ-034 | Decided 2026-10-21: A |
+| D-32 | The bench equipment purchase | DQ-035 | Open, batch 4 |
+| D-33 | Certified safety relay or plain relays | DQ-036 | Open, batch 4 |
+| D-34 | What feeds the actuator rail on the bench | DQ-037 | Open, batch 4 |
+| D-35 | Tele-operation heartbeat timeout | DQ-038 | Open, batch 4 |
+| D-36 | Lost wireless heartbeat: stop demand or warning in OE-1 | DQ-039 | Open, batch 4 |
+| D-37 | Session recording and retention | DQ-040 | Open, batch 4 |
+| D-38 | The tether's own hazards accepted with rigging checks | DQ-041 | Open, batch 4 |
+| D-39 | Stator temperature cut-off and session readout | DQ-042 | Open, batch 4 |
+| D-40 | Tether catch height | DQ-043 | Open, batch 4 |
+| D-41 | Where the laboratory is | DQ-044 | Open, batch 4 |
 
 ## 9. Top risks to the assurance path
 

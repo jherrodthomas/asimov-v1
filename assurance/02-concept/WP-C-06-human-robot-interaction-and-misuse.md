@@ -26,7 +26,7 @@ IS-nn per operating envelope: the operator within E-stop reach (OE-1), a co-work
 
 ## 3. Contact limits
 
-Body-region limits of ISO/TS 15066 Annex A for transient and quasi-static contact; the fall energy of a 35 kg body from 1.2 m (about 411 J at the centre of mass per the concept-phase package) against them; what SF-04 and SF-20 must bound.
+Decided 2026-10-21 (DQ-028 A): the ISO/TS 15066 Annex A values are the design targets; the head and neck region is excluded from any contact by design (no reach into it); a project factor of 0.75 applies to the arm and hand values until the first measured contact (WP-V-03). Body-region limits of ISO/TS 15066 Annex A for transient and quasi-static contact; the fall energy of a 35 kg body from 1.2 m (about 411 J at the centre of mass per the concept-phase package) against them; what SF-04 and SF-20 must bound.
 
 ## 4. Collaborative operation
 

@@ -30,7 +30,7 @@ Per component: technology class, usage level, the independent safeguard and why 
 
 ## 4. Position
 
-SF-01 bipedal stability is the one safety function a learned component may carry; the position is decision DQ-006. Until the lead answers, no safety function is allocated to a learned component: stability in OE-1 rests on the tether and gantry of WP-V-07, the policy's outputs pass through the torque and velocity clamps of the MCB safety layer (SF-03), and the fall-arrest function SF-02 is a deterministic controlled descent. If the lead allocates SF-01 to the policy, WP-M-13 §5 applies, the AI Act record WP-K-07 becomes a full technical documentation, and this document is rewritten.
+SF-01 bipedal stability is the one safety function a learned component may carry; the position is decision DQ-006, answered A on 2026-10-21: SF-01 is withdrawn and no safety function is allocated to a learned component: stability in OE-1 rests on the tether and gantry of WP-V-07, the policy's outputs pass through the torque and velocity clamps of the MCB safety layer (SF-03), and the fall-arrest function SF-02 is a deterministic controlled descent. If the lead allocates SF-01 to the policy, WP-M-13 §5 applies, the AI Act record WP-K-07 becomes a full technical documentation, and this document is rewritten.
 
 ## 5. Requirements
 

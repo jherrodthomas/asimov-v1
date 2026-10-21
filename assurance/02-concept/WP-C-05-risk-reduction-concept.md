@@ -22,6 +22,8 @@ Risk reduction concept for the hazards of WP-C-03 by the three-step method of IS
 
 ## 2. Step 1: inherently safe design measures
 
+The lead accepted the residual pinch and crush risk to the bench technician in OE-1 on 2026-10-21 (DQ-025 A), with procedural measures only, until the guarding (SF-07) and the measured contact limits (SF-04, WP-V-03) exist at G2; the adequacy argument for H-02, H-04 and H-05 in OE-1 is therefore that acceptance, recorded in WP-C-03 §8.
+
 Mechanical end-stops ≥ 5° outside the software limits (SF-25), chamfered edges and threadlocked fasteners (SF-05), labyrinth guarding at the waist and neck yaw with gaps ≤ 4 mm (SF-07), 7075-T6 and 316L with certificates, a 35 kg mass that cannot be reduced in v1.
 
 ## 3. Step 2: safeguarding and complementary protective measures

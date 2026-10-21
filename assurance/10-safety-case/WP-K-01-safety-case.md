@@ -4,9 +4,9 @@
 |---|---|
 | Work product | WP-K-01 Safety case for the laboratory configuration (UL 4600 structure: claims, arguments, evidence, defeaters) |
 | Standard reference | ISO 13849-1:2023 §4.7, §10 (information); ISO 12100 §7 (documentation); ISO 13482:2014 §7 (verification and validation, as the test matrix of the argument); Regulation (EU) 2023/1230 Annex IV Part A (technical documentation); UL 4600 §5, §6. Every clause to be checked against a licensed copy |
-| Version | 0.1 (2026-10-21): initial structure from the concept-package GSN (`09_GSN`), evidence register (`10_Evidence`) and gap register (`11_Gaps`); every claim draft, every defeater open; 22 evidence items, 34 defeaters, 10 open items |
+| Version | 0.2 (2026-10-21): the ten decisions of batch 1 applied: G1.1 retargeted (SF-01 withdrawn, DQ-006 A), the safe state and stop category settled (DQ-005 A), PL d adopted (DQ-004 A), OE-1 and CFG-001 fixed (DQ-002 A, DQ-003 A), both frames (DQ-001 C); OI-2, OI-3 closed. 0.1 (2026-10-21): initial structure from the concept-package GSN (`09_GSN`), evidence register (`10_Evidence`) and gap register (`11_Gaps`); every claim draft, every defeater open; 22 evidence items, 34 defeaters, 10 open items |
 | Status | Draft |
-| PL / scope | PL d target (DQ-004); CFG-001 kit robot, tethered, bench-powered, fork-evaluated; CFG-002 battery and policy robot, upstream-compatible, unverified; OE-1 only (DQ-002) |
+| PL / scope | PL d (DQ-004 A, decided 2026-10-21); CFG-001 kit robot, tethered, bench-powered, fork-evaluated (DQ-003 A); CFG-002 battery and policy robot, upstream-compatible, unverified; OE-1 only (DQ-002 A) |
 | Author | Assurance team (AI-assisted draft, I0) |
 | Reviewer(s) | TBD (I2 for the safety case) |
 | Approver | Project lead |
@@ -34,9 +34,10 @@ Goal G0 is argued over four strategies: S1 per safety function (G1.x), S2 over t
 S3 over the command path (G3.x), S4 over the process (G4.x). GSN diagrams are generated from the records
 (`case/tools`), not drawn by hand.
 
-Two claims carry what makes a biped different from a wheeled machine. G1.1 (bipedal stability, SF-01) is at
-present allocated to a learned locomotion policy that has not been released; whether it may stay there, or whether
-the deterministic layer must bound it, is DQ-006, and until that is answered G1.1 rests on simulation alone. G2.4
+Two claims carry what makes a biped different from a wheeled machine. G1.1 was the claim that SF-01, bipedal
+stability, reaches PL d on the learned locomotion policy; on 2026-10-21 the lead withdrew SF-01 as a safety function
+(DQ-006 A), so G1.1 now claims only that the policy's commands are bounded by the deterministic safety layer (SF-03,
+SF-23) and that a loss of balance ends in the tether, never in a free fall. G2.4
 (the tether and gantry of OE-1) carries the fall hazard in place of a fall-arrest function: it is the complementary
 measure that makes testing defensible while G1.2 (controlled descent, SF-02) has no implementation, and the
 case for the first item depends on it more than on any safety function.
@@ -52,7 +53,7 @@ project lead has accepted it at a named baseline. "Open defeaters" counts the de
 |---|---|---|---|---|---|
 | G0 | Asimov v1 in its laboratory envelope poses no unreasonable risk | — | draft | Sn-01, Sn-02, Sn-03, Sn-05, Sn-06 | 2 |
 | G1 | The safety functions with a required Performance Level reach it | G0 | draft | Sn-04, Sn-08, Sn-09 | 2 |
-| G1.1 | SF-01 bipedal stability is maintained at PL d | G1 | draft | Sn-04, Sn-18 | 5 |
+| G1.1 | The locomotion policy carries no safety function: its commands are bounded by SF-03 and SF-23 and a loss of balance ends in the tether (SF-01 withdrawn, DQ-006 A) | G1 | draft | Sn-04, Sn-18 | 5 |
 | G1.2 | SF-02 fall arrest by controlled descent is implemented at PL d | G1 | draft | Sn-04, Sn-11 | 3 |
 | G1.3 | SF-03 joint torque and velocity limits are enforced at PL d | G1 | draft | Sn-04, Sn-18 | 1 |
 | G1.4 | SF-04 force-limited contact is implemented at PL d | G1 | draft | Sn-04, Sn-13 | 1 |
@@ -88,11 +89,15 @@ each holds only procedurally: a trained operator (AOU-01), the tether and gantry
 
 ## 5. Safety functions and Performance Levels
 
-Seventeen of the 25 safety functions of [WP-C-04](../02-concept/WP-C-04-safety-functions-and-plr.md) carry a PLr:
-SF-01, SF-02, SF-03, SF-04, SF-08, SF-13, SF-20, SF-23, SF-24 at PLr d; SF-06, SF-11, SF-14, SF-25 at PLr c;
-SF-15 at PLr e (battery protection, the BMS as a certified component); SF-16 at PLr b. The remaining eight are
-static or procedural measures (guarding, markings, materials, the mechanical end-stops) argued under G2. The
-PLr values are the concept package's proposal pending DQ-004 and the re-rating of WP-C-03 OI-2. None reaches
+Sixteen of the 25 safety functions of [WP-C-04](../02-concept/WP-C-04-safety-functions-and-plr.md) carry a PLr:
+SF-02, SF-03, SF-04, SF-08, SF-13, SF-20, SF-23, SF-24 at PLr d; SF-06, SF-11, SF-14, SF-25 at PLr c;
+SF-15 at PLr e (battery protection, the BMS as a certified component); SF-16 at PLr b. SF-01 (bipedal stability)
+was withdrawn as a safety function on 2026-10-21 (DQ-006 A): the learned policy is a functional component and
+stability in OE-1 rests on G2.4. The remaining eight are static or procedural measures (guarding, markings,
+materials, the mechanical end-stops) argued under G2. PL d is the target the lead set (DQ-004 A) with the gantry
+and tether as the complementary measure; the safe state every stop function ends in is a controlled descent to a
+kneel or crouch, then power removal, with the E-stop removing power at once (DQ-005 A). The PLr values await the
+re-rating of WP-C-03 OI-2. None reaches
 any PL at BL-001: no safety function has an implementation in any public repository (GAP-16), no reliability
 figure exists (GAP-14) and no single-fault tolerance is designed (GAP-09).
 
@@ -190,12 +195,12 @@ Each open item is an action record in `assurance/case/actions/`; the work produc
 | ID | Item | Needed by | Claims |
 |---|---|---|---|
 | OI-1 | Weigh the robot, measure the centre of gravity and bound the fall energy (WP-C-01 OI-1) | G1 | G1.2, G2.4, G4.2 |
-| OI-2 | Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005) (WP-C-04 OI-1) | G1 | G1.2, G1.6 |
-| OI-3 | Decide whether the learned locomotion policy may carry SF-01 (DQ-006) (WP-C-04 OI-2) | G1 | G1.1 |
-| OI-4 | Obtain or design the E-stop architecture: devices, receiver, contactors, stop category (DQ-008) (WP-C-04 OI-3) | G1 | G1.8 |
+| OI-2 | ~~Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005)~~ decided 2026-10-21 (A: controlled descent, then power removal; the E-stop removes power at once) (WP-C-04 OI-1) | G1 | G1.2, G1.6 |
+| OI-3 | ~~Decide whether the learned locomotion policy may carry SF-01 (DQ-006)~~ decided 2026-10-21 (A: not allocated; SF-01 withdrawn, G1.1 retargeted) (WP-C-04 OI-2) | G1 | G1.1 |
+| OI-4 | Design the E-stop architecture: wired dual-channel pendant plus surveilled wireless device, contactors, stop category 0 (DQ-008 A and DQ-005 A, decided 2026-10-21) (WP-C-04 OI-3) | G1 | G1.8 |
 | OI-5 | Obtain actuator, encoder and board reliability data from upstream or the suppliers (WP-M-10 OI-1) | G2 | G1 |
 | OI-6 | Reviewer with build or operating experience confirms every rating in WP-C-03 (WP-C-03 OI-2) | G1 | G4.2 |
 | OI-7 | Port the 120 requirements and 139 test cases of the concept package into WP-S-02 and WP-V-01 (WP-S-02 OI-1) | G2 | G1 |
-| OI-8 | Set the battery policy: certified pack list and BMS handshake interlock (DQ-009) (WP-C-01 OI-2) | G1 | G1.10, G2.2 |
-| OI-9 | Specify the tether and gantry of OE-1 and record them as the complementary measure (DQ-007) (WP-V-07 OI-1) | G1 | G2.4 |
+| OI-8 | Design the BMS handshake interlock and write the certified-pack list (DQ-009 A, decided 2026-10-21) (WP-C-01 OI-2) | G1 | G1.10, G2.2 |
+| OI-9 | Specify the tether and gantry of OE-1 and record them as the complementary measure (DQ-007 A, decided 2026-10-21) (WP-V-07 OI-1) | G1 | G2.4 |
 | OI-10 | Get the manual's safety, quick-start and BOM pages published, or write the information for use (WP-O-03 OI-1) | G1 | G2.3 |

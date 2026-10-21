@@ -16,7 +16,7 @@
   kind: action
   title: "Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005)"
   description: "Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005); source WP-C-04 OI-1"
-  lifecycle_status: open
+  lifecycle_status: closed
   needed_by: G1
   related_claims: [G1.2, G1.6]
   baseline: BL-001
@@ -28,7 +28,7 @@
   kind: action
   title: "Decide whether the learned locomotion policy may carry SF-01 (DQ-006)"
   description: "Decide whether the learned locomotion policy may carry SF-01 (DQ-006); source WP-C-04 OI-2"
-  lifecycle_status: open
+  lifecycle_status: closed
   needed_by: G1
   related_claims: [G1.1]
   baseline: BL-001
