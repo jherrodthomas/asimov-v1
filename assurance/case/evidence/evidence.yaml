@@ -1,0 +1,376 @@
+# Source: WP-K-01 Safety Case (§6, evidence status). Machine-readable copy; WP-K-01 remains the reviewed document.
+# evidence_status: available = performed and approved at a named baseline; partial = drafted or inherited unreviewed; missing = not yet performed.
+
+- id: Sn-01
+  kind: evidence
+  title: "Item definition and limits of the machinery"
+  description: "Draft v0.1; ported from the concept-package item definition with the repository facts; unknowns marked"
+  evidence_status: partial
+  lifecycle_area: hazard-analysis
+  location: "assurance/02-concept/WP-C-01-item-definition.md"
+  related_claims: [G0, G4.2]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-02
+  kind: evidence
+  title: "Risk assessment and PLr determination"
+  description: "Draft v0.1; the 32 hazards and the risk graph of the concept-package HARA, rated per operating envelope; ratings need a reviewer who has built or operated the robot"
+  evidence_status: partial
+  lifecycle_area: hazard-analysis
+  location: "assurance/02-concept/WP-C-03-risk-assessment.md"
+  related_claims: [G0, G4.2]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-03
+  kind: evidence
+  title: "Baseline gap assessment GAP-01 to GAP-34"
+  description: "Draft v0.1; the 28 gaps of the concept package re-stated against the repository plus six new findings"
+  evidence_status: partial
+  lifecycle_area: safety-management
+  location: "assurance/00-assessment/gap-assessment.md"
+  related_claims: [G0]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-04
+  kind: evidence
+  title: "Safety functions specification SF-01 to SF-25: demand, safe state, response, stop category, PLr, allocation"
+  description: "Draft v0.1; the 25 functions of the concept-package FSC with their targets; the safe state of the biped undecided (DQ-005)"
+  evidence_status: partial
+  lifecycle_area: hazard-analysis
+  location: "assurance/02-concept/WP-C-04-safety-functions-and-plr.md"
+  related_claims: [G1, G1.1, G1.2, G1.3, G1.4, G1.5, G1.6, G1.7, G1.8, G1.9, G1.10, G1.11, G1.12, G1.13, G1.14, G1.15]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-05
+  kind: evidence
+  title: "Operating environment and task specification: the four operating envelopes"
+  description: "Draft v0.1; OE-1 to OE-4 of the concept package with people presence, tether and speed limits"
+  evidence_status: partial
+  lifecycle_area: hazard-analysis
+  location: "assurance/02-concept/WP-C-02-operating-environment-and-tasks.md"
+  related_claims: [G0]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-06
+  kind: evidence
+  title: "Concept-package safety-case workbook: hazard catalogue, HARA, FSC, GSN, evidence and gap registers"
+  description: "Inherited; AI-assisted, unreviewed (I0); seed of WP-C-03, WP-C-04 and WP-K-01"
+  evidence_status: partial
+  lifecycle_area: safety-case-review
+  location: "assurance/00-assessment/concept-package/Asimov_v1_Safety_Case.xlsx"
+  related_claims: [G0, G4.2]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-07
+  kind: evidence
+  title: "Concept-package DFMEA: 32 failure modes, 19 at high action priority"
+  description: "Inherited; unreviewed; seed of WP-H-03 and WP-A-01"
+  evidence_status: partial
+  lifecycle_area: technical-implementation
+  location: "assurance/00-assessment/concept-package/Asimov_v1_DFMEA.xlsx"
+  related_claims: []
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-08
+  kind: evidence
+  title: "Concept-package requirements workbook: 120 requirements (63 safety) with trace"
+  description: "Inherited; unreviewed; seed of WP-S-01, WP-S-02, WP-H-01, WP-W-02"
+  evidence_status: partial
+  lifecycle_area: safety-concepts
+  location: "assurance/00-assessment/concept-package/Asimov_v1_Requirements.xlsx"
+  related_claims: [G1]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-09
+  kind: evidence
+  title: "Concept-package test plan: 139 test cases, ISO 13849-2 and ISO 13482 §7 matrices"
+  description: "Inherited; drafted, no test executed; seed of WP-V-01"
+  evidence_status: partial
+  lifecycle_area: verification-validation
+  location: "assurance/00-assessment/concept-package/Asimov_v1_TestPlan.xlsx"
+  related_claims: [G1]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-10
+  kind: evidence
+  title: "Mechanical CAD of the seven subassemblies (STEP)"
+  description: "Inherited from upstream; functional design data, no safety analysis attached"
+  evidence_status: partial
+  lifecycle_area: technical-implementation
+  location: "mechanical/README.md"
+  related_claims: [G1.15, G2.1]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-11
+  kind: evidence
+  title: "Stability, fall and controlled-descent test record"
+  description: "Not performed"
+  evidence_status: missing
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/README.md"
+  related_claims: [G1.2]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-12
+  kind: evidence
+  title: "Emergency-stop and safety-chain test record (each device, link loss, welded contact, re-arm)"
+  description: "Not performed; no chain exists"
+  evidence_status: missing
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/README.md"
+  related_claims: [G1.8]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-13
+  kind: evidence
+  title: "Contact force, pressure and power-and-force-limiting measurement"
+  description: "Not performed"
+  evidence_status: missing
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/README.md"
+  related_claims: [G1.4, G1.12]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-14
+  kind: evidence
+  title: "Fault injection record"
+  description: "Not performed"
+  evidence_status: missing
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/README.md"
+  related_claims: []
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-15
+  kind: evidence
+  title: "Baseline record BL-001"
+  description: "Recorded; fork and upstream commit hashes"
+  evidence_status: partial
+  lifecycle_area: safety-management
+  location: "assurance/case/baselines/baselines.yaml"
+  related_claims: [G4.1]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-16
+  kind: evidence
+  title: "Safety case WP-K-01"
+  description: "Draft v0.1"
+  evidence_status: partial
+  lifecycle_area: safety-case-review
+  location: "assurance/10-safety-case/WP-K-01-safety-case.md"
+  related_claims: [G4.3]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-17
+  kind: evidence
+  title: "Electrical record: motion control board KiCad sources and the WireViz harness"
+  description: "Inherited from upstream; no E-stop, contactor, power distribution board or battery in it"
+  evidence_status: partial
+  lifecycle_area: technical-implementation
+  location: "electrical/README.md"
+  related_claims: [G1.7, G2.2]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-18
+  kind: evidence
+  title: "MuJoCo simulation model with the per-joint control ranges"
+  description: "Inherited from upstream; the only dynamics and torque data at BL-001; not pinned to a hardware revision"
+  evidence_status: partial
+  lifecycle_area: technical-implementation
+  location: "sim-model/xmls/asimov.xml"
+  related_claims: [G1.1, G1.3]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-19
+  kind: evidence
+  title: "Material and build acceptance record (mill certificates, harness pull test, commissioning checks)"
+  description: "Not performed; no unit built under the fork"
+  evidence_status: missing
+  lifecycle_area: technical-implementation
+  location: "assurance/06-validation/README.md"
+  related_claims: [G2.1, G4.4]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-20
+  kind: evidence
+  title: "Tele-operation and API security concept and test"
+  description: "Not written; upstream has published neither the API nor the authentication scheme"
+  evidence_status: missing
+  lifecycle_area: safety-concepts
+  location: "assurance/06-validation/README.md"
+  related_claims: [G3.1]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-21
+  kind: evidence
+  title: "Test operations procedure for powered testing (the hold point)"
+  description: "Draft v0.1; tether, gantry, E-stop, cleared area"
+  evidence_status: partial
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/WP-V-07-test-operations.md"
+  related_claims: [G2.3, G2.4]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: Sn-22
+  kind: evidence
+  title: "Firmware safety-layer verification (tests in CI, static analysis, bench results)"
+  description: "Not performed; no firmware exists in any public repository"
+  evidence_status: missing
+  lifecycle_area: verification-validation
+  location: "assurance/06-validation/README.md"
+  related_claims: [G1.6, G1.13, G1.14, G4.3]
+  baseline: BL-001
+  configuration: CFG-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"

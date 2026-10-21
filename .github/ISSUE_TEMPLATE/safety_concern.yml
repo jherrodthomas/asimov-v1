@@ -1,0 +1,37 @@
+name: Safety concern
+description: A hazard you think the analyses miss, a near miss, or an event in operation (WP-O-04 field monitoring)
+labels: ["safety-concern", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a hazard the risk assessment may have missed, a near miss, or an event seen while
+        operating a robot built from this record. If you are unsure, report anyway and say so.
+        **Security vulnerabilities:** use the private report link on the "New issue" page.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - A hazard the analyses may miss
+        - A near miss during testing or operation
+        - Contact, injury or property damage
+        - A limit of the operating environment that did not hold
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What you saw or what you think is missing
+      description: Keep facts separate from conclusions. Name the zone, task, speed and who was where, if an event.
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links, logs, photos, the work product and section you think is affected.

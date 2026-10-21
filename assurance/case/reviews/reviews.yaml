@@ -1,0 +1,3 @@
+# Review records. No review has been performed at baseline BL-001, so this file holds no records.
+# A record has: id REV-nnn, kind review, title, reviewed_objects, reviewer, independence (I0-I3), review_date,
+# outcome (accepted | changes-requested | rejected), baseline, record, source_revision.

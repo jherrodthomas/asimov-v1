@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability (private)
+    url: https://github.com/jherrodthomas/asimov-v1/security/advisories/new
+    about: Do not open public issues for vulnerabilities. Report them privately here (WP-O-05).
+  - name: Decisions waiting on the project lead
+    url: https://github.com/jherrodthomas/asimov-v1/blob/main/assurance/01-management/decisions/README.md
+    about: Questions for the lead live in the decision register, not in issues.

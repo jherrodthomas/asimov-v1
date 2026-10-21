@@ -1,0 +1,40 @@
+# Safety-relevant file list (WP-P-01 §3) — authoritative, machine-readable copy.
+#
+# Format: <class> <glob>   (comment after '#')
+#   SR-A  safety-related parts of the control system: stop-chain and power-distribution design files, the
+#         motion control board, the firmware safety layer, safety parameter sets. Two human approvals; impact
+#         analysis; verification evidence.
+#   SR-Q  functional layers that feed hazards or configure limits: the mechanical structure, the simulation model
+#         the policy is trained on, the tele-operation stack, the locomotion policy. Impact analysis.
+#   SR-T  build, test, CI, toolchain or dependency configuration that changes evidence or binaries.
+# Anything not matched is NSR (standard change route).
+#
+# Globs are relative to the repository root: the robot's sources live in this repository under mechanical/,
+# electrical/ and sim-model/; the firmware, API and policy repositories are not published yet and get patterns
+# when they are pinned (WP-M-10). '**' matches any number of path segments, '*' matches within one segment.
+# When several patterns match, the longest wins. Change this file only through a change request (WP-P-02).
+
+# SR-A: the stop chain, power distribution and the safety layer
+SR-A electrical/safety/**                    # E-stop devices, safety relay, contactors (to be created)
+SR-A electrical/power_distribution/**        # fuse table, disconnect, BMS interlock (to be created)
+SR-A electrical/motion_control/**            # motion control board: KiCad sources, device tree, scripts
+SR-A electrical/wiring/**                    # WireViz harness: actuator power and CAN
+SR-A firmware/**                             # the deterministic safety layer (to be created or pinned)
+SR-A assurance/05-software/parameters/**     # WP-W-09 parameter sets
+
+# SR-Q: functional layers that feed hazards or configure limits
+SR-Q mechanical/ASV1/**                      # the structure, guarding and end-stops
+SR-Q mechanical/README.md
+SR-Q sim-model/**                            # the MuJoCo model: masses, joint ranges, control ranges
+SR-Q electrical/README.md                    # the published electrical architecture and port map
+SR-Q api/**                                  # the Asimov API (to be pinned)
+SR-Q policy/**                               # the locomotion policy (to be pinned)
+
+# SR-T: build, CI, toolchain, pins
+SR-T .github/**
+SR-T assurance/tools/**
+SR-T assurance/process/tools/**
+SR-T assurance/case/tools/**
+SR-T assurance/01-management/decisions/*.py
+SR-T docs/assets/asimov/make_assets.py
+SR-T tools/**

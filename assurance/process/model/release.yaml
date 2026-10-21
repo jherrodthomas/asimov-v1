@@ -1,0 +1,137 @@
+# Validation and release phase (gate G5). Format: assurance/process/README.md §3.
+# The assessments are activities in the confirmation lane because they produce a work product of their
+# own (WP-K-04, WP-K-05); the matching WP-M-06 measures (FSA-F, CS-A1) carry `record_wp`.
+
+- id: REL-01
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Assembly, installation and commissioning instructions (DIY-kit build)"
+  produces: [WP-O-01]
+  inputs: [WP-S-06, WP-H-02, WP-W-09]
+- id: REL-02
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Operation, maintenance and decommissioning"
+  produces: [WP-O-02]
+  inputs: [WP-S-06, WP-H-04]
+- id: REL-03
+  kind: activity
+  phase: G5
+  lane: risk
+  name: "Information for use, markings and warnings"
+  produces: [WP-O-03]
+  inputs: [WP-C-05, WP-C-02, WP-O-02]
+- id: REL-04
+  kind: activity
+  phase: G5
+  lane: srpcs
+  name: "Safety validation on the robot"
+  produces: [WP-V-01]
+  inputs: [WP-S-02, WP-S-09, WP-V-02, WP-V-03, WP-V-04, WP-V-05, WP-V-07]
+- id: REL-05
+  kind: activity
+  phase: G5
+  lane: risk
+  name: "Unknown scenarios and field trials"
+  produces: [WP-V-08]
+  inputs: [WP-C-10, WP-V-01, WP-V-07]
+- id: REL-06
+  kind: activity
+  phase: G5
+  lane: cs
+  name: "Cybersecurity validation and penetration testing"
+  produces: [WP-V-06]
+  inputs: [WP-S-07, WP-W-11]
+- id: REL-07
+  kind: activity
+  phase: G5
+  lane: cs
+  name: "Cybersecurity case"
+  produces: [WP-K-03]
+  inputs: [WP-C-08, WP-V-06]
+- id: REL-08
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Release management and baseline procedure"
+  produces: [WP-P-10]
+  inputs: [WP-P-01, WP-P-02]
+- id: REL-09
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Technical documentation index"
+  produces: [WP-K-02]
+  inputs: [WP-M-13, WP-P-04, WP-V-01, WP-O-03]
+- id: REL-10
+  kind: activity
+  phase: G5
+  lane: ml
+  name: "AI Act conformity record"
+  produces: [WP-K-07]
+  inputs: [WP-C-09, WP-W-10, WP-K-02]
+- id: REL-11
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Complete the safety case"
+  produces: []
+  updates: [WP-K-01, WP-T-01]
+  inputs: [WP-V-01, WP-V-08, WP-K-03, WP-K-02]
+- id: REL-12
+  kind: activity
+  phase: G5
+  lane: assess
+  name: "Functional safety assessment"
+  produces: [WP-K-04]
+  inputs: [WP-K-01, WP-V-01, WP-S-09]
+- id: REL-13
+  kind: activity
+  phase: G5
+  lane: assess
+  name: "Cybersecurity assessment"
+  produces: [WP-K-05]
+  inputs: [WP-K-03, WP-V-06]
+- id: REL-14
+  kind: activity
+  phase: G5
+  lane: joint
+  name: "Release record and declaration of conformity draft"
+  produces: [WP-K-06]
+  inputs: [WP-K-02, WP-K-04, WP-K-05, WP-P-10]
+
+# Confirmation measures planned for G5 (WP-M-06 §9).
+- id: CR-12
+  kind: review
+  phase: G5
+  name: "Confirmation review of the safety case"
+  covers: [WP-K-01]
+  independence: I3
+- id: FSA-F
+  kind: review
+  phase: G5
+  name: "Final functional safety assessment"
+  covers: [WP-K-01, WP-V-01]
+  independence: I3
+  record_wp: WP-K-04
+- id: CS-A1
+  kind: review
+  phase: G5
+  name: "Cybersecurity assessment"
+  covers: [WP-K-03, WP-V-06]
+  independence: external
+  record_wp: WP-K-05
+- id: ML-R3
+  kind: review
+  phase: G5
+  name: "Review of the AI Act conformity record"
+  covers: [WP-K-07]
+  independence: I3-equivalent
+- id: NB-1
+  kind: review
+  phase: G5
+  name: "EU type-examination of the technical documentation (if the conformity route needs one)"
+  covers: [WP-K-02, WP-K-06]
+  independence: notified body

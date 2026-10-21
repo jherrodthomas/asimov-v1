@@ -1,0 +1,66 @@
+# Integrated lifecycle (L0) and swimlanes. Format: assurance/process/README.md §3.
+# Gate names and exit criteria are not copied here: they are read from WP-M-00 §2.
+# Role names must match a role in WP-M-02 §3.1; the assignee is read from there.
+
+- id: G0
+  kind: phase
+  modelled: true
+- id: G1
+  kind: phase
+  modelled: true
+- id: G2
+  kind: phase
+  modelled: true
+- id: G3
+  kind: phase
+  modelled: true
+- id: G4
+  kind: phase
+  modelled: true
+- id: G5
+  kind: phase
+  modelled: true
+- id: G6
+  kind: phase
+  modelled: true
+
+- id: joint
+  kind: lane
+  name: "Joint (all disciplines)"
+  role: "Safety manager"
+  plan: WP-M-02
+- id: risk
+  kind: lane
+  name: "Machinery and robot risk assessment (ISO 12100, ISO 10218, ISO 13482)"
+  role: "Safety manager"
+  plan: WP-M-02
+- id: srpcs
+  kind: lane
+  name: "Safety-related control system (ISO 13849-1)"
+  role: "Safety-related control system engineer"
+  plan: WP-M-02
+- id: hw
+  kind: lane
+  name: "Electrical and mechanical (EN 60204-1)"
+  role: "Electrical and mechanical engineer"
+  plan: WP-M-02
+- id: sw
+  kind: lane
+  name: "Software (ISO 13849-1 §7, IEC 61508-3)"
+  role: "Firmware and software engineer(s)"
+  plan: WP-M-02
+- id: cs
+  kind: lane
+  name: "Cybersecurity (IEC 62443)"
+  role: "Cybersecurity manager"
+  plan: WP-M-08
+- id: ml
+  kind: lane
+  name: "Machine learning (ISO/IEC TR 5469)"
+  role: "ML safety lead"
+  plan: WP-M-09
+- id: assess
+  kind: lane
+  name: "Independent confirmation"
+  role: "External functional safety assessor"
+  plan: WP-M-06

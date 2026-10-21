@@ -1,0 +1,12 @@
+# Engineering baselines the assurance records refer to. A baseline is frozen only by a tagged
+# configuration baseline under WP-P-01; until then it is under development. Format: the restricted
+# YAML subset described in assurance/case/README.md, so one validator can read every record.
+
+- id: BL-001
+  kind: baseline
+  title: "Initial assurance baseline (the fork as inherited, with the concept-phase package)"
+  description: "The fork jherrodthomas/asimov-v1 at 3d4ec9d (2026-05-03): upstream asimovinc/asimov-v1 content as of 5de64d3 (2026-04-30: mechanical CAD of the seven subassemblies, the motion control board v0.1.4 KiCad sources, the WireViz harness, the MuJoCo model) plus the fork's concept-phase engineering package of 2026-05-03 (safety-case workbook, DFMEA, requirements, test plan, architecture, trace memo). No firmware, API or locomotion policy exists in any public repository. No fork change to the robot. The commit hashes are the baseline of record; no tag yet."
+  lifecycle_status: under-development
+  tag: null
+  source: WP-P-01
+  source_revision: "3d4ec9d"

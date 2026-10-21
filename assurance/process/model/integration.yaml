@@ -1,0 +1,81 @@
+# Integration and verification phase (gate G4). Format: assurance/process/README.md §3.
+
+- id: INT-01
+  kind: activity
+  phase: G4
+  lane: hw
+  name: "Hardware integration and verification"
+  produces: [WP-H-06]
+  inputs: [WP-H-02, WP-H-05]
+- id: INT-02
+  kind: activity
+  phase: G4
+  lane: sw
+  name: "Software integration and verification"
+  produces: [WP-W-07]
+  inputs: [WP-W-06]
+- id: INT-03
+  kind: activity
+  phase: G4
+  lane: sw
+  name: "Software validation on the target (bench, hardware in the loop)"
+  produces: [WP-W-08]
+  inputs: [WP-W-07, WP-H-06]
+- id: INT-04
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "System integration and test"
+  produces: [WP-S-08]
+  inputs: [WP-H-06, WP-W-08]
+- id: INT-05
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "Stability, fall and controlled-descent tests"
+  produces: [WP-V-02]
+  inputs: [WP-S-04, WP-H-08, WP-S-08, WP-V-07]
+- id: INT-06
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "Emergency stop and safety-chain validation"
+  produces: [WP-V-04]
+  inputs: [WP-S-08, WP-V-07]
+- id: INT-07
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "Human detection, speed reduction and power-and-force limiting validation"
+  produces: [WP-V-03]
+  inputs: [WP-V-02, WP-W-09, WP-V-07]
+- id: INT-08
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "Fault injection and fault-list validation"
+  produces: [WP-V-05]
+  inputs: [WP-H-03, WP-W-04, WP-S-08]
+- id: INT-09
+  kind: activity
+  phase: G4
+  lane: srpcs
+  name: "System verification: PL verification and fault behaviour"
+  produces: [WP-S-09]
+  inputs: [WP-H-04, WP-V-05, WP-V-04]
+- id: INT-10
+  kind: activity
+  phase: G4
+  lane: joint
+  name: "Update the hazard log and the safety case"
+  produces: []
+  updates: [WP-T-01, WP-K-01]
+  inputs: [WP-S-09, WP-V-02, WP-V-03]
+
+# Confirmation measures planned for G4 (WP-M-06 §9).
+- id: AUD-2
+  kind: review
+  phase: G4
+  name: "Functional safety audit of the bench campaign, test records and tool use"
+  covers: [WP-P-03, WP-P-07, WP-W-08]
+  independence: I3

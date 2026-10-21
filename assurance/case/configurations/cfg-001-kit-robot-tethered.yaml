@@ -1,0 +1,23 @@
+# Robot configuration records. One file per configuration.
+# classification: upstream-compatible | fork-evaluated | assurance-supported (see README.md).
+# A configuration can be classified assurance-supported only when the validator finds at least one
+# accepted claim for it; acceptance needs a recorded review (reviews/).
+
+- id: CFG-001
+  kind: configuration
+  title: "Asimov v1 DIY-kit robot as published, tethered in a laboratory (OE-1): 25 actuated joints, Radxa CM5 motion control board, Raspberry Pi 5 edge board, bench power supply, no battery, tele-operation only, no locomotion policy"
+  description: "The robot a builder can make from the repository and the kit at BL-001, as defined in WP-C-01 §1.1, operated in the supervised, tethered laboratory envelope OE-1 of WP-C-02. No safety function exists on it at BL-001 beyond what upstream's unreleased firmware may implement. The reference configuration of the first safety case (DQ-003)."
+  classification: fork-evaluated
+  evaluation_state: in-progress
+  platform: "jherrodthomas/asimov-v1 at BL-001 (mechanical, electrical, sim-model); firmware, API and policy not published"
+  brand_safety_mode: "none (the kit's wireless E-stop is declared, its architecture undocumented)"
+  item_definition: WP-C-01
+  related_assumptions: [AOU-01, AOU-02, AOU-03, AOU-04, AOU-05, AOU-06, AOU-07]
+  related_claims: [G0]
+  baseline: BL-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-C-01
+  source_revision: "3d4ec9d"

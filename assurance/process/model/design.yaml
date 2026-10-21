@@ -1,0 +1,127 @@
+# System design phase (gate G2). Format: assurance/process/README.md §3.
+
+- id: DES-01
+  kind: activity
+  phase: G2
+  lane: joint
+  name: "System requirements"
+  produces: [WP-S-01]
+  inputs: [WP-C-01, WP-C-02]
+- id: DES-02
+  kind: activity
+  phase: G2
+  lane: hw
+  name: "Mechanical, structural and stability analysis"
+  produces: [WP-H-08]
+  inputs: [WP-C-01, WP-C-03]
+- id: DES-03
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Safety requirements specification"
+  produces: [WP-S-02]
+  inputs: [WP-C-04, WP-C-05, WP-S-01]
+- id: DES-04
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Response time, fall-arrest and stopping budget"
+  produces: [WP-S-04]
+  inputs: [WP-C-04, WP-C-06, WP-H-08]
+- id: DES-05
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Stop chain and safety-related control architecture"
+  produces: [WP-S-03]
+  inputs: [WP-S-02, WP-S-04]
+- id: DES-06
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Safety chain I/O interface"
+  produces: [WP-S-05]
+  inputs: [WP-S-03]
+- id: DES-07
+  kind: activity
+  phase: G2
+  lane: joint
+  name: "Requirements for installation, operation and maintenance"
+  produces: [WP-S-06]
+  inputs: [WP-C-05, WP-S-02]
+- id: DES-08
+  kind: activity
+  phase: G2
+  lane: cs
+  name: "Cybersecurity architecture"
+  produces: [WP-S-07]
+  inputs: [WP-C-08, WP-S-03]
+- id: DES-09
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "System FMEA"
+  produces: [WP-A-01]
+  inputs: [WP-S-03, WP-S-05]
+- id: DES-10
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Fault tree analysis"
+  produces: [WP-A-02]
+  inputs: [WP-A-01]
+- id: DES-11
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Common cause failure analysis"
+  produces: [WP-A-03]
+  inputs: [WP-S-03, WP-A-01]
+- id: DES-12
+  kind: activity
+  phase: G2
+  lane: joint
+  name: "STPA of the motion control chain"
+  produces: [WP-A-04]
+  inputs: [WP-S-03, WP-S-05, WP-C-10]
+- id: DES-13
+  kind: activity
+  phase: G2
+  lane: srpcs
+  name: "Independence of the safety chain from the policy and tele-operation stack"
+  produces: [WP-A-05]
+  inputs: [WP-S-03, WP-S-07, WP-A-04]
+- id: DES-14
+  kind: activity
+  phase: G2
+  lane: joint
+  name: "Update the hazard log and the safety case"
+  produces: []
+  updates: [WP-T-01, WP-K-01]
+  inputs: [WP-S-02, WP-A-01, WP-A-05]
+
+# Confirmation measures planned for G2 (WP-M-06 §9).
+- id: CR-05
+  kind: review
+  phase: G2
+  name: "Confirmation review of the SRS and SRP/CS architecture"
+  covers: [WP-S-02, WP-S-03, WP-S-04, WP-S-05]
+  independence: I3
+- id: CR-06@G2
+  kind: review
+  phase: G2
+  name: "Confirmation review of the system-level safety analyses"
+  covers: [WP-A-01, WP-A-02, WP-A-03, WP-A-04, WP-A-05, WP-H-08]
+  independence: I3
+- id: FSA-I2
+  kind: review
+  phase: G2
+  name: "Interim functional safety assessment"
+  covers: [WP-S-02, WP-S-03, WP-S-04, WP-S-05, WP-A-01, WP-A-02, WP-A-03, WP-A-04, WP-A-05]
+  independence: I3
+- id: AUD-1
+  kind: review
+  phase: G2
+  name: "Functional safety audit of configuration, change and review"
+  covers: [WP-P-01, WP-P-02, WP-P-05]
+  independence: I3

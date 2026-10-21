@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="762" viewBox="0 0 1000 762" role="img" aria-labelledby="smap-t smap-d">
+  <title id="smap-t">Which standard shapes which phase</title>
+  <desc id="smap-d">Standards by phase, counted from the work product register: ISO 12100: G0 5, G1 7, G2 3, G3 0, G4 1, G5 4, G6 0; ISO 10218 · TS 15066: G0 0, G1 7, G2 3, G3 2, G4 1, G5 1, G6 0; ISO 13482: G0 0, G1 8, G2 4, G3 2, G4 3, G5 5, G6 0; ISO 13849-1 / -2: G0 10, G1 5, G2 9, G3 13, G4 8, G5 4, G6 0; IEC 62061 · IEC 61508: G0 14, G1 2, G2 2, G3 10, G4 2, G5 2, G6 1; IEC 60204-1: G0 0, G1 1, G2 2, G3 3, G4 3, G5 1, G6 0; ISO 13850 · ISO 13857: G0 0, G1 2, G2 1, G3 0, G4 2, G5 0, G6 0; IEC 62133-2 · UN 38.3: G0 0, G1 0, G2 0, G3 2, G4 0, G5 0, G6 0; IEC 62443-4-1 / -4-2: G0 14, G1 4, G2 3, G3 9, G4 1, G5 5, G6 2; ISO/IEC TR 5469: G0 3, G1 1, G2 0, G3 1, G4 0, G5 0, G6 0; ISO 21448 (method): G0 0, G1 2, G2 0, G3 0, G4 0, G5 1, G6 0; Machinery Regulation: G0 6, G1 4, G2 1, G3 0, G4 0, G5 5, G6 1; AI Act: G0 2, G1 1, G2 0, G3 1, G4 0, G5 1, G6 1; UL 4600: G0 1, G1 1, G2 0, G3 0, G4 0, G5 0, G6 0; Automotive SPICE: G0 17, G1 7, G2 7, G3 11, G4 9, G5 4, G6 0.</desc>
+  <defs>
+<linearGradient id="smap-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="smap-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="761" rx="22" fill="url(#smap-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#smap-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">STANDARDS MAP · FROM THE REGISTER</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">Which standard shapes which phase</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">89 work products · counted from the clause columns of WP-M-00</text>
+<text x="382" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G0</text>
+<text x="382" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">Governance</text>
+<text x="382" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">21 WPs</text>
+<text x="466" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G1</text>
+<text x="466" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">Concept</text>
+<text x="466" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">13 WPs</text>
+<text x="550" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G2</text>
+<text x="550" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">System design</text>
+<text x="550" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">13 WPs</text>
+<text x="634" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G3</text>
+<text x="634" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">HW/SW</text>
+<text x="634" y="144" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">development</text>
+<text x="634" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">18 WPs</text>
+<text x="718" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G4</text>
+<text x="718" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">Integration and</text>
+<text x="718" y="144" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">verification</text>
+<text x="718" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">9 WPs</text>
+<text x="802" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G5</text>
+<text x="802" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">Validation and</text>
+<text x="802" y="144" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">release</text>
+<text x="802" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">13 WPs</text>
+<text x="886" y="120" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">G6</text>
+<text x="886" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="middle">Operation</text>
+<text x="886" y="157" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#7E949B" text-anchor="middle">2 WPs</text>
+<text x="956" y="133" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">total</text>
+<text x="40" y="175" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 12100</text>
+<text x="40" y="188" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">risk assessment</text>
+<rect x="344" y="164" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.34941176470588237"/>
+<text x="382" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">5</text>
+<rect x="428" y="164" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.4411764705882353"/>
+<text x="466" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">7</text>
+<rect x="512" y="164" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="550" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<text x="634" y="182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="680" y="164" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="718" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="764" y="164" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="802" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<text x="886" y="182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="182" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">20</text>
+<rect x="32" y="194" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="209" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 10218 · TS 15066</text>
+<text x="40" y="222" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">robots, collaborative</text>
+<text x="382" y="216" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="428" y="198" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.4411764705882353"/>
+<text x="466" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">7</text>
+<rect x="512" y="198" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="550" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="596" y="198" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="634" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="680" y="198" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="718" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="764" y="198" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="802" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="886" y="216" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="216" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">14</text>
+<text x="40" y="243" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 13482</text>
+<text x="40" y="256" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">personal care robots</text>
+<text x="382" y="250" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="428" y="232" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.48705882352941177"/>
+<text x="466" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">8</text>
+<rect x="512" y="232" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="550" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<rect x="596" y="232" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="634" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="680" y="232" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="718" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="764" y="232" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.34941176470588237"/>
+<text x="802" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">5</text>
+<text x="886" y="250" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="250" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">22</text>
+<rect x="32" y="262" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="277" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 13849-1 / -2</text>
+<text x="40" y="290" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">safety-related control</text>
+<rect x="344" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.5788235294117647"/>
+<text x="382" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">10</text>
+<rect x="428" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.34941176470588237"/>
+<text x="466" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">5</text>
+<rect x="512" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.5329411764705883"/>
+<text x="550" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">9</text>
+<rect x="596" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.7164705882352942"/>
+<text x="634" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">13</text>
+<rect x="680" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.48705882352941177"/>
+<text x="718" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">8</text>
+<rect x="764" y="266" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="802" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<text x="886" y="284" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="284" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">49</text>
+<text x="40" y="311" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">IEC 62061 · IEC 61508</text>
+<text x="40" y="324" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">where 13849 runs out</text>
+<rect x="344" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.7623529411764706"/>
+<text x="382" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">14</text>
+<rect x="428" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="466" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="512" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="550" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="596" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.5788235294117647"/>
+<text x="634" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">10</text>
+<rect x="680" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="718" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="764" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="802" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="848" y="300" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="886" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="956" y="318" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">33</text>
+<rect x="32" y="330" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="345" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">IEC 60204-1</text>
+<text x="40" y="358" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">electrical equipment</text>
+<text x="382" y="352" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="428" y="334" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="466" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="512" y="334" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="550" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="596" y="334" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="634" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="680" y="334" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="718" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="764" y="334" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="802" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="886" y="352" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="352" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">10</text>
+<text x="40" y="379" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 13850 · ISO 13857</text>
+<text x="40" y="392" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">E-stop, reach distances</text>
+<text x="382" y="386" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="428" y="368" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="466" y="386" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="512" y="368" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="550" y="386" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="634" y="386" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="680" y="368" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="718" y="386" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<text x="802" y="386" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="886" y="386" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="386" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">5</text>
+<rect x="32" y="398" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="413" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">IEC 62133-2 · UN 38.3</text>
+<text x="40" y="426" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">battery safety</text>
+<text x="382" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="466" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="550" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="596" y="402" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="634" y="420" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<text x="718" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="802" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="886" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="420" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">2</text>
+<text x="40" y="447" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">IEC 62443-4-1 / -4-2</text>
+<text x="40" y="460" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">cybersecurity</text>
+<rect x="344" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.7623529411764706"/>
+<text x="382" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">14</text>
+<rect x="428" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="466" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<rect x="512" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="550" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="596" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.5329411764705883"/>
+<text x="634" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">9</text>
+<rect x="680" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="718" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="764" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.34941176470588237"/>
+<text x="802" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">5</text>
+<rect x="848" y="436" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="886" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<text x="956" y="454" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">38</text>
+<rect x="32" y="466" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="481" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO/IEC TR 5469</text>
+<text x="40" y="494" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">AI in safety functions</text>
+<rect x="344" y="470" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.2576470588235294"/>
+<text x="382" y="488" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">3</text>
+<rect x="428" y="470" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="466" y="488" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="550" y="488" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="596" y="470" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="634" y="488" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="718" y="488" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="802" y="488" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="886" y="488" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="488" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">5</text>
+<text x="40" y="515" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">ISO 21448 (method)</text>
+<text x="40" y="528" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">performance limits</text>
+<text x="382" y="522" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="428" y="504" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="466" y="522" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<text x="550" y="522" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="634" y="522" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="718" y="522" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="764" y="504" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="802" y="522" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="886" y="522" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="522" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">3</text>
+<rect x="32" y="534" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="549" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Machinery Regulation</text>
+<text x="40" y="562" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">(EU) 2023/1230</text>
+<rect x="344" y="538" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3952941176470588"/>
+<text x="382" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">6</text>
+<rect x="428" y="538" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="466" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<rect x="512" y="538" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="550" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="634" y="556" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="718" y="556" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="764" y="538" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.34941176470588237"/>
+<text x="802" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">5</text>
+<rect x="848" y="538" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="886" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="956" y="556" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">17</text>
+<text x="40" y="583" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">AI Act</text>
+<text x="40" y="596" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">(EU) 2024/1689</text>
+<rect x="344" y="572" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.21176470588235294"/>
+<text x="382" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">2</text>
+<rect x="428" y="572" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="466" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="550" y="590" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="596" y="572" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="634" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="718" y="590" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="764" y="572" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="802" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="848" y="572" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="886" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="956" y="590" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">6</text>
+<rect x="32" y="602" width="936" height="34" rx="6" fill="#EDF2F4" fill-opacity="0.45"/>
+<text x="40" y="617" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">UL 4600</text>
+<text x="40" y="630" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">safety case</text>
+<rect x="344" y="606" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="382" y="624" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<rect x="428" y="606" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.16588235294117648"/>
+<text x="466" y="624" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">1</text>
+<text x="550" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="634" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="718" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="802" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="886" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="624" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">2</text>
+<text x="40" y="651" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Automotive SPICE</text>
+<text x="40" y="664" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">process capability</text>
+<rect x="344" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.9"/>
+<text x="382" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">17</text>
+<rect x="428" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.4411764705882353"/>
+<text x="466" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">7</text>
+<rect x="512" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.4411764705882353"/>
+<text x="550" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">7</text>
+<rect x="596" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.6247058823529412"/>
+<text x="634" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">11</text>
+<rect x="680" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.5329411764705883"/>
+<text x="718" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">9</text>
+<rect x="764" y="640" width="76" height="26" rx="6" fill="#0E8C83" fill-opacity="0.3035294117647059"/>
+<text x="802" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#122026" text-anchor="middle">4</text>
+<text x="886" y="658" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="956" y="658" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="13" font-weight="800" fill="#D4821A" text-anchor="middle">55</text>
+<text x="40" y="690" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7E949B" text-anchor="start">A cell is the number of work products needed by that gate whose register row cites the standard; one work product can answer several standards, which is the point of an integrated lifecycle.</text>
+<text x="40" y="706" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7E949B" text-anchor="start">Structured after the standards, cited by clause; no compliance is claimed, and every clause reference is marked to be checked against a licensed copy.</text>
+<text x="40" y="746" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7E949B" text-anchor="start">Records digest 21e4132c8591 · regenerated whenever the register changes; CI fails if this figure is stale.</text>
+</svg>

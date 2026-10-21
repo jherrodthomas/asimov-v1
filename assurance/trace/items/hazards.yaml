@@ -1,0 +1,402 @@
+# Hazards (H-) from WP-C-03 §4 (risk assessment, ported from the concept-package hazard catalogue HZ-) and safety
+# functions (SF-) identified in WP-C-03 §7 and specified in WP-C-04 §2. Ratings are WP-C-03 proposals, not approved.
+# Source of truth is WP-C-03 (hazards, PLr) and WP-C-04 (functions). Format: case/tools/subsetyaml.py (restricted YAML subset).
+
+- id: H-01
+  kind: hazard
+  title: "Tip-over onto a person: a 35 kg body falling from 1.2 m, about 411 J at the centre of mass"
+  package_id: HZ-M01
+  status: proposed
+  source: WP-C-03
+
+- id: H-02
+  kind: hazard
+  title: "Joint pinch or shearing: knee, elbow, hip, neck trap fingers or a limb during MOVE"
+  package_id: HZ-M02
+  status: proposed
+  source: WP-C-03
+
+- id: H-03
+  kind: hazard
+  title: "Cutting: sharp edges on machined 7075 parts; a loose fastener as a projectile"
+  package_id: HZ-M03
+  status: proposed
+  source: WP-C-03
+
+- id: H-04
+  kind: hazard
+  title: "Impact: an arm sweep strikes the head or torso of a bystander during MOVE"
+  package_id: HZ-M04
+  status: proposed
+  source: WP-C-03
+
+- id: H-05
+  kind: hazard
+  title: "Drawing-in: hair or clothing caught at the waist yaw or neck yaw rotation"
+  package_id: HZ-M05
+  status: proposed
+  source: WP-C-03
+
+- id: H-06
+  kind: hazard
+  title: "Loss of balance during STAND or MOVE: an uncommanded fall"
+  package_id: HZ-M07
+  status: proposed
+  source: WP-C-03
+
+- id: H-07
+  kind: hazard
+  title: "Slip, trip or fall of a person over the robot, its tether or its harness"
+  package_id: HZ-M08
+  status: proposed
+  source: WP-C-03
+
+- id: H-08
+  kind: hazard
+  title: "Electric shock at the XT30 input, the charger or the battery pack"
+  package_id: HZ-E01
+  status: proposed
+  source: WP-C-03
+
+- id: H-09
+  kind: hazard
+  title: "Arc or short circuit on the power distribution board or a damaged CAN harness"
+  package_id: HZ-E02
+  status: proposed
+  source: WP-C-03
+
+- id: H-10
+  kind: hazard
+  title: "Electrostatic damage to the motion control board, CM5 or IMU during DIY assembly"
+  package_id: HZ-E03
+  status: proposed
+  source: WP-C-03
+
+- id: H-11
+  kind: hazard
+  title: "Electromagnetic disturbance disrupts the tele-operation link or the wireless E-stop"
+  package_id: HZ-E04
+  status: proposed
+  source: WP-C-03
+
+- id: H-12
+  kind: hazard
+  title: "Burn: actuator stators above 60 °C under sustained load"
+  package_id: HZ-T01
+  status: proposed
+  source: WP-C-03
+
+- id: H-13
+  kind: hazard
+  title: "Battery thermal runaway: lithium pack failure, fire or venting"
+  package_id: HZ-T02
+  status: proposed
+  source: WP-C-03
+
+- id: H-14
+  kind: hazard
+  title: "Hearing damage: the 10 W speaker above 85 dBA at the user's ear"
+  package_id: HZ-N01
+  status: proposed
+  source: WP-C-03
+
+- id: H-15
+  kind: hazard
+  title: "Hand-arm vibration while holding the tele-operation tablet (low)"
+  package_id: HZ-V01
+  status: proposed
+  source: WP-C-03
+
+- id: H-16
+  kind: hazard
+  title: "Optical radiation from the camera module (low)"
+  package_id: HZ-R01
+  status: proposed
+  source: WP-C-03
+
+- id: H-17
+  kind: hazard
+  title: "Inhalation of MJF PA12 dust during fabrication or repair"
+  package_id: HZ-X01
+  status: proposed
+  source: WP-C-03
+
+- id: H-18
+  kind: hazard
+  title: "Manual-handling injury lifting the 35 kg robot"
+  package_id: HZ-G01
+  status: proposed
+  source: WP-C-03
+
+- id: H-19
+  kind: hazard
+  title: "Operation outside +10 to +35 °C: torque drift, BMS cut-off, plastic embrittlement"
+  package_id: HZ-V02
+  status: proposed
+  source: WP-C-03
+
+- id: H-20
+  kind: hazard
+  title: "Wet floor or moisture ingress: short circuit or slip (no IP rating)"
+  package_id: HZ-V03
+  status: proposed
+  source: WP-C-03
+
+- id: H-21
+  kind: hazard
+  title: "Inadequate restraint: the robot grasps or leans on a person (scoped out by AOU-07)"
+  package_id: HZ-P01
+  status: proposed
+  source: WP-C-03
+
+- id: H-22
+  kind: hazard
+  title: "Incorrect autonomous decision: a locomotion-policy edge case commands a hazardous trajectory"
+  package_id: HZ-P02
+  status: proposed
+  source: WP-C-03
+
+- id: H-23
+  kind: hazard
+  title: "Power loss mid-stride: an uncontrolled fall"
+  package_id: HZ-P03
+  status: proposed
+  source: WP-C-03
+
+- id: H-24
+  kind: hazard
+  title: "Robot-to-human contact above the force and pressure limits"
+  package_id: HZ-P04
+  status: proposed
+  source: WP-C-03
+
+- id: H-25
+  kind: hazard
+  title: "Restraint of a human: the robot pins or leans on a person (scoped out by AOU-07)"
+  package_id: HZ-P05
+  status: proposed
+  source: WP-C-03
+
+- id: H-26
+  kind: hazard
+  title: "A person leans on the robot: tip-over under external load"
+  package_id: HZ-P06
+  status: proposed
+  source: WP-C-03
+
+- id: H-27
+  kind: hazard
+  title: "Human cognitive overload from a confusing interface or failure annunciation"
+  package_id: HZ-P07
+  status: proposed
+  source: WP-C-03
+
+- id: H-28
+  kind: hazard
+  title: "Loss of the tele-operation link in MOVE: the watchdog drops the robot to DAMP, and DAMP itself drops the robot"
+  package_id: HZ-C01
+  status: proposed
+  source: WP-C-03
+
+- id: H-29
+  kind: hazard
+  title: "Unauthorised tele-operation command moves the robot"
+  package_id: HZ-C02
+  status: proposed
+  source: WP-C-03
+
+- id: H-30
+  kind: hazard
+  title: "IMU stuck or out of range: the balance controller diverges"
+  package_id: HZ-C03
+  status: proposed
+  source: WP-C-03
+
+- id: H-31
+  kind: hazard
+  title: "Software fault: the control loop deadlocks and the motors hold the last command"
+  package_id: HZ-C04
+  status: proposed
+  source: WP-C-03
+
+- id: H-32
+  kind: hazard
+  title: "Joint limit overshoot: a position command drives into the mechanical end-stop"
+  package_id: HZ-C05
+  status: proposed
+  source: WP-C-03
+
+- id: SF-01
+  kind: safety-function
+  title: "Maintain bipedal stability while standing and moving"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-02
+  kind: safety-function
+  title: "Detect an impending fall and arrest it by a controlled descent before impact"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-03
+  kind: safety-function
+  title: "Joint torque and velocity limit per joint"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-04
+  kind: safety-function
+  title: "Force-limited contact in collaborative regions"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-05
+  kind: safety-function
+  title: "Fastener torque and secure-by-design; sharp edges chamfered (static measure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-06
+  kind: safety-function
+  title: "Speed reduction in human-shared regions on a perception trigger"
+  plr: c
+  status: proposed
+  source: WP-C-04
+
+- id: SF-07
+  kind: safety-function
+  title: "Guarding at the waist yaw and neck yaw rotational interfaces (static measure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-08
+  kind: safety-function
+  title: "Safe stop on watchdog timeout or communication loss (stop category 1)"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-09
+  kind: safety-function
+  title: "Cable management and a visible tether route (procedure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-10
+  kind: safety-function
+  title: "Power isolation: lockable disconnector and insulation class (static measure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-11
+  kind: safety-function
+  title: "Overcurrent protection on each motor branch"
+  plr: c
+  status: proposed
+  source: WP-C-04
+
+- id: SF-12
+  kind: safety-function
+  title: "ESD-safe assembly process (procedure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-13
+  kind: safety-function
+  title: "Wireless E-stop link surveillance and heartbeat"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-14
+  kind: safety-function
+  title: "Stator over-temperature shutdown"
+  plr: c
+  status: proposed
+  source: WP-C-04
+
+- id: SF-15
+  kind: safety-function
+  title: "Battery thermal and cell-voltage protection by the BMS"
+  plr: e
+  status: proposed
+  source: WP-C-04
+
+- id: SF-16
+  kind: safety-function
+  title: "Audio limiter at or below 80 dBA at 1 m"
+  plr: b
+  status: proposed
+  source: WP-C-04
+
+- id: SF-17
+  kind: safety-function
+  title: "Respiratory protection during MJF dust generation (procedure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-18
+  kind: safety-function
+  title: "Two-person lift procedure for the 35 kg robot (procedure)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-19
+  kind: safety-function
+  title: "Indoor-only operating envelope until an IP-rated build exists (operating restriction)"
+  plr: "-"
+  status: proposed
+  source: WP-C-04
+
+- id: SF-20
+  kind: safety-function
+  title: "Power-and-force limiting per ISO/TS 15066 in collaborative mode"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-21
+  kind: safety-function
+  title: "Authenticated, integrity-protected tele-operation channel"
+  plr: c
+  status: proposed
+  source: WP-C-04
+
+- id: SF-22
+  kind: safety-function
+  title: "Operator session lock and idle timeout"
+  plr: b
+  status: proposed
+  source: WP-C-04
+
+- id: SF-23
+  kind: safety-function
+  title: "IMU plausibility and cross-check (rate against acceleration, freshness)"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-24
+  kind: safety-function
+  title: "Real-time scheduler watchdog and deadline monitor"
+  plr: d
+  status: proposed
+  source: WP-C-04
+
+- id: SF-25
+  kind: safety-function
+  title: "Software joint limits inside the mechanical end-stops"
+  plr: c
+  status: proposed
+  source: WP-C-04

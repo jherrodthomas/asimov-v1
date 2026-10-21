@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1378" viewBox="0 0 1000 1378" role="img" aria-labelledby="p4-t p4-d">
+  <title id="p4-t">G4 Integration and verification: integrated process map</title>
+  <desc id="p4-d">Process map of phase G4 Integration and verification: INT-01 Hardware integration and verification (Electrical &amp; mechanical, after nothing); INT-02 Software integration and verification (Software, after nothing); INT-03 Software validation on the target (bench, hardware in the loop) (Software, after INT-01, INT-02); INT-04 System integration and test (Safety-related control, after INT-03); INT-05 Stability, fall and controlled-descent tests (Safety-related control, after INT-04); INT-06 Emergency stop and safety-chain validation (Safety-related control, after INT-04); INT-07 Human detection, speed reduction and power-and-force limiting validation (Safety-related control, after INT-05); INT-08 Fault injection and fault-list validation (Safety-related control, after INT-04); INT-09 System verification: PL verification and fault behaviour (Safety-related control, after INT-06, INT-08); INT-10 Update the hazard log and the safety case (Joint, after INT-07, INT-09).</desc>
+  <defs>
+<linearGradient id="p4-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="p4-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="p4-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="p4-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="1377" rx="22" fill="url(#p4-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#p4-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">PROCESS MAP · G4 · L1</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">P4 Integration and verification: who does what, in what order</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">10 activities · 1 confirmation measures · 1 interfaces</text>
+<rect x="43" y="118" width="224" height="1044" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="43" y="118" width="224" height="4" rx="2" fill="#2C9A58"/>
+<text x="155" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint</text>
+<text x="155" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="273" y="118" width="224" height="1044" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="273" y="118" width="224" height="4" rx="2" fill="#0E8C83"/>
+<text x="385" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control</text>
+<text x="385" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting); additional…</text>
+<rect x="503" y="118" width="224" height="1044" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="503" y="118" width="224" height="4" rx="2" fill="#2F6FD6"/>
+<text x="615" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2F6FD6" text-anchor="middle">Electrical &amp; mechanical</text>
+<text x="615" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">TBD (likely external)</text>
+<rect x="733" y="118" width="224" height="1044" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="733" y="118" width="224" height="4" rx="2" fill="#7A4BD6"/>
+<text x="845" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#7A4BD6" text-anchor="middle">Software</text>
+<text x="845" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas; additional contributors…</text>
+<path d="M615.0,264.0 C615.0,278.0 845.0,278.0 845.0,290.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M845.0,264.0 L845.0,290.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M845.0,372.0 C845.0,386.0 385.0,386.0 385.0,398.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,480.0 L385.0,506.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,480.0 L385.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,588.0 L385.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,480.0 L385.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,696.0 L385.0,938.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,804.0 L385.0,938.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,912.0 C385.0,980.0 155.0,980.0 155.0,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<path d="M385.0,1020.0 C385.0,1034.0 155.0,1034.0 155.0,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p4-arrow)"/>
+<rect x="511" y="184" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="511" y="192" width="3" height="64" rx="1.5" fill="#2F6FD6"/>
+<text x="522" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2F6FD6" text-anchor="start">INT-01</text>
+<text x="522" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Hardware integration and</text>
+<text x="522" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">verification</text>
+<rect x="522" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="539.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">H-06</text>
+<rect x="741" y="184" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="741" y="192" width="3" height="64" rx="1.5" fill="#7A4BD6"/>
+<text x="752" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#7A4BD6" text-anchor="start">INT-02</text>
+<text x="752" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Software integration and</text>
+<text x="752" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">verification</text>
+<rect x="752" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="769.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">W-07</text>
+<rect x="741" y="292" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="741" y="300" width="3" height="64" rx="1.5" fill="#7A4BD6"/>
+<text x="752" y="308" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#7A4BD6" text-anchor="start">INT-03</text>
+<text x="752" y="323" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Software validation on the target</text>
+<text x="752" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">(bench, hardware in the loop)</text>
+<rect x="752" y="354" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="769.6" y="363.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">W-08</text>
+<rect x="281" y="400" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="408" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="416" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-04</text>
+<text x="292" y="431" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">System integration and test</text>
+<rect x="292" y="462" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="471.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">S-08</text>
+<rect x="281" y="508" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="516" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="524" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-05</text>
+<text x="292" y="539" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Stability, fall and</text>
+<text x="292" y="552" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">controlled-descent tests</text>
+<rect x="292" y="570" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="579.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-02</text>
+<rect x="281" y="616" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="624" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-06</text>
+<text x="292" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Emergency stop and safety-chain</text>
+<text x="292" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">validation</text>
+<rect x="292" y="678" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-04</text>
+<rect x="281" y="832" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="840" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="848" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-07</text>
+<text x="292" y="863" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Human detection, speed reduction</text>
+<text x="292" y="876" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">and power-and-force limiting</text>
+<text x="292" y="889" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">validation</text>
+<rect x="292" y="894" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-03</text>
+<rect x="281" y="724" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="732" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-08</text>
+<text x="292" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Fault injection and fault-list</text>
+<text x="292" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">validation</text>
+<rect x="292" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-05</text>
+<rect x="281" y="940" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="948" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="292" y="956" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">INT-09</text>
+<text x="292" y="971" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">System verification: PL</text>
+<text x="292" y="984" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">verification and fault behaviour</text>
+<rect x="292" y="1002" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="309.6" y="1011.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">S-09</text>
+<rect x="51" y="1048" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1056" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1064" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">INT-10</text>
+<text x="62" y="1079" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Update the hazard log and the</text>
+<text x="62" y="1092" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">safety case</text>
+<rect x="62" y="1110" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1119.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">T-01</text>
+<rect x="101.2" y="1110" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="118.8" y="1119.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-01</text>
+<path d="M385.0,548.0 L385.0,872.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="364.5" y="701" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="385" y="713" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-09</text>
+<rect x="40" y="1162" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="1162" width="5" height="62" rx="2" fill="#A88A00"/>
+<text x="56" y="1182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
+<text x="948" y="1182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<rect x="56" y="1194" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="95" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">AUD-2 · I3</text>
+<rect x="40" y="1240" width="920" height="64" rx="12" fill="#8FD8D1" fill-opacity="0.3"/>
+<rect x="40" y="1240" width="920" height="64" rx="12" fill="none" stroke="#0E8C83" stroke-width="1"/>
+<text x="58" y="1264" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#0E8C83" text-anchor="start">G4 · Integration and verification gate</text>
+<text x="58" y="1282" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">Exit: Hardware, software and system integration and PL verification complete; stability, fall, E-stop and detection tests passed; fault-injection campaign</text>
+<text x="58" y="1295" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">closed</text>
+<text x="40" y="1350" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Arrows are work-product inputs: an activity cannot finish before the one above it. Chips name the work products produced, coloured by register status (grey skeleton, amber draft,</text>
+<text x="40" y="1363" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">green approved). Dotted links are cross-domain interfaces; red means a recorded open item still has to settle it.</text>
+</svg>

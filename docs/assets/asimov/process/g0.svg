@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2350" viewBox="0 0 1000 2350" role="img" aria-labelledby="p0-t p0-d">
+  <title id="p0-t">G0 Governance: integrated process map</title>
+  <desc id="p0-d">Process map of phase G0 Governance: GOV-01 Impact analysis of the inherited Asimov v1 baseline and the concept-phase package (Joint, after nothing); GOV-02 Assurance strategy and lifecycle tailoring (Joint, after GOV-01); GOV-03 Regulatory conformity strategy (Joint, after GOV-02); GOV-04 Functional safety plan (Risk assessment, after GOV-03); GOV-05 Organisation rules, safety culture and competence (Joint, after GOV-04); GOV-06 Quality management and QA plan (Joint, after GOV-05); GOV-07 Confirmation measures plan (Risk assessment, after GOV-06); GOV-08 Cybersecurity plan (Cybersecurity, after GOV-05); GOV-09 Machine-learning safety plan (Machine learning, after GOV-08); GOV-10 Upstream and supplier management (Joint, after GOV-02); GOV-11 Configuration management plan and safety-relevant file list (Joint, after GOV-04, GOV-10); GOV-12 Change management (Joint, after GOV-11); GOV-13 Problem resolution (Joint, after GOV-12); GOV-14 Documentation management (Joint, after GOV-11); GOV-15 Verification and review procedure (Joint, after GOV-07, GOV-14); GOV-16 Requirements management and traceability procedure (Joint, after GOV-15); GOV-17 Project risk management (Joint, after GOV-04); GOV-18 Project plan (Joint, after GOV-07, GOV-17); GOV-19 Process capability baseline (Joint, after GOV-13, GOV-15); GOV-20 Work product register (Joint, after GOV-07); GOV-21 Integrated process model and maps (Joint, after GOV-20).</desc>
+  <defs>
+<linearGradient id="p0-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="p0-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="p0-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="p0-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="2349" rx="22" fill="url(#p0-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#p0-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">PROCESS MAP · G0 · L1</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">P0 Governance: who does what, in what order</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">21 activities · 2 confirmation measures · 0 interfaces</text>
+<rect x="43" y="118" width="224" height="2016" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="43" y="118" width="224" height="4" rx="2" fill="#2C9A58"/>
+<text x="155" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint</text>
+<text x="155" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="273" y="118" width="224" height="2016" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="273" y="118" width="224" height="4" rx="2" fill="#D4821A"/>
+<text x="385" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment</text>
+<text x="385" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="503" y="118" width="224" height="2016" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="503" y="118" width="224" height="4" rx="2" fill="#D64535"/>
+<text x="615" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity</text>
+<text x="615" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting); permanent…</text>
+<rect x="733" y="118" width="224" height="2016" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="733" y="118" width="224" height="4" rx="2" fill="#C2399A"/>
+<text x="845" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning</text>
+<text x="845" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting); permanent…</text>
+<path d="M155.0,264.0 L155.0,290.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,372.0 L155.0,398.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,480.0 C155.0,548.0 385.0,548.0 385.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,696.0 C385.0,710.0 155.0,710.0 155.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,804.0 L155.0,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1128.0 C155.0,1250.0 385.0,1250.0 385.0,1370.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,804.0 C155.0,926.0 615.0,926.0 615.0,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M615.0,1128.0 C615.0,1250.0 845.0,1250.0 845.0,1370.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,372.0 L155.0,506.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,696.0 C385.0,764.0 155.0,764.0 155.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,588.0 L155.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,912.0 L155.0,1154.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1236.0 L155.0,1370.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,912.0 L155.0,1262.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,1452.0 C385.0,1466.0 155.0,1466.0 155.0,1478.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1344.0 L155.0,1478.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1560.0 L155.0,1802.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,696.0 C385.0,818.0 155.0,818.0 155.0,938.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,1452.0 C385.0,1520.0 155.0,1520.0 155.0,1586.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1020.0 L155.0,1586.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1452.0 L155.0,1910.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1560.0 L155.0,1910.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M385.0,1452.0 C385.0,1574.0 155.0,1574.0 155.0,1694.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<path d="M155.0,1776.0 L155.0,2018.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p0-arrow)"/>
+<rect x="51" y="184" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="192" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-01</text>
+<text x="62" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Impact analysis of the inherited</text>
+<text x="62" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Asimov v1 baseline and the</text>
+<text x="62" y="241" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">concept-phase package</text>
+<rect x="62" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-11</text>
+<rect x="51" y="292" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="300" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="308" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-02</text>
+<text x="62" y="323" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Assurance strategy and lifecycle</text>
+<text x="62" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">tailoring</text>
+<rect x="62" y="354" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="363.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-01</text>
+<rect x="51" y="400" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="408" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="416" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-03</text>
+<text x="62" y="431" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Regulatory conformity strategy</text>
+<rect x="62" y="462" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="471.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-13</text>
+<rect x="281" y="616" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="624" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="292" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">GOV-04</text>
+<text x="292" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Functional safety plan</text>
+<rect x="292" y="678" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="309.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-02</text>
+<rect x="51" y="724" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="732" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-05</text>
+<text x="62" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Organisation rules, safety</text>
+<text x="62" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">culture and competence</text>
+<rect x="62" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-04</text>
+<rect x="51" y="1048" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1056" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1064" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-06</text>
+<text x="62" y="1079" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Quality management and QA plan</text>
+<rect x="62" y="1110" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1119.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-05</text>
+<rect x="281" y="1372" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="281" y="1380" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="292" y="1388" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">GOV-07</text>
+<text x="292" y="1403" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Confirmation measures plan</text>
+<rect x="292" y="1434" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="309.6" y="1443.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-06</text>
+<rect x="511" y="1048" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="511" y="1056" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="522" y="1064" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">GOV-08</text>
+<text x="522" y="1079" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity plan</text>
+<rect x="522" y="1110" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="539.6" y="1119.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-08</text>
+<rect x="741" y="1372" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="741" y="1380" width="3" height="64" rx="1.5" fill="#C2399A"/>
+<text x="752" y="1388" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="start">GOV-09</text>
+<text x="752" y="1403" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Machine-learning safety plan</text>
+<rect x="752" y="1434" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="769.6" y="1443.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-09</text>
+<rect x="51" y="508" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="516" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="524" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-10</text>
+<text x="62" y="539" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Upstream and supplier management</text>
+<rect x="62" y="570" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="579.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-10</text>
+<rect x="51" y="832" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="840" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="848" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-11</text>
+<text x="62" y="863" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Configuration management plan and</text>
+<text x="62" y="876" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">safety-relevant file list</text>
+<rect x="62" y="894" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-01</text>
+<rect x="51" y="1156" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1164" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1172" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-12</text>
+<text x="62" y="1187" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Change management</text>
+<rect x="62" y="1218" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1227.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-02</text>
+<rect x="51" y="1372" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1380" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1388" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-13</text>
+<text x="62" y="1403" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Problem resolution</text>
+<rect x="62" y="1434" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1443.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-03</text>
+<rect x="51" y="1264" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1272" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1280" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-14</text>
+<text x="62" y="1295" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Documentation management</text>
+<rect x="62" y="1326" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1335.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-04</text>
+<rect x="51" y="1480" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1488" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1496" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-15</text>
+<text x="62" y="1511" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Verification and review procedure</text>
+<rect x="62" y="1542" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1551.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-05</text>
+<rect x="51" y="1804" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1812" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1820" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-16</text>
+<text x="62" y="1835" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Requirements management and</text>
+<text x="62" y="1848" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">traceability procedure</text>
+<rect x="62" y="1866" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1875.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-06</text>
+<rect x="51" y="940" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="948" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="956" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-17</text>
+<text x="62" y="971" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Project risk management</text>
+<rect x="62" y="1002" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1011.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-07</text>
+<rect x="51" y="1588" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1596" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1604" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-18</text>
+<text x="62" y="1619" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Project plan</text>
+<rect x="62" y="1650" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1659.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-03</text>
+<rect x="51" y="1912" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1920" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1928" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-19</text>
+<text x="62" y="1943" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Process capability baseline</text>
+<rect x="62" y="1974" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1983.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-12</text>
+<rect x="51" y="1696" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1704" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1712" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-20</text>
+<text x="62" y="1727" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Work product register</text>
+<rect x="62" y="1758" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="1767.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">M-00</text>
+<rect x="51" y="2020" width="208" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="2028" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="2036" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">GOV-21</text>
+<text x="62" y="2051" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Integrated process model and maps</text>
+<rect x="62" y="2082" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="2091.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-11</text>
+<rect x="40" y="2134" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="2134" width="5" height="62" rx="2" fill="#A88A00"/>
+<text x="56" y="2154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
+<text x="948" y="2154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<rect x="56" y="2166" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="95" y="2178.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-01 · I3</text>
+<rect x="142" y="2166" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="181" y="2178.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-03 · I3</text>
+<rect x="40" y="2212" width="920" height="64" rx="12" fill="#8FD8D1" fill-opacity="0.3"/>
+<rect x="40" y="2212" width="920" height="64" rx="12" fill="none" stroke="#0E8C83" stroke-width="1"/>
+<text x="58" y="2236" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#0E8C83" text-anchor="start">G0 · Governance gate</text>
+<text x="58" y="2254" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">Exit: Plans approved; roles assigned; configuration and change control running</text>
+<text x="40" y="2322" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Arrows are work-product inputs: an activity cannot finish before the one above it. Chips name the work products produced, coloured by register status (grey skeleton, amber draft,</text>
+<text x="40" y="2335" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">green approved). Dotted links are cross-domain interfaces; red means a recorded open item still has to settle it.</text>
+</svg>

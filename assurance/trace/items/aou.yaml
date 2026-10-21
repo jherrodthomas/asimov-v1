@@ -1,0 +1,51 @@
+# Assumptions of use (AOU-) from WP-C-01 §8 (item definition), ported from the concept-package assumptions ASS-A-01…A-07.
+# Source of truth is WP-C-01. Format: case/tools/subsetyaml.py (restricted YAML subset).
+
+- id: AOU-01
+  kind: aou
+  text: "A trained operator is present and within E-stop reach at all times in MOVE"
+  aou_status: "Procedural only (concept-package A-01)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-02
+  kind: aou
+  text: "The battery, when fitted, is a UN 38.3 and IEC 62133-2 compliant lithium pack with an integrated BMS"
+  aou_status: "Not enforced: the kit ships without a battery (A-02; DQ-009)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-03
+  kind: aou
+  text: "The structure is genuine 7075-T6 aluminium and MJF PA12; no substitution during the DIY build"
+  aou_status: "Not enforced: no incoming inspection (A-03)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-04
+  kind: aou
+  text: "The CAN harness is built per the WireViz record with correct termination and crimps"
+  aou_status: "Not enforced: no acceptance test (A-04)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-05
+  kind: aou
+  text: "The operating surface is level (slope at most 5°), dry and free of obstacles"
+  aou_status: "Assumed (A-05)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-06
+  kind: aou
+  text: "No human body part enters the swept volume of any actuated joint while in STAND or MOVE"
+  aou_status: "Procedural only (A-06)"
+  status: proposed
+  source: WP-C-01
+
+- id: AOU-07
+  kind: aou
+  text: "The robot is not a medical device, a child-care robot or a load-bearing person carrier"
+  aou_status: "Project scope (A-07)"
+  status: proposed
+  source: WP-C-01

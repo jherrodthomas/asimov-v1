@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1162" viewBox="0 0 1000 1162" role="img" aria-labelledby="p1-t p1-d">
+  <title id="p1-t">G1 Concept: integrated process map</title>
+  <desc id="p1-d">Process map of phase G1 Concept: CON-01 Define the robot and its limits (Joint, after nothing); CON-02 Specify the operating envelopes and tasks (Risk assessment, after CON-01); CON-03 Analyse human-robot interaction, contact limits and foreseeable misuse (Risk assessment, after CON-02); CON-04 Hazard identification and risk assessment (Risk assessment, after CON-03); CON-05 Specify the safety functions and their required PL (Safety-related control, after CON-04); CON-06 Analyse functional insufficiencies of perception and the locomotion policy (Risk assessment, after CON-04); CON-07 Risk reduction concept (Risk assessment, after CON-05, CON-06); CON-08 Cybersecurity threat and risk assessment (Cybersecurity, after CON-04); CON-09 Cybersecurity requirements and security level target (Cybersecurity, after CON-05, CON-08); CON-10 Define the ML components and their safety requirements (Machine learning, after CON-05, CON-06); CON-11 Test operations hold point (Joint, after CON-04); CON-12 Record the hazard log and the argument structure (Joint, after CON-07, CON-09, CON-10).</desc>
+  <defs>
+<linearGradient id="p1-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="p1-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="p1-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="p1-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="1161" rx="22" fill="url(#p1-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#p1-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">PROCESS MAP · G1 · L1</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">P1 Concept: who does what, in what order</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">12 activities · 6 confirmation measures · 4 interfaces</text>
+<rect x="43" y="118" width="178" height="828" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="43" y="118" width="178" height="4" rx="2" fill="#2C9A58"/>
+<text x="132" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint</text>
+<text x="132" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="227" y="118" width="178" height="828" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="227" y="118" width="178" height="4" rx="2" fill="#D4821A"/>
+<text x="316" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment</text>
+<text x="316" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="411" y="118" width="178" height="828" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="411" y="118" width="178" height="4" rx="2" fill="#0E8C83"/>
+<text x="500" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control</text>
+<text x="500" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<rect x="595" y="118" width="178" height="828" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="595" y="118" width="178" height="4" rx="2" fill="#D64535"/>
+<text x="684" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity</text>
+<text x="684" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<rect x="779" y="118" width="178" height="828" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="779" y="118" width="178" height="4" rx="2" fill="#C2399A"/>
+<text x="868" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning</text>
+<text x="868" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<path d="M132.0,264.0 C132.0,278.0 316.0,278.0 316.0,290.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,372.0 L316.0,398.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,480.0 L316.0,506.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,588.0 C316.0,602.0 500.0,602.0 500.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,588.0 L316.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M500.0,696.0 C500.0,710.0 316.0,710.0 316.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,696.0 L316.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,588.0 C316.0,602.0 684.0,602.0 684.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M500.0,696.0 C500.0,710.0 684.0,710.0 684.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M684.0,696.0 L684.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M500.0,696.0 C500.0,710.0 868.0,710.0 868.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,696.0 C316.0,710.0 868.0,710.0 868.0,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,588.0 C316.0,602.0 132.0,602.0 132.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M316.0,804.0 C316.0,818.0 132.0,818.0 132.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M684.0,804.0 C684.0,818.0 132.0,818.0 132.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<path d="M868.0,804.0 C868.0,818.0 132.0,818.0 132.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p1-arrow)"/>
+<rect x="51" y="184" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="192" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">CON-01</text>
+<text x="62" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Define the robot and its</text>
+<text x="62" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">limits</text>
+<rect x="62" y="246" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-01</text>
+<rect x="235" y="292" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="235" y="300" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="246" y="308" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">CON-02</text>
+<text x="246" y="323" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Specify the operating</text>
+<text x="246" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">envelopes and tasks</text>
+<rect x="246" y="354" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="263.6" y="363.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-02</text>
+<rect x="235" y="400" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="235" y="408" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="246" y="416" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">CON-03</text>
+<text x="246" y="431" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Analyse human-robot</text>
+<text x="246" y="444" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">interaction, contact</text>
+<text x="246" y="457" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">limits and foreseeable…</text>
+<rect x="246" y="462" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="263.6" y="471.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-06</text>
+<rect x="235" y="508" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="235" y="516" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="246" y="524" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">CON-04</text>
+<text x="246" y="539" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Hazard identification and</text>
+<text x="246" y="552" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">risk assessment</text>
+<rect x="246" y="570" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="263.6" y="579.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-03</text>
+<rect x="419" y="616" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="419" y="624" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="430" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">CON-05</text>
+<text x="430" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Specify the safety</text>
+<text x="430" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">functions and their</text>
+<text x="430" y="673" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">required PL</text>
+<rect x="430" y="678" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="447.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-04</text>
+<rect x="235" y="616" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="235" y="624" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="246" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">CON-06</text>
+<text x="246" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Analyse functional</text>
+<text x="246" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">insufficiencies of</text>
+<text x="246" y="673" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">perception and the…</text>
+<rect x="246" y="678" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="263.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-10</text>
+<rect x="235" y="724" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="235" y="732" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="246" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">CON-07</text>
+<text x="246" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Risk reduction concept</text>
+<rect x="246" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="263.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-05</text>
+<rect x="603" y="616" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="603" y="624" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="614" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">CON-08</text>
+<text x="614" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity threat and</text>
+<text x="614" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">risk assessment</text>
+<rect x="614" y="678" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="631.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-07</text>
+<rect x="603" y="724" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="603" y="732" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="614" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">CON-09</text>
+<text x="614" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity</text>
+<text x="614" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">requirements and security</text>
+<text x="614" y="781" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">level target</text>
+<rect x="614" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="631.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-08</text>
+<rect x="787" y="724" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="787" y="732" width="3" height="64" rx="1.5" fill="#C2399A"/>
+<text x="798" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="start">CON-10</text>
+<text x="798" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Define the ML components</text>
+<text x="798" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">and their safety</text>
+<text x="798" y="781" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">requirements</text>
+<rect x="798" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="815.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">C-09</text>
+<rect x="51" y="616" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="624" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">CON-11</text>
+<text x="62" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Test operations hold</text>
+<text x="62" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">point</text>
+<rect x="62" y="678" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-07</text>
+<rect x="51" y="832" width="162" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="840" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="848" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">CON-12</text>
+<text x="62" y="863" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Record the hazard log and</text>
+<text x="62" y="876" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">the argument structure</text>
+<rect x="62" y="894" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">T-01</text>
+<rect x="101.2" y="894" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="118.8" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-01</text>
+<path d="M316.0,548.0 L684.0,656.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="479.5" y="593" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="500" y="605" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-01</text>
+<path d="M500.0,616.0 L408.0,600.0 L316.0,616.0" fill="none" stroke="#D64535" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="372" y="591" width="72" height="16" rx="8" fill="#FFFFFF" stroke="#D64535" stroke-width="1"/>
+<text x="408" y="603" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">IX-02 OPEN</text>
+<path d="M500.0,656.0 L868.0,764.0" fill="none" stroke="#D64535" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="648" y="701" width="72" height="16" rx="8" fill="#FFFFFF" stroke="#D64535" stroke-width="1"/>
+<text x="684" y="713" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">IX-03 OPEN</text>
+<path d="M316.0,332.0 L316.0,440.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="295.5" y="377" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="316" y="389" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-04</text>
+<rect x="40" y="946" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="946" width="5" height="62" rx="2" fill="#A88A00"/>
+<text x="56" y="966" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
+<text x="948" y="966" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<rect x="56" y="978" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="95" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-02 · I3</text>
+<rect x="142" y="978" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="181" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-03 · I3</text>
+<rect x="228" y="978" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="267" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-04 · I3</text>
+<rect x="314" y="978" width="84.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="356.1" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">FSA-I1 · I3</text>
+<rect x="406.2" y="978" width="115.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="463.8" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CS-I1 · external</text>
+<rect x="529.4" y="978" width="146.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="602.5" y="990.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">ML-R1 · I3-equivalent</text>
+<rect x="40" y="1024" width="920" height="64" rx="12" fill="#8FD8D1" fill-opacity="0.3"/>
+<rect x="40" y="1024" width="920" height="64" rx="12" fill="none" stroke="#0E8C83" stroke-width="1"/>
+<text x="58" y="1048" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#0E8C83" text-anchor="start">G1 · Concept gate</text>
+<text x="58" y="1066" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">Exit: Machine limits, operating envelopes, risk assessment, safety functions with their required PL, risk reduction concept, cybersecurity and ML concepts</text>
+<text x="58" y="1079" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">approved; confirmation review of the risk assessment passed</text>
+<text x="40" y="1134" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Arrows are work-product inputs: an activity cannot finish before the one above it. Chips name the work products produced, coloured by register status (grey skeleton, amber draft,</text>
+<text x="40" y="1147" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">green approved). Dotted links are cross-domain interfaces; red means a recorded open item still has to settle it.</text>
+</svg>
