@@ -27,7 +27,14 @@
     "registered": 22
   },
   "gates": {
-    "records": []
+    "records": [
+      {
+        "date": "2026-10-21",
+        "gate": "G0",
+        "outcome": "pass with conditions",
+        "record": "assurance/10-safety-case/gates/G0-2026-10-21.md"
+      }
+    ]
   },
   "lifecycle_areas": [
     {

@@ -20,8 +20,9 @@ Every question for the lead lives in the decision register,
    difference between the options; skip it when it would only decorate.
 3. **Batches of ten.** Keep about ten questions open, those that unblock the most. When the lead has answered a
    batch, open the next ten from the queue and rewrite each to the standard above. Everything else waits as `queued`.
-4. **Start of a session:** read the inbox page's `answers` and `explain` collections, copy them into the register, and
-   answer explanation requests before asking anything new.
+4. **Start of a session, and whenever the inbox page sends a note:** read the inbox page's `answers`, `explain` and
+   `signals` collections, copy answers into the register, apply them, and answer explanation requests before asking
+   anything new.
 5. **In chat**, name a decision by its question, not its ID. Ask in chat only when blocked right now: multiple choice
    with the recommendation first.
 

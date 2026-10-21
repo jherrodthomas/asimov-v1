@@ -22,6 +22,8 @@ Stability, fall and controlled-descent tests: tip-over margin standing and walki
 
 ## 2. Test specification
 
+The fall campaign is approved and bounded (DQ-024 A, 2026-10-21): power-cut and loss-of-balance tests from standing on the gantry, caught by the tether above knee height, an inspection after each test, the spares budget and the stop rule of DQ-026 agreed before the first; the number of repetitions is set here.
+
 ST-nn: mode, load, floor, stop type (E-stop, watchdog, loss of power, commanded descent), tether slack, repetitions, measurement method (motion capture or video, IMU log, force plate).
 
 ## 3. Stability tests

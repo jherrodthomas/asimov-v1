@@ -152,12 +152,12 @@ Nothing is marked complete before its review, and every number below is computed
 
 <!-- BEGIN GENERATED: record-headline (docs/assets/asimov/make_assets.py) -->
 
-**P0 Governance** · no gate passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `38c1432440db`
+**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `0b928fd3b732`
 
 <!-- END GENERATED: record-headline -->
 
 <p align="center">
-  <img src="docs/assets/asimov/lifecycle.svg" width="100%" alt="The seven phases P0 to P6, each closed by its gate G0 to G6; today is P0 governance and no gate is passed; hold points at G1 (no powered floor test before the gantry, the wired E-stop and WP-V-07) and G4 (no person within reach before contact validation).">
+  <img src="docs/assets/asimov/lifecycle.svg" width="100%" alt="The seven phases P0 to P6, each closed by its gate G0 to G6; today is P1 concept, G0 passed with conditions on 2026-10-21; hold points at G1 (no powered floor test before the gantry, the wired E-stop and WP-V-07) and G4 (no person within reach before contact validation).">
 </p>
 
 | What the card guarantees | |

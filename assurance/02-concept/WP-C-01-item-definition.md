@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-01 Item definition and limits of the machinery |
 | Standard reference | ISO 12100:2010 §5.3 (determination of the limits of the machinery), §5.4 (hazard identification inputs); ISO 10218-1:2011 §3, §5 (terms, robot requirements); ISO 13482:2014 §4 (robot types, use); ISO 13849-1:2023 §4.5; Regulation (EU) 2023/1230 Annex III §1.1.2, Annex IV Part A (technical documentation) |
-| Version | 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
+| Version | 0.3 (2026-10-21): DQ-014 A applied to §4. 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); operating envelope OE-1 only (DQ-002 A, decided 2026-10-21); CFG-001 the kit robot as published, tethered and bench-powered; CFG-002 the battery-powered robot under the locomotion policy, every value quoted from upstream and unverified |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -207,5 +207,5 @@ carrying a person; outdoor use; medical or child-care use.
 |---|---|---|---|
 | OI-1 | Weigh the robot, measure the centre of gravity, bound the fall energy (ACT-001) | EM | G1 |
 | OI-2 | ~~Set the battery policy (DQ-009)~~ decided 2026-10-21 (A: certified-pack list and BMS handshake interlock); design the interlock in WP-H-05 and the pack list in WP-O-03 (ACT-008) | EM | G2 |
-| OI-3 | Obtain from upstream the declared joint torque and velocity limits, or set them (DQ-014) | SRP | G1 |
+| OI-3 | Obtain from upstream the declared joint torque and velocity limits; until then half the MuJoCo range applies (DQ-014 A, decided 2026-10-21) | SRP | G1 |
 | OI-4 | ~~Apply DQ-002 and DQ-003 to §1 and §9 when answered~~ applied 2026-10-21 (both A) | SM | G1 |

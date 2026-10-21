@@ -204,7 +204,7 @@ procedures and carry none.
 |---|---|---|---|---|---|
 | SF-01 | Maintain bipedal stability while standing and moving | d | **withdrawn as a safety function** (DQ-006 A, 2026-10-21): the policy is a functional component bounded by SF-03 and watched by SF-23; stability in OE-1 rests on the gantry and tether (DM-01) | H-01, H-06, H-22 | the number is kept, nothing is claimed |
 | SF-02 | Detect an impending fall and arrest it by a controlled descent before impact | d | d | H-01, H-06, H-23, H-28 | the safe state is a controlled descent to a kneel or crouch, then power removal (DQ-005 A) |
-| SF-03 | Joint torque and velocity limit per joint | d | d | H-02, H-04, H-24 | limits DQ-014 |
+| SF-03 | Joint torque and velocity limit per joint | d | d | H-02, H-04, H-24 | limits: half the MuJoCo range until measured (DQ-014 A) |
 | SF-04 | Force-limited contact in collaborative regions | d | d (not claimed in OE-1: nobody within reach) | H-02, H-04, H-24 | OE-2 |
 | SF-05 | Fastener torque and secure-by-design; chamfered edges | — | — | H-03 | static |
 | SF-06 | Speed reduction in human-shared regions on a perception trigger | c | c (not claimed in OE-1) | H-04 | the trigger has no safety-rated sensor (WP-C-10) |
@@ -222,7 +222,7 @@ procedures and carry none.
 | SF-18 | Two-person lift for the 35 kg robot | — | — | H-18 | procedure |
 | SF-19 | Indoor-only operating envelope until an IP-rated build exists | — | — | H-19, H-20 | restriction |
 | SF-20 | Power-and-force limiting per ISO/TS 15066 in collaborative mode | d | d (not claimed in OE-1) | H-24 | OE-2 |
-| SF-21 | Authenticated, integrity-protected tele-operation channel | c | c | H-29 | SL target DQ-012 |
+| SF-21 | Authenticated, integrity-protected tele-operation channel | c | c | H-29 | SL 2 for identification and authentication, integrity, data flow and availability (DQ-012 A, decided 2026-10-21) |
 | SF-22 | Operator session lock and idle timeout | b | b | H-27, H-29 | |
 | SF-23 | IMU plausibility and cross-check | d | d | H-30 | second IMU for the second channel (DFMEA FM-12) |
 | SF-24 | Real-time scheduler watchdog and deadline monitor | d | d | H-31 | |

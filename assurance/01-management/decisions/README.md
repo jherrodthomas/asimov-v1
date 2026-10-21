@@ -50,6 +50,11 @@ Answers and requests for more explanation are saved in the page's own store, in 
 copies answers into this file (`via: inbox`), writes any requested explanation into `explanation`,
 applies what can be applied, rebuilds the page and republishes it.
 
+When the lead has answered what they can, the **I'm done for now** button at the top of the page records the
+moment in the collection `signals` (document `done`: time, answerer, number of answers) and opens a note to
+Claude; sending that note wakes the session that published the page, which then applies the answers. Without
+the note, the next session reads `signals/done` and the answers at its start.
+
 ```sh
 python3 assurance/01-management/decisions/check_decisions.py
 python3 assurance/01-management/decisions/build_inbox.py --out <scratch>/inbox.html

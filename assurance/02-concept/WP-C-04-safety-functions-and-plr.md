@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-04 Safety functions specification with required Performance Level, stop category and response time |
 | Standard reference | ISO 13849-1:2023 §5 (safety requirements specification of each safety function), Annex A (PLr); ISO 10218-1:2011 §5.4 (safety-related control system performance), §5.5 (robot stopping functions), §5.6 (speed control), §5.10 (collaborative operation); ISO 13482:2014 §5.16 (emergency stop), §6 (safety-related control system); ISO 13850:2015 §4; IEC 60204-1:2018 §9.2.2 (stop categories); ISO/TS 15066:2016 §5.5 |
-| Version | 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
+| Version | 0.3 (2026-10-21): DQ-014 A applied to SF-03. 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); CFG-001 in OE-1; the collaborative functions SF-04, SF-06, SF-20 specified but not claimed in the first item |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -114,7 +114,7 @@ WP-C-05 and WP-O-03 and verified by inspection.
 | Response time | ≤ 10 ms (package) |
 | PLr | d |
 | Category, DC | 3: the firmware clamp as channel 1, the drive's hardware current limit as channel 2, encoder and current read-back as diagnostics |
-| Limits | Per joint and per envelope, from WP-W-09 (DQ-014); the MuJoCo control ranges are the only published values and are simulation values (GAP-06) |
+| Limits | Per joint and per envelope, from WP-W-09. In OE-1: half the MuJoCo control range per joint and a velocity ceiling set by WP-S-04, until measured (DQ-014 A, decided 2026-10-21); the MuJoCo control ranges are the only published values and are simulation values (GAP-06) |
 | Modes | M2, M3, M4 |
 | Verification | WP-W-06 unit tests of the clamp, WP-V-03 measured torques at the joints |
 | Today | Nothing published enforces any limit |
@@ -232,5 +232,5 @@ test cases). Claims: WP-K-01 G1.1…G1.15, G2.4.
 | OI-1 | ~~Apply DQ-005 (safe state) to SF-02, SF-08, SF-13 and §1; apply DQ-016 (stop category) to SF-13~~ applied 2026-10-21 (DQ-005 A; DQ-016 settled by it) (ACT-002) | SM | G1 |
 | OI-2 | ~~Apply DQ-006 to SF-01 and §5~~ applied 2026-10-21 (A: withdrawn); carry the withdrawal into WP-C-09 and WP-M-09 (ACT-003) | ML | G1 |
 | OI-3 | Design the E-stop architecture behind SF-13 (DQ-008 A decided 2026-10-21: wired dual-channel pendant plus surveilled wireless device; ACT-004) | EM | G1 |
-| OI-4 | Set every **(TBC)** value from WP-S-04 and the lead's answers (DQ-014) | SRP | G2 |
+| OI-4 | Set every remaining **(TBC)** value from WP-S-04; the joint limits are half the MuJoCo range until measured (DQ-014 A, decided 2026-10-21) | SRP | G2 |
 | OI-5 | Port the package's safety requirements into WP-S-02 under these functions (ACT-007) | SRP | G2 |

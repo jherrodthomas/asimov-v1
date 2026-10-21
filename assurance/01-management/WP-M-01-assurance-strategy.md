@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -77,7 +77,9 @@ From the [baseline gap assessment](../00-assessment/gap-assessment.md), at the c
 | Operator | A trained test operator with a hand on the wired E-stop during development ([WP-V-07](../06-validation/WP-V-07-test-operations.md)). After release: personnel briefed per [WP-O-03](../09-production-operation/WP-O-03-information-for-use.md) |
 
 The choice of the kit robot as published over waiting for upstream's software is decision DQ-003 (A, decided
-2026-10-21). The battery-powered, free-standing robot under the locomotion policy is tracked as `CFG-002`, every statement
+2026-10-21). Because no firmware exists in public, the fork writes a minimal firmware of its own for the motion
+control board (DQ-023 A, decided 2026-10-21): CAN actuator control with the clamps, the watchdog, the E-stop input
+and a DAMP-only fallback, enough for the hang tests; the controlled descent waits for a controller. The battery-powered, free-standing robot under the locomotion policy is tracked as `CFG-002`, every statement
 about it a claim to verify, never evidence, until its code is public.
 
 Any other configuration, including OE-2 (an industrial cell), OE-3 (a home) and OE-4 (public space), needs an impact
@@ -113,8 +115,8 @@ a Living Safety Case; the standards that feed it are these.
 | Question | Answered with | Where |
 |---|---|---|
 | What are the hazards and how much risk reduction does each need? | **ISO 12100** risk assessment (three-step method) on the hazard catalogues of **ISO 12100 Annex B** and **ISO 13482 Annex A** (the only standard with a personal-care hazard list: falls, contact, restraint, autonomous decisions); **ISO 10218-1** Annex A for the robot-system hazards; required **Performance Level** from the ISO 13849-1 Annex A risk graph | WP-C-01, C-03, C-04, C-05 |
-| Which safety functions must the robot have? | **ISO 10218-1 §5**: emergency stop, protective stop, speed and force limits, singularity and axis limits; **ISO 13482 §5 and §6**: stability, contact force and energy, E-stop, safety-related control; **ISO 13850** for the emergency stop; **EN 60204-1 §9** for stop categories | WP-C-04 |
-| How much contact is allowed? | **ISO/TS 15066** Annex A body-region limits for transient and quasi-static contact; **ISO 13482 §5.7** limits to forces, pressures and energies; **ISO 13857** reach and gap distances | WP-C-06, S-04, V-03 |
+| Which safety functions must the robot have? | **ISO 10218-1:2025 §5** (the 2025 editions are cited, DQ-015 A; the package's 2011 clause references are remapped under WP-M-06 OI-1): emergency stop, protective stop, speed and force limits, singularity and axis limits; **ISO 13482 §5 and §6**: stability, contact force and energy, E-stop, safety-related control; **ISO 13850** for the emergency stop; **EN 60204-1 §9** for stop categories | WP-C-04 |
+| How much contact is allowed? | **ISO/TS 15066** Annex A body-region limits (the source of the limits until the 2025 annex of ISO 10218-2 is checked, DQ-015 A) for transient and quasi-static contact; **ISO 13482 §5.7** limits to forces, pressures and energies; **ISO 13857** reach and gap distances | WP-C-06, S-04, V-03 |
 | How good must the control system be, and how is that shown? | **ISO 13849-1** categories B to 4, MTTFD, DCavg, CCF, PL a to e; **ISO 13849-2** validation and fault lists; **IEC 62061 / IEC 61508** where 13849 runs out (software beyond 13849-1 §7, management, assessment) | WP-S-02…S-05, WP-H-01…H-07, WP-W-01…W-09, WP-V-01…V-05 |
 | Is the electrical installation and the battery safe? | **IEC 60204-1**: supply disconnecting device, overcurrent protection, protection against electric shock, control circuits, verification; **IEC 62133-2** and UN 38.3 for the lithium pack | WP-H-02, H-05 |
 | What if nothing fails but the policy or the perception gets it wrong? | No machinery standard covers performance limits of a learned balance controller. **ISO 21448 is used as an informative method** (triggering conditions, known and unknown scenarios) inside WP-C-10 and WP-V-08; the resulting limits become operating-environment limits or safety functions | WP-C-10, V-08 |
@@ -242,17 +244,27 @@ index, the register entry is the question.
 | D-08 | Emergency-stop devices: wired tether E-stop plus the surveilled wireless device | DQ-008 | Decided 2026-10-21: A |
 | D-09 | Battery policy: certified-pack list and BMS handshake interlock | DQ-009 | Decided 2026-10-21: A |
 | D-10 | Independent assessor: when | DQ-010 | Decided 2026-10-21: A, not for now; revisit at G1 |
-| D-11 | Roles and self-approval while the project has one person | DQ-011 | Open, batch 2 |
-| D-12 | Cybersecurity security level target | DQ-012 | Open, batch 2 |
-| D-13 | Buying the standards | DQ-013 | Open, batch 2 |
-| D-14 | Joint torque and velocity limits in the laboratory | DQ-014 | Open, batch 2 |
-| D-15 | Editions of ISO 10218 to cite | DQ-015 | Open, batch 2 |
+| D-11 | Roles and self-approval while the project has one person | DQ-011 | Decided 2026-10-21: A |
+| D-12 | Cybersecurity security level target | DQ-012 | Decided 2026-10-21: A, SL 2 for FR 1, 3, 5, 7; SL 1 otherwise |
+| D-13 | Buying the standards | DQ-013 | Decided 2026-10-21: A, not until an assessor is engaged |
+| D-14 | Joint torque and velocity limits in the laboratory | DQ-014 | Decided 2026-10-21: A, half the MuJoCo range until measured |
+| D-15 | Editions of ISO 10218 to cite | DQ-015 | Decided 2026-10-21: A, the 2025 editions |
 | D-16 | Stop category of the emergency stop on a biped | DQ-016 | Withdrawn 2026-10-21: settled by D-05 (category 0) |
-| D-17 | Hold or pass G0 with the confirmation measures scheduled, not performed | DQ-020 | Open, batch 2 |
-| D-18 | The environmental limits of the laboratory envelope OE-1 | DQ-021 | Open, batch 2 |
-| D-19 | Two-person rule for every powered test | DQ-022 | Open, batch 2 |
-| D-20 | Write the fork's own safety layer for the motion control board before upstream's firmware is public | DQ-023 | Open, batch 2 |
-| D-21 | Deliberate fall and power-cut tests on the kit robot | DQ-024 | Open, batch 2 |
+| D-17 | Hold or pass G0 with the confirmation measures scheduled, not performed | DQ-020 | Decided 2026-10-21: A, passed with conditions ([G0 record](../10-safety-case/gates/G0-2026-10-21.md)) |
+| D-18 | The environmental limits of the laboratory envelope OE-1 | DQ-021 | Decided 2026-10-21: A |
+| D-19 | Two-person rule for every powered test | DQ-022 | Decided 2026-10-21: A |
+| D-20 | Write the fork's own safety layer for the motion control board before upstream's firmware is public | DQ-023 | Decided 2026-10-21: A, a minimal fork firmware for the hang tests |
+| D-21 | Deliberate fall and power-cut tests on the kit robot | DQ-024 | Decided 2026-10-21: A, a bounded campaign |
+| D-22 | Residual pinch and crush risk to the bench technician in OE-1 | DQ-025 | Open, batch 3 |
+| D-23 | Spares budget and damage limit for the fall campaign | DQ-026 | Open, batch 3 |
+| D-24 | Buy a rated gantry crane or build a frame | DQ-027 | Open, batch 3 |
+| D-25 | ISO/TS 15066 contact limits as design targets | DQ-028 | Open, batch 3 |
+| D-26 | Recruit a second contributor as verification reviewer | DQ-029 | Open, batch 3 |
+| D-27 | When G1 is held | DQ-030 | Open, batch 3 |
+| D-28 | Kit-assembly hazards in or out of the item | DQ-031 | Open, batch 3 |
+| D-29 | Walking in the first item | DQ-032 | Open, batch 3 |
+| D-30 | The UART debug port in the reference build | DQ-033 | Open, batch 3 |
+| D-31 | A second IMU for SF-23 | DQ-034 | Open, batch 3 |
 
 ## 9. Top risks to the assurance path
 

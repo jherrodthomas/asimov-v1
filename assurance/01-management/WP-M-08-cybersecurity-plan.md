@@ -34,7 +34,7 @@ Cybersecurity manager; external cybersecurity reviewer and assessor (WP-M-06 §7
 
 ## 5. Security level target
 
-Decision DQ-012; the target per foundational requirement is recorded in WP-C-08 once answered.
+Decided 2026-10-21 (DQ-012 A): SL 2 for FR 1, FR 3, FR 5 and FR 7, SL 1 otherwise; the target per foundational requirement is recorded in WP-C-08 §2.
 
 ## 6. Open items
 

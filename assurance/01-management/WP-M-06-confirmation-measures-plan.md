@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-06 Confirmation measures plan (reviews, validation independence, functional safety assessment, conformity assessment) |
 | Standard reference | ISO 13849-1:2023 §8 (verification of the PL) and §10 (validation, performed by persons independent of the design where practicable); ISO 13849-2:2012 §4 (validation principles, independence); IEC 61508-1:2010 §8 (functional safety assessment, independence by consequence class); IEC 62061:2021 §5 (verification and validation planning); IEC 62443-4-1:2018 SM-13 (continuous improvement, reviews); Regulation (EU) 2023/1230 Art. 25 and Annexes VI–X (conformity assessment procedures) |
-| Version | 0.2 (2026-10-21): DQ-010 A (no assessor for now; every I2 and I3 measure unscheduled, G0 held) and DQ-004 A applied; OI-3 and OI-6 closed. 0.1 (initial plan; 2026-10-21) |
+| Version | 0.3 (2026-10-21): DQ-013 A, DQ-015 A and DQ-020 A applied (G0 passed with conditions). 0.2 (2026-10-21): DQ-010 A (no assessor for now; every I2 and I3 measure unscheduled, G0 held) and DQ-004 A applied; OI-3 and OI-6 closed. 0.1 (initial plan; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All. PL d (DQ-004 A, decided 2026-10-21) until the safety functions are approved |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -22,8 +22,9 @@ go.
 No confirmation measure has been performed at baseline `3d4ec9d`. No assessor is engaged: the lead decided on
 2026-10-21 not to engage one for now (DQ-010 A, to be revisited at G1), so every I2 and I3 measure in this plan is
 **unscheduled**, G0 is held with CR-01 and CR-03 scheduled rather than performed, and no work product can leave
-Draft through a confirmation measure until the question is reopened. The standards are not bought either (DQ-013),
-so every clause reference stays marked as to be checked. The concept-phase package the fork inherited was itself
+Draft through a confirmation measure until the question is reopened. The standards are not bought either (DQ-013 A, decided
+2026-10-21: not until an assessor is engaged), so every clause reference stays marked as to be checked; the
+editions to check against are ISO 10218-1 and -2:2025 with ISO/TS 15066 for the contact limits (DQ-015 A). The concept-phase package the fork inherited was itself
 produced with AI assistance and never reviewed; it counts as an author-side pre-review at I0 and gives no credit
 here.
 
@@ -171,9 +172,9 @@ declaration; date; method; findings with IDs; outcome. Findings are tracked as G
 
 | ID | Open item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Check every clause reference in this plan and in WP-M-00 against licensed copies of ISO 13849-1:2023, ISO 13849-2:2012, IEC 61508-1:2010, ISO 10218-1, ISO 13482:2014 and ISO 12100:2010 (decision DQ-013 on buying them; unscheduled until DQ-010) | SM | G0 |
+| OI-1 | Check every clause reference in this plan and in WP-M-00 against licensed copies of ISO 13849-1:2023, ISO 13849-2:2012, IEC 61508-1:2010, ISO 10218-1, ISO 13482:2014 and ISO 12100:2010 (decision DQ-013 on buying them; unscheduled until DQ-010) | SM | G0; cite ISO 10218-1/-2:2025 and remap the package's 2011 clause references (DQ-015 A); no purchase until an assessor is engaged (DQ-013 A) |
 | OI-2 | Re-plan independence once WP-C-04 is approved at PL d (DQ-004 A); record the rationale for any reduction from the PL d assumption | SM | G1 |
 | OI-3 | ~~Engage the external FS assessor or record the decision not to (DQ-010)~~ decided 2026-10-21 (A: not for now); revisit at G1 | PM | G1 |
 | OI-4 | Identify a cybersecurity assessor and a penetration tester; agree the independence statement | CSM | G1 |
-| OI-5 | CR-01 and CR-03 are due at G0 but no assessor is engaged (DQ-010 A); whether G0 is held or passed with them scheduled rather than performed is the lead's (DQ-020) | SM | G0 |
+| OI-5 | ~~CR-01 and CR-03 are due at G0 but no assessor is engaged~~ decided 2026-10-21 (DQ-020 A): G0 passed with conditions, both reviews scheduled for the first independent reviewer ([G0 record](../10-safety-case/gates/G0-2026-10-21.md)) | SM | G0 |
 | OI-6 | ~~Confirm or withdraw NB-1 once DQ-001 and DQ-006 are answered~~ decided 2026-10-21: Module A (DQ-006 A); NB-1 stays a placeholder for a later item (WP-M-13 §3) | SM | G1 |

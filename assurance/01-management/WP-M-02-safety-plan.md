@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-02 Functional safety plan |
 | Standard reference | ISO 13849-1:2023 §4 (planning of the SRP/CS, roles, documentation); IEC 62061:2021 §5 (management of functional safety: planning, competence, configuration management, modification); IEC 61508-1:2010 §6 (management of functional safety); ISO 12100:2010 §4 (strategy); ISO 10218-1:2011 §5.4 (safety-related control system performance); ASPICE 4.0 MAN.3 |
-| Version | 0.2 (2026-10-21): DQ-004 A and DQ-010 A applied; DQ-011 opened. 0.1 (initial plan; 2026-10-21) |
+| Version | 0.3 (2026-10-21): DQ-011 A (self-approval recorded at I0) and DQ-023 A (the fork writes a minimal firmware) applied. 0.2 (2026-10-21): DQ-004 A and DQ-010 A applied; DQ-011 opened. 0.1 (initial plan; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All. Planned to PL d until the risk assessment ([WP-C-03](../02-concept/WP-C-03-risk-assessment.md)) and the safety function specification ([WP-C-04](../02-concept/WP-C-04-safety-functions-and-plr.md)) are approved; the target is PL d (DQ-004 A, decided 2026-10-21) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -64,7 +64,7 @@ measures, QA audits). Roles marked TBD must be filled before the gate shown.
 | ML safety lead | Owns [WP-M-09](WP-M-09-ml-safety-plan.md); classification of the locomotion policy; evidence for the position DQ-006 settles | Jherrod Thomas (acting); permanent holder TBD | G1 |
 | Safety-related control system engineer | Stop chain and safety-layer architecture, category and diagnostics, PL calculation, fault lists, validation of the chain (WP-S-02…S-05, WP-H-01, H-03, H-04, H-07) | Jherrod Thomas (acting); additional contributors TBD | G2 |
 | Electrical and mechanical engineer | E-stop and motor-rail wiring, IEC 60204-1 electrical safety, the battery and BMS interlock, structural and stability analysis, guarding (WP-H-02, H-05, H-08) | TBD (likely external) | G2 |
-| Firmware and software engineer(s) | The motion-control safety layer, the mode machine, the tele-operation stack, unit and integration verification (WP-W-*) | Jherrod Thomas; additional contributors TBD | G2 |
+| Firmware and software engineer(s) | The fork's minimal firmware for the motion control board (DQ-023 A: CAN actuator control with clamps, watchdog, E-stop input, DAMP-only fallback), the safety layer, the mode machine, unit and integration verification (WP-W-*) | Jherrod Thomas; additional contributors TBD | G2 |
 | Verification reviewer(s) | Verification reviews of work products and code (PR reviews) at the independence level set in [WP-P-05](../07-supporting/WP-P-05-verification-review-procedure.md) | TBD (at least one person other than the author) | G0 |
 | Quality assurance | Process and work product audits per [WP-M-05](WP-M-05-quality-assurance-plan.md) | TBD (independent of the author) | G0 |
 | Test bench owner | Builds and maintains the actuator bench, the hardware-in-the-loop rig with the MuJoCo model, and the gantry (WP-W-08, WP-V-07) | TBD | G3 |
@@ -73,7 +73,7 @@ measures, QA audits). Roles marked TBD must be filled before the gate shown.
 | External cybersecurity assessor | Cybersecurity assessment ([WP-K-05](../10-safety-case/WP-K-05-cybersecurity-assessment.md)) | TBD | G5 (interim earlier, see WP-M-06) |
 | Notified body | Only if the lead's frame and route (DQ-001, WP-M-13 §3) or Annex I Part A (DQ-006) need one | TBD | G5 |
 
-**Interim limitation (DQ-011, open in batch 2):** while the project has one person, the safety manager approves the work
+**Interim limitation (DQ-011 A, decided 2026-10-21):** while the project has one person, the safety manager approves the work
 products they author. Every such approval is self-approval at independence I0 and is recorded as that in the
 Approver field of the work product's header as it is next revised; no verification review above I0 and no
 confirmation measure exists until a second person or an assessor joins (DQ-010 A: not for now).

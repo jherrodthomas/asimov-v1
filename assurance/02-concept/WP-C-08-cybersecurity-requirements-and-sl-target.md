@@ -22,7 +22,7 @@ Cybersecurity requirements CSR-nn and the security level target per foundational
 
 ## 2. Security level target
 
-SL-T per FR 1–7, decided by the lead (DQ-012); planning assumption SL 2 for identification, integrity, data flow and availability, SL 1 otherwise.
+SL-T per FR 1–7, decided by the lead on 2026-10-21 (DQ-012 A): SL 2 for FR 1 identification and authentication control, FR 3 system integrity, FR 5 restricted data flow and FR 7 resource availability; SL 1 for FR 2 use control, FR 4 data confidentiality and FR 6 timely response to events. The target defends against an intentional attacker with simple means, which is who can reach a Wi-Fi robot. The UART debug port is DQ-033.
 
 ## 3. Requirements
 
