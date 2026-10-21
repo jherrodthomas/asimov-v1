@@ -22,8 +22,8 @@
   pattern: "Safety-Performance limits"
   topic: "The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims are bounded by what the IMU and the camera can detect and by the safe state the biped can reach"
   anchors: ["WP-C-04:The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10", "WP-C-10:What the camera and the IMU cannot see bounds the claim SF-06 and SF-02 can make"]
-  status: open
-  open_item: "DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing"
+  status: documented
+  open_item: null
   due: G1
 - id: IX-03
   kind: interface
@@ -32,8 +32,8 @@
   pattern: "Safety-ML"
   topic: "Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability in OE-1 rests on the tether and gantry with the policy as a functional component"
   anchors: ["WP-C-04:The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006", "WP-C-09:SF-01 bipedal stability is the one safety function a learned component may carry; the position is decision DQ-006"]
-  status: open
-  open_item: "DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1"
+  status: documented
+  open_item: null
   due: G1
 - id: IX-04
   kind: interface

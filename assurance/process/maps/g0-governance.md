@@ -153,7 +153,7 @@ Which activity answers each clause reference listed in the register. One activit
 | Machinery and robot risk assessment (ISO 12100, ISO 10218, ISO 13482) | Safety manager | Jherrod Thomas (acting) | G0 |
 | Cybersecurity (IEC 62443) | Cybersecurity manager | Jherrod Thomas (acting); permanent holder TBD | G1 |
 | Machine learning (ISO/IEC TR 5469) | ML safety lead | Jherrod Thomas (acting); permanent holder TBD | G1 |
-| Independent confirmation | External functional safety assessor | TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled) | G1 (revisit) |
+| Independent confirmation | External functional safety assessor | None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1 | G1 (revisit) |
 
 **Other roles WP-M-02 §3.1 needs by G0:** Project maintainer (Jherrod Thomas); Configuration and change manager (Jherrod Thomas (acting)); Verification reviewer(s) (TBD (at least one person other than the author)); Quality assurance (TBD (independent of the author)).
 

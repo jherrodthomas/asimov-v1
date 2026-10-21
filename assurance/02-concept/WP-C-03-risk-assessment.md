@@ -4,9 +4,9 @@
 |---|---|
 | Work product | WP-C-03 Risk assessment (ISO 12100) and determination of the required Performance Level per safety function (ISO 13849-1) |
 | Standard reference | ISO 12100:2010 §5.4–§5.6, Annex B; ISO 13482:2014 §5, Annex A; ISO 10218-1:2011 §5, Annex A; ISO 13849-1:2023 §5, Annex A (risk graph); ISO 13850:2015; IEC 60204-1:2018 §9.2.2 (stop categories); Regulation (EU) 2023/1230 Annex III §1.1.2 |
-| Version | 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
+| Version | 0.2 (2026-10-21): DQ-004 A (PL d), DQ-005 A (safe state), DQ-006 A (SF-01 withdrawn), DQ-007 A, DQ-008 A, DQ-009 A applied to §6 and §7. 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
 | Status | Draft |
-| PL / scope | Highest PLr in OE-1: **d** proposed (DQ-004, open); the inherited HARA reads **e** for nine rows in OE-2…OE-4, which stay excluded rather than argued down; CFG-001 |
+| PL / scope | Highest PLr in OE-1: **d** (DQ-004 A, decided 2026-10-21, with the gantry and tether as the complementary measure); the inherited HARA reads **e** for nine rows in OE-2…OE-4, which stay excluded rather than argued down; CFG-001 |
 | Author | Assurance team (AI-assisted draft, I0) |
 | Reviewer(s) | TBD (I1); the ratings need a reviewer who has built or operated the robot |
 | Approver | Project lead |
@@ -15,7 +15,8 @@
 > [!WARNING]
 > Draft. Severity and probability ratings below are engineering judgement from the record and from the concept
 > package, not from measurement: the robot has not been weighed, its centre of gravity, joint limits and fall energy
-> are unknown (WP-C-01 §10). The lead has not yet set the target PL (DQ-004) or the safe state (DQ-005). Nothing here
+> are unknown (WP-C-01 §10). The target PL (DQ-004 A: PL d) and the safe state (DQ-005 A: controlled descent, then
+> power removal) were decided on 2026-10-21 and the tables below carry them. Nothing here
 > lowers a rating to fit the existing hardware; where the gantry and tether change a reading, the row says so.
 
 ## 1. Scope and inputs
@@ -172,8 +173,8 @@ absent or carried by a measure that is not a control function.
 Nine rows read **e** unmitigated (H-01, H-02, H-04, H-06, H-22, H-24, H-28, H-30, H-31). With the OE-1
 complementary measures none stays at e: four read d (H-06, H-28, H-30, H-31), the rest c or lower. The package's
 ISO 10218-1 default of PL d, Category 3 is adopted as the floor for every stop and fall function regardless of a
-lower graph reading (§2 step 3), pending DQ-004. Rows for OE-2…OE-4 stay at their unmitigated reading and are
-excluded from the first item (DQ-002).
+lower graph reading (§2 step 3); PL d is the adopted target (DQ-004 A). Rows for OE-2…OE-4 stay at their
+unmitigated reading and are excluded from the first item (DQ-002 A).
 
 ### 5.2 What the second reading relies on
 
@@ -185,9 +186,9 @@ absent the unmitigated reading applies and no powered floor test runs.
 
 | Measure | Kind (ISO 12100 step) | Reduces | Status at BL-001 |
 |---|---|---|---|
-| DM-01 Gantry and rated tether, quick-release, dynamic-load sized | Complementary protective measure (step 2) | H-01, H-06, H-22, H-23, H-28, H-30, H-31 in OE-1 | Does not exist; DQ-007 |
-| DM-02 Wired dual-channel E-stop in the operator's hand removing the motor rail; surveilled wireless receiver | Safeguarding (step 2), SF-13 | H-11, H-28, H-29, every limb hazard | Does not exist; DQ-008 |
-| DM-03 Bench supply with current limit in place of a battery | Inherently safe design of the configuration (step 1) | H-08, H-09, H-13, H-23 in OE-1 | Procedure; DQ-009 for CFG-002 |
+| DM-01 Gantry and rated tether, quick-release, dynamic-load sized | Complementary protective measure (step 2) | H-01, H-06, H-22, H-23, H-28, H-30, H-31 in OE-1 | Decided (DQ-007 A: overhead gantry, rated tether, quick-release); not yet built, WP-V-07 OI-1 |
+| DM-02 Wired dual-channel E-stop in the operator's hand removing the motor rail; surveilled wireless receiver | Safeguarding (step 2), SF-13 | H-11, H-28, H-29, every limb hazard | Decided (DQ-008 A: wired dual-channel pendant plus the surveilled wireless device); not yet built, WP-V-07 OI-2 |
+| DM-03 Bench supply with current limit in place of a battery | Inherently safe design of the configuration (step 1) | H-08, H-09, H-13, H-23 in OE-1 | Procedure on CFG-001; on CFG-002 the certified-pack list and BMS handshake interlock of DQ-009 A |
 | DM-04 Cleared and marked area; nobody within reach of a powered limb | Information for use and organisation (step 3) | H-02, H-04, H-05, H-24, H-26 | Procedure; WP-V-07 |
 | DM-05 Mechanical end-stops, chamfered edges, locked fasteners, labyrinth guards at waist and neck | Inherently safe design (step 1), SF-05, SF-07, SF-25 | H-02, H-03, H-05, H-32 | Partly in the CAD; unverified (GAP-24, GAP-26) |
 | DM-06 Material certificates, harness acceptance test, commissioning checks | Information for use and production control (step 3) | H-01, H-06, H-09 via FM-02, FM-18 | Does not exist; WP-O-01 |
@@ -201,21 +202,21 @@ procedures and carry none.
 
 | ID | Safety function | PLr (package) | PLr adopted for OE-1 | Hazards | Note |
 |---|---|---|---|---|---|
-| SF-01 | Maintain bipedal stability while standing and moving | d | d, **allocation pending DQ-006**; withdrawn as a safety function if the policy may not carry it | H-01, H-06, H-22 | the gantry carries stability meanwhile |
-| SF-02 | Detect an impending fall and arrest it by a controlled descent before impact | d | d | H-01, H-06, H-23, H-28 | the safe state is DQ-005 |
+| SF-01 | Maintain bipedal stability while standing and moving | d | **withdrawn as a safety function** (DQ-006 A, 2026-10-21): the policy is a functional component bounded by SF-03 and watched by SF-23; stability in OE-1 rests on the gantry and tether (DM-01) | H-01, H-06, H-22 | the number is kept, nothing is claimed |
+| SF-02 | Detect an impending fall and arrest it by a controlled descent before impact | d | d | H-01, H-06, H-23, H-28 | the safe state is a controlled descent to a kneel or crouch, then power removal (DQ-005 A) |
 | SF-03 | Joint torque and velocity limit per joint | d | d | H-02, H-04, H-24 | limits DQ-014 |
 | SF-04 | Force-limited contact in collaborative regions | d | d (not claimed in OE-1: nobody within reach) | H-02, H-04, H-24 | OE-2 |
 | SF-05 | Fastener torque and secure-by-design; chamfered edges | — | — | H-03 | static |
 | SF-06 | Speed reduction in human-shared regions on a perception trigger | c | c (not claimed in OE-1) | H-04 | the trigger has no safety-rated sensor (WP-C-10) |
 | SF-07 | Guarding at the waist yaw and neck yaw | — | — | H-05 | static |
-| SF-08 | Safe stop on watchdog timeout or communication loss (stop category 1) | d | d | H-06, H-23, H-26, H-28 | ends in the safe state of DQ-005 |
+| SF-08 | Safe stop on watchdog timeout or communication loss (stop category 1) | d | d | H-06, H-23, H-26, H-28 | ends in the controlled descent of DQ-005 A |
 | SF-09 | Cable management and a visible tether route | — | — | H-07 | procedure |
 | SF-10 | Power isolation: lockable disconnector and insulation class | — | — | H-08, H-09 | static |
 | SF-11 | Overcurrent protection on each motor branch | c | c | H-09 | |
 | SF-12 | ESD-safe assembly process | — | — | H-10 | procedure |
-| SF-13 | Emergency-stop devices and wireless link surveillance | d | d | H-11, H-28, every limb hazard | devices DQ-008; stop category DQ-016 |
+| SF-13 | Emergency-stop devices and wireless link surveillance | d | d | H-11, H-28, every limb hazard | devices DQ-008 A (wired pendant plus surveilled wireless); stop category 0, the E-stop removes power at once (DQ-005 A) |
 | SF-14 | Stator over-temperature shutdown | c | c | H-12 | |
-| SF-15 | Battery thermal and cell-voltage protection by the BMS | e | e on CFG-002; absent on CFG-001 | H-13, H-23 | DQ-009 |
+| SF-15 | Battery thermal and cell-voltage protection by the BMS | e | e on CFG-002; absent on CFG-001 | H-13, H-23 | DQ-009 A: certified-pack list and BMS handshake interlock on CFG-002; no battery on CFG-001 |
 | SF-16 | Audio limiter at or below 80 dBA at 1 m | b | b | H-14 | |
 | SF-17 | Respiratory protection during MJF dust generation | — | — | H-17 | procedure |
 | SF-18 | Two-person lift for the 35 kg robot | — | — | H-18 | procedure |
@@ -251,7 +252,7 @@ tether's own integrity (a new hazard the gantry introduces, to be rated in WP-C-
 
 | ID | Item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Apply DQ-004 (target PL) and DQ-005 (safe state) to §5 and §7 when answered | SM | G1 |
+| OI-1 | ~~Apply DQ-004 (target PL) and DQ-005 (safe state) to §5 and §7 when answered~~ applied 2026-10-21 (both A) | SM | G1 |
 | OI-2 | Reviewer with build or operating experience confirms every rating (ACT-006) | VR | G1 |
 | OI-3 | Re-rate §5 against the interaction scenarios and misuse cases of WP-C-06 once written | SM | G1 |
 | OI-4 | Rate the hazards the gantry and tether introduce (tether failure, entanglement, a suspended robot swinging) in WP-C-05 §3.3 and here | SM | G1 |

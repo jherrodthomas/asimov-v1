@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-V-07 Test operations and safety procedures for powered testing (hold point: tether, gantry, E-stop, cleared area) |
 | Standard reference | ISO 12100:2010 §6.4 (information for use, including for the development phase), §6.3 (safeguarding and complementary protective measures); ISO 13482:2014 §7 (verification and validation, test conditions); ISO 10218-2:2011 §5 (safeguarding during commissioning); ISO 13850:2015 §4 (emergency stop function, as bench equipment); IEC 60204-1:2018 §5.3 (supply disconnecting device), §7.2 (overcurrent protection); ASPICE 4.0 VAL.1 |
-| Version | 0.1 (initial procedure; 2026-10-21) |
+| Version | 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
 | Status | Draft |
 | PL / scope | Development testing only. No PL is claimed for the bench equipment |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -39,7 +39,8 @@ outside it but follow §3.
 | C-8 | The operator has read this procedure, is trained per WP-M-04, and has run the pre-session checks of §4; one observer is present | Signed line in the test log | WP-M-04 competence |
 
 Conditions C-1 to C-3 are the bench equipment of [WP-M-02 §4.1](../01-management/WP-M-02-safety-plan.md#41-early-implementation-of-at-risk-work);
-buying them is decisions DQ-007 and DQ-008 for the lead. Until they are answered and the equipment exists, every
+the lead decided them on 2026-10-21 (DQ-007 A: gantry and rated tether; DQ-008 A: wired dual-channel pendant
+plus the surveilled wireless device; DQ-009 A: bench supply, no battery on CFG-001). Until the equipment exists, every
 activity on the kit robot is bench work with single limbs on a stand or the robot hanging with its feet off the floor
 (WP-C-02 T-01, T-02), under C-2 to C-8 as far as they apply.
 
@@ -87,8 +88,8 @@ understood.
 
 | ID | Item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Specify and buy or build the gantry and tether (DQ-007; ACT-009); record the rating and the load test | test bench owner | Before the first hang test |
-| OI-2 | Specify and build the wired E-stop pendant and contactor chain (DQ-008; ACT-004) | EM | Before the first hang test |
+| OI-1 | Specify and buy or build the gantry and tether (DQ-007 A, decided 2026-10-21; ACT-009); record the rating and the load test | test bench owner | Before the first hang test |
+| OI-2 | Specify and build the wired E-stop pendant and contactor chain (DQ-008 A, decided 2026-10-21; ACT-004) | EM | Before the first hang test |
 | OI-3 | Name and train the test operator(s) (WP-M-02 §3.1) | PM | Before the first powered test |
 | OI-4 | Replace the §3 limits with the budget of WP-S-04 and the parameters of WP-W-09 once set (DQ-014) | SRP | G2 |
 | OI-5 | Define the test area in WP-C-02 §6 with a sketch and reference it here | SM | G1 |

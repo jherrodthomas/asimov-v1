@@ -187,7 +187,7 @@
 <rect x="40" y="2134" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
 <rect x="40" y="2134" width="5" height="62" rx="2" fill="#A88A00"/>
 <text x="56" y="2154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
-<text x="948" y="2154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<text x="948" y="2154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1</text>
 <rect x="56" y="2166" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
 <text x="95" y="2178.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-01 · I3</text>
 <rect x="142" y="2166" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>

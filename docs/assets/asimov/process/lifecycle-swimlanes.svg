@@ -194,7 +194,7 @@
 <rect x="40" y="472" width="920" height="42" rx="6" fill="#F7FAFB" fill-opacity="0.6"/>
 <rect x="40" y="472" width="5" height="42" rx="2" fill="#A88A00"/>
 <text x="56" y="491" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Independent confirmation</text>
-<text x="56" y="506" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">TBD (DQ-010 open; recommended: not for…</text>
+<text x="56" y="506" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">None for now (DQ-010 A, decided…</text>
 <text x="326" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
 <text x="426" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
 <text x="526" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
@@ -213,7 +213,7 @@
 <text x="326" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G0</text>
 <path d="M338.0,610 L414.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
 <text x="426" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">6</text>
-<text x="426" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">4 (2)</text>
+<text x="426" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">4 (0)</text>
 <polygon points="426.0,601 435.0,610 426.0,619 417.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
 <text x="426" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G1</text>
 <path d="M438.0,610 L514.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>

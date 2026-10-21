@@ -31,7 +31,10 @@
       title: "Both from the start"
       detail: "Covers either market. Cost: two sets of clause references in every document and two conformity files to keep aligned, for a one-person project."
   sources: ["Regulation (EU) 2023/1230 Art. 54 (application date), Annex I Part A", "ISO 10218-1:2011 scope", "ISO 13482:2014 scope", "ANSI/RIA R15.06-2012 scope", "concept package 01_Title (standards framework)"]
-  status: open
+  status: applied
+  answer: {choice: C, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-13 v0.2 §3 and §6 (two routes: EU Module A and the US workplace route; one technical file, one R15.06 cross-reference); WP-M-01 §4 and §8 D-01; WP-C-01 §6", at: 2026-10-21}
+  note: "Not the recommendation: both frames from the start. One technical file is kept; the US frame is a cross-reference and the OSHA and NFPA 79 items it adds, not a second file."
 
 - id: DQ-002
   ref: GAP-00
@@ -60,7 +63,9 @@
       title: "Aim at OE-3 personal care from the start"
       detail: "Matches upstream's consumer ambition. Cost: ISO 13482 Type 1 verification, fall protection without a tether, children and pets in the hazard list; the gap count is 19 and the policy is unreleased."
   sources: ["concept package 05_OpEnv", "concept package 12_Gaps", "ISO 13482:2014 §1 scope", "ISO 10218-2:2011 §1 scope"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-01 v0.2 §1 and §9; WP-C-02 v0.2 §2 (OE-1 the only envelope; OE-2 a second item); WP-C-03 §6; WP-K-01 header", at: 2026-10-21}
 
 - id: DQ-003
   ref: GAP-00
@@ -89,7 +94,9 @@
       title: "Assess the kit robot with a user-supplied battery and a fork-written controller"
       detail: "Independence from upstream's roadmap. Cost: the fork writes and verifies motion firmware for 25 joints before any safety work product can be grounded; a second software lifecycle."
   sources: ["README roadmap (Asimov API, locomotion policy, mobile app marked upcoming)", "concept package 03_ItemDef", "concept package 13_Assumptions OI-01, OI-02, OI-05"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-01 v0.2 §1 (CFG-001 the reference configuration; CFG-002 tracked); case/configurations; assurance README", at: 2026-10-21}
 
 - id: DQ-004
   ref: GAP-03
@@ -120,7 +127,9 @@
       title: "PL c, treating the laboratory operator as the main measure"
       detail: "Cheapest. Cost: below what ISO 10218-1 §5.4 expects for a robot stop function; an assessor would not accept it for a 35 kg machine."
   sources: ["concept package 07_HARA (PLr column)", "ISO 13849-1:2023 Annex A (risk graph)", "ISO 12100:2010 §6.3 (complementary protective measures)", "ISO 10218-1:2011 §5.4.2 (PL d, Category 3 default)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-03 v0.2 header and §7 (PLr d adopted; tether as complementary measure DM-01); WP-C-04 v0.2 header and §5; WP-K-01 §5; WP-M-02 and WP-M-06 headers", at: 2026-10-21}
 
 - id: DQ-005
   ref: GAP-10
@@ -149,7 +158,9 @@
       title: "Hold the last pose with torque on"
       detail: "Keeps the robot up. Cost: relies on the actuators and the controller that may be the fault; a held pose with a person leaning on the robot is a hazard; not a safe state under ISO 13849-1."
   sources: ["concept package 06_Hazards HZ-C01, HZ-P03", "concept package 08_FMEA (watchdog, comms loss rows)", "DFMEA FM-06, FM-10, FM-14", "README specifications (DAMP, STAND, MOVE modes)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.2 §1 and SF-02, SF-08, SF-13 (safe state: controlled descent to a kneel or crouch, then power removal; the E-stop removes power at once); WP-C-01 §5; process interface IX-02 documented; DQ-016 withdrawn", at: 2026-10-21}
 
 - id: DQ-006
   ref: GAP-13
@@ -179,7 +190,9 @@
       title: "Defer until upstream publishes the policy"
       detail: "No work now. Cost: WP-C-04, WP-C-09 and the case structure stay provisional; IX-03 stays open past G1."
   sources: ["concept package 09_FSC SF-01", "ISO/IEC TR 5469:2024 §6–§8", "Regulation (EU) 2023/1230 Annex I Part A", "Regulation (EU) 2024/1689 Art. 6"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.2 §3.1 (SF-01 withdrawn as a safety function); WP-C-03 §7; WP-C-09; WP-M-13 §2 and §5 (Annex I Part A not triggered); claim G1.1 retargeted; trace SF-01; process interface IX-03 documented", at: 2026-10-21}
 
 - id: DQ-007
   ref: GAP-03
@@ -208,7 +221,9 @@
       title: "No fall protection; the operator keeps clear and catches nothing"
       detail: "No cost. Cost: every loss of balance is an uncontrolled fall of a 35 kg body; the risk graph stays at PL e and the case cannot close for any envelope."
   sources: ["concept package 05_OpEnv (OE-1 tethered)", "concept package 13_Assumptions ASS-A-01", "WP-V-07 §2 conditions"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 condition C-1; WP-C-02 §2 OE-1 and §4; WP-C-03 DM-01; claim G2.4; the purchase stays open as WP-V-07 OI-1", at: 2026-10-21}
 
 - id: DQ-008
   ref: GAP-07
@@ -237,7 +252,9 @@
       title: "A hard-wired mushroom button on the robot's torso only"
       detail: "Simplest chain. Cost: the button is on a 35 kg machine that may be falling or moving; the operator must approach to press it; nothing for a bystander."
   sources: ["README DIY kit table (wireless E-stop)", "concept package 04_StdMatrix ISO 13482 §5.16", "DFMEA FM-19, FM-20", "ISO 13850:2015 §4"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.2 SF-13; WP-C-03 DM-02; WP-V-07 condition C-2; WP-S-03 seed; the build stays open as WP-V-07 OI-2", at: 2026-10-21}
 
 - id: DQ-009
   ref: GAP-12
@@ -266,7 +283,9 @@
       title: "Bench supply only in the laboratory; no battery in the reference configuration"
       detail: "Removes the hazard from OE-1 entirely. Cost: no walking range beyond the cable; the battery question returns unchanged for OE-2."
   sources: ["README DIY kit table (battery not included)", "DFMEA FM-21, FM-22", "concept package 02_SyRS SYRS-013, SYRS-014", "IEC 62133-2:2017"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.2 SF-15; WP-C-01 §8 AOU-02; trace AOU-02; WP-H-05 and WP-O-01 seeds; no battery on CFG-001 remains (bench supply)", at: 2026-10-21}
 
 - id: DQ-010
   ref: GAP-00
@@ -294,7 +313,9 @@
       title: "Find a second contributor for I1 verification reviews instead, and defer the assessor to G2"
       detail: "Moves work products out of Draft without an assessor. Cost: a competent volunteer is hard to find; confirmation measures stay unperformed."
   sources: ["WP-M-06 §3, §9", "WP-M-02 §3.1 (roles)", "WP-M-01 T-09"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-06 v0.2 §1 and §9 (every I2 and I3 measure unscheduled; G0 held with CR-01 and CR-03 scheduled, not performed); WP-M-02 §3.1; revisit at G1", at: 2026-10-21}
 
 - id: DQ-011
   ref: GAP-00
@@ -303,10 +324,14 @@
   decider: lead
   blocks: "The Approver field of every work product; WP-M-02 §3.1"
   gate: G0
+  asked: 2026-10-21
+  batch: 2
   context: >-
-    Every work product needs an approver other than its author for its status to mean anything. With one person,
-    either every work product stays Draft until someone joins, or the lead approves their own work and the record
-    says so in the header.
+    Every work product needs an approver other than its author for its status to mean anything. You decided not to
+    engage an assessor for now (DQ-010 A), so with one person either every work product stays Draft until someone
+    joins, or you approve your own work and the record says so in the header. The choice changes nothing about
+    independence: no confirmation measure is performed either way; it changes whether a document can be called
+    approved at all.
   options:
     - key: A
       recommended: true
@@ -316,8 +341,7 @@
       title: "No approval until a second person joins"
       detail: "Clean. Cost: every status stays Draft indefinitely."
   sources: ["WP-M-02 §3.1", "WP-M-01 T-09"]
-  status: queued
-  after: [DQ-010]
+  status: open
 
 - id: DQ-012
   ref: GAP-19
@@ -326,10 +350,14 @@
   decider: lead
   blocks: "WP-C-08 §2; the controls in WP-S-07; SF-21, SF-22"
   gate: G1
+  asked: 2026-10-21
+  batch: 2
   context: >-
     The robot is moved by commands over a WebRTC data channel from an operator app, through an API upstream has
-    not published. The security level fixes how strong authentication, integrity and availability must be and
-    what the penetration test (WP-V-06) has to show.
+    not published, and the authentication scheme is undocumented (GAP-19). A forged or replayed command can drive a
+    joint into a person or past its clamp; a jammed link ends in the controlled descent of DQ-005 A. The security
+    level fixes how strong authentication, integrity and availability must be, which controls WP-S-07 must design,
+    and what the penetration test (WP-V-06) has to show.
   options:
     - key: A
       recommended: true
@@ -342,8 +370,7 @@
       title: "SL 3 for the command path"
       detail: "Strong. Cost: hardware-backed keys and a security audit the project cannot afford yet."
   sources: ["IEC 62443-4-2:2019 §4 (security levels)", "concept package 02_SyRS SYRS-010, SYRS-011", "DFMEA FM-15"]
-  status: queued
-  after: [DQ-001]
+  status: open
 
 - id: DQ-013
   ref: GAP-00
@@ -352,10 +379,14 @@
   decider: lead
   blocks: "WP-M-06 OI-1 (every clause reference marked to be checked)"
   gate: G1
+  asked: 2026-10-21
+  batch: 2
   context: >-
     No standard is available in the drafting environment; every clause reference in the record is marked to be
     checked against a licensed copy. ISO 10218-1 and -2, ISO 13482, ISO 13849-1 and -2, ISO 12100 and
-    IEC 60204-1 together cost several hundred euros or dollars.
+    IEC 60204-1 together cost several hundred euros or dollars; with both frames (DQ-001 C) ANSI/RIA R15.06 and
+    NFPA 79 come on top. Without copies, every PLr, category and clause number in WP-C-03, WP-C-04 and WP-S-03 is
+    written from memory of the standards, and the assessor you deferred (DQ-010 A) would start by checking them.
   options:
     - key: A
       recommended: true
@@ -365,8 +396,7 @@
       title: "Buy ISO 13849-1, ISO 10218-1 and ISO 13482 now"
       detail: "The three the risk assessment and the safety functions rest on. Cost: a few hundred euros or dollars."
   sources: ["WP-M-06 OI-1", "WP-M-00 §1 note"]
-  status: queued
-  after: [DQ-010]
+  status: open
 
 - id: DQ-014
   ref: GAP-06
@@ -375,9 +405,14 @@
   decider: lead
   blocks: "WP-W-09 PAR-nn; SF-03; the speed limit row of WP-C-02 for OE-1"
   gate: G1
+  asked: 2026-10-21
+  batch: 2
   context: >-
     Upstream publishes no joint limits; the MuJoCo model's control ranges (36 to 145 N m per joint) are
-    simulation values. The laboratory needs a declared limit set the firmware enforces and the tests use.
+    simulation values (GAP-06). The clamps SF-03 you set at PL d (DQ-004 A) need a declared limit set the firmware
+    enforces and the tests of WP-V-02 and WP-V-03 use; until one exists, WP-V-07 runs every powered test at half the
+    simulation range with the actuators' hardware current limit as the backstop. A limit too low may keep the
+    robot from standing; a limit too high is a contact hazard for the bench technician (H-02, H-04).
   options:
     - key: A
       recommended: true
@@ -387,8 +422,7 @@
       title: "The MuJoCo control range as published"
       detail: "What the simulation was trained with. Cost: simulation values, not declared robot limits."
   sources: ["sim-model/xmls/asimov.xml (ctrlrange per motor)", "concept package 02_SyRS SYRS-004, SYRS-005"]
-  status: queued
-  after: [DQ-004]
+  status: open
 
 - id: DQ-015
   ref: GAP-00
@@ -397,9 +431,14 @@
   decider: lead
   blocks: "Clause references in WP-M-00, WP-C-04, WP-C-06"
   gate: G1
+  asked: 2026-10-21
+  batch: 2
   context: >-
     ISO 10218-1 and -2 were revised in 2025 and absorb most of ISO/TS 15066; the concept-phase package cites the
-    2011 editions and ISO/TS 15066 separately. Whichever is cited must be the one bought and applied in full.
+    2011 editions and ISO/TS 15066 separately. With both frames (DQ-001 C) the US side matters too: ANSI/RIA
+    R15.06-2012 is the national adoption of the 2011 editions, and its revision to the 2025 text is pending.
+    Whichever edition is cited must be the one bought (DQ-013) and applied in full, and the R15.06 cross-reference
+    of WP-M-13 §6 must map to it.
   options:
     - key: A
       recommended: true
@@ -409,8 +448,7 @@
       title: "The 2011 editions plus ISO/TS 15066"
       detail: "Matches the package. Cost: superseded editions lose presumption of conformity when the 2025 ones are cited in the Official Journal."
   sources: ["ISO 10218-1:2025 foreword", "concept package 14_References"]
-  status: queued
-  after: [DQ-001, DQ-013]
+  status: open
 
 - id: DQ-016
   ref: GAP-10
@@ -419,6 +457,7 @@
   decider: lead
   blocks: "SF-13 in WP-C-04; WP-S-03 §3; what WP-V-04 measures"
   gate: G1
+  asked: 2026-10-21
   context: >-
     A category 0 E-stop on a biped is a fall onto the tether. A category 1 E-stop depends on the controller the
     operator may be pressing the button because of. EN 60204-1 lets the risk assessment choose; ISO 10218-1
@@ -432,8 +471,158 @@
       title: "Category 1: controlled descent, then power removal"
       detail: "Gentler. Cost: the stop runs through the controller that may be at fault; a timeout must still cut power."
   sources: ["EN 60204-1:2018 §9.2.2", "ISO 10218-1:2011 §5.5.2", "concept package 09_FSC SF-08, SF-13"]
-  status: queued
-  after: [DQ-005]
+  status: withdrawn
+  note: "Settled by DQ-005 A on 2026-10-21: the E-stop removes power at once (stop category 0) and the tether carries the fall in OE-1; a category 1 E-stop is not asked again."
+
+- id: DQ-020
+  ref: GAP-00
+  question: "Is G0 held open, or passed with conditions, now that the two confirmation reviews due at G0 cannot be performed?"
+  context: >-
+    G0 closes the governance phase: plans approved, roles assigned, the fork under configuration control. Two
+    confirmation reviews are due at G0 (CR-01 on the impact analysis, CR-03 on the safety plan) and need an
+    independent reviewer that, by your decision DQ-010 A, the project does not have for now. The verification
+    reviewer and QA roles are also unfilled. A gate counts as passed only by its record in 10-safety-case/gates/;
+    holding it keeps every later gate formally blocked but changes no work; passing it with conditions records
+    exactly what is owed and lets the concept phase be gated on its own merits.
+  reversibility: revisit
+  decider: lead
+  blocks: "The G0 gate record; WP-M-06 OI-5; the first row of every later gate skeleton"
+  gate: G0
+  asked: 2026-10-21
+  batch: 2
+  options:
+    - key: A
+      recommended: true
+      title: "Pass G0 with conditions: CR-01 and CR-03 are scheduled for the first independent reviewer, the three roles stay TBD with a due gate, recorded in the G0 gate record"
+      detail: "The record moves to the concept phase honestly, with the debt written down. Cost: a gate record that says Pass with conditions is weaker evidence than a Pass, and an assessor will read the conditions first."
+    - key: B
+      title: "Hold G0 open until an independent reviewer performs CR-01 and CR-03"
+      detail: "Clean. Cost: no gate can pass before someone joins (DQ-010 A says not for now), so the whole lifecycle stays at P0 on paper while the concept work proceeds anyway."
+    - key: C
+      title: "Pass G0 outright and defer the two reviews to G1 without conditions"
+      detail: "Simplest. Cost: a deferral of a confirmation measure needs the assessor's agreement (WP-M-06 §6), which does not exist; the record would overstate itself."
+  sources: ["WP-M-00 §2 (G0 exit criteria)", "WP-M-06 §9 and OI-5", "WP-M-02 §3.1 (roles TBD)", "process/maps/g0-governance.md (readiness)"]
+  status: open
+
+- id: DQ-021
+  ref: GAP-00
+  question: "Do we adopt the proposed environmental limits of the laboratory envelope OE-1: 10 to 35 °C, non-condensing, a level sealed floor with slope at most 1 %, at least 200 lux, no steps, indoors only?"
+  context: >-
+    Every operating-environment limit becomes a condition of the safety case, an instruction in the information
+    for use and a check before each session. The concept-phase package assumed values without stating them; the
+    record proposes a set in WP-C-02 §4 marked to be confirmed. The robot has no IP rating, the Raspberry Pi 5 in the
+    head has no thermal validation (GAP-25), the policy is trained on a level simulated floor and the camera is the
+    operator's only view. Tighter limits cost nothing today; looser ones need evidence the record does not have.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-C-02 §4 and §5; WP-O-03 operating limits; WP-V-07 condition C-4; AOU-05"
+  gate: G1
+  asked: 2026-10-21
+  batch: 2
+  proceed_after: 2026-10-28
+  options:
+    - key: A
+      recommended: true
+      title: "Adopt the proposed set as the OE-1 limits, each marked as a limit of the first item"
+      detail: "Conservative, verifiable with a thermometer, a spirit level and a lux meter. Cost: a laboratory outside these limits cannot host a test until the limit is widened with evidence."
+    - key: B
+      title: "Adopt wider limits now: 5 to 40 °C, slope up to 3 %, 100 lux"
+      detail: "Fits more rooms. Cost: no thermal data for the compute, no floor-friction data for the policy, and a darker room for an operator whose only view is a 2 MP camera."
+    - key: C
+      title: "Set no numeric limits until the first tests have run"
+      detail: "No work now. Cost: the hold point WP-V-07 has no environmental condition to check, and the risk assessment's OE-1 reading rests on an undefined room."
+  sources: ["WP-C-02 §4 (every value marked TBC)", "concept package 05_OpEnv", "DFMEA FM-23, FM-24", "ISO 13482:2014 §5.2 (environmental conditions)"]
+  status: open
+
+- id: DQ-022
+  ref: GAP-00
+  question: "Is a two-person rule mandatory for every powered test of the assembled robot: one operator with the wired E-stop and one observer, nobody else?"
+  context: >-
+    The hold point WP-V-07 writes a test session as operator plus observer. With one person on the project, a strict
+    rule means no powered test until someone else is in the room; a relaxed rule lets the maintainer run hang tests
+    alone with the pendant in hand. A 35 kg robot on a gantry can trap a tether, swing or fall on the one person
+    present; the observer is also the person who presses the E-stop when the operator cannot. The rule is an
+    operating default the record enforces through the session log, not a safety function.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-V-07 condition C-8 and §4; WP-O-02 operating rules; AOU-01"
+  gate: G1
+  asked: 2026-10-21
+  batch: 2
+  proceed_after: 2026-10-28
+  options:
+    - key: A
+      recommended: true
+      title: "Two people for every powered test with the robot assembled; single-limb bench tests on a stand may be run alone"
+      detail: "What a laboratory safety officer would expect for a suspended 35 kg machine. Cost: the first hang test waits for a second person; the maintainer cannot test alone in the evening."
+    - key: B
+      title: "One person may run hang tests with the feet off the floor; two people for every test with the feet on the floor"
+      detail: "Keeps bench work moving. Cost: a hang test is where the tether, shackles and gantry are first loaded, and the one person present is inside the fall radius while rigging."
+    - key: C
+      title: "No rule; the operator decides per session"
+      detail: "Maximum freedom. Cost: the risk assessment's OE-1 reading assumes an operator and an observer outside the reach envelope (DM-04); without the rule that assumption is unenforced."
+  sources: ["WP-V-07 §2 C-8, §4", "WP-C-02 §2 OE-1 (people column)", "WP-C-03 DM-04", "concept package 13_Assumptions ASS-A-03"]
+  status: open
+
+- id: DQ-023
+  ref: GAP-16
+  question: "Does the fork write its own deterministic safety layer for the motion control board now, or wait for upstream's firmware and add the layer to it?"
+  context: >-
+    No firmware exists in any public repository: the mode machine, the watchdog and the joint clamps upstream
+    describes are unreleased. The safety functions you set at PL d (SF-02, SF-03, SF-08, SF-23, SF-24) all live in
+    that layer. Writing it now means a fork firmware for the Radxa CM5 that talks CAN to 25 actuators, with its own
+    build, tests and bench, before upstream's design is known; waiting means no powered floor test and no safety
+    function until an unknown date, and then a layer bolted onto code written without it. Either way the
+    specification (WP-W-02, WP-W-03) is written first.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-W-01…WP-W-08 scope; the test bench WP-W-08; WP-M-03 plan; who the firmware engineer is"
+  gate: G1
+  asked: 2026-10-21
+  batch: 2
+  options:
+    - key: A
+      recommended: true
+      title: "Specify the layer now (WP-W-02, WP-W-03) and build a minimal fork firmware for the hang tests: CAN actuator control with clamps, watchdog, E-stop input and a DAMP-only fallback; the controlled descent waits for a controller"
+      detail: "The hold point and the first tests become possible without upstream. Cost: a second firmware lifecycle for the project, months of one person's time, and rework when upstream's firmware arrives."
+    - key: B
+      title: "Specify the layer now; write no firmware until upstream publishes, then assess and wrap theirs"
+      detail: "No duplicated code. Cost: no powered test and no safety function until an unknown date; the specification is tested against nothing."
+    - key: C
+      title: "Neither: tele-operate the actuators with the vendor's own CAN tools for the hang tests and write nothing"
+      detail: "Fastest to a moving robot. Cost: no clamp, no watchdog, no E-stop input in software; every test relies on the pendant and the tether alone, outside the hold point's condition C-6."
+  sources: ["gap assessment GAP-16", "WP-C-04 §5 (allocation table)", "README roadmap (firmware upcoming)", "electrical/README.md (motion control board ports)"]
+  status: open
+
+- id: DQ-024
+  ref: GAP-03
+  question: "May the kit robot be used for deliberate fall and power-cut tests on the gantry, accepting damage to the hardware, or are those tests run in simulation and on single limbs only?"
+  context: >-
+    The fall-arrest budget (WP-S-04), the controlled descent (SF-02) and the tether rating all need measured data:
+    how fast the robot falls, what the tether sees, what the descent can do. The only way to measure it is to let the
+    assembled robot lose balance or lose power on the gantry, caught by the tether. Each such test risks the frame,
+    the actuators and the harness of a kit at a target price of 15,000 USD; the DFMEA already rates the hip-yoke
+    fillet and the 7075 substitution as fatigue concerns (GAP-04). Simulation gives numbers nobody has validated
+    against this hardware (GAP-21).
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-V-02 test plan; WP-S-04 inputs; the tether rating of DQ-007; the spare-parts budget"
+  gate: G2
+  asked: 2026-10-21
+  batch: 2
+  options:
+    - key: A
+      recommended: true
+      title: "Yes, a bounded campaign: power-cut and loss-of-balance tests from standing, caught by the tether above knee height, with an inspection and a spares budget agreed before the first one"
+      detail: "The budget and the descent get real numbers. Cost: a spares budget in the hundreds to low thousands; a bent yoke ends the campaign; the test plan must say how many drops and from what."
+    - key: B
+      title: "Simulation and single-limb tests only; no deliberate fall of the assembled robot"
+      detail: "No hardware risk. Cost: the fall energy, the tether load and the descent time stay simulation values; claim G1.2 and the tether rating rest on unvalidated numbers."
+    - key: C
+      title: "Deliberate falls only on a second, sacrificial frame"
+      detail: "Protects the reference unit. Cost: a second kit or a partial frame, months away; the data is for a different unit."
+  sources: ["WP-V-02 (skeleton)", "WP-S-04 §2", "gap assessment GAP-03, GAP-04, GAP-21", "DFMEA FM-01, FM-02"]
+  status: open
 
 - id: DQ-017
   ref: GAP-33

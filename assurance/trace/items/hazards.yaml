@@ -228,7 +228,7 @@
 
 - id: SF-01
   kind: safety-function
-  title: "Maintain bipedal stability while standing and moving"
+  title: "Maintain bipedal stability while standing and moving (withdrawn as a safety function on 2026-10-21, DQ-006 A: the policy is a functional component bounded by SF-03 and SF-23; stability in OE-1 rests on the tether and gantry)"
   plr: d
   status: proposed
   source: WP-C-04

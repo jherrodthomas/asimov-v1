@@ -11,7 +11,7 @@
 | Date | YYYY-MM-DD |
 | Baseline | <commit SHA or tag> |
 | Chair | Safety manager (Jherrod Thomas (acting)) |
-| Participants | Safety manager (Jherrod Thomas (acting)); Cybersecurity manager (Jherrod Thomas (acting); permanent holder TBD); ML safety lead (Jherrod Thomas (acting); permanent holder TBD); External functional safety assessor (TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)) |
+| Participants | Safety manager (Jherrod Thomas (acting)); Cybersecurity manager (Jherrod Thomas (acting); permanent holder TBD); ML safety lead (Jherrod Thomas (acting); permanent holder TBD); External functional safety assessor (None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1) |
 | Assessor informed | Yes / No (name) |
 
 ## Inputs (WP-M-02 §10)
@@ -23,7 +23,7 @@
 | Open risks (WP-M-07) | | [WP-M-07](../../../01-management/WP-M-07-risk-management.md) |
 | Confirmation measures assigned to this gate (WP-M-06) and their results | 0 of 2 performed: CR-01, CR-03@G0 | [WP-M-06](../../../01-management/WP-M-06-confirmation-measures-plan.md) |
 | QA findings (WP-M-05) | | [WP-M-05](../../../01-management/WP-M-05-quality-assurance-plan.md) |
-| Open items of the phase's work products | 37 open-item rows not marked closed, any due gate (table below) | |
+| Open items of the phase's work products | 38 open-item rows not marked closed, any due gate (table below) | |
 
 ### Work products of this gate
 
@@ -31,7 +31,7 @@
 |---|---|---|---|---|
 | [WP-M-11](../../../01-management/WP-M-11-impact-analysis.md) Impact analysis of the inherited Asimov v1 baseline and the concept-phase package (modification of existing machinery) | GOV-01 | Skeleton | 1 | |
 | [WP-M-01](../../../01-management/WP-M-01-assurance-strategy.md) Assurance strategy and lifecycle tailoring | GOV-02 | Draft | 4 | |
-| [WP-M-13](../../../01-management/WP-M-13-regulatory-conformity-strategy.md) Regulatory conformity strategy (Machinery Regulation, AI Act, US frame) | GOV-03 | Draft | 4 | |
+| [WP-M-13](../../../01-management/WP-M-13-regulatory-conformity-strategy.md) Regulatory conformity strategy (Machinery Regulation, AI Act, US frame) | GOV-03 | Draft | 5 | |
 | [WP-M-02](../../../01-management/WP-M-02-safety-plan.md) Functional safety plan | GOV-04 | Draft | 5 | |
 | [WP-M-04](../../../01-management/WP-M-04-organization-competence-safety-culture.md) Organization-specific rules, safety culture, competence management | GOV-05 | Skeleton | 1 | |
 | [WP-M-05](../../../01-management/WP-M-05-quality-assurance-plan.md) Quality management and quality assurance plan (design control, records, nonconformance) | GOV-06 | Skeleton | 1 | |

@@ -1,5 +1,5 @@
 {
-  "actions_open": 10,
+  "actions_open": 8,
   "assurance_state": "Development",
   "baseline": {
     "id": "BL-001",
@@ -91,6 +91,6 @@
       "title": "Safety Case and Review"
     }
   ],
-  "records_digest": "d9cd5af97b39",
+  "records_digest": "8c27b71e21dd",
   "reviews": 0
 }

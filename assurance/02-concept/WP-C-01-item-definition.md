@@ -4,9 +4,9 @@
 |---|---|
 | Work product | WP-C-01 Item definition and limits of the machinery |
 | Standard reference | ISO 12100:2010 §5.3 (determination of the limits of the machinery), §5.4 (hazard identification inputs); ISO 10218-1:2011 §3, §5 (terms, robot requirements); ISO 13482:2014 §4 (robot types, use); ISO 13849-1:2023 §4.5; Regulation (EU) 2023/1230 Annex III §1.1.2, Annex IV Part A (technical documentation) |
-| Version | 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
+| Version | 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
 | Status | Draft |
-| PL / scope | PL d target for the stop and fall functions (DQ-004, open); operating envelope OE-1 only (DQ-002, open); CFG-001 the kit robot as published, tethered and bench-powered; CFG-002 the battery-powered robot under the locomotion policy, every value quoted from upstream and unverified |
+| PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); operating envelope OE-1 only (DQ-002 A, decided 2026-10-21); CFG-001 the kit robot as published, tethered and bench-powered; CFG-002 the battery-powered robot under the locomotion policy, every value quoted from upstream and unverified |
 | Author | Assurance team (AI-assisted draft, I0) |
 | Reviewer(s) | TBD (I1; someone who has built or operated the robot) |
 | Approver | Project lead |
@@ -25,7 +25,7 @@
 |---|---|
 | Item | Asimov v1, an open-source bipedal humanoid robot: 1.2 m, 35 kg, 25 actuated degrees of freedom and two passive toes, on two configurations. **CFG-001**, the DIY-kit robot as published (§1.1): what a builder can make from the repository and the kit today, suspended from a gantry, powered from a bench supply, moved by tele-operation; the reference configuration of the first safety case. **CFG-002**, the battery-powered robot walking under the locomotion policy through the Asimov API (§1.2): what upstream intends to sell, decided but not public |
 | Fork | `jherrodthomas/asimov-v1` from `asimovinc/asimov-v1` at BL-001 (upstream content as of `5de64d3`, 2026-04-30) |
-| Product class | Machinery (a drive system and a function of its own); a robot under ISO 10218-1 when operated in an industrial envelope (OE-2); a personal care robot of Type 1 (mobile servant) under ISO 13482 only if the lead widens the item to OE-3 or OE-4 (DQ-002). The first item is a research machine in a laboratory (OE-1) and claims neither class |
+| Product class | Machinery (a drive system and a function of its own); a robot under ISO 10218-1 when operated in an industrial envelope (OE-2); a personal care robot of Type 1 (mobile servant) under ISO 13482 only if a later item widens the scope to OE-3 or OE-4 (DQ-002 A: OE-1 only in the first item; OE-2 is a second item once the firmware and policy are public). The first item is a research machine in a laboratory (OE-1) and claims neither class |
 | Upstream designation | "Asimov v1", DIY kit at a target price of 15,000 USD, shipping announced for summer 2026; the Asimov API, the locomotion policy and the mobile app marked as upcoming in the roadmap |
 | Manufacturer of record | Asimov Inc (Menlo) for the design and the kit; whoever assembles the kit makes the machine (WP-M-13 §2). The fork assigns no manufacturer and places no product on the market |
 
@@ -166,14 +166,14 @@ the Asimov API, with the kit's wireless E-stop as the only stop device. None of 
 | Mode | Behaviour | Entered | Safety relevance |
 |---|---|---|---|
 | M0 Off | No power on the motor rail | power off, E-stop pressed | the robot is a dead weight on the tether |
-| M1 DAMP | Motors limp; the declared safe default | disconnect, E-stop release, fault | **a fall unless the tether holds** (GAP-10, DQ-005) |
-| M2 STAND | The controller holds a standing pose, ramping in over about 2 s | operator command from DAMP | balance rests on the controller (DQ-006) |
+| M1 DAMP | Motors limp; the declared default | disconnect, E-stop release, fault | **a fall unless the tether holds** (GAP-10). Not the safe state: DQ-005 A makes the safe state a controlled descent to a kneel or crouch, then power removal; the E-stop removes power at once and the tether carries the fall |
+| M2 STAND | The controller holds a standing pose, ramping in over about 2 s | operator command from DAMP | balance rests on the controller, which is not a safety function (DQ-006 A): the tether carries stability in OE-1 |
 | M3 MOVE | Position and velocity commands accepted | operator command from STAND | every limb hazard of WP-C-03 |
 | M4 Bench | Actuators on a stand or the robot with feet off the floor | technician | the only powered mode permitted without the gantry lowered (WP-V-07) |
 
 ## 6. Legal requirements and standards
 
-Per [WP-M-13](../01-management/WP-M-13-regulatory-conformity-strategy.md) (frame pending DQ-001) and
+Per [WP-M-13](../01-management/WP-M-13-regulatory-conformity-strategy.md) (both frames, DQ-001 C: the EU technical file with a US cross-reference) and
 [WP-M-01 §4](../01-management/WP-M-01-assurance-strategy.md#4-the-standards-and-how-each-one-is-used).
 
 ## 7. Known hazards and experience from similar items
@@ -187,7 +187,7 @@ ISO 12100 Annex B and ISO 13482 Annex A) is carried into WP-C-03. No field histo
 | ID | Assumption | Status at BL-001 |
 |---|---|---|
 | AOU-01 | A trained operator is present and within E-stop reach at all times in MOVE | Procedural only |
-| AOU-02 | The battery, when fitted, is a UN 38.3 and IEC 62133-2 compliant lithium pack with an integrated BMS | Not enforced (DQ-009) |
+| AOU-02 | The battery, when fitted, is a UN 38.3 and IEC 62133-2 compliant lithium pack with an integrated BMS, from the certified-pack list of WP-O-03, and the motor rails are refused without a BMS handshake on C5 | Policy set (DQ-009 A); the interlock does not exist yet (WP-H-05); no battery on CFG-001 |
 | AOU-03 | The structure is genuine 7075-T6 aluminium and MJF PA12; no substitution during the DIY build | Not enforced |
 | AOU-04 | The CAN harness is built per the WireViz record with correct termination and crimps | Not enforced |
 | AOU-05 | The operating surface is level (slope at most 5°), dry and free of obstacles | Assumed |
@@ -198,7 +198,7 @@ Machine-readable copy: [`trace/items/aou.yaml`](../trace/items/aou.yaml).
 
 ## 9. Out of scope for this item
 
-OE-2, OE-3 and OE-4 (DQ-002); any battery-powered or policy-driven operation (CFG-002); collaborative tasks;
+OE-2, OE-3 and OE-4 (DQ-002 A; OE-2 is the second item); any battery-powered or policy-driven operation (CFG-002); collaborative tasks;
 carrying a person; outdoor use; medical or child-care use.
 
 ## 10. Open items
@@ -206,6 +206,6 @@ carrying a person; outdoor use; medical or child-care use.
 | ID | Item | Owner | Due |
 |---|---|---|---|
 | OI-1 | Weigh the robot, measure the centre of gravity, bound the fall energy (ACT-001) | EM | G1 |
-| OI-2 | Set the battery policy (DQ-009) and record the resulting limit here (ACT-008) | PM | G1 |
+| OI-2 | ~~Set the battery policy (DQ-009)~~ decided 2026-10-21 (A: certified-pack list and BMS handshake interlock); design the interlock in WP-H-05 and the pack list in WP-O-03 (ACT-008) | EM | G2 |
 | OI-3 | Obtain from upstream the declared joint torque and velocity limits, or set them (DQ-014) | SRP | G1 |
-| OI-4 | Apply DQ-002 and DQ-003 to §1 and §9 when answered | SM | G1 |
+| OI-4 | ~~Apply DQ-002 and DQ-003 to §1 and §9 when answered~~ applied 2026-10-21 (both A) | SM | G1 |

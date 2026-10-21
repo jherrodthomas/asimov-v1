@@ -4,9 +4,9 @@
 |---|---|
 | Work product | WP-C-04 Safety functions specification with required Performance Level, stop category and response time |
 | Standard reference | ISO 13849-1:2023 §5 (safety requirements specification of each safety function), Annex A (PLr); ISO 10218-1:2011 §5.4 (safety-related control system performance), §5.5 (robot stopping functions), §5.6 (speed control), §5.10 (collaborative operation); ISO 13482:2014 §5.16 (emergency stop), §6 (safety-related control system); ISO 13850:2015 §4; IEC 60204-1:2018 §9.2.2 (stop categories); ISO/TS 15066:2016 §5.5 |
-| Version | 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
+| Version | 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
 | Status | Draft |
-| PL / scope | PL d target for the stop and fall functions (DQ-004, open); CFG-001 in OE-1; the collaborative functions SF-04, SF-06, SF-20 specified but not claimed in the first item |
+| PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); CFG-001 in OE-1; the collaborative functions SF-04, SF-06, SF-20 specified but not claimed in the first item |
 | Author | Assurance team (AI-assisted draft, I0) |
 | Reviewer(s) | TBD (I1) |
 | Approver | Project lead |
@@ -14,8 +14,8 @@
 
 > [!WARNING]
 > Draft. The reaction times and allocations are the package's concept-level targets, not measured or designed
-> values. The safe state of a biped is undecided (DQ-005), so every function that ends in "the safe state" is
-> incomplete until the lead answers. Nothing here has been implemented: no firmware exists.
+> values. The safe state of the biped was decided on 2026-10-21 (DQ-005 A: a controlled descent to a kneel or
+> crouch, then power removal; the E-stop removes power at once). Nothing here has been implemented: no firmware exists.
 
 ## 1. Purpose
 
@@ -31,18 +31,19 @@ descent and the fall energy against measurement.
 Conventions: a **demand** is the event the function must respond to; the **safe state** is what the function
 achieves and holds; the **response time** runs from the demand at the sensor or device to the start of the safe
 state. For a standing biped the safe state is not power removal alone: power removal (DAMP) is a fall (WP-C-03 H-28).
-The planning assumption until DQ-005 is answered is **controlled descent to a kneel or crouch, then power removal**;
-the E-stop removes power at once (stop category 0, DQ-016) and the tether carries the fall in OE-1. Stop categories
+The safe state is **controlled descent to a kneel or crouch under a deterministic sequence, then power removal**
+(DQ-005 A, decided 2026-10-21); the E-stop removes power at once (stop category 0; DQ-016 withdrawn as settled)
+and the tether carries the fall in OE-1. Stop categories
 per IEC 60204-1 §9.2.2: category 0 is immediate removal of power (a fall onto the tether); category 1 is a
 controlled stop with power removed when stopped (the controlled descent).
 
-The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10. The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006.
+The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10. The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006. The answer (DQ-006 A, 2026-10-21) withdraws SF-01 as a safety function: the policy is a functional component.
 
 ## 2. Safety functions
 
 | ID | Safety function | Demand | Safe state | PLr | Cat. | Stop cat. | Response target (package) | Allocation (package) | Hazards |
 |---|---|---|---|---|---|---|---|---|---|
-| SF-01 | Maintain bipedal stability while standing and moving | Every control cycle in STAND and MOVE: a disturbance, a step, an external push within the limits | The robot keeps its balance | d | 3 | — | ≤ 20 ms | locomotion policy, IMU, MCB **(DQ-006)** | H-01, H-06, H-22 |
+| SF-01 | Maintain bipedal stability while standing and moving | Every control cycle in STAND and MOVE: a disturbance, a step, an external push within the limits | The robot keeps its balance | d (package); **withdrawn, DQ-006 A** | — | — | ≤ 20 ms | locomotion policy as a functional component; bounded by SF-03, SF-23; the tether carries stability (G2.4) | H-01, H-06, H-22 |
 | SF-02 | Detect an impending fall and arrest it by a controlled descent before impact | IMU attitude or rate outside the recoverable envelope; loss of torque on a load-bearing joint; SF-08 or SF-13 demand while standing | A controlled descent to a kneel or crouch, then power removal **(DQ-005)**; on the tether, the tether carries what the descent does not | d | 3 | 1 then 0 | ≤ 200 ms to the start of the descent | MCB safety layer, IMU, actuators | H-01, H-06, H-23, H-28 |
 | SF-03 | Joint torque and velocity limit per joint | A commanded or measured torque or velocity above the limit of the active envelope | The command is clamped; a sustained violation is a fault (SF-08) | d | 3 | — | ≤ 10 ms | MCB safety layer, drive current limit | H-02, H-04, H-24 |
 | SF-04 | Force-limited contact in collaborative regions | Contact force or pressure above the ISO/TS 15066 body-region limit | Joint torque reduced and motion stopped at the contact | d | 3 | 1 | ≤ 100 ms | MCB safety layer, sensorised links (none exist) | H-02, H-04, H-24 |
@@ -82,8 +83,8 @@ WP-C-05 and WP-O-03 and verified by inspection.
 | Demand | Every control cycle in STAND and MOVE: gravity, a step, an external disturbance within the limits of WP-C-01 §4 |
 | Safe state | The robot keeps its balance within the recoverable envelope; outside it SF-02 takes over |
 | Response time | ≤ 20 ms control cycle (package) |
-| PLr | d (package); the OE-1 reading of WP-C-03 with the tether is c, d by the ISO 10218-1 default |
-| Allocation | The package allocates it to the locomotion policy, the IMU and the MCB. **The policy is a learned component nobody outside upstream has seen (GAP-13, GAP-17).** The recommended position (DQ-006 A) withdraws SF-01 as a safety function: stability in OE-1 rests on the gantry and tether (claim G2.4) and the policy's output is bounded by SF-03 and watched by SF-23. If the lead allocates it (DQ-006 B), this section is rewritten with the TR 5469 class and usage level of WP-C-09 and the AI Act record WP-K-07 |
+| PLr | **none: withdrawn as a safety function** (DQ-006 A, decided 2026-10-21). The package's d is kept in the table of §2 for traceability only |
+| Allocation | The package allocated it to the locomotion policy, the IMU and the MCB. **The policy is a learned component nobody outside upstream has seen (GAP-13, GAP-17).** The lead's decision (DQ-006 A) withdraws SF-01 as a safety function: stability in OE-1 rests on the gantry and tether (claim G2.4), the policy is a functional component whose output is bounded by SF-03 and watched by SF-23, and no learned component implements a safety function. Annex I Part A of the Machinery Regulation and the AI Act high-risk file are not triggered (WP-M-13 §5). A free-standing robot is not in the case until a deterministic balance safeguard exists |
 | Modes | M2 STAND, M3 MOVE |
 | Verification | WP-V-02 stability tests on the tether; the policy's sim-to-real coverage (WP-W-10) if allocated |
 | Today | No controller exists in public; the robot has never stood under the fork |
@@ -93,7 +94,7 @@ WP-C-05 and WP-O-03 and verified by inspection.
 | Item | Specification |
 |---|---|
 | Demand | IMU attitude or angular rate outside the recoverable envelope **(TBC from WP-S-04)**; loss of torque or encoder on a load-bearing joint; a demand of SF-08 or SF-13 while standing |
-| Safe state | **Planning assumption (DQ-005 A):** a deterministic descent sequence lowers the centre of mass to a kneel or crouch within the budget of WP-S-04, then motor power is removed; the robot ends de-energised and low. On the tether the tether carries whatever the descent does not. Option B (power removal only) makes this function a tether rule; option C (hold) is not a safe state |
+| Safe state | **Decided (DQ-005 A, 2026-10-21):** a deterministic descent sequence lowers the centre of mass to a kneel or crouch within the budget of WP-S-04, then motor power is removed; the robot ends de-energised and low. On the tether the tether carries whatever the descent does not. Option B (power removal only) makes this function a tether rule; option C (hold) is not a safe state |
 | Response time | ≤ 200 ms to the start of the descent (package); the descent itself **(TBC)**; the fall energy at contact bounded by WP-H-08 |
 | Stop category | 1, then 0 |
 | PLr | d |
@@ -123,7 +124,7 @@ WP-C-05 and WP-O-03 and verified by inspection.
 | Item | Specification |
 |---|---|
 | Demand | No tele-operation heartbeat for 250 ms (package SRS-004); a control-loop deadline missed (SF-24); a CAN bus-off on a leg bus (package SYRS-023); a fault classified critical (package SRS-013) |
-| Safe state | The safe state of DQ-005 reached as a stop category 1 (SF-02's descent), power removed when reached; latched until a deliberate re-arm with the cause cleared |
+| Safe state | The controlled descent of DQ-005 A reached as a stop category 1 (SF-02's descent), power removed when reached; latched until a deliberate re-arm with the cause cleared |
 | Response time | ≤ 100 ms to the start of the stop (package) |
 | PLr | d |
 | Category, DC | 3: the firmware watchdog as channel 1, the hardware watchdog on the SoC as channel 2 (package SRS-002) |
@@ -135,10 +136,10 @@ WP-C-05 and WP-O-03 and verified by inspection.
 
 | Item | Specification |
 |---|---|
-| Demand | A person actuates the wired pendant device (OE-1, DQ-008) or the kit's wireless transmitter (ISO 13850 devices: red mushroom on yellow, positive-opening contacts, latching); the wireless heartbeat is missed for **(TBC)** periods; a channel fault |
+| Demand | A person actuates the wired, dual-channel pendant device on the tether (OE-1, DQ-008 A) or the kit's wireless transmitter (ISO 13850 devices: red mushroom on yellow, positive-opening contacts, latching); the wireless heartbeat is missed for **(TBC)** periods; a channel fault |
 | Safe state | Motor power removed from every actuator by two independent paths (motor-rail contactors in series and the drive enables); latched until a deliberate re-arm at the robot or the pendant with every device released (no automatic re-arm, DFMEA FM-20); the tether carries the fall in OE-1 |
 | Response time | ≤ 500 ms (package SYRS-003); ≤ 200 ms proposed for the wired device to power removal |
-| Stop category | 0 proposed (DQ-016 A): no software in the path; the alternative category 1 runs through the controller the operator may be stopping |
+| Stop category | 0 (DQ-005 A, decided 2026-10-21; DQ-016 withdrawn as settled): no software in the path, power removed at once, the tether carries the fall in OE-1; a category 1 E-stop would run through the controller the operator may be stopping |
 | PLr | d |
 | Category, DC | 3, medium or better: dual channel, cross-monitored, contactor feedback in the re-arm loop; the wireless receiver counts only with heartbeat surveillance that fails safe (SF-13's own diagnostic) |
 | Modes | Every mode |
@@ -183,13 +184,13 @@ They stay in the register so that the OE-2 item can take them up without re-rati
 
 Conventional functions whose package rows (§2) are adopted as the specification at v0.1; their requirements are
 ported from the package's SYRS, SRS and HwRS into WP-S-02. SF-15 is absent on CFG-001 (no battery) and its interlock
-is decision DQ-009.
+was decision DQ-009, answered 2026-10-21 (A): a certified-pack list in the information for use and a hardware interlock that refuses the motor rails without a compliant BMS handshake on C5. The interlock is designed in WP-H-05 and WP-H-02; CFG-001 carries no battery.
 
 ## 4. Required Performance Level
 
 PLr per function follows WP-C-03 §5 and §7: the package's reading as the unmitigated value, the OE-1 reading with
 the complementary measures, and the ISO 10218-1 §5.4 default of PL d, Category 3 as the floor for the stop and fall
-functions, pending DQ-004. SF-15 keeps the package's PL e on CFG-002 because a thermal runaway inside a home is S2 F2
+functions (DQ-004 A, decided 2026-10-21). SF-15 keeps the package's PL e on CFG-002 because a thermal runaway inside a home is S2 F2
 P2 and no complementary measure applies; on CFG-001 the function is absent.
 
 ## 5. Allocation
@@ -200,7 +201,7 @@ P2 and no complementary measure applies; on CFG-001 the function is absent.
 | MCB safety layer (deterministic firmware) | SF-02, SF-03, SF-08, SF-14, SF-16, SF-23, SF-24, SF-25; SF-04, SF-06, SF-20 in OE-2 | PL at the PLr with the ISO 13849-1 §7 lifecycle (WP-W-*); does not exist today |
 | Power distribution board | SF-10, SF-11, under-voltage lockout | PL c for SF-11 |
 | Edge board | SF-21, SF-22 | PL c and b |
-| Locomotion policy | SF-01 **(DQ-006)** | none unless allocated |
+| Locomotion policy | none: SF-01 withdrawn (DQ-006 A) | none |
 | Gantry and tether, procedures, information for use | the fall hazard in OE-1; SF-05, SF-07, SF-09, SF-12, SF-17, SF-18, SF-19 | complementary measures, verified by inspection |
 
 ## 6. Response time and stop category per function
@@ -215,7 +216,7 @@ which also owns the controlled-descent model. No value is measured.
 | T-01 bench | M4 | SF-03, SF-11, SF-13, SF-14, SF-24, SF-25 | none until implemented |
 | T-02 hang test | M4 | as T-01 plus SF-08, SF-23 | none until implemented |
 | T-03, T-04 stand and move on the tether | M2, M3 | every function with a PLr except SF-04, SF-06, SF-15, SF-20 | none until implemented; the gantry carries the fall |
-| T-05 walk on the tether (CFG-002) | M3 | as T-04 plus SF-01 per DQ-006 | not in the first item |
+| T-05 walk on the tether (CFG-002) | M3 | as T-04; SF-01 withdrawn (DQ-006 A), the tether carries stability | not in the first item |
 | T-06 fall tests | M1–M3 | SF-02, SF-08, SF-13 under test | — |
 
 ## 8. Traceability
@@ -228,8 +229,8 @@ test cases). Claims: WP-K-01 G1.1…G1.15, G2.4.
 
 | ID | Item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Apply DQ-005 (safe state) to SF-02, SF-08, SF-13 and §1; apply DQ-016 (stop category) to SF-13 (ACT-002) | SM | G1 |
-| OI-2 | Apply DQ-006 to SF-01 and §5: withdraw it or specify the policy's class and usage level (ACT-003) | ML | G1 |
-| OI-3 | Design or obtain the E-stop architecture behind SF-13 (DQ-008; ACT-004) | EM | G1 |
+| OI-1 | ~~Apply DQ-005 (safe state) to SF-02, SF-08, SF-13 and §1; apply DQ-016 (stop category) to SF-13~~ applied 2026-10-21 (DQ-005 A; DQ-016 settled by it) (ACT-002) | SM | G1 |
+| OI-2 | ~~Apply DQ-006 to SF-01 and §5~~ applied 2026-10-21 (A: withdrawn); carry the withdrawal into WP-C-09 and WP-M-09 (ACT-003) | ML | G1 |
+| OI-3 | Design the E-stop architecture behind SF-13 (DQ-008 A decided 2026-10-21: wired dual-channel pendant plus surveilled wireless device; ACT-004) | EM | G1 |
 | OI-4 | Set every **(TBC)** value from WP-S-04 and the lead's answers (DQ-014) | SRP | G2 |
 | OI-5 | Port the package's safety requirements into WP-S-02 under these functions (ACT-007) | SRP | G2 |

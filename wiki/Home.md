@@ -1,4 +1,4 @@
-![Asimov v1 assurance. An open humanoid. Engineered for safety. A geometric amber biped hanging from a gantry on a cyan tether, with a camera head, a red emergency-stop pendant on a lead and a dashed fall radius on a perspective floor grid, beside the project name and the standards it follows.](../docs/assets/asimov/hero.svg)
+![Asimov v1, the open-source bipedal humanoid by Asimov Inc.: a 1.2 m, 35 kg robot with 25 actuated joints, photographed standing.](../assets/asimov-v1.jpg)
 
 # Asimov v1 assurance, explained
 

@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="docs/assets/asimov/hero.svg" width="100%" alt="Asimov v1 assurance. An open humanoid. Engineered for safety. A geometric amber biped hanging from a gantry on a cyan tether, with a camera head, a red emergency-stop pendant on a lead and a dashed fall radius on a perspective floor grid, beside the project name and the standards it follows.">
-</p>
+# Asimov v1: Open-Source Humanoid Robot
 
 > [!IMPORTANT]
 > **This is a fork.** Everything above the [Safety-assurance record](#safety-assurance-record) heading is upstream's
@@ -8,8 +6,6 @@
 > (`asimovinc/asimov-v1`) neither produced nor endorses. **Asimov v1 is research hardware and the record is a draft
 > prepared for engineering review:** no safety function reaches any Performance Level under ISO 13849-1 today, the
 > robot is not CE-marked, and no configuration is approved for operation around people.
-
-# Asimov v1: Open-Source Humanoid Robot
 
 [![License: CERN-OHL-S-2.0](https://img.shields.io/badge/Hardware-CERN--OHL--S--2.0-blue)](HARDWARE-LICENSE.txt)
 [![License: Software](https://img.shields.io/badge/Software-GPL--2.0-blue)](SOFTWARE-LICENSE.txt)
@@ -156,7 +152,7 @@ Nothing is marked complete before its review, and every number below is computed
 
 <!-- BEGIN GENERATED: record-headline (docs/assets/asimov/make_assets.py) -->
 
-**P0 Governance** · no gate passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 2 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `21e4132c8591`
+**P0 Governance** · no gate passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `38c1432440db`
 
 <!-- END GENERATED: record-headline -->
 
@@ -180,7 +176,7 @@ validated and drawn by [`generate_dashboard.py`](assurance/case/tools/generate_d
 
 <!-- BEGIN GENERATED: assurance-headline (assurance/case/tools/generate_dashboard.py) -->
 
-**Development** · baseline `BL-001` at `3d4ec9d` · 29 claims (0 with accepted evidence) · 22 evidence items (0 accepted) · 34 open defeaters · records digest `d9cd5af97b39`
+**Development** · baseline `BL-001` at `3d4ec9d` · 29 claims (0 with accepted evidence) · 22 evidence items (0 accepted) · 34 open defeaters · records digest `8c27b71e21dd`
 
 <!-- END GENERATED: assurance-headline -->
 
@@ -197,15 +193,16 @@ validated and drawn by [`generate_dashboard.py`](assurance/case/tools/generate_d
 The argument is a doer-and-checker argument with one more step. The tele-operation stack and the locomotion policy
 propose; the deterministic safety layer on the motion control board checks; and a hardwired stop chain is the checker
 of last resort that nothing in software can override. A biped adds a question a wheeled machine never asks: removing
-power drops the robot, so the safe state is a decision ([DQ-005](assurance/01-management/decisions/README.md)) and,
-until a controlled-descent function exists, the tether and gantry of the laboratory carry the fall.
+power drops the robot, so the safe state had to be decided: a controlled descent to a kneel or crouch, then power
+removal, with the emergency stop removing power at once ([DQ-005](assurance/01-management/decisions/README.md)). Until
+that descent exists as verified firmware, the tether and gantry of the laboratory carry the fall.
 
 | Layer | Role | State |
 |---|---|---|
 | Tele-operation stack and locomotion policy | Operator commands over the Asimov API, WebRTC video; in future the learned policy's joint targets | Inherited; the policy, the API contract and the authentication scheme are unreleased or undocumented; hardening proposed |
 | Deterministic safety layer (motion control board) | Clamps every joint command, checks the IMU, runs the watchdog, holds the mode machine, performs the controlled descent | **Does not exist in any public repository.** Specified in the [safety functions](assurance/02-concept/WP-C-04-safety-functions-and-plr.md); architecture in [WP-S-03](assurance/03-system/WP-S-03-technical-safety-concept.md) |
 | Hardwired stop chain | Emergency stop, link surveillance, actuator power removal, BMS interlock | **Does not exist yet.** Bench version first ([WP-V-07](assurance/06-validation/WP-V-07-test-operations.md)), product version in the [SRP/CS architecture](assurance/03-system/WP-S-03-technical-safety-concept.md) |
-| Tether and gantry | Carries the robot's mass in a fall while no fall-arrest function exists | A condition of every powered floor test; decision DQ-007 |
+| Tether and gantry | Carries the robot's mass in a fall while no fall-arrest function exists | A condition of every powered floor test (DQ-007, decided); to be bought or built |
 | Safety and assurance | Risk assessment, safety functions and PLr, PL calculation, validation, cybersecurity, safety case | Draft and skeleton work products, not yet reviewed |
 
 More in the [architecture overview](docs/architecture.md) and [WP-M-01 §6](assurance/01-management/WP-M-01-assurance-strategy.md#6-safety-architecture-argument-the-central-strategy).
@@ -266,9 +263,9 @@ structure and clause map exist and the content is still to be written.
 | | [Baseline gap assessment](assurance/00-assessment/gap-assessment.md) | Draft |
 | | [Work product register](assurance/01-management/WP-M-00-work-product-register.md), [process model and maps](assurance/process/README.md), [decision register](assurance/01-management/decisions/README.md) | Draft; checked by CI |
 | | [Living Safety Case records and dashboard](assurance/case/README.md) | Draft: records at BL-001, validated and drawn by CI |
-| **2 · Safety engineering** | [Item definition](assurance/02-concept/WP-C-01-item-definition.md), [operating envelopes](assurance/02-concept/WP-C-02-operating-environment-and-tasks.md), [risk assessment](assurance/02-concept/WP-C-03-risk-assessment.md), [safety functions and PLr](assurance/02-concept/WP-C-04-safety-functions-and-plr.md) | Draft, ported from the concept package; PLr and envelope pending the lead (DQ-002, DQ-004) |
+| **2 · Safety engineering** | [Item definition](assurance/02-concept/WP-C-01-item-definition.md), [operating envelopes](assurance/02-concept/WP-C-02-operating-environment-and-tasks.md), [risk assessment](assurance/02-concept/WP-C-03-risk-assessment.md), [safety functions and PLr](assurance/02-concept/WP-C-04-safety-functions-and-plr.md) | Draft, ported from the concept package; PL d, OE-1 only, controlled descent as the safe state and SF-01 withdrawn, as the lead decided on 2026-10-21 |
 | | [Insufficiency analysis](assurance/02-concept/WP-C-10-functional-insufficiency-analysis.md), [cybersecurity threat assessment](assurance/02-concept/WP-C-07-cybersecurity-threat-and-risk-assessment.md), [ML component definition](assurance/02-concept/WP-C-09-ml-component-definition-and-safety-requirements.md) | Skeleton |
-| | [Test operations hold point](assurance/06-validation/WP-V-07-test-operations.md) | Draft; the gantry, the wired E-stop and the bench supply wait on the lead (DQ-007, DQ-008, DQ-009) |
+| | [Test operations hold point](assurance/06-validation/WP-V-07-test-operations.md) | Draft; the gantry, the wired E-stop pendant and the bench supply are decided (2026-10-21) and still to be bought or built |
 | **3 · Build and verify** | Bench equipment, the [safety layer](assurance/05-software/WP-W-03-software-architecture.md), [chain architecture](assurance/03-system/WP-S-03-technical-safety-concept.md) and [PL calculation](assurance/04-hardware/WP-H-04-reliability-data-and-pl-calculation.md), [fall and descent tests](assurance/06-validation/WP-V-02-stopping-braking-stability-tests.md), [fault injection](assurance/06-validation/WP-V-05-fault-injection.md) | Planned |
 | **4 · Validate and release** | [Safety validation](assurance/06-validation/WP-V-01-safety-validation.md), [assessment](assurance/10-safety-case/WP-K-04-functional-safety-assessment.md), [technical documentation](assurance/10-safety-case/WP-K-02-technical-documentation-index.md), [release record](assurance/10-safety-case/WP-K-06-release-record.md), [field monitoring](assurance/09-production-operation/WP-O-04-field-monitoring.md) | Planned |
 

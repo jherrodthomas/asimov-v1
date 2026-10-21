@@ -41,11 +41,11 @@ below. CI fails if any of them is stale. The document form of the same argument 
 | Claims with accepted supporting evidence | 0 |
 | Registered evidence items | 22 (0 available, 15 drafted, 7 not yet performed) |
 | Evidence requiring review | 15 |
-| Open assurance actions | 10 |
+| Open assurance actions | 8 |
 | Open defeaters (known counter-evidence) | 34 |
 | Evaluated configurations | 1 |
 | Assurance-supported configurations | 0 |
-| Records digest | `d9cd5af97b39` |
+| Records digest | `8c27b71e21dd` |
 
 | Lifecycle area | Status | Evidence (drafted / missing / accepted) |
 |---|---|---|

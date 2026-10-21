@@ -36,10 +36,7 @@
 
 From the [process model](../../../process/README.md). Each one is a condition on the gate unless it is closed before the review.
 
-| Interface | Topic | Open item | Due | Closed? |
-|---|---|---|---|---|
-| IX-02 | The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims are bounded by what the IMU and the camera can detect and by the safe state the biped can reach | DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing | G1 | |
-| IX-03 | Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability in OE-1 rests on the tether and gantry with the policy as a functional component | DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1 | G1 | |
+None.
 
 ### Roles WP-M-02 §3.1 needs by this gate that are not assigned
 
@@ -50,7 +47,6 @@ From the [process model](../../../process/README.md). Each one is a condition on
 | Quality assurance | TBD (independent of the author) | G0 |
 | Test bench owner | TBD | G3 |
 | Test operator(s) | TBD (trained per WP-M-04) | G1 |
-| External functional safety assessor | TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled) | G1 |
 | External cybersecurity assessor | TBD | G5 |
 | Notified body | TBD | G5 |
 
