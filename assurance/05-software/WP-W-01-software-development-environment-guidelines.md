@@ -26,7 +26,7 @@ Radxa CM5 (PREEMPT_RT Linux, motion control) and Raspberry Pi 5 (media, tele-ope
 
 ## 3. Guidelines
 
-Coding rules, review rules, test rules, the separation of the safety layer from the policy runtime.
+Coding rules, review rules, test rules, the separation of the safety layer from the policy runtime. The UART debug port is open in development builds and closed in the reference build (DQ-033 A, 2026-10-21): the two builds differ in that one flag, recorded in the build manifest.
 
 ## 4. What exists at BL-001
 

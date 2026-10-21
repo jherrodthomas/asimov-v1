@@ -5,6 +5,18 @@ engineering, firmware, legged locomotion, cybersecurity, verification, documenta
 analysis is as valuable as code. The [wiki's contributor guide](https://github.com/jherrodthomas/asimov-v1/wiki/Contributor-guide)
 is the short version of this page.
 
+## Wanted: one verification reviewer
+
+The project lead decided on 2026-10-21 to look for a second contributor now (decision DQ-029). The role is
+**verification reviewer** at independence I1: someone other than the author who reads a work product against the
+procedure in [WP-P-05](assurance/07-supporting/WP-P-05-verification-review-procedure.md) and says what is wrong,
+missing or unsupported. No assessor's credentials are needed; machinery-safety or robotics experience is, and a few
+hours per document. The first two documents are the
+[risk assessment (WP-C-03)](assurance/02-concept/WP-C-03-risk-assessment.md) and the
+[safety functions and required PL (WP-C-04)](assurance/02-concept/WP-C-04-safety-functions-and-plr.md). To volunteer,
+open an issue with the problem-report template titled "Verification reviewer" or comment on any pull request; the
+lead will reply with the review record template and a baseline to review against.
+
 ## Where to start
 
 - **Questions and bugs:** [open an issue](https://github.com/jherrodthomas/asimov-v1/issues) with the problem

@@ -26,7 +26,7 @@ The MCB schematics and PCB (v0.1.4), the harness (XT30(2+2) power and CAN to eve
 
 ## 3. Signal chain
 
-E-stop devices → receiver → motor-rail contactors; the MCB safety layer's enable; the BMS handshake; category and DC per WP-S-03.
+E-stop devices → receiver → motor-rail contactors; the MCB safety layer's enable; the BMS handshake; category and DC per WP-S-03. Decided 2026-10-21: a second IMU of a different type on a separate supply as the second channel of SF-23 (DQ-034 A); the UART debug port behind a cover with a tamper label, disabled in firmware unless a maintenance mode is armed (DQ-033 A).
 
 ## 4. Response time budget
 

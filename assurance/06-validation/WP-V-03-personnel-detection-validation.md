@@ -22,7 +22,7 @@ Human detection, speed reduction and power-and-force limiting validation: that S
 
 ## 2. Test specification
 
-PD-nn: body-region test fixtures, approach cases, expected force and pressure, per joint and per operating envelope.
+PD-nn: body-region test fixtures, approach cases, expected force and pressure, per joint and per operating envelope. Pass criteria are the ISO/TS 15066 Annex A values with the 0.75 factor on the arm and hand values (DQ-028 A, 2026-10-21); a measured contact above the factored value fails even below the published one.
 
 ## 3. Blind zones
 

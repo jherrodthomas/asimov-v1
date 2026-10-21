@@ -26,7 +26,7 @@ A hardwired E-stop chain removes motor power independently of every processor (S
 
 ## 3. Allocation of safety functions to elements
 
-E-nn elements (E-stop devices and receiver, motor-rail contactors, the MCB safety layer, actuator drive limits, thermistors, the BMS, the tether) against SF-01…SF-25 with channel structure and category.
+E-nn elements (E-stop devices and receiver, motor-rail contactors, the MCB safety layer, a second IMU of a different type on a separate supply for SF-23 (DQ-034 A, decided 2026-10-21), actuator drive limits, thermistors, the BMS, the tether) against SF-02…SF-25 (SF-01 withdrawn, DQ-006 A) with channel structure and category.
 
 ## 4. Architecture
 

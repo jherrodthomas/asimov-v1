@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-03 Risk assessment (ISO 12100) and determination of the required Performance Level per safety function (ISO 13849-1) |
 | Standard reference | ISO 12100:2010 §5.4–§5.6, Annex B; ISO 13482:2014 §5, Annex A; ISO 10218-1:2011 §5, Annex A; ISO 13849-1:2023 §5, Annex A (risk graph); ISO 13850:2015; IEC 60204-1:2018 §9.2.2 (stop categories); Regulation (EU) 2023/1230 Annex III §1.1.2 |
-| Version | 0.2 (2026-10-21): DQ-004 A (PL d), DQ-005 A (safe state), DQ-006 A (SF-01 withdrawn), DQ-007 A, DQ-008 A, DQ-009 A applied to §6 and §7. 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
+| Version | 0.3 (2026-10-21): DQ-025 A (residual pinch risk accepted for OE-1) and DQ-031 A (assembly hazards in the item) applied to §4 and §8. 0.2 (2026-10-21): DQ-004 A (PL d), DQ-005 A (safe state), DQ-006 A (SF-01 withdrawn), DQ-007 A, DQ-008 A, DQ-009 A applied to §6 and §7. 0.1 (2026-10-21): the 32 hazards of the concept-package catalogue (`06_Hazards`) ported as H-01…H-32 with their package IDs; the risk graph readings of the package HARA (`07_HARA`) carried as the unmitigated rating per operating envelope and re-read for OE-1 with the gantry and tether; the 25 safety functions identified; measures DM-01…DM-06 |
 | Status | Draft |
 | PL / scope | Highest PLr in OE-1: **d** (DQ-004 A, decided 2026-10-21, with the gantry and tether as the complementary measure); the inherited HARA reads **e** for nine rows in OE-2…OE-4, which stay excluded rather than argued down; CFG-001 |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -110,6 +110,8 @@ and a measure, not a PLr.
 | H-16 | HZ-R01 | Radiation | Optical radiation from the camera module | the head | any (low) |
 | H-17 | HZ-X01 | Materials | Inhalation of MJF PA12 dust during fabrication or repair | workshop | OS-07 |
 | H-18 | HZ-G01 | Ergonomic | Manual-handling injury lifting the 35 kg robot | wherever it is lifted | OS-07 |
+
+H-10, H-17 and H-18 are kit-assembly hazards; the lead kept them inside the item on 2026-10-21 (DQ-031 A) as procedural measures of WP-O-01, rated but with no Performance Level.
 | H-19 | HZ-V02 | Environment | Operation outside +10 to +35 °C: torque drift, BMS cut-off, plastic embrittlement | the robot | OS-10 |
 | H-20 | HZ-V03 | Environment | Wet floor or moisture ingress: short circuit or slip | the floor, the robot | OS-10 |
 | H-21 | HZ-P01 | Personal care: restraint | Inadequate restraint: the robot grasps or leans on a person | reach envelope | scoped out (AOU-07) |
@@ -234,8 +236,11 @@ Machine-readable copy: [`trace/items/hazards.yaml`](../trace/items/hazards.yaml)
 
 No powered floor test is inside this assessment until DM-01, DM-02, DM-03 and DM-04 exist (WP-V-07). No operation
 with a person within reach of a powered limb is inside it at all (OE-2…OE-4 excluded). With those conditions the
-residual risk of OE-1 is dominated by the bench technician's exposure to pinches (H-02, OE-1 reading c) and by the
-tether's own integrity (a new hazard the gantry introduces, to be rated in WP-C-05 §3.3).
+residual risk of OE-1 is dominated by the bench technician's exposure to pinches and crushes at the joints (H-02,
+H-04, H-05; OE-1 reading c) and by the tether's own integrity (a new hazard the gantry introduces, to be rated in
+WP-C-05 §3.3). **The lead accepted the first on 2026-10-21 (DQ-025 A), for OE-1 only and until the guarding and the
+measured contact limits exist at G2:** no hand on a powered limb, the rail off at the bench supply and the E-stop
+pressed before any adjustment, enforced through the session log of WP-V-07. The tether's own hazards are DQ-041.
 
 ## 9. Hazard log cross-references
 

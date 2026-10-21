@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-04 Safety functions specification with required Performance Level, stop category and response time |
 | Standard reference | ISO 13849-1:2023 §5 (safety requirements specification of each safety function), Annex A (PLr); ISO 10218-1:2011 §5.4 (safety-related control system performance), §5.5 (robot stopping functions), §5.6 (speed control), §5.10 (collaborative operation); ISO 13482:2014 §5.16 (emergency stop), §6 (safety-related control system); ISO 13850:2015 §4; IEC 60204-1:2018 §9.2.2 (stop categories); ISO/TS 15066:2016 §5.5 |
-| Version | 0.3 (2026-10-21): DQ-014 A applied to SF-03. 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
+| Version | 0.4 (2026-10-21): DQ-028 A (contact limits) and DQ-034 A (second IMU) applied. 0.3 (2026-10-21): DQ-014 A applied to SF-03. 0.2 (2026-10-21): the lead's answers of 2026-10-21 applied: PL d (DQ-004 A); the safe state is a controlled descent to a kneel or crouch, then power removal, the E-stop removes power at once (DQ-005 A, closing DQ-016); SF-01 withdrawn as a safety function (DQ-006 A); SF-13 devices (DQ-008 A); SF-15 battery policy (DQ-009 A). 0.1 (2026-10-21): the 25 functions of the concept-package FSC (`09_FSC`) with their targets, reaction times and allocations, re-stated per function with demand, safe state, response, stop category, PLr, category, modes and the open decisions; the four decisions that shape them (DQ-004, DQ-005, DQ-006, DQ-008) marked |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); CFG-001 in OE-1; the collaborative functions SF-04, SF-06, SF-20 specified but not claimed in the first item |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -37,7 +37,7 @@ and the tether carries the fall in OE-1. Stop categories
 per IEC 60204-1 §9.2.2: category 0 is immediate removal of power (a fall onto the tether); category 1 is a
 controlled stop with power removed when stopped (the controlled descent).
 
-The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10. The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006. The answer (DQ-006 A, 2026-10-21) withdraws SF-01 as a safety function: the policy is a functional component.
+The contact limits behind SF-03, SF-04 and SF-20 are the ISO/TS 15066 Annex A body-region values with the head and neck excluded from contact by design and a project factor of 0.75 on the arm and hand values until measured (DQ-028 A, decided 2026-10-21; WP-C-06 §3). The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10. The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006. The answer (DQ-006 A, 2026-10-21) withdraws SF-01 as a safety function: the policy is a functional component.
 
 ## 2. Safety functions
 
@@ -156,7 +156,7 @@ WP-C-05 and WP-O-03 and verified by inspection.
 | Safe state | The attitude estimate is rejected for that cycle; a persistent fault (**TBC:** 3 cycles) is critical and triggers SF-08 |
 | Response time | ≤ 50 ms (package) |
 | PLr | d |
-| Category, DC | 3: a second IMU on a separate bus (DFMEA FM-12) as the second channel |
+| Category, DC | 3: a second IMU of a different type on a separate supply, read by the safety layer and cross-checked against the first (DQ-034 A, decided 2026-10-21; DFMEA FM-12) |
 | Modes | M2, M3 |
 | Verification | WP-V-05 fault injection: frozen, saturated and biased IMU data |
 | Today | One LSM6DSV on the motion control board; an external IMU connector exists (electrical README) |

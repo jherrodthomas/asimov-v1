@@ -116,7 +116,7 @@ Which activity answers each clause reference listed in the register. One activit
 | Software (ISO 13849-1 §7, IEC 61508-3) | Firmware and software engineer(s) | Jherrod Thomas; additional contributors TBD | G2 |
 | Independent confirmation | External functional safety assessor | None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1 | G1 (revisit) |
 
-**Other roles WP-M-02 §3.1 needs by G4:** Verification reviewer(s) (TBD (at least one person other than the author); needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD; needed by G3, still unassigned); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned).
+**Other roles WP-M-02 §3.1 needs by G4:** Verification reviewer(s) (TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21), starting with WP-C-03 and WP-C-04; needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD; needed by G3, still unassigned); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned).
 
 **Confirmation measures (WP-M-06 §9):**
 

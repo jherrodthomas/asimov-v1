@@ -26,7 +26,7 @@ SL-T per FR 1–7, decided by the lead on 2026-10-21 (DQ-012 A): SL 2 for FR 1 i
 
 ## 3. Requirements
 
-CSR-nn per CR: DTLS and TLS 1.3 on the tele-operation channel, session tokens with expiry, idle lock, audit logging, signed images, a closed UART debug port in the reference build, CAN message authentication where a safety signal crosses a bus, E-stop link heartbeat and encryption.
+CSR-nn per CR: DTLS and TLS 1.3 on the tele-operation channel, session tokens with expiry, idle lock, audit logging, signed images, a UART debug port that is open during development and closed in the reference build: behind a cover with a tamper label and disabled in firmware unless a maintenance mode is armed from the pendant with the rail off (DQ-033 A, decided 2026-10-21), CAN message authentication where a safety signal crosses a bus, E-stop link heartbeat and encryption.
 
 ## 4. Traceability
 

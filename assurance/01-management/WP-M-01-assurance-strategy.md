@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -255,16 +255,26 @@ index, the register entry is the question.
 | D-19 | Two-person rule for every powered test | DQ-022 | Decided 2026-10-21: A |
 | D-20 | Write the fork's own safety layer for the motion control board before upstream's firmware is public | DQ-023 | Decided 2026-10-21: A, a minimal fork firmware for the hang tests |
 | D-21 | Deliberate fall and power-cut tests on the kit robot | DQ-024 | Decided 2026-10-21: A, a bounded campaign |
-| D-22 | Residual pinch and crush risk to the bench technician in OE-1 | DQ-025 | Open, batch 3 |
-| D-23 | Spares budget and damage limit for the fall campaign | DQ-026 | Open, batch 3 |
-| D-24 | Buy a rated gantry crane or build a frame | DQ-027 | Open, batch 3 |
-| D-25 | ISO/TS 15066 contact limits as design targets | DQ-028 | Open, batch 3 |
-| D-26 | Recruit a second contributor as verification reviewer | DQ-029 | Open, batch 3 |
-| D-27 | When G1 is held | DQ-030 | Open, batch 3 |
-| D-28 | Kit-assembly hazards in or out of the item | DQ-031 | Open, batch 3 |
-| D-29 | Walking in the first item | DQ-032 | Open, batch 3 |
-| D-30 | The UART debug port in the reference build | DQ-033 | Open, batch 3 |
-| D-31 | A second IMU for SF-23 | DQ-034 | Open, batch 3 |
+| D-22 | Residual pinch and crush risk to the bench technician in OE-1 | DQ-025 | Decided 2026-10-21: A, accepted for OE-1 until G2 |
+| D-23 | Spares budget and damage limit for the fall campaign | DQ-026 | Decided 2026-10-21: A, parts-based |
+| D-24 | Buy a rated gantry crane or build a frame | DQ-027 | Decided 2026-10-21: A, buy |
+| D-25 | ISO/TS 15066 contact limits as design targets | DQ-028 | Decided 2026-10-21: A, with a 0.75 factor on arm and hand values |
+| D-26 | Recruit a second contributor as verification reviewer | DQ-029 | Decided 2026-10-21: A, public call open |
+| D-27 | When G1 is held | DQ-030 | Decided 2026-10-21: A, after the first hang test |
+| D-28 | Kit-assembly hazards in or out of the item | DQ-031 | Decided 2026-10-21: A, in |
+| D-29 | Walking in the first item | DQ-032 | Decided 2026-10-21: A, not in the first item |
+| D-30 | The UART debug port in the reference build | DQ-033 | Decided 2026-10-21: A, closed in the reference build |
+| D-31 | A second IMU for SF-23 | DQ-034 | Decided 2026-10-21: A |
+| D-32 | The bench equipment purchase | DQ-035 | Open, batch 4 |
+| D-33 | Certified safety relay or plain relays | DQ-036 | Open, batch 4 |
+| D-34 | What feeds the actuator rail on the bench | DQ-037 | Open, batch 4 |
+| D-35 | Tele-operation heartbeat timeout | DQ-038 | Open, batch 4 |
+| D-36 | Lost wireless heartbeat: stop demand or warning in OE-1 | DQ-039 | Open, batch 4 |
+| D-37 | Session recording and retention | DQ-040 | Open, batch 4 |
+| D-38 | The tether's own hazards accepted with rigging checks | DQ-041 | Open, batch 4 |
+| D-39 | Stator temperature cut-off and session readout | DQ-042 | Open, batch 4 |
+| D-40 | Tether catch height | DQ-043 | Open, batch 4 |
+| D-41 | Where the laboratory is | DQ-044 | Open, batch 4 |
 
 ## 9. Top risks to the assurance path
 

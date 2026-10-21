@@ -156,7 +156,7 @@ Nothing is marked complete before its review, and every number below is computed
 
 <!-- BEGIN GENERATED: record-headline (docs/assets/asimov/make_assets.py) -->
 
-**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `0b928fd3b732`
+**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `e5c55582aaa7`
 
 <!-- END GENERATED: record-headline -->
 
@@ -321,7 +321,7 @@ changes need a rationale, an impact analysis and appropriate verification.
 
 | | |
 |---|---|
-| [Contributing](CONTRIBUTING.md) | Rules for safety-relevant changes and assurance records |
+| [Contributing](CONTRIBUTING.md) | Rules for safety-relevant changes and assurance records; **one verification reviewer wanted** (see the top of that page) |
 | [Issues](https://github.com/jherrodthomas/asimov-v1/issues) · [Pull requests](https://github.com/jherrodthomas/asimov-v1/pulls) | Problem reports, safety concerns, reviews of the analyses; pull requests target `main` |
 | [Security policy](SECURITY.md) | Private vulnerability reporting |
 | [Wiki](https://github.com/jherrodthomas/asimov-v1/wiki) | Orientation: processes, process maps, how each standard is used, glossary, how decisions are made. Kept in [`wiki/`](wiki/README.md) and mirrored on merge |

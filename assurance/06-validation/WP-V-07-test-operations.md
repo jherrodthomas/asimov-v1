@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-V-07 Test operations and safety procedures for powered testing (hold point: tether, gantry, E-stop, cleared area) |
 | Standard reference | ISO 12100:2010 §6.4 (information for use, including for the development phase), §6.3 (safeguarding and complementary protective measures); ISO 13482:2014 §7 (verification and validation, test conditions); ISO 10218-2:2011 §5 (safeguarding during commissioning); ISO 13850:2015 §4 (emergency stop function, as bench equipment); IEC 60204-1:2018 §5.3 (supply disconnecting device), §7.2 (overcurrent protection); ASPICE 4.0 VAL.1 |
-| Version | 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
+| Version | 0.4 (2026-10-21): DQ-025 A, DQ-027 A and DQ-032 A applied to §2 and §3. 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
 | Status | Draft |
 | PL / scope | Development testing only. No PL is claimed for the bench equipment |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -29,7 +29,7 @@ outside it but follow §3.
 
 | # | Condition | Evidence | Closes |
 |---|---|---|---|
-| C-1 | An overhead gantry or rated anchor point with a tether rated for the robot's mass under a dynamic load (fall factor and shock allowance **(TBC)**), a quick-release the operator can reach, and a lowering mechanism so that the feet touch the floor only when intended (DQ-007) | Rating labels, photo and sketch in the change record under [`07-supporting/impact/`](../07-supporting/impact/README.md); a static load test to **(TBC: 2×)** the robot's mass before first use | GAP-03 (bench), H-01, H-06, H-23, H-28 |
+| C-1 | A rated portable gantry crane (500 kg class) with a trolley and a rated winch or fall-arrest block (DQ-027 A, decided 2026-10-21), with a tether rated for the robot's mass under a dynamic load (fall factor and shock allowance **(TBC)**), a quick-release the operator can reach, and a lowering mechanism so that the feet touch the floor only when intended (DQ-007) | Rating labels, photo and sketch in the change record under [`07-supporting/impact/`](../07-supporting/impact/README.md); a static load test to **(TBC: 2×)** the robot's mass before first use | GAP-03 (bench), H-01, H-06, H-23, H-28 |
 | C-2 | A wired, dual-channel emergency stop (two NC contacts, red mushroom button, latching) on a pendant in the operator's hand, through a safety relay or two contactors, that removes the actuator rail; re-arm needs a deliberate action at the pendant with the button released. The kit's wireless E-stop may be fitted in addition but does not count until its link is surveilled (DQ-008) | Wiring sketch in the change record; a functional test before every session (§4) | GAP-07, GAP-11 (bench) |
 | C-3 | A bench power supply with a current limit and a switch within the operator's reach feeds the actuator rail in place of a battery; no battery is on the robot (DQ-009) | Supply model and settings in the test log | GAP-08, GAP-12 (bench) |
 | C-4 | The test area meets the OE-1 limits of WP-C-02 §4 (10 to 35 °C, non-condensing, sealed dry floor with slope at most 1 %, at least 200 lux, no steps, indoors; DQ-021 A) and is defined, level, dry and marked: the reach envelope plus 1 m on every side; nobody inside it while the rail is powered except as §3 allows; the operator's station and the observer's station outside it on opposite sides (WP-C-02 §6) | Area sketch in the test log | WP-C-02 OE-1 |
@@ -48,10 +48,10 @@ activity on the kit robot is bench work with single limbs on a stand or the robo
 
 | Limit | Value | Source |
 |---|---|---|
-| People inside the area while the rail is powered | None. A technician may enter only with the rail switched off at the bench supply and the E-stop pressed | No contact limit is measured (GAP-05); AOU-06 |
+| People inside the area while the rail is powered | None. A technician may enter only with the rail switched off at the bench supply and the E-stop pressed; no hand on a powered limb. The residual pinch and crush risk this rule leaves is accepted by the lead for OE-1 until G2 (DQ-025 A, 2026-10-21) | No contact limit is measured (GAP-05); AOU-06; WP-C-03 §8 |
 | Joint torque and velocity | The limits of C-5: half the MuJoCo control range per joint and the velocity ceiling of WP-S-04 until measured (DQ-014 A, decided 2026-10-21) | WP-C-01 §4 |
 | Feet on the floor | Only with the gantry lowered to a tether slack that lets the robot stand but not fall below **(TBC: knee height)** | C-1 |
-| Walking | Not before a controller exists, is identified (C-6) and has been run in the hang test; within the gantry span only | WP-C-02 T-05 |
+| Walking | Not in the first item (DQ-032 A, decided 2026-10-21): standing, stepping in place and limb motion on the tether only; walking returns with the policy in the second item | WP-C-02 T-05 |
 | Deliberate falls and power cuts | Only as the bounded campaign of WP-V-02 (DQ-024 A, decided 2026-10-21): from standing, caught by the tether above knee height, nobody inside the area, an inspection after each and the spares budget of DQ-026 agreed before the first | WP-V-02 |
 | Battery | None on the robot | C-3; DQ-009 |
 | Session length | Thermal readout of every actuator logged every **(TBC: 10 min)**; stop at 60 °C stator temperature | H-12 |
@@ -89,7 +89,7 @@ understood.
 
 | ID | Item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Specify and buy or build the gantry and tether (DQ-007 A, decided 2026-10-21; ACT-009); record the rating and the load test | test bench owner | Before the first hang test |
+| OI-1 | Buy the gantry: a rated portable gantry crane, 500 kg class, with a trolley and a rated winch or fall-arrest block, tether and shackles (DQ-027 A, decided 2026-10-21; the purchase is DQ-035; ACT-009); keep the certificates and record the load test | test bench owner | Before the first hang test |
 | OI-2 | Specify and build the wired E-stop pendant and contactor chain (DQ-008 A, decided 2026-10-21; ACT-004) | EM | Before the first hang test |
 | OI-3 | Name and train the test operator(s) (WP-M-02 §3.1) | PM | Before the first powered test |
 | OI-4 | Replace the §3 limits with the budget of WP-S-04 and the parameters of WP-W-09 once set (DQ-014) | SRP | G2 |

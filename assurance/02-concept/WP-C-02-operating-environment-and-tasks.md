@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-02 Operating environment and task specification (operating envelopes OE-1…OE-4, floors, people, tether) |
 | Standard reference | Machinery: 12100 §5.3; 13482 §5.2; 10218-2 §5; Other: ISO 21448 §5 (informative method); ASPICE: SYS.1 |
-| Version | 0.3 (2026-10-21): DQ-021 A (OE-1 environmental limits adopted), DQ-014 A (joint limits) and DQ-022 A (two-person rule) applied to §3 and §4. 0.2 (2026-10-21): DQ-002 A applied (OE-1 the only envelope of the first item, OE-2 a second item); DQ-007 A (gantry and tether) and DQ-009 A (no battery on CFG-001) recorded. 0.1 (2026-10-21): the four operating envelopes of the concept package (`05_OpEnv`) as zones, with people presence, fall protection, speed limits and status; tasks T-01…T-08; environmental limits; exclusions; the development test area |
+| Version | 0.4 (2026-10-21): DQ-027 A (gantry crane) and DQ-032 A (no walking in the first item) applied to §3 and §6. 0.3 (2026-10-21): DQ-021 A (OE-1 environmental limits adopted), DQ-014 A (joint limits) and DQ-022 A (two-person rule) applied to §3 and §4. 0.2 (2026-10-21): DQ-002 A applied (OE-1 the only envelope of the first item, OE-2 a second item); DQ-007 A (gantry and tether) and DQ-009 A (no battery on CFG-001) recorded. 0.1 (2026-10-21): the four operating envelopes of the concept package (`05_OpEnv`) as zones, with people presence, fall protection, speed limits and status; tasks T-01…T-08; environmental limits; exclusions; the development test area |
 | Status | Draft |
 | PL / scope | PL d target (DQ-004 A); OE-1 only in the first item (DQ-002 A, decided 2026-10-21); CFG-001 (DQ-003 A) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -56,7 +56,7 @@ defeaters DF-01…DF-34 of the safety case, not a second analysis.
 | T-02 | Hang test: the robot on the gantry with feet off the floor, joints moved by tele-operation; two people (DQ-022 A) | OE-1 | M4 | operator, observer | gantry carrying the whole mass; SF-03 clamps; E-stop | permitted under WP-V-07 once the gantry exists |
 | T-03 | Stand on the tether: feet on the floor, gantry lowered to take a fall, STAND under the controller | OE-1 | M2 | operator, observer | gantry and tether; E-stop; the controller's limits | **not permitted** until a controller exists and WP-V-07 conditions hold |
 | T-04 | Move on the tether: tele-operated limb and torso motion in MOVE, feet on the floor | OE-1 | M3 | operator, observer | as T-03 plus SF-03, SF-23, SF-24 | not permitted until the safety layer exists |
-| T-05 | Walk on the tether (CFG-002): locomotion under the policy within the gantry span | OE-1 | M3 | operator, observer | as T-04 plus the policy position (DQ-006) | not permitted; policy unreleased |
+| T-05 | Walk on the tether (CFG-002): locomotion under the policy within the gantry span | OE-1 | M3 | operator, observer | as T-04 plus the policy as a functional component (DQ-006 A) | **not in the first item** (DQ-032 A, decided 2026-10-21): standing, stepping in place and limb motion only; walking returns with the policy in the second item |
 | T-06 | Controlled descent and fall tests: deliberate loss of balance, power cut, DAMP, caught by the tether or descending under SF-02 | OE-1 | M1…M3 | operator, observer | gantry sized for the dynamic load; nobody within the fall radius | the first test campaign of WP-V-02 |
 | T-07 | Demonstration to visitors | OE-1 | any | public | none exists | **excluded** (people within reach, DQ-002) |
 | T-08 | Collaborative task with a worker (CFG-002) | OE-2 | M3 | briefed | SF-04, SF-20, SF-06 measured | **excluded** from the first item |
@@ -92,8 +92,9 @@ Each exclusion becomes an operating limit in WP-O-03 §3 and a marking where it 
 
 ## 6. The development test area (OE-1)
 
-A marked rectangle at least the reach envelope (1.5 m diameter) plus 1 m on every side, under a gantry or a rated
-anchor point whose span is the walking range; a level, dry, sealed floor; the operator's station outside the
+A marked rectangle at least the reach envelope (1.5 m diameter) plus 1 m on every side, under a rated portable
+gantry crane with a trolley (DQ-027 A); since walking is not in the first item (DQ-032 A) the gantry needs no walking
+span, only room to lower the robot to the floor; a level, dry, sealed floor; the operator's station outside the
 rectangle with the wired E-stop and the bench supply switch within reach; the observer outside the rectangle on the
 other side; nothing inside but the robot, its tether and test props; the camera view and the telemetry visible to the
 operator. Sketch and dimensions to be recorded under [`06-validation/test-sites/`](../06-validation/test-sites/README.md)

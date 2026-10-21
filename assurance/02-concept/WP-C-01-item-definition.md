@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-01 Item definition and limits of the machinery |
 | Standard reference | ISO 12100:2010 §5.3 (determination of the limits of the machinery), §5.4 (hazard identification inputs); ISO 10218-1:2011 §3, §5 (terms, robot requirements); ISO 13482:2014 §4 (robot types, use); ISO 13849-1:2023 §4.5; Regulation (EU) 2023/1230 Annex III §1.1.2, Annex IV Part A (technical documentation) |
-| Version | 0.3 (2026-10-21): DQ-014 A applied to §4. 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
+| Version | 0.4 (2026-10-21): DQ-030 A, DQ-031 A and DQ-032 A applied to §2, §9 and OI-1. 0.3 (2026-10-21): DQ-014 A applied to §4. 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); operating envelope OE-1 only (DQ-002 A, decided 2026-10-21); CFG-001 the kit robot as published, tethered and bench-powered; CFG-002 the battery-powered robot under the locomotion policy, every value quoted from upstream and unverified |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -78,7 +78,7 @@
 | ID | Function | Implemented by | Notes |
 |---|---|---|---|
 | F-01 | Stand: maintain bipedal balance in STAND | Locomotion policy or balance controller on the CM5, IMU, 12 leg actuators | **The controller is not public.** Whether it may carry a safety function is DQ-006 |
-| F-02 | Walk: forward, backward and turning locomotion in MOVE | Locomotion policy (CFG-002 only) | Unreleased |
+| F-02 | Walk: forward, backward and turning locomotion in MOVE | Locomotion policy (CFG-002 only) | Unreleased; **not a function of the first item** (DQ-032 A, decided 2026-10-21): standing, stepping in place and limb motion only |
 | F-03 | Manipulate: upper-body reach with the two 5-DOF arms; no end effector in v1 | Position and velocity commands to 10 arm actuators | Loads per §1.2 on CFG-002 |
 | F-04 | Sense: camera, quad microphones, IMU, joint encoders, streamed to the operator | Edge board, motion control board | Monocular camera: no range to a person |
 | F-05 | Speak: audio output through the 10 W speaker | Edge board | A limiter is a safety function (SF-16) |
@@ -198,14 +198,16 @@ Machine-readable copy: [`trace/items/aou.yaml`](../trace/items/aou.yaml).
 
 ## 9. Out of scope for this item
 
-OE-2, OE-3 and OE-4 (DQ-002 A; OE-2 is the second item); any battery-powered or policy-driven operation (CFG-002); collaborative tasks;
-carrying a person; outdoor use; medical or child-care use.
+OE-2, OE-3 and OE-4 (DQ-002 A; OE-2 is the second item); any battery-powered or policy-driven operation (CFG-002); walking
+(DQ-032 A); collaborative tasks; carrying a person; outdoor use; medical or child-care use. The kit-assembly hazards
+(ESD, printed-part dust, lifting the 35 kg robot: H-10, H-17, H-18) are **inside** the item as procedural measures of
+WP-O-01 (DQ-031 A, decided 2026-10-21).
 
 ## 10. Open items
 
 | ID | Item | Owner | Due |
 |---|---|---|---|
-| OI-1 | Weigh the robot, measure the centre of gravity, bound the fall energy (ACT-001) | EM | G1 |
+| OI-1 | Weigh the robot, measure the centre of gravity, bound the fall energy (ACT-001) | EM | G1 (G1 is held after this measurement, DQ-030 A) |
 | OI-2 | ~~Set the battery policy (DQ-009)~~ decided 2026-10-21 (A: certified-pack list and BMS handshake interlock); design the interlock in WP-H-05 and the pack list in WP-O-03 (ACT-008) | EM | G2 |
 | OI-3 | Obtain from upstream the declared joint torque and velocity limits; until then half the MuJoCo range applies (DQ-014 A, decided 2026-10-21) | SRP | G1 |
 | OI-4 | ~~Apply DQ-002 and DQ-003 to §1 and §9 when answered~~ applied 2026-10-21 (both A) | SM | G1 |

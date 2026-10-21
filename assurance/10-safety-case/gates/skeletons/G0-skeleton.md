@@ -70,7 +70,7 @@ None.
 
 | Role | Assigned to | Needed by |
 |---|---|---|
-| Verification reviewer(s) | TBD (at least one person other than the author) | G0 |
+| Verification reviewer(s) | TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21), starting with WP-C-03 and WP-C-04 | G0 |
 | Quality assurance | TBD (independent of the author) | G0 |
 
 ## Exit criteria (WP-M-00 §2)
