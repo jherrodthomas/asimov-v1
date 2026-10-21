@@ -156,7 +156,7 @@ Nothing is marked complete before its review, and every number below is computed
 
 <!-- BEGIN GENERATED: record-headline (docs/assets/asimov/make_assets.py) -->
 
-**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `1324d16c93c8`
+**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `c27237c5c873`
 
 <!-- END GENERATED: record-headline -->
 

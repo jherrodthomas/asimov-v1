@@ -164,7 +164,7 @@ is recorded here as a strength of the package (§9) and the gap stays a gap.
    manual describes, so that upstream's firmware, when it arrives, is assessed against a specification rather than
    read for one. Decided 2026-10-21 (DQ-023 A): the fork also writes a minimal firmware of its own for the hang tests.
 8. **Ask upstream for reliability data and the plan documents** (GAP-14, GAP-07): actuator and encoder failure
-   rates, the E-stop design, the mode-machine specification; record their absence as the fork's design input.
+   rates, the E-stop design, the mode-machine specification; record their absence as the fork's design input. Decided 2026-10-21 (DQ-047 A): one public discussion on the upstream repository, drafted in WP-M-10 §5.
 9. **Set the limits and the security target** (DQ-012, DQ-014): decided 2026-10-21: half the MuJoCo range per joint
    until measured (A), and SL 2 for identification, integrity, data flow and availability (A).
 10. **Build the Living Safety Case tooling** and register GAP-01…GAP-34 as the first defeaters against the

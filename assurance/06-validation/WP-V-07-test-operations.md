@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-V-07 Test operations and safety procedures for powered testing (hold point: tether, gantry, E-stop, cleared area) |
 | Standard reference | ISO 12100:2010 §6.4 (information for use, including for the development phase), §6.3 (safeguarding and complementary protective measures); ISO 13482:2014 §7 (verification and validation, test conditions); ISO 10218-2:2011 §5 (safeguarding during commissioning); ISO 13850:2015 §4 (emergency stop function, as bench equipment); IEC 60204-1:2018 §5.3 (supply disconnecting device), §7.2 (overcurrent protection); ASPICE 4.0 VAL.1 |
-| Version | 0.5 (2026-10-21): DQ-035 A, DQ-037 A, DQ-039 A to DQ-044 A applied to §2 to §5. 0.4 (2026-10-21): DQ-025 A, DQ-027 A and DQ-032 A applied to §2 and §3. 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
+| Version | 0.6 (2026-10-21): DQ-049 A, DQ-051 A, DQ-052 A and DQ-053 A applied to §2, §3 and §6. 0.5 (2026-10-21): DQ-035 A, DQ-037 A, DQ-039 A to DQ-044 A applied to §2 to §5. 0.4 (2026-10-21): DQ-025 A, DQ-027 A and DQ-032 A applied to §2 and §3. 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
 | Status | Draft |
 | PL / scope | Development testing only. No PL is claimed for the bench equipment |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -36,7 +36,8 @@ outside it but follow §3.
 | C-5 | Every joint's torque and velocity limit the firmware enforces is known and recorded, or the test runs with the actuators' hardware current limits set to a value the test plan names (DQ-014) | Parameter record; the firmware version read before the test | GAP-06 (bench) |
 | C-6 | The firmware or controller build is identifiable (version, hash) and its behaviour on heartbeat loss, E-stop and fault is written down before the test; where upstream's firmware is used as released, its release notes are the record | Build manifest in the test log | GAP-16 (bench) |
 | C-7 | The robot has been weighed, its lifting points and two-person lift are agreed, and the material and harness acceptance checks of WP-O-01 (as far as they exist) are recorded for the unit | Acceptance record | GAP-04, GAP-22 (bench) |
-| C-8 | Two people for every powered test with the robot assembled (DQ-022 A, decided 2026-10-21): the operator, who has read this procedure, is trained per WP-M-04 and has run the pre-session checks of §4, and one observer; single-limb bench tests on a stand (T-01) may be run alone | Signed lines of both in the test log | WP-M-04 competence; WP-C-02 T-01 |
+| C-8 | Two people for every powered test with the robot assembled (DQ-022 A, decided 2026-10-21): the operator, who has read this procedure, is trained per WP-M-04 and has run the pre-session checks of §4, and one observer. The observer may be any briefed adult (DQ-052 A): this procedure read aloud to them, the stations and the E-stop shown, a signed line in the log; the observer never enters the area or touches the robot. Single-limb bench tests on a stand (T-01) may be run alone | Signed lines of both in the test log | WP-M-04 competence; WP-C-02 T-01 |
+| C-9 | Insurance (DQ-053 A, decided 2026-10-21): the lead's existing policy is checked and its answer filed with the site record; hang tests with the feet off the floor may run under it if machinery under test is not excluded; cover for the robot is in place before the first test with the feet on the floor | Insurer's written answer in the site record | site-01 record |
 
 Conditions C-1 to C-3 are the bench equipment of [WP-M-02 §4.1](../01-management/WP-M-02-safety-plan.md#41-early-implementation-of-at-risk-work);
 the lead decided them on 2026-10-21 (DQ-007 A: gantry and rated tether; DQ-008 A: wired dual-channel pendant
@@ -49,7 +50,7 @@ activity on the kit robot is bench work with single limbs on a stand or the robo
 | Limit | Value | Source |
 |---|---|---|
 | People inside the area while the rail is powered | None. A technician may enter only with the rail switched off at the bench supply and the E-stop pressed; no hand on a powered limb. The residual pinch and crush risk this rule leaves is accepted by the lead for OE-1 until G2 (DQ-025 A, 2026-10-21) | No contact limit is measured (GAP-05); AOU-06; WP-C-03 §8 |
-| Joint torque and velocity | The limits of C-5: half the MuJoCo control range per joint and the velocity ceiling of WP-S-04 until measured (DQ-014 A, decided 2026-10-21) | WP-C-01 §4 |
+| Joint torque and velocity | The limits of C-5: half the MuJoCo control range per joint (DQ-014 A) and 1.0 rad/s on every joint (DQ-049 A, decided 2026-10-21) until WP-S-04 sets per-joint values | WP-C-01 §4 |
 | Feet on the floor | Only with the gantry lowered to a tether slack that lets the robot stand but catches it at knee height, about 0.4 m from the floor at the centre of mass (DQ-043 A, decided 2026-10-21), until the controlled descent is verified; the descent tests of WP-V-02 set their own slack | C-1 |
 | Walking | Not in the first item (DQ-032 A, decided 2026-10-21): standing, stepping in place and limb motion on the tether only; walking returns with the policy in the second item | WP-C-02 T-05 |
 | Deliberate falls and power cuts | Only as the bounded campaign of WP-V-02 (DQ-024 A, decided 2026-10-21): from standing, caught by the tether above knee height, nobody inside the area, an inspection after each and the spares budget of DQ-026 agreed before the first | WP-V-02 |
@@ -86,7 +87,8 @@ Any unexpected motion, any fall or tether load that was not planned, any contact
 failure of a pre-session check, and any E-stop press that was not planned is a safety anomaly
 ([WP-M-02 §9](../01-management/WP-M-02-safety-plan.md#9-safety-anomaly-handling)). Testing stops; the anomaly is
 raised as an issue labelled `safety-anomaly`; the safety manager lifts the stop in writing after the cause is
-understood.
+understood. Anomaly reports, logs and results are published as issues and records as they happen (DQ-051 A,
+2026-10-21); video is published only when an anomaly report cites it and the people in it have agreed.
 
 ## 7. Open items
 

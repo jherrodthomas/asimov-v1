@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.5 (2026-10-21): batch 4 applied and batch 5 opened in §8. 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.6 (2026-10-21): batch 5 applied (DQ-054 A in §7) and batch 6 opened in §8. 0.5 (2026-10-21): batch 4 applied and batch 5 opened in §8. 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -216,11 +216,12 @@ tailoring decision. Each one needs confirmation review by an independent assesso
 The lifecycle has seven phases, each closed by a gate; gate names and exit criteria are in
 [WP-M-00 §2](WP-M-00-work-product-register.md#2-gates), the activities per phase in [WP-M-02 §4](WP-M-02-safety-plan.md#4-lifecycle-activities-per-phase),
 and the integrated maps in the [process model (WP-P-11)](../process/README.md).
+The second item (OE-2) starts after G5 of this one (DQ-054 A, decided 2026-10-21).
 
 | Phase | Gate | What it settles | Hold points |
 |---|---|---|---|
 | P0 Governance | G0 | Plans, roles, configuration control, the frame (DQ-001), the envelopes (DQ-002), the reference configuration (DQ-003) | None; the fork powers nothing |
-| P1 Concept | G1 | Robot limits, operating envelopes, risk assessment, safety functions with PLr, the safe state (DQ-005), the policy position (DQ-006), the gantry and E-stop (DQ-007, DQ-008), the battery policy (DQ-009), cybersecurity and ML concepts, test operations | **Hold point:** no powered test with the feet on the floor without the gantry, the wired E-stop and WP-V-07 approved |
+| P1 Concept | G1 | Robot limits, the first site and the bench equipment (DQ-044, DQ-035), operating envelopes, risk assessment, safety functions with PLr, the safe state (DQ-005), the policy position (DQ-006), the gantry and E-stop (DQ-007, DQ-008), the battery policy (DQ-009), cybersecurity and ML concepts, test operations | **Hold point:** no powered test with the feet on the floor without the gantry, the wired E-stop and WP-V-07 approved |
 | P2 System design | G2 | SRS, stop chain and safety-layer architecture, fall-arrest and response-time budget, I/O map, structural and stability analysis, system analyses | |
 | P3 HW/SW development | G3 | Chain hardware and PL calculation, the safety layer and its verification, qualification of components and tools, ML engineering evidence | |
 | P4 Integration and verification | G4 | Integration, PL verification, stability and fall tests on the gantry, contact measurements, E-stop tests, fault injection | **Hold point:** no person within reach of a powered limb before WP-V-03 passes |
@@ -275,16 +276,26 @@ index, the register entry is the question.
 | D-39 | Stator temperature cut-off and session readout | DQ-042 | Decided 2026-10-21: A, 60 °C |
 | D-40 | Tether catch height | DQ-043 | Decided 2026-10-21: A, knee height |
 | D-41 | Where the laboratory is | DQ-044 | Decided 2026-10-21: A, the lead's own premises |
-| D-42 | Hours per week | DQ-045 | Open, batch 5 |
-| D-43 | Where the reviewer call is posted | DQ-046 | Open, batch 5 |
-| D-44 | Ask upstream in public for reliability data and the E-stop design | DQ-047 | Open, batch 5 |
-| D-45 | Re-arm after an E-stop: pendant only | DQ-048 | Open, batch 5 |
-| D-46 | Laboratory joint velocity ceiling (decider: claude) | DQ-049 | Open, batch 5 |
-| D-47 | The policy as a black box or weights under agreement | DQ-050 | Open, batch 5 |
-| D-48 | Publishing anomalies, results and video | DQ-051 | Open, batch 5 |
-| D-49 | Who may be the observer | DQ-052 | Open, batch 5 |
-| D-50 | Liability insurance before powered tests | DQ-053 | Open, batch 5 |
-| D-51 | When the second item starts | DQ-054 | Open, batch 5 |
+| D-42 | Hours per week | DQ-045 | Decided 2026-10-21: A, about eight |
+| D-43 | Where the reviewer call is posted | DQ-046 | Decided 2026-10-21: A, upstream's Discord and forum (draft in WP-M-10 §5) |
+| D-44 | Ask upstream in public for reliability data and the E-stop design | DQ-047 | Decided 2026-10-21: A (draft in WP-M-10 §5) |
+| D-45 | Re-arm after an E-stop: pendant only | DQ-048 | Decided 2026-10-21: A |
+| D-46 | Laboratory joint velocity ceiling | DQ-049 | Decided 2026-10-21: A, 1.0 rad/s |
+| D-47 | The policy as a black box or weights under agreement | DQ-050 | Decided 2026-10-21: A, black box |
+| D-48 | Publishing anomalies, results and video | DQ-051 | Decided 2026-10-21: A, as they happen; video behind consent |
+| D-49 | Who may be the observer | DQ-052 | Decided 2026-10-21: A, any briefed adult |
+| D-50 | Liability insurance before powered tests | DQ-053 | Decided 2026-10-21: A, check first; cover before the first floor test |
+| D-51 | When the second item starts | DQ-054 | Decided 2026-10-21: A, after G5 |
+| D-52 | The recruited reviewer performing the G1 confirmation reviews at I1 | DQ-055 | Open, batch 6 |
+| D-53 | Which robot unit is the reference unit | DQ-056 | Open, batch 6 |
+| D-54 | A dedicated isolated Wi-Fi network | DQ-057 | Open, batch 6 |
+| D-55 | Hold-to-run enabling switch on the pendant | DQ-058 | Open, batch 6 |
+| D-56 | G1 target date | DQ-059 | Open, batch 6 |
+| D-57 | Licence of the record | DQ-060 | Open, batch 6 |
+| D-58 | Visitors outside the cleared area | DQ-061 | Open, batch 6 |
+| D-59 | Who lifts a stop after an anomaly | DQ-062 | Open, batch 6 |
+| D-60 | Firmware language (decider: claude) | DQ-063 | Open, batch 6 |
+| D-61 | Observing the actuator CAN protocol if undocumented | DQ-064 | Open, batch 6 |
 
 ## 9. Top risks to the assurance path
 

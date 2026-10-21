@@ -22,7 +22,7 @@ Field monitoring and incident reporting: how events in operation and in testing 
 
 ## 2. Signals monitored
 
-Test logs, anomalies, E-stop presses and their causes, falls and near-falls, contacts, near misses, upstream advisories, component recalls, battery incidents.
+Test logs, anomalies, E-stop presses and their causes, falls and near-falls, contacts, near misses, upstream advisories, component recalls, battery incidents. Anomalies, logs and results are published as they happen; video behind the consent of the people in it (DQ-051 A, 2026-10-21).
 
 ## 3. Procedure
 

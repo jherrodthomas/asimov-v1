@@ -32,7 +32,30 @@ Actuators (BLDC with harmonic gear and encoder, typical of 25), the motion contr
 
 Certificates, failure rates and B10d values needed by WP-H-04 and WP-H-07; what is missing at BL-001 (GAP-14).
 
-## 5. Open items
+## 5. Messages to upstream and the community
+
+The lead decided on 2026-10-21 to post two messages (DQ-046 A, DQ-047 A). Both are the lead's to post; the drafts
+below are the record's, and what comes back is entered in §2 and §4 as a design input, silence included.
+
+**Reviewer call, for upstream's Discord and forum (DQ-046 A):**
+
+> I maintain a fork of asimov-v1 that carries a safety-assurance record for the kit robot: a risk assessment, safety
+> functions with a required Performance Level, a hold point for powered tests, and a safety case that publishes its
+> own gaps. It is independent of Asimov Inc and claims nothing about their product. I am looking for one person
+> with machinery-safety or robotics experience to review two documents, a few hours each: the risk assessment and
+> the safety functions. Details and the two documents: [CONTRIBUTING](https://github.com/jherrodthomas/asimov-v1/blob/main/CONTRIBUTING.md).
+
+**Request for design inputs, one public discussion on the upstream repository (DQ-047 A):**
+
+> I am building a safety-assurance record for a tethered laboratory configuration of Asimov v1, published at
+> jherrodthomas/asimov-v1. Three things would let the record rest on your data rather than on estimates:
+> (1) failure-rate or B10d data for the actuators and their encoders, or the supplier's part numbers so I can ask
+> them; (2) the design of the wireless E-stop: receiver, what it switches, stop category, re-arm behaviour;
+> (3) the mode machine's specification (DAMP, STAND, MOVE: transitions, timeouts, watchdog). The record's findings
+> about the kit are public and yours to use. Where you prefer not to answer, the record will state that the data
+> was requested and not available.
+
+## 6. Open items
 
 | ID | Item | Owner | Due |
 |---|---|---|---|

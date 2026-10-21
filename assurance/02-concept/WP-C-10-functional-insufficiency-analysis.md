@@ -22,7 +22,7 @@ Analyses the performance limits of perception and the locomotion policy that cau
 
 ## 2. Functional insufficiencies
 
-FI-nn seeded from the gap assessment and the DFMEA: a policy out-of-distribution scenario (FM-28, HZ-P02), a sim-to-real gap on friction and inertia, a monocular camera that cannot range a person, no perception of a person behind the robot, IMU saturation in a fall, DAMP as a safe state that itself drops the robot (HZ-C01), a frozen camera frame (FM-23).
+FI-nn seeded from the gap assessment and the DFMEA (the policy being a black box for the first item, DQ-050 A, its insufficiencies are stated at the interface and found on the tether, not in its training data): a policy out-of-distribution scenario (FM-28, HZ-P02), a sim-to-real gap on friction and inertia, a monocular camera that cannot range a person, no perception of a person behind the robot, IMU saturation in a fall, DAMP as a safe state that itself drops the robot (HZ-C01), a frozen camera frame (FM-23).
 
 ## 3. Triggering conditions
 

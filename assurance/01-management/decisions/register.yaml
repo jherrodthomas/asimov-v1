@@ -1281,7 +1281,9 @@
       title: "Unplanned: whatever time is available, no dates in the plan"
       detail: "No commitment. Cost: the project plan stays a skeleton and the gate roadmap has no dates to be wrong about."
   sources: ["WP-M-03 §4 (hours per week are a decision for the register)", "WP-M-02 §3.1 (roles)", "DQ-023, DQ-029 (decided)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-03 §4 and §5 (about eight hours a week in two sessions; the gate roadmap paced on it)", at: 2026-10-21}
 
 - id: DQ-046
   ref: GAP-00
@@ -1312,7 +1314,9 @@
       title: "Nowhere else; wait for someone to find the repository"
       detail: "No posting. Cost: the role most likely stays unfilled through G1."
   sources: ["DQ-029 (decided)", "CONTRIBUTING.md (the call)", "README (upstream community links)", "G0 gate record condition C-2"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-10 §5 (the reviewer call drafted for upstream's Discord and forum, to be posted by the lead); WP-M-02 §3.1", at: 2026-10-21}
 
 - id: DQ-047
   ref: GAP-14
@@ -1342,7 +1346,9 @@
       title: "Do not ask; substitute certified components and the fork's own measurements"
       detail: "Independent of upstream. Cost: the actuators cannot be substituted; their failure rates would be estimated from generic data, which an assessor will discount."
   sources: ["gap assessment GAP-07, GAP-14 and action 8", "WP-M-10 (skeleton)", "WP-H-04 (skeleton)", "CLAUDE.md (upstream is quoted, not restated)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-10 §5 (one public discussion on the upstream repository drafted: actuator and encoder failure rates, the E-stop design, the mode-machine specification); WP-H-04 §2; gap assessment action 8", at: 2026-10-21}
 
 - id: DQ-048
   ref: GAP-07
@@ -1368,7 +1374,9 @@
       title: "Reset from either the pendant or the app"
       detail: "Convenient. Cost: a network client in the re-arm path of a PL d chain; the safety relay's monitored reset is bypassed."
   sources: ["ISO 13850:2015 §4.1.4 (reset), to be checked", "WP-C-04 SF-13", "DQ-008, DQ-012, DQ-036 (decided)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.6 SF-13 (re-arm only at the pendant's reset with the button released, then a separate start command; the app never re-arms); WP-S-05 §2; WP-V-04 §2", at: 2026-10-21}
 
 - id: DQ-049
   ref: GAP-06
@@ -1394,7 +1402,9 @@
       title: "2.0 rad/s"
       detail: "Livelier motion. Cost: a hand speed near 2 m/s at the shoulder, above what ISO/TS 15066 contemplates for transient contact."
   sources: ["DQ-014 (decided)", "WP-V-07 §2 C-5", "sim-model/xmls/asimov.xml (joint ranges)", "ISO/TS 15066:2016 (speed and contact), to be checked"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-W-09 §2 (1.0 rad/s on every joint in OE-1 until WP-S-04 sets a per-joint value); WP-V-07 §3; WP-C-04 SF-03", at: 2026-10-21}
 
 - id: DQ-050
   ref: GAP-17
@@ -1420,7 +1430,9 @@
       title: "Ask upstream for the weights and training description under a non-disclosure agreement"
       detail: "Simulation evidence becomes possible. Cost: an agreement a one-person project has to negotiate and honour; findings under it cannot be published in the record."
   sources: ["DQ-006 (decided)", "gap assessment GAP-17, GAP-21", "WP-C-09 (skeleton)", "WP-M-09 (skeleton)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-09 §3 and WP-M-09 §3 (the policy is a black box for the first item: interface requirements only, tested on the tether when public; no request to upstream); WP-C-10 §2; WP-W-10 §2", at: 2026-10-21}
 
 - id: DQ-051
   ref: GAP-27
@@ -1449,7 +1461,9 @@
       title: "Logs and results public; no video ever"
       detail: "No faces, no consent questions. Cost: the one record that shows what a fall looked like stays private."
   sources: ["README (the project publishes its own counter-evidence)", "WP-V-07 §6 (anomalies)", "DQ-040 (decided)", "WP-O-04 (skeleton)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.6 §6 and WP-P-04 §3 (anomaly reports, logs and results published as issues and records as they happen; video published only when an anomaly report cites it and the people in it have agreed); WP-O-04 §2", at: 2026-10-21}
 
 - id: DQ-052
   ref: GAP-00
@@ -1476,7 +1490,9 @@
       title: "A trained test operator only"
       detail: "Two competent people at every test. Cost: no powered test until a second person is trained, which is months."
   sources: ["DQ-022 (decided)", "WP-V-07 §2 C-8 and §4", "WP-M-04 (skeleton)", "WP-C-03 DM-04"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-V-07 v0.6 §2 C-8 (the observer may be any briefed adult: the briefing read aloud, stations and E-stop shown, a signed line; never enters the area); WP-M-04 §3", at: 2026-10-21}
 
 - id: DQ-053
   ref: GAP-00
@@ -1505,7 +1521,9 @@
       title: "No specific cover; accept the risk personally and record it"
       detail: "Nothing to arrange. Cost: a fall onto a visitor-observer is uninsured; the record carries a personal risk acceptance an assessor will remark on."
   sources: ["DQ-044, DQ-052 (decided or open)", "WP-V-07 §2", "WP-M-07 (skeleton)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "06-validation/test-sites/site-01-own-premises.md (insurance row) and WP-V-07 v0.6 §2 C-9 (hang tests under the existing policy if machinery under test is not excluded; cover before the first floor test); WP-M-07 §3", at: 2026-10-21}
 
 - id: DQ-054
   ref: GAP-00
@@ -1531,6 +1549,283 @@
       title: "In parallel from the moment upstream publishes the firmware and policy"
       detail: "Follows upstream's pace. Cost: the hours are split, the risk assessment is re-rated for OE-2 mid-phase, and the first case slows."
   sources: ["DQ-002, DQ-003, DQ-032 (decided)", "WP-C-02 §2 OE-2", "WP-M-01 §7", "concept package 12_Gaps (12 gaps for OE-2)"]
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-03 §2 and WP-M-01 §7 (the second item starts after the first item's release gate G5; until then OE-2 appears only as interface assumptions); WP-C-02 §2", at: 2026-10-21}
+
+- id: DQ-055
+  ref: GAP-00
+  question: "May the reviewer you are recruiting perform the G1 confirmation reviews at independence I1 instead of the planned I2 and I3, recorded as a deviation, or do those reviews stay unperformed until an assessor exists?"
+  context: >-
+    G1 needs three confirmation reviews (the risk assessment, the safety plan re-confirmed, the safety functions and
+    PLr) at I2 or I3 (WP-M-06 §9) and no assessor is engaged for now (DQ-010 A). A reviewer from outside the project
+    (DQ-029 A) is independent of you but not an independent organisation; letting them perform the reviews at I1
+    gets the risk assessment and the safety functions an outside reading before anything is built, with the
+    shortfall written down; keeping the measures unperformed keeps the plan honest and G1 conditional, as G0 was.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-M-06 §4 and §9 (CR-02, CR-03, CR-04 at G1); the G1 gate record; G0 condition C-1"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  options:
+    - key: A
+      recommended: true
+      title: "Yes, at I1 as a recorded deviation: the reviewer performs CR-02 and CR-04 (and CR-01, CR-03 carried from G0), the record states the independence shortfall, and the reviews are repeated at I3 when an assessor is engaged"
+      detail: "An outside reading now, the honest label on it, and nothing lost later. Cost: the reviewer's hours; the G1 record still says the planned independence was not reached."
+    - key: B
+      title: "No: the reviewer does verification reviews only (WP-P-05); the confirmation reviews stay unperformed and G1 passes with conditions like G0"
+      detail: "Clean separation of the two kinds of review. Cost: a second gate in a row whose confirmation measures are all conditions."
+  sources: ["WP-M-06 §3, §4, §9", "DQ-010, DQ-029 (decided)", "G0 gate record conditions C-1, C-2", "IEC 61508-1:2010 §8 (independence), to be checked"]
+  status: open
+
+- id: DQ-056
+  ref: GAP-00
+  question: "Which robot unit is the reference unit of CFG-001: a DIY kit ordered from Asimov Inc, a unit built from the published CAD and board files, or none yet?"
+  context: >-
+    Every test in the record needs a physical robot, and the record does not say whether one exists. A kit from
+    upstream (15,000 USD target price, shipping announced for summer 2026) is the configuration the case describes;
+    a self-built unit from the CAD, printed parts and the board files is the same design with the fork's own
+    material and assembly record, which the DFMEA already asks for; neither in hand means the hang test, the fall
+    campaign and G1 have no date. The answer also sets who the manufacturer of the unit is (WP-M-13 §2).
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-C-01 §1.1 (the unit); WP-O-01 build record; WP-M-03 §5 dates; the baseline of the first hang test"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  options:
+    - key: A
+      recommended: true
+      title: "A DIY kit from Asimov Inc, ordered or on order, with its kit revision recorded as the hardware baseline"
+      detail: "The design the case describes, with upstream's parts. Cost: the kit price and its delivery date; the record waits for it."
+    - key: B
+      title: "A unit built from the published CAD and board files with the fork's own parts"
+      detail: "Independent of the kit's delivery. Cost: actuators to source, parts to print and machine, a full build record (WP-O-01) before the first test; months."
+    - key: C
+      title: "None yet; the record proceeds on the design alone until a unit is decided"
+      detail: "No spend. Cost: no test, no measurement, no G1 date; the case stays analysis."
+  sources: ["README (DIY kit, price, shipping date)", "WP-C-01 §1.1", "WP-O-01 (skeleton)", "WP-M-13 §2 (who makes the machine)"]
+  status: open
+
+- id: DQ-057
+  ref: GAP-19
+  question: "Does the laboratory robot run on a dedicated, isolated Wi-Fi network with the operator's laptop, or on the household or office network?"
+  context: >-
+    The tele-operation link, the heartbeat that stops the robot (DQ-038 A) and the wireless E-stop's surveillance
+    all ride on Wi-Fi. On a shared network the robot is reachable by every device on it, the heartbeat competes with
+    everyone's traffic, and the SL 2 target you set (DQ-012 A) is harder to argue; a dedicated access point with its
+    own SSID, no internet route and only the robot and the operator's laptop on it costs a small router and makes
+    the zone-and-conduit model of WP-S-07 true in the laboratory.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-S-07 §2 zones and conduits; WP-C-02 §4 Wi-Fi row; WP-V-07 condition C-6; site-01 record"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "A dedicated access point: its own SSID and password, no route to the internet or the household network, only the robot and the operator's laptop on it"
+      detail: "The laboratory network is the zone the security architecture describes. Cost: a small router and a line in the site record; software updates come in by cable."
+    - key: B
+      title: "The household or office network, with the robot's traffic left as it is"
+      detail: "No hardware. Cost: every device on the network can reach the robot's API; the heartbeat shares the air with everything else; SL 2 is argued against a network the record does not control."
+  sources: ["DQ-012, DQ-038 (decided)", "WP-S-07 (skeleton)", "WP-C-02 §4 (Wi-Fi coverage)", "IEC 62443-3-2 (zones and conduits), to be checked"]
+  status: open
+
+- id: DQ-058
+  ref: GAP-07
+  question: "Does every tele-operated motion in the laboratory need a hold-to-run enabling switch on the pendant, released to stop, or is the E-stop alone the operator's control?"
+  context: >-
+    In manual and tele-operated modes the robot standards expect an enabling device: the robot moves only while the
+    operator holds a three-position switch, and releasing or squeezing it stops motion without an E-stop press. It
+    makes every motion deliberate and turns a dropped pendant into a stop. The pendant you chose (DQ-008 A) can carry
+    one; the stop it commands can be the controlled descent (category 1) rather than the power cut of the E-stop,
+    which spares the tether. Without it, the only way to stop a wrong command is the E-stop, and every stop is a
+    fall onto the tether.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-C-04 (a new function or a mode condition of SF-08); WP-S-03 §4; WP-S-05 I/O; the pendant specification in the change record"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  options:
+    - key: A
+      recommended: true
+      title: "Yes: a three-position enabling switch on the pendant; motion in M3 MOVE only while it is held; release or panic-grip commands the controlled descent, not the power cut"
+      detail: "What ISO 10218-1 expects for manual operation, and a stop that does not drop the robot. Cost: a switch on the pendant, an input to the safety layer, and the switch's own fault analysis."
+    - key: B
+      title: "No enabling switch: the E-stop is the operator's only stop; MOVE is entered by a command and stays active"
+      detail: "Simpler pendant. Cost: a wrong command runs until the E-stop; every stop is a fall onto the tether; an assessor will ask why manual operation has no enabling device."
+  sources: ["ISO 10218-1:2025 §5 (manual mode, enabling device), to be checked", "DQ-005, DQ-008 (decided)", "WP-C-04 SF-08, SF-13", "WP-C-01 §5 (modes)"]
+  status: open
+
+- id: DQ-059
+  ref: GAP-00
+  question: "Is the target for the G1 concept gate the end of the first quarter of 2027, or later?"
+  context: >-
+    With about eight hours a week (DQ-045 A), the gate after the first hang test (DQ-030 A), the bench equipment to
+    buy (DQ-035 A), the minimal firmware to write (DQ-023 A) and a robot unit to have (DQ-056), G1 is some months
+    away whatever the answer. A target date makes the project plan a plan, lets the record say what slips, and tells
+    the reviewer you recruit when they are needed. The date is a target you set, not a promise the record makes.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-03 §5 gate roadmap; WP-M-07 schedule risk; the reviewer briefing"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "End of March 2027, with the first hang test targeted for January"
+      detail: "Fits eight hours a week if the equipment and the unit arrive by December. Cost: slips if either does; the plan says so."
+    - key: B
+      title: "End of June 2027"
+      detail: "More room. Cost: a long concept phase for a record that already holds the analysis."
+    - key: C
+      title: "No date; G1 when the hang test has happened"
+      detail: "No slip to report. Cost: no plan, and nothing for the reviewer to schedule against."
+  sources: ["DQ-023, DQ-030, DQ-035, DQ-045 (decided)", "WP-M-03 §5", "WP-M-07 (skeleton)"]
+  status: open
+
+- id: DQ-060
+  ref: GAP-33
+  question: "Under which licence is the assurance record published: upstream's hardware and software licences as now, or a documentation licence such as CC BY-SA 4.0?"
+  context: >-
+    The record is text, figures and data, not hardware or software; it is currently released under upstream's
+    CERN-OHL-S-2.0 and GPL-2.0 because the concept-phase package said so, which is an odd fit for documents and may
+    not even be valid for them. A documentation licence (CC BY-SA 4.0, share-alike like upstream's) says plainly
+    what others may do with the analyses and keeps the reciprocity; the tools under `tools/` and `assurance/*/tools/`
+    are software and can stay under GPL-2.0. The choice is yours as the author and affects every file's header and
+    the README's licensing paragraph.
+  reversibility: revisit
+  decider: lead
+  blocks: "README licensing paragraph; CONTRIBUTING §Licensing; a LICENSE file for the record; WP-P-04"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  options:
+    - key: A
+      recommended: true
+      title: "CC BY-SA 4.0 for the record (text, figures, data) and GPL-2.0 for the tools; stated in the README and a LICENSE-RECORD file"
+      detail: "A licence written for documents, share-alike like upstream. Cost: two licences in one repository; a short note on which applies where."
+    - key: B
+      title: "Keep upstream's CERN-OHL-S-2.0 and GPL-2.0 for everything"
+      detail: "One story. Cost: hardware and software licences applied to prose; their obligations (source files, modifications) read strangely for a risk assessment."
+    - key: C
+      title: "CC BY 4.0 (no share-alike)"
+      detail: "Most permissive. Cost: derived analyses need not stay open, which breaks the reciprocity the fork inherited."
+  sources: ["README (maintainer and upstream attribution)", "CONTRIBUTING §Licensing", "HARDWARE-LICENSE.txt, SOFTWARE-LICENSE.txt", "concept package README (licensing)"]
+  status: open
+
+- id: DQ-061
+  ref: GAP-00
+  question: "May visitors watch a powered test from outside the cleared area, or is the laboratory closed to everyone but the operator and the observer while the rail is powered?"
+  context: >-
+    The operating envelope excludes any person within reach and names demonstrations to visitors as excluded
+    (T-07), because that task put people within reach. A visitor behind the marked line, outside the swing radius
+    (DQ-041 A), with the observer between them and the robot, is a different case: no contact hazard, but one more
+    person to brief, one more who may step forward, and faces on the session video (DQ-051 A). Showing the robot to
+    people is also how a reviewer or a collaborator gets interested.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-C-02 §2 OE-1 people column and §3 T-07; WP-V-07 §2 C-4; WP-O-02 operating rules"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Yes, at most two, briefed and signed in the log, behind a second marked line beyond the swing radius, with the observer able to see them; never during fall tests"
+      detail: "People can see the work without being in its way. Cost: a second line on the floor, two more briefings, consent for the video."
+    - key: B
+      title: "No visitors while the rail is powered"
+      detail: "Simplest rule. Cost: nobody sees the robot move except the two people running it; demonstrations wait for a later envelope."
+  sources: ["WP-C-02 §2, §3 T-07", "WP-V-07 §2 C-4", "DQ-022, DQ-041, DQ-051, DQ-052 (decided)"]
+  status: open
+
+- id: DQ-062
+  ref: GAP-30
+  question: "After a safety anomaly stops testing, who lifts the stop: you alone as safety manager, or you with the recruited reviewer's written concurrence?"
+  context: >-
+    The safety plan says the safety manager lifts a stop in writing after the cause is understood (WP-M-02 §9). With
+    one person, that is the operator clearing their own anomaly, which an assessor reads as no control at all. The
+    reviewer you are recruiting could concur on the cause and the fix before testing resumes; it costs a delay of
+    days per anomaly and gives the problem-resolution process (GAP-30, GAP-32) its first independent step.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-02 §9; WP-P-03 problem resolution; WP-V-07 §6; the anomaly issue template"
+  gate: G1
+  asked: 2026-10-21
+  batch: 6
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Your decision with the reviewer's written concurrence on the cause and the fix, recorded on the anomaly issue; until a reviewer exists, your decision alone with that fact stated on the issue"
+      detail: "An independent step as soon as one is possible, and no deadlock before. Cost: days of delay per anomaly once the reviewer exists."
+    - key: B
+      title: "Your decision alone, always"
+      detail: "No delay. Cost: the operator clears their own anomalies; GAP-30 and GAP-32 stay open in substance."
+  sources: ["WP-M-02 §9", "WP-V-07 §6", "gap assessment GAP-30, GAP-32", "DQ-029 (decided)"]
+  status: open
+
+- id: DQ-063
+  ref: GAP-16
+  question: "Is the fork's minimal firmware written in C with MISRA C:2012 rules, as the software plan assumes, or in Rust?"
+  context: >-
+    The firmware you approved (DQ-023 A) runs on the Radxa CM5 under a real-time Linux and talks CAN to the
+    actuators. The record's software environment assumes C and C++ under MISRA C:2012 for the safety layer, which
+    is what ISO 13849-1 §7 and the assessors it refers to know how to review; Rust removes a class of memory faults
+    but has no settled place in the machinery-safety toolchain and no MISRA-like coding standard an assessor expects.
+    Either way the code is small. This is a reversible technical choice, so the record goes ahead with the
+    recommendation unless you object.
+  reversibility: easy
+  decider: claude
+  blocks: "WP-W-01 §2 environment; WP-W-05 unit design; WP-P-07 tool qualification"
+  gate: G2
+  asked: 2026-10-21
+  batch: 6
+  proceed_after: 2026-10-28
+  options:
+    - key: A
+      recommended: true
+      title: "C under MISRA C:2012 for the safety layer, with a static analyser in CI; Python for tooling"
+      detail: "The toolchain the standards and assessors know. Cost: MISRA discipline on a one-person project; a free analyser that covers a useful subset of the rules."
+    - key: B
+      title: "Rust for the safety layer"
+      detail: "Memory safety by construction. Cost: no coding standard an assessor expects, a toolchain qualification argument to write, and fewer reviewers who read it."
+  sources: ["WP-W-01 §2 (environment)", "ISO 13849-1:2023 §7 (software), to be checked", "DQ-023 (decided)"]
+  status: open
+
+- id: DQ-064
+  ref: GAP-14
+  question: "If upstream does not publish the actuators' CAN protocol and limits, may the fork observe and reverse-engineer the protocol on its own hardware, or does the firmware wait for documentation?"
+  context: >-
+    The minimal firmware (DQ-023 A) has to command 25 actuators over CAN. Upstream's documentation does not
+    describe the actuator protocol, the current limits or the fault codes; the actuators are a supplier's product
+    with their own data sheet that may or may not be public. Observing the bus on a unit you own and documenting
+    what you see is ordinary engineering and lawful for your own use in most places, but it builds the safety layer
+    on an interface nobody warrants; waiting keeps the layer honest and the robot still.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-W-01 §4; WP-W-03 §2; WP-M-10 supplier management; WP-H-07 actuator evidence"
+  gate: G2
+  asked: 2026-10-21
+  batch: 6
+  options:
+    - key: A
+      recommended: true
+      title: "Ask first (DQ-047), then observe and document the protocol on the fork's own unit if no documentation comes within a month; every observed fact marked as observed, not warranted"
+      detail: "Keeps the firmware moving and the record honest about its basis. Cost: a protocol note to maintain; a supplier data sheet, when it appears, may contradict it."
+    - key: B
+      title: "Wait for the supplier's or upstream's documentation"
+      detail: "A warranted interface. Cost: no firmware and no powered test until an unknown date."
+  sources: ["electrical/README.md (CAN ports, actuators)", "electrical/wiring/wiring.yaml", "DQ-023, DQ-047 (decided or open)", "WP-M-10 (skeleton)"]
   status: open
 
 - id: DQ-017

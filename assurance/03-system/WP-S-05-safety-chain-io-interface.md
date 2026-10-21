@@ -22,7 +22,7 @@ The hardware-software interface of the safety chain: every signal between the mo
 
 ## 2. I/O map
 
-MCB ports C0…C5, the UART debug port, the IMU on I2C, the E-stop receiver output, the motor-rail enable, the BMS handshake on C5, power-good and under-voltage signals of the power distribution board.
+MCB ports C0…C5, the UART debug port, the IMU on I2C, the E-stop receiver output, the motor-rail enable, the BMS handshake on C5, power-good and under-voltage signals of the power distribution board, the pendant's reset input to the safety relay (the only re-arm path, DQ-048 A) and the start command from the operator app, which never re-arms.
 
 ## 3. Signal semantics
 

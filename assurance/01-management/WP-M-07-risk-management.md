@@ -26,7 +26,7 @@ R-nn seeded from WP-M-01 §9: upstream never publishes the firmware or the API; 
 
 ## 3. Review
 
-At every gate review (WP-M-02 §10) and whenever a decision in the register changes a risk.
+At every gate review (WP-M-02 §10) and whenever a decision in the register changes a risk. Liability for powered tests on the lead's own premises is a registered risk (DQ-053 A, 2026-10-21): the existing policy is checked first; hang tests may run under it if machinery under test is not excluded; cover is in place before the first floor test.
 
 ## 4. Strategic decisions
 

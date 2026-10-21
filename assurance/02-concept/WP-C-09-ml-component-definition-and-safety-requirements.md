@@ -26,7 +26,7 @@ The locomotion policy trained in MuJoCo against `sim-model/xmls/asimov.xml` (unr
 
 ## 3. Classification
 
-Per component: technology class, usage level, the independent safeguard and why it is sufficient.
+Per component: technology class, usage level, the independent safeguard and why it is sufficient. The locomotion policy is treated as a black box for the first item (DQ-050 A, 2026-10-21): no request for its weights or training description; the record states what it must satisfy at its interface (§5) and tests it on the tether when it is public.
 
 ## 4. Position
 

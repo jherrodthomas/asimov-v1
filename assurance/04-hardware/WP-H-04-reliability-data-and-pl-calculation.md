@@ -22,7 +22,7 @@ Reliability data and the PL calculation per safety function: MTTFD per channel, 
 
 ## 2. Reliability data
 
-Per component: source (certificate, B10d, datasheet, Annex C table), value, justification; the actuator and encoder data upstream must supply (WP-M-10).
+Per component: source (certificate, B10d, datasheet, Annex C table), value, justification; the actuator and encoder data upstream must supply, requested in public (DQ-047 A, 2026-10-21; WP-M-10 §5); until it comes, estimates from ISO 13849-1 Annex C tables, marked as such.
 
 ## 3. Calculation per safety function
 

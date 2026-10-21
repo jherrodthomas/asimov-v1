@@ -26,7 +26,7 @@ The locomotion policy (MuJoCo-trained, unreleased upstream at BL-001), any perce
 
 ## 3. Position
 
-Whether the learned policy may carry the bipedal stability function SF-01 is decision DQ-006; until answered the plan assumes it does not, stability in OE-1 rests on the tether and gantry, and the policy is a functional component checked by the MCB safety layer.
+The learned policy carries no safety function (DQ-006 A, 2026-10-21) and is a black box for the first item (DQ-050 A: no weights requested, interface requirements only, tested on the tether when public); the plan assumes it does not, stability in OE-1 rests on the tether and gantry, and the policy is a functional component checked by the MCB safety layer.
 
 ## 4. Activities
 

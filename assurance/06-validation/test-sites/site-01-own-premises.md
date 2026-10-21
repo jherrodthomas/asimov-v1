@@ -18,6 +18,6 @@ powered test with the robot assembled (WP-V-07 condition C-4).
 | Wi-Fi | continuous over the area (SF-08 heartbeat) |
 | Exits and first aid | TBC |
 | Recording | room camera position TBC (DQ-040 A) |
-| Insurance | TBC (DQ-053) |
+| Insurance | DQ-053 A (2026-10-21): the existing policy checked first and the insurer's written answer filed here (TBC); hang tests under it if machinery under test is not excluded; cover before the first floor test |
 
 Sketch: to be added. Sessions are logged as `<YYYY-MM-DD>-site-01.md` in this folder.

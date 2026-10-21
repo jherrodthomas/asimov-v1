@@ -165,7 +165,7 @@ Which activity answers each clause reference listed in the register. One activit
 | Machine learning (ISO/IEC TR 5469) | ML safety lead | Jherrod Thomas (acting); permanent holder TBD | G1 |
 | Independent confirmation | External functional safety assessor | None for now (DQ-010 A, decided 2026-10-21): every I2 and I3 measure unscheduled; revisit at G1 | G1 (revisit) |
 
-**Other roles WP-M-02 §3.1 needs by G3:** Verification reviewer(s) (TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21), starting with WP-C-03 and WP-C-04; needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned).
+**Other roles WP-M-02 §3.1 needs by G3:** Verification reviewer(s) (TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21) and is posted by the lead on upstream's Discord and forum (DQ-046 A; draft in WP-M-10 §5), starting with WP-C-03 and WP-C-04; needed by G0, still unassigned); Quality assurance (TBD (independent of the author); needed by G0, still unassigned); Test bench owner (TBD); Test operator(s) (TBD (trained per WP-M-04); needed by G1, still unassigned).
 
 **Confirmation measures (WP-M-06 §9):**
 

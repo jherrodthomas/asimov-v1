@@ -34,7 +34,7 @@ Per role: machinery and robot safety (ISO 12100, ISO 10218, ISO 13482, ISO 13849
 
 ## 5. Training
 
-Operator training for WP-V-07; builder briefing for the DIY-kit assembly (WP-O-01).
+Operator training for WP-V-07; builder briefing for the DIY-kit assembly (WP-O-01); the observer briefing (DQ-052 A, 2026-10-21): any briefed adult may observe once WP-V-07 has been read aloud to them, the stations and the E-stop shown, and a line signed in the session log; the observer never enters the area.
 
 ## 6. Open items
 

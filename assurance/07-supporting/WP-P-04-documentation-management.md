@@ -26,7 +26,7 @@ Those of the [assurance README](../README.md#conventions).
 
 ## 3. Generated files
 
-Folder READMEs, process maps and gate skeletons, swimlane and README figures, the dashboard, the decision lifecycle figure; never edited by hand; checked by CI.
+Folder READMEs, process maps and gate skeletons, swimlane and README figures, the dashboard, the decision lifecycle figure; never edited by hand; checked by CI. Anomaly reports, test logs and results are published in the repository as they happen; video only when an anomaly report cites it and the people in it have agreed (DQ-051 A, 2026-10-21).
 
 ## 4. Retention
 

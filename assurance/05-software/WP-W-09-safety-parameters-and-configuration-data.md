@@ -22,7 +22,7 @@ Safety-related parameters and configuration data: joint torque and velocity limi
 
 ## 2. Parameter register
 
-The first parameter set for OE-1 is decided (DQ-014 A, 2026-10-21): half the MuJoCo `ctrlrange` torque limit per joint and a velocity ceiling set by WP-S-04, until measured; the contact thresholds of SF-04 and SF-20 are the ISO/TS 15066 Annex A values with a 0.75 factor on the arm and hand values (DQ-028 A); the heartbeat timeout is 250 ms with a one-sample grace (DQ-038 A); the stator cut-off is 60 °C (DQ-042 A).
+The first parameter set for OE-1 is decided (DQ-014 A, 2026-10-21): half the MuJoCo `ctrlrange` torque limit per joint (DQ-014 A) and a velocity ceiling of 1.0 rad/s on every joint (DQ-049 A) until WP-S-04 sets per-joint values; the contact thresholds of SF-04 and SF-20 are the ISO/TS 15066 Annex A values with a 0.75 factor on the arm and hand values (DQ-028 A); the heartbeat timeout is 250 ms with a one-sample grace (DQ-038 A); the stator cut-off is 60 °C (DQ-042 A).
 
 PAR-nn: value, unit, source (WP-S-04 budget, ISO/TS 15066 Annex A, measurement), range, where it lives, who may change it, how it is verified after loading. The MuJoCo `ctrlrange` torque limits per joint are the only published limits at BL-001 and are simulation values, not declared robot limits (GAP-06).
 

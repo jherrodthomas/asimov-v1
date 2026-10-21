@@ -22,7 +22,7 @@ ML engineering of the locomotion policy: data and simulation provenance, trainin
 
 ## 2. Training and simulation
 
-MuJoCo model, randomisation ranges, the sim-to-real coverage matrix (DFMEA FM-28).
+MuJoCo model, randomisation ranges, the sim-to-real coverage matrix (DFMEA FM-28). For the first item the policy is upstream's black box (DQ-050 A, 2026-10-21): this section records what upstream publishes, not evidence the fork produces.
 
 ## 3. Testing
 

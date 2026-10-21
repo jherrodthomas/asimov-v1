@@ -22,7 +22,7 @@ Scope, work breakdown, effort, schedule logic, resources and tracking for taking
 
 ## 2. Scope
 
-In scope: the reference configuration of WP-M-01 §3.1 (the DIY-kit robot as published, tethered in a laboratory, OE-1), every work product of WP-M-00, the engineering changes that close the gap assessment's findings, and the infrastructure the fork lacks (a firmware repository, a bench, a gantry and tether, a test area). Out of scope: the home and public envelopes OE-3 and OE-4 until the lead widens the item (DQ-002).
+In scope: the reference configuration of WP-M-01 §3.1 (the DIY-kit robot as published, tethered in a laboratory, OE-1), every work product of WP-M-00, the engineering changes that close the gap assessment's findings, and the infrastructure the fork lacks (a firmware repository, a bench, a gantry and tether, a test area). Out of scope: the home and public envelopes OE-3 and OE-4 (DQ-002 A). The second item (OE-2, the industrial cell with the battery and the policy) starts after the first item's release gate G5 (DQ-054 A, 2026-10-21); until then OE-2 appears only as the interface assumptions the first case states.
 
 ## 3. Work breakdown structure
 
@@ -30,7 +30,7 @@ One element per phase P0…P6 and per work-product group, following [WP-M-01 §7
 
 ## 4. Effort and staffing
 
-Hours per element against the roles of WP-M-02 §3.1; the lead's available hours per week are a decision for the register. Budget lines decided so far: the spares for the fall campaign (DQ-026 A: two leg actuators, printed shell parts, a harness repair kit) and the bench equipment approved as one purchase on 2026-10-21 (DQ-035 A; quotes in the [change record](../07-supporting/impact/change-2026-10-21-bench-equipment.md)).
+Hours per element against the roles of WP-M-02 §3.1. The lead's time is about eight hours a week on average, planned as two sessions (DQ-045 A, 2026-10-21); everything not on the critical path to the first hang test and G1 is deferred. Budget lines decided so far: the spares for the fall campaign (DQ-026 A: two leg actuators, printed shell parts, a harness repair kit) and the bench equipment approved as one purchase on 2026-10-21 (DQ-035 A; quotes in the [change record](../07-supporting/impact/change-2026-10-21-bench-equipment.md)).
 
 ## 5. Schedule and gate roadmap
 
