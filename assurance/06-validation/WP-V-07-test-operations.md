@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-V-07 Test operations and safety procedures for powered testing (hold point: tether, gantry, E-stop, cleared area) |
 | Standard reference | ISO 12100:2010 §6.4 (information for use, including for the development phase), §6.3 (safeguarding and complementary protective measures); ISO 13482:2014 §7 (verification and validation, test conditions); ISO 10218-2:2011 §5 (safeguarding during commissioning); ISO 13850:2015 §4 (emergency stop function, as bench equipment); IEC 60204-1:2018 §5.3 (supply disconnecting device), §7.2 (overcurrent protection); ASPICE 4.0 VAL.1 |
-| Version | 0.6 (2026-10-21): DQ-049 A, DQ-051 A, DQ-052 A and DQ-053 A applied to §2, §3 and §6. 0.5 (2026-10-21): DQ-035 A, DQ-037 A, DQ-039 A to DQ-044 A applied to §2 to §5. 0.4 (2026-10-21): DQ-025 A, DQ-027 A and DQ-032 A applied to §2 and §3. 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
+| Version | 0.7 (2026-10-21): DQ-056 C, DQ-061 A and DQ-062 B applied to §1, §2 and §6. 0.6 (2026-10-21): DQ-049 A, DQ-051 A, DQ-052 A and DQ-053 A applied to §2, §3 and §6. 0.5 (2026-10-21): DQ-035 A, DQ-037 A, DQ-039 A to DQ-044 A applied to §2 to §5. 0.4 (2026-10-21): DQ-025 A, DQ-027 A and DQ-032 A applied to §2 and §3. 0.3 (2026-10-21): DQ-021 A, DQ-022 A, DQ-014 A and DQ-024 A applied to §2, §3 and §4. 0.2 (2026-10-21): the bench equipment decided (DQ-007 A, DQ-008 A, DQ-009 A); the two-person rule is DQ-022. 0.1 (initial procedure; 2026-10-21) |
 | Status | Draft |
 | PL / scope | Development testing only. No PL is claimed for the bench equipment |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -15,7 +15,7 @@
 ## 1. Purpose
 
 This procedure is the **hold point** of [WP-M-01 §7](../01-management/WP-M-01-assurance-strategy.md#7-phases-gates-and-sequence):
-no Asimov v1 unit is powered with its feet on the floor under the fork's control until the conditions below hold. It
+no Asimov v1 unit is powered with its feet on the floor under the fork's control until the conditions below hold. No unit exists at the time of writing (DQ-056 C, 2026-10-21), so no powered test of any kind is possible; the procedure is written ahead of the robot. It
 exists because the kit robot as inherited has no documented emergency stop, no fall-arrest function, no declared
 joint limits, no power distribution record and no safe state better than a fall ([gap assessment](../00-assessment/gap-assessment.md)
 GAP-07, GAP-08, GAP-10, GAP-06). The procedure makes the next months of testing defensible without claiming any
@@ -32,7 +32,7 @@ outside it but follow §3.
 | C-1 | A rated portable gantry crane (500 kg class) with a trolley and a rated winch or fall-arrest block (DQ-027 A, decided 2026-10-21), with a tether rated for the robot's mass under a dynamic load (fall factor and shock allowance **(TBC)**), a quick-release the operator can reach, and a lowering mechanism so that the feet touch the floor only when intended (DQ-007) | Rating labels, photo and sketch in the change record under [`07-supporting/impact/`](../07-supporting/impact/README.md); a static load test to **(TBC: 2×)** the robot's mass before first use | GAP-03 (bench), H-01, H-06, H-23, H-28 |
 | C-2 | A wired, dual-channel emergency stop (two NC contacts, red mushroom button, latching) on a pendant in the operator's hand, through a safety relay or two contactors, that removes the actuator rail; re-arm needs a deliberate action at the pendant with the button released. The kit's wireless E-stop may be fitted in addition but does not count until its link is surveilled (DQ-008) | Wiring sketch in the change record; a functional test before every session (§4) | GAP-07, GAP-11 (bench) |
 | C-3 | A laboratory power supply at the kit's rail voltage with an adjustable current limit and an output switch within the operator's reach feeds the actuator rail in place of a battery (DQ-037 A, decided 2026-10-21); the limit is set per test and written in the session log; no battery is on the robot (DQ-009 A) | Supply model, voltage and current limit in the test log | GAP-08, GAP-12 (bench) |
-| C-4 | The test area meets the OE-1 limits of WP-C-02 §4 (10 to 35 °C, non-condensing, sealed dry floor with slope at most 1 %, at least 200 lux, no steps, indoors; DQ-021 A) and is defined, level, dry and marked: the reach envelope plus 1 m on every side; nobody inside it while the rail is powered except as §3 allows; the operator's station and the observer's station outside it on opposite sides (WP-C-02 §6) | Area sketch in the test log | WP-C-02 OE-1 |
+| C-4 | Visitors, at most two, briefed and signed in the log, may watch from behind a second marked line beyond the swing radius, in the observer's view, never during fall tests (DQ-061 A, decided 2026-10-21). The test area meets the OE-1 limits of WP-C-02 §4 (10 to 35 °C, non-condensing, sealed dry floor with slope at most 1 %, at least 200 lux, no steps, indoors; DQ-021 A) and is defined, level, dry and marked: the reach envelope plus 1 m on every side; nobody inside it while the rail is powered except as §3 allows; the operator's station and the observer's station outside it on opposite sides (WP-C-02 §6) | Area sketch in the test log | WP-C-02 OE-1 |
 | C-5 | Every joint's torque and velocity limit the firmware enforces is known and recorded, or the test runs with the actuators' hardware current limits set to a value the test plan names (DQ-014) | Parameter record; the firmware version read before the test | GAP-06 (bench) |
 | C-6 | The firmware or controller build is identifiable (version, hash) and its behaviour on heartbeat loss, E-stop and fault is written down before the test; where upstream's firmware is used as released, its release notes are the record | Build manifest in the test log | GAP-16 (bench) |
 | C-7 | The robot has been weighed, its lifting points and two-person lift are agreed, and the material and harness acceptance checks of WP-O-01 (as far as they exist) are recorded for the unit | Acceptance record | GAP-04, GAP-22 (bench) |
@@ -86,8 +86,8 @@ report refers to it; the information for use says that sessions are recorded.
 Any unexpected motion, any fall or tether load that was not planned, any contact with a person or object, any
 failure of a pre-session check, and any E-stop press that was not planned is a safety anomaly
 ([WP-M-02 §9](../01-management/WP-M-02-safety-plan.md#9-safety-anomaly-handling)). Testing stops; the anomaly is
-raised as an issue labelled `safety-anomaly`; the safety manager lifts the stop in writing after the cause is
-understood. Anomaly reports, logs and results are published as issues and records as they happen (DQ-051 A,
+raised as an issue labelled `safety-anomaly`; the safety manager lifts the stop in writing, alone, after the cause is
+understood (DQ-062 B; the issue states that no independent step exists). Anomaly reports, logs and results are published as issues and records as they happen (DQ-051 A,
 2026-10-21); video is published only when an anomaly report cites it and the people in it have agreed.
 
 ## 7. Open items

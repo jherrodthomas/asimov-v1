@@ -22,7 +22,7 @@ Operation, maintenance and decommissioning: the operating envelope limits, the d
 
 ## 2. Operation
 
-Operating envelope OE-1 only; the hold point WP-V-07; operator duties; modes.
+Operating envelope OE-1 only; the hold point WP-V-07; operator duties; modes; visitors only behind the second line, at most two, briefed and signed in, never during fall tests (DQ-061 A, 2026-10-21).
 
 ## 3. Maintenance
 

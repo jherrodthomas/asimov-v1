@@ -30,6 +30,8 @@ Actuators (BLDC with harmonic gear and encoder, typical of 25), the motion contr
 
 ## 4. Supplier evidence
 
+The actuators' CAN protocol, limits and fault codes are needed from the supplier or upstream before any firmware talks to them: the fork does not observe or reverse-engineer the bus (DQ-064 B, decided 2026-10-21). The request is §5.
+
 Certificates, failure rates and B10d values needed by WP-H-04 and WP-H-07; what is missing at BL-001 (GAP-14).
 
 ## 5. Messages to upstream and the community

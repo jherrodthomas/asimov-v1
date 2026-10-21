@@ -43,7 +43,7 @@ None.
 | Role | Assigned to | Needed by |
 |---|---|---|
 | Electrical and mechanical engineer | TBD (likely external) | G2 |
-| Verification reviewer(s) | TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21) and is posted by the lead on upstream's Discord and forum (DQ-046 A; draft in WP-M-10 §5), starting with WP-C-03 and WP-C-04 | G0 |
+| Verification reviewer(s) | TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21) and is posted by the lead on upstream's Discord and forum (DQ-046 A; draft in WP-M-10 §5), starting with WP-C-03 and WP-C-04; that reviewer may also perform the G1 confirmation reviews at I1 as a recorded deviation (DQ-055 A) | G0 |
 | Quality assurance | TBD (independent of the author) | G0 |
 | Test bench owner | TBD | G3 |
 | Test operator(s) | TBD (trained per WP-M-04) | G1 |

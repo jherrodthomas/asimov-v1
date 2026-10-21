@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-01 Assurance strategy and lifecycle tailoring |
 | Standard reference | ISO 12100:2010 §4 (strategy for risk assessment and risk reduction); ISO 13849-1:2023 §4 (overview, planning); IEC 61508-1:2010 §6 (management of functional safety, tailoring of the lifecycle); IEC 62443-4-1:2018 SM-1 (development process); ISO/IEC TR 5469:2024 (AI in safety functions, informative); UL 4600 (safety case structure, informative); Regulation (EU) 2023/1230 Art. 25 (conformity assessment procedures) |
-| Version | 0.6 (2026-10-21): batch 5 applied (DQ-054 A in §7) and batch 6 opened in §8. 0.5 (2026-10-21): batch 4 applied and batch 5 opened in §8. 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
+| Version | 0.7 (2026-10-21): batch 6 applied and batch 7 opened in §8. 0.6 (2026-10-21): batch 5 applied (DQ-054 A in §7) and batch 6 opened in §8. 0.5 (2026-10-21): batch 4 applied and batch 5 opened in §8. 0.4 (2026-10-21): batch 3 applied and batch 4 opened in §8. 0.3 (2026-10-21): batch 2 applied (DQ-015 A editions, DQ-023 A the fork's firmware) and batch 3 opened in §8. 0.2 (2026-10-21): the ten decisions of batch 1 applied to §2, §4 and §8; batch 2 opened. 0.1 (initial strategy; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All (machinery and robot safety, SRP/CS, cybersecurity, ML, process) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -286,16 +286,26 @@ index, the register entry is the question.
 | D-49 | Who may be the observer | DQ-052 | Decided 2026-10-21: A, any briefed adult |
 | D-50 | Liability insurance before powered tests | DQ-053 | Decided 2026-10-21: A, check first; cover before the first floor test |
 | D-51 | When the second item starts | DQ-054 | Decided 2026-10-21: A, after G5 |
-| D-52 | The recruited reviewer performing the G1 confirmation reviews at I1 | DQ-055 | Open, batch 6 |
-| D-53 | Which robot unit is the reference unit | DQ-056 | Open, batch 6 |
-| D-54 | A dedicated isolated Wi-Fi network | DQ-057 | Open, batch 6 |
-| D-55 | Hold-to-run enabling switch on the pendant | DQ-058 | Open, batch 6 |
-| D-56 | G1 target date | DQ-059 | Open, batch 6 |
-| D-57 | Licence of the record | DQ-060 | Open, batch 6 |
-| D-58 | Visitors outside the cleared area | DQ-061 | Open, batch 6 |
-| D-59 | Who lifts a stop after an anomaly | DQ-062 | Open, batch 6 |
-| D-60 | Firmware language (decider: claude) | DQ-063 | Open, batch 6 |
-| D-61 | Observing the actuator CAN protocol if undocumented | DQ-064 | Open, batch 6 |
+| D-52 | The recruited reviewer performing the G1 confirmation reviews at I1 | DQ-055 | Decided 2026-10-21: A, as a recorded deviation |
+| D-53 | Which robot unit is the reference unit | DQ-056 | Decided 2026-10-21: C, none yet; the kit order is DQ-065 |
+| D-54 | A dedicated isolated Wi-Fi network | DQ-057 | Decided 2026-10-21: B, the household network; residual risk DQ-067 |
+| D-55 | Hold-to-run enabling switch on the pendant | DQ-058 | Decided 2026-10-21: A |
+| D-56 | G1 target date | DQ-059 | Decided 2026-10-21: B, end of June 2027 |
+| D-57 | Licence of the record | DQ-060 | Decided 2026-10-21: A, CC BY-SA 4.0; tools GPL-2.0 |
+| D-58 | Visitors outside the cleared area | DQ-061 | Decided 2026-10-21: A, at most two behind a second line |
+| D-59 | Who lifts a stop after an anomaly | DQ-062 | Decided 2026-10-21: B, the safety manager alone |
+| D-60 | Firmware language | DQ-063 | Decided 2026-10-21: B, Rust |
+| D-61 | Observing the actuator CAN protocol if undocumented | DQ-064 | Decided 2026-10-21: B, wait for documentation |
+| D-62 | Order the kit when orderable | DQ-065 | Open, batch 7 |
+| D-63 | Buy a CM5 for the firmware now | DQ-066 | Open, batch 7 |
+| D-64 | Accept the shared-network exposure for OE-1 | DQ-067 | Open, batch 7 |
+| D-65 | G1 on the record if no unit by the target | DQ-068 | Open, batch 7 |
+| D-66 | Budget cap through G1 | DQ-069 | Open, batch 7 |
+| D-67 | The lead as test operator of record | DQ-070 | Open, batch 7 |
+| D-68 | ML-R1 at I1 by the recruited reviewer | DQ-071 | Open, batch 7 |
+| D-69 | Dated copies of upstream manual pages | DQ-072 | Open, batch 7 |
+| D-70 | Second IMU type (decider: claude) | DQ-073 | Open, batch 7 |
+| D-71 | Rust coding rules | DQ-074 | Open, batch 7 |
 
 ## 9. Top risks to the assurance path
 

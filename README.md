@@ -156,7 +156,7 @@ Nothing is marked complete before its review, and every number below is computed
 
 <!-- BEGIN GENERATED: record-headline (docs/assets/asimov/make_assets.py) -->
 
-**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `c27237c5c873`
+**P1 Concept** · 1 gate(s) passed · 89 work products (12 draft, 77 skeleton, 0 approved) · 34 gap findings (18 high) · 10 decisions open · 0 of 11 cross-domain interfaces open · 0 of 22 confirmation measures performed · records digest `062f03314b1d`
 
 <!-- END GENERATED: record-headline -->
 
@@ -333,8 +333,9 @@ changes need a rationale, an impact analysis and appropriate verification.
 safety-lifecycle development, systems engineering and assurance practice on a real humanoid platform.
 
 Asimov v1 is published by Asimov Inc. under CERN-OHL-S-2.0 ([hardware](HARDWARE-LICENSE.txt)) and GPL-2.0
-([software](SOFTWARE-LICENSE.txt)). The record under `assurance/`, `docs/`, `tools/` and `wiki/` is a derivative
-analytical work of those sources and is released under the same licences. The fork is an independent project, is not
+([software](SOFTWARE-LICENSE.txt)). The record under `assurance/`, `docs/` and `wiki/` is an independent
+analytical work about those sources, licensed under CC BY-SA 4.0; the tools under `tools/` and the record's generators
+are GPL-2.0 ([LICENSE-RECORD.md](LICENSE-RECORD.md), decided 2026-10-21). The fork is an independent project, is not
 affiliated with or endorsed by Asimov Inc., and carries no Asimov trademark claim.
 
 Open-source licensing does not establish machinery safety certification, CE marking, or suitability for operation

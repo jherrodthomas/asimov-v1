@@ -29,7 +29,7 @@ of the stop chain), WP-H-07 (the certificates of the safety relay and the gantry
 | Gantry crane | portable, 500 kg class, adjustable height, trolley; span and height to fit the site record | TBC | rating plate, supplier load test | |
 | Winch or fall-arrest block | rated for 35 kg dynamic load with shock allowance; controlled lowering | TBC | EN 360 or equivalent, to be checked | |
 | Tether and shackles | rated, with a quick-release the operator can reach | TBC | rating marks | |
-| E-stop pendant | red mushroom on yellow, two NC positive-opening contacts, latching, reset button | TBC | ISO 13850 device | |
+| E-stop pendant | red mushroom on yellow, two NC positive-opening contacts, latching, reset button, a three-position enabling switch (DQ-058 A) | TBC | ISO 13850 device | |
 | Safety relay module | Category 3 or better, monitored reset, PL d or e on the data sheet | TBC | data sheet with PL and MTTFD | |
 | Contactors | two, rated for the rail current, mirror contacts | TBC | data sheet | |
 | Bench supply | the kit's rail voltage, adjustable current limit, output switch, rated for the standing current with margin | TBC | | |

@@ -22,7 +22,7 @@ Software tool classification and qualification (IEC 61508-3 §7.4.4 T1–T3): co
 
 ## 2. Tool list
 
-Per tool: use, class, qualification method, evidence.
+Per tool: use, class, qualification method, evidence. The Rust toolchain of the safety layer (DQ-063 B, 2026-10-21) needs its own qualification argument here: compiler version pinning, the language specification cited, the lint set enforced in CI (DQ-074), and the evidence that the build is reproducible.
 
 ## 3. AI-assisted drafting
 

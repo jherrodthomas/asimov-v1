@@ -22,7 +22,7 @@ Documentation management: the document-control header, status meanings, identifi
 
 ## 2. Rules
 
-Those of the [assurance README](../README.md#conventions).
+Those of the [assurance README](../README.md#conventions). The record is licensed under CC BY-SA 4.0 and the tools under GPL-2.0 ([LICENSE-RECORD.md](../../LICENSE-RECORD.md), DQ-060 A, 2026-10-21).
 
 ## 3. Generated files
 

@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-06 Confirmation measures plan (reviews, validation independence, functional safety assessment, conformity assessment) |
 | Standard reference | ISO 13849-1:2023 §8 (verification of the PL) and §10 (validation, performed by persons independent of the design where practicable); ISO 13849-2:2012 §4 (validation principles, independence); IEC 61508-1:2010 §8 (functional safety assessment, independence by consequence class); IEC 62061:2021 §5 (verification and validation planning); IEC 62443-4-1:2018 SM-13 (continuous improvement, reviews); Regulation (EU) 2023/1230 Art. 25 and Annexes VI–X (conformity assessment procedures) |
-| Version | 0.3 (2026-10-21): DQ-013 A, DQ-015 A and DQ-020 A applied (G0 passed with conditions). 0.2 (2026-10-21): DQ-010 A (no assessor for now; every I2 and I3 measure unscheduled, G0 held) and DQ-004 A applied; OI-3 and OI-6 closed. 0.1 (initial plan; 2026-10-21) |
+| Version | 0.4 (2026-10-21): DQ-055 A (the G1 confirmation reviews may be performed at I1 by the recruited reviewer as a recorded deviation). 0.3 (2026-10-21): DQ-013 A, DQ-015 A and DQ-020 A applied (G0 passed with conditions). 0.2 (2026-10-21): DQ-010 A (no assessor for now; every I2 and I3 measure unscheduled, G0 held) and DQ-004 A applied; OI-3 and OI-6 closed. 0.1 (initial plan; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All. PL d (DQ-004 A, decided 2026-10-21) until the safety functions are approved |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -22,7 +22,9 @@ go.
 No confirmation measure has been performed at baseline `3d4ec9d`. No assessor is engaged: the lead decided on
 2026-10-21 not to engage one for now (DQ-010 A, to be revisited at G1), so every I2 and I3 measure in this plan is
 **unscheduled**, G0 is held with CR-01 and CR-03 scheduled rather than performed, and no work product can leave
-Draft through a confirmation measure until the question is reopened. The standards are not bought either (DQ-013 A, decided
+Draft through a confirmation measure until the question is reopened. One deviation is allowed (DQ-055 A, decided
+2026-10-21): the reviewer recruited under DQ-029 A may perform CR-01 to CR-04 at independence I1, recorded as a
+deviation from the planned I2 and I3, and those reviews are repeated at I3 when an assessor is engaged. The standards are not bought either (DQ-013 A, decided
 2026-10-21: not until an assessor is engaged), so every clause reference stays marked as to be checked; the
 editions to check against are ISO 10218-1 and -2:2025 with ISO/TS 15066 for the contact limits (DQ-015 A). The concept-phase package the fork inherited was itself
 produced with AI assistance and never reviewed; it counts as an author-side pre-review at I0 and gives no credit

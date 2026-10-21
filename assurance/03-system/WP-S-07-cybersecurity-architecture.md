@@ -22,6 +22,8 @@ The cybersecurity architecture (IEC 62443-4-1 SD, 62443-3-3 zones and conduits):
 
 ## 2. Zones and conduits
 
+The laboratory network is the household or office network, not one the record controls (DQ-057 B, decided 2026-10-21): the robot and the operator's laptop share it with every other device, so the network is outside every zone and the SL 2 target rests on the robot's own controls alone; the residual exposure until those exist is DQ-067.
+
 Safety chain (E-stop devices, receiver, motor-rail contactors); motion control board and the six CAN buses; the Raspberry Pi 5 edge board with its tele-operation and media stack; the operator app; the update path; the site network (external). The safety chain is a zone of its own with no conduit from the tele-operation network.
 
 ## 3. Controls per conduit

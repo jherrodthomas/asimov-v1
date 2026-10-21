@@ -26,7 +26,7 @@ The WebRTC tele-operation data channel, the Asimov API (unreleased), the Raspber
 
 ## 3. Threat scenarios
 
-Seeded from GAP-19, GAP-20, GAP-22 and the DFMEA: an unauthenticated or replayed tele-operation command (HZ-C02), a jammed or spoofed wireless E-stop link (HZ-E04), a tampered policy or firmware image, a hostile device on a CAN bus, an open UART debug port, an unpinned supply chain.
+The laboratory network is a shared household or office network (DQ-057 B, 2026-10-21): every scenario below is reachable by any device on it, not only by an attacker who first joins the network. Seeded from GAP-19, GAP-20, GAP-22 and the DFMEA: an unauthenticated or replayed tele-operation command (HZ-C02), a jammed or spoofed wireless E-stop link (HZ-E04), a tampered policy or firmware image, a hostile device on a CAN bus, an open UART debug port, an unpinned supply chain.
 
 ## 4. Risk rating
 

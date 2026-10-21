@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-C-01 Item definition and limits of the machinery |
 | Standard reference | ISO 12100:2010 §5.3 (determination of the limits of the machinery), §5.4 (hazard identification inputs); ISO 10218-1:2011 §3, §5 (terms, robot requirements); ISO 13482:2014 §4 (robot types, use); ISO 13849-1:2023 §4.5; Regulation (EU) 2023/1230 Annex III §1.1.2, Annex IV Part A (technical documentation) |
-| Version | 0.4 (2026-10-21): DQ-030 A, DQ-031 A and DQ-032 A applied to §2, §9 and OI-1. 0.3 (2026-10-21): DQ-014 A applied to §4. 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
+| Version | 0.5 (2026-10-21): DQ-056 C (no unit) and DQ-058 A (enabling switch) applied to §1.1 and §5. 0.4 (2026-10-21): DQ-030 A, DQ-031 A and DQ-032 A applied to §2, §9 and OI-1. 0.3 (2026-10-21): DQ-014 A applied to §4. 0.2 (2026-10-21): DQ-002 A (OE-1 only), DQ-003 A (CFG-001 the reference configuration), DQ-001 C (both frames), DQ-005 A, DQ-006 A, DQ-009 A applied to §1, §5, §6, §8 and §9. 0.1 (2026-10-21): ported from the concept-package item definition (`03_ItemDef`) and re-stated against the repository at BL-001; two configurations CFG-001 and CFG-002; assumptions AOU-01…AOU-07; element and interface IDs |
 | Status | Draft |
 | PL / scope | PL d target for the stop and fall functions (DQ-004 A, decided 2026-10-21); operating envelope OE-1 only (DQ-002 A, decided 2026-10-21); CFG-001 the kit robot as published, tethered and bench-powered; CFG-002 the battery-powered robot under the locomotion policy, every value quoted from upstream and unverified |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -30,6 +30,8 @@
 | Manufacturer of record | Asimov Inc (Menlo) for the design and the kit; whoever assembles the kit makes the machine (WP-M-13 §2). The fork assigns no manufacturer and places no product on the market |
 
 ### 1.1 Reference configuration CFG-001, the kit robot as published
+
+**No physical unit exists at BL-001 (DQ-056 C, decided 2026-10-21):** the configuration is the design as published, and the record proceeds on it alone until a unit is decided (DQ-065). Every value below that needs a measurement stays a design value.
 
 | Element | Value | Source |
 |---|---|---|
@@ -168,7 +170,7 @@ the Asimov API, with the kit's wireless E-stop as the only stop device. None of 
 | M0 Off | No power on the motor rail | power off, E-stop pressed | the robot is a dead weight on the tether |
 | M1 DAMP | Motors limp; the declared default | disconnect, E-stop release, fault | **a fall unless the tether holds** (GAP-10). Not the safe state: DQ-005 A makes the safe state a controlled descent to a kneel or crouch, then power removal; the E-stop removes power at once and the tether carries the fall |
 | M2 STAND | The controller holds a standing pose, ramping in over about 2 s | operator command from DAMP | balance rests on the controller, which is not a safety function (DQ-006 A): the tether carries stability in OE-1 |
-| M3 MOVE | Position and velocity commands accepted | operator command from STAND | every limb hazard of WP-C-03 |
+| M3 MOVE | Position and velocity commands accepted only while the pendant's three-position enabling switch is held (DQ-058 A, decided 2026-10-21); release or panic-grip commands the controlled descent | operator command from STAND with the enabling switch held | every limb hazard of WP-C-03 |
 | M4 Bench | Actuators on a stand or the robot with feet off the floor | technician | the only powered mode permitted without the gantry lowered (WP-V-07) |
 
 ## 6. Legal requirements and standards

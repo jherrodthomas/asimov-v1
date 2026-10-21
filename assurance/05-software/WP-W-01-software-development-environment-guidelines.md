@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-W-01 SW development environment, languages and coding guidelines |
 | Standard reference | SRP/CS: 13849-1 §7; 61508-3 §7.4.4; IEC 62443: 62443-4-1 SI-1, SI-2; Other: MISRA C:2012 (firmware); ASPICE: SWE.3 |
-| Version | 0.0 (skeleton: structure, clause map and seeds from the concept-phase package; 2026-10-21) |
+| Version | 0.1 (2026-10-21): DQ-063 B (Rust) and DQ-064 B (no reverse-engineering of the actuator protocol) applied to §2 and §4. 0.0 (skeleton: structure, clause map and seeds from the concept-phase package; 2026-10-21) |
 | Status | Skeleton |
 | PL / scope | All |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -22,7 +22,7 @@ Software development environment, languages and coding guidelines for the motion
 
 ## 2. Environment
 
-Radxa CM5 (PREEMPT_RT Linux, motion control) and Raspberry Pi 5 (media, tele-operation); C and C++ with MISRA C:2012 for the safety layer; Python for tooling and training; the MuJoCo model for simulation; pinned images.
+Radxa CM5 (PREEMPT_RT Linux, motion control) and Raspberry Pi 5 (media, tele-operation); **Rust for the safety layer** (DQ-063 B, decided 2026-10-21, not the recommendation: a coding standard to adopt, DQ-074, and a toolchain qualification argument to write in WP-P-07); C and C++ only where a vendor library forces it; Python for tooling and training; the MuJoCo model for simulation; pinned images.
 
 ## 3. Guidelines
 
@@ -30,7 +30,7 @@ Coding rules, review rules, test rules, the separation of the safety layer from 
 
 ## 4. What exists at BL-001
 
-No firmware, API or policy is in any public repository (GAP-16, GAP-17); the environment is defined ahead of the code.
+No firmware, API or policy is in any public repository (GAP-16, GAP-17); the environment is defined ahead of the code. The actuators' CAN protocol is not documented either, and the fork does not observe or reverse-engineer it (DQ-064 B, decided 2026-10-21): the firmware's actuator interface waits for the supplier's or upstream's documentation (requested under DQ-047 A); the layer above it (watchdog, mode machine, clamps, E-stop input) is written against a CAN loopback meanwhile.
 
 ## 5. Open items
 

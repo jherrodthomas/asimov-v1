@@ -15,7 +15,7 @@ powered test with the robot assembled (WP-V-07 condition C-4).
 | Observer's station | outside the rectangle on the opposite side |
 | Power | TBC: outlet for the bench supply; the supply's output switch is the second stop |
 | Environment | 10 to 35 °C, non-condensing, ≥ 200 lux, dry, indoors, no steps (DQ-021 A); measured before each session |
-| Wi-Fi | continuous over the area (SF-08 heartbeat) |
+| Wi-Fi | continuous over the area (SF-08 heartbeat); the household or office network, shared (DQ-057 B); password changed before the first session if DQ-067 A |
 | Exits and first aid | TBC |
 | Recording | room camera position TBC (DQ-040 A) |
 | Insurance | DQ-053 A (2026-10-21): the existing policy checked first and the insurer's written answer filed here (TBC); hang tests under it if machinery under test is not excluded; cover before the first floor test |

@@ -84,5 +84,5 @@ batches of ten, record decisions in the register. A session's pull request is re
 ## Licensing
 
 Asimov v1 is published by Asimov Inc. under CERN-OHL-S-2.0 ([hardware](HARDWARE-LICENSE.txt)) and GPL-2.0
-([software](SOFTWARE-LICENSE.txt)). Contributions to the record are derivative analytical works under the same
-licences; forks must not imply Asimov Inc.'s endorsement.
+([software](SOFTWARE-LICENSE.txt)). Contributions to the record are licensed under CC BY-SA 4.0 and contributions to the
+tools under GPL-2.0 ([LICENSE-RECORD.md](LICENSE-RECORD.md)); forks must not imply Asimov Inc.'s endorsement.

@@ -4,7 +4,7 @@
 |---|---|
 | Work product | WP-M-02 Functional safety plan |
 | Standard reference | ISO 13849-1:2023 §4 (planning of the SRP/CS, roles, documentation); IEC 62061:2021 §5 (management of functional safety: planning, competence, configuration management, modification); IEC 61508-1:2010 §6 (management of functional safety); ISO 12100:2010 §4 (strategy); ISO 10218-1:2011 §5.4 (safety-related control system performance); ASPICE 4.0 MAN.3 |
-| Version | 0.4 (2026-10-21): DQ-029 A (public call for a reviewer) and DQ-030 A (G1 after the first hang test) applied to §3.1 and §10. 0.3 (2026-10-21): DQ-011 A (self-approval recorded at I0) and DQ-023 A (the fork writes a minimal firmware) applied. 0.2 (2026-10-21): DQ-004 A and DQ-010 A applied; DQ-011 opened. 0.1 (initial plan; 2026-10-21) |
+| Version | 0.5 (2026-10-21): DQ-055 A and DQ-062 B applied to §3.1 and §9. 0.4 (2026-10-21): DQ-029 A (public call for a reviewer) and DQ-030 A (G1 after the first hang test) applied to §3.1 and §10. 0.3 (2026-10-21): DQ-011 A (self-approval recorded at I0) and DQ-023 A (the fork writes a minimal firmware) applied. 0.2 (2026-10-21): DQ-004 A and DQ-010 A applied; DQ-011 opened. 0.1 (initial plan; 2026-10-21) |
 | Status | Draft |
 | PL / scope | All. Planned to PL d until the risk assessment ([WP-C-03](../02-concept/WP-C-03-risk-assessment.md)) and the safety function specification ([WP-C-04](../02-concept/WP-C-04-safety-functions-and-plr.md)) are approved; the target is PL d (DQ-004 A, decided 2026-10-21) |
 | Author | Assurance team (AI-assisted draft, I0) |
@@ -65,7 +65,7 @@ measures, QA audits). Roles marked TBD must be filled before the gate shown.
 | Safety-related control system engineer | Stop chain and safety-layer architecture, category and diagnostics, PL calculation, fault lists, validation of the chain (WP-S-02…S-05, WP-H-01, H-03, H-04, H-07) | Jherrod Thomas (acting); additional contributors TBD | G2 |
 | Electrical and mechanical engineer | E-stop and motor-rail wiring, IEC 60204-1 electrical safety, the battery and BMS interlock, structural and stability analysis, guarding (WP-H-02, H-05, H-08) | TBD (likely external) | G2 |
 | Firmware and software engineer(s) | The fork's minimal firmware for the motion control board (DQ-023 A: CAN actuator control with clamps, watchdog, E-stop input, DAMP-only fallback), the safety layer, the mode machine, unit and integration verification (WP-W-*) | Jherrod Thomas; additional contributors TBD | G2 |
-| Verification reviewer(s) | Verification reviews of work products and code (PR reviews) at the independence level set in [WP-P-05](../07-supporting/WP-P-05-verification-review-procedure.md) | TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21) and is posted by the lead on upstream's Discord and forum (DQ-046 A; draft in WP-M-10 §5), starting with WP-C-03 and WP-C-04 | G0 (carried to G1 as a condition of the G0 record) |
+| Verification reviewer(s) | Verification reviews of work products and code (PR reviews) at the independence level set in [WP-P-05](../07-supporting/WP-P-05-verification-review-procedure.md) | TBD; a public call for one reviewer with machinery-safety or robotics experience is open in CONTRIBUTING.md (DQ-029 A, decided 2026-10-21) and is posted by the lead on upstream's Discord and forum (DQ-046 A; draft in WP-M-10 §5), starting with WP-C-03 and WP-C-04; that reviewer may also perform the G1 confirmation reviews at I1 as a recorded deviation (DQ-055 A) | G0 (carried to G1 as a condition of the G0 record) |
 | Quality assurance | Process and work product audits per [WP-M-05](WP-M-05-quality-assurance-plan.md) | TBD (independent of the author) | G0 |
 | Test bench owner | Builds and maintains the actuator bench, the hardware-in-the-loop rig with the MuJoCo model, and the gantry (WP-W-08, WP-V-07) | TBD | G3 |
 | Test operator(s) | Powered tests under [WP-V-07](../06-validation/WP-V-07-test-operations.md), hand on the wired E-stop | TBD (trained per WP-M-04) | G1 (before any powered floor test) |
@@ -198,7 +198,9 @@ or a near-fall, a contact with a person, a stop that did not happen or was late,
 raised as a GitHub issue labelled `safety-anomaly` using the problem report template, triaged by the safety manager
 within one working day, and handled under [WP-P-03](../07-supporting/WP-P-03-problem-resolution.md). An anomaly with
 injury or property damage also follows the field monitoring procedure ([WP-O-04](../09-production-operation/WP-O-04-field-monitoring.md)).
-Testing stops until the safety manager lifts the stop (WP-V-07 §6).
+Testing stops until the safety manager lifts the stop (WP-V-07 §6). The safety manager lifts it alone, always
+(DQ-062 B, decided 2026-10-21); while the project has one person this is the operator clearing their own anomaly, and
+every anomaly issue states that no independent step exists (GAP-30, GAP-32 stay open in substance).
 
 ## 10. Progress tracking and gate reviews
 

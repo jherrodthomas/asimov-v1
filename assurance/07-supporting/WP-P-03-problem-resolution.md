@@ -26,7 +26,7 @@ GitHub issues with the problem report and safety concern templates; labels.
 
 ## 3. Triage and classification
 
-Safety anomaly within one working day; severity classes; the stop rule.
+Safety anomaly within one working day; severity classes; the stop rule. The stop is lifted by the safety manager alone (DQ-062 B, 2026-10-21); the anomaly issue states that no independent step exists.
 
 ## 4. Root cause and corrective action
 

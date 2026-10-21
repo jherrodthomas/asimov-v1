@@ -1577,7 +1577,9 @@
       title: "No: the reviewer does verification reviews only (WP-P-05); the confirmation reviews stay unperformed and G1 passes with conditions like G0"
       detail: "Clean separation of the two kinds of review. Cost: a second gate in a row whose confirmation measures are all conditions."
   sources: ["WP-M-06 §3, §4, §9", "DQ-010, DQ-029 (decided)", "G0 gate record conditions C-1, C-2", "IEC 61508-1:2010 §8 (independence), to be checked"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-06 v0.4 §1 and §9 (the recruited reviewer may perform CR-01 to CR-04 at I1 as a recorded deviation, repeated at I3 when an assessor is engaged); WP-M-02 §3.1", at: 2026-10-21}
 
 - id: DQ-056
   ref: GAP-00
@@ -1606,7 +1608,10 @@
       title: "None yet; the record proceeds on the design alone until a unit is decided"
       detail: "No spend. Cost: no test, no measurement, no G1 date; the case stays analysis."
   sources: ["README (DIY kit, price, shipping date)", "WP-C-01 §1.1", "WP-O-01 (skeleton)", "WP-M-13 §2 (who makes the machine)"]
-  status: open
+  status: applied
+  answer: {choice: C, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-01 v0.5 §1.1 (no robot unit exists; the record proceeds on the design alone until a unit is decided: DQ-065); WP-M-03 §5; WP-V-07 (no powered test is possible)", at: 2026-10-21}
+  note: "Not the recommendation: no unit yet. The hang test, the fall campaign and the measurements of GAP-03 have no date; DQ-065 asks whether to order the kit when it becomes orderable."
 
 - id: DQ-057
   ref: GAP-19
@@ -1633,7 +1638,10 @@
       title: "The household or office network, with the robot's traffic left as it is"
       detail: "No hardware. Cost: every device on the network can reach the robot's API; the heartbeat shares the air with everything else; SL 2 is argued against a network the record does not control."
   sources: ["DQ-012, DQ-038 (decided)", "WP-S-07 (skeleton)", "WP-C-02 §4 (Wi-Fi coverage)", "IEC 62443-3-2 (zones and conduits), to be checked"]
-  status: open
+  status: applied
+  answer: {choice: B, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-S-07 §2 and WP-C-07 §2 (the laboratory network is the household or office network, not controlled by the record; the SL 2 target is argued on the robot's own controls); WP-C-02 §4 Wi-Fi row; site-01 record; residual risk asked as DQ-067", at: 2026-10-21}
+  note: "Not the recommendation: the household network. Every device on it can reach the robot's API until the SL 2 controls are verified; DQ-067 asks whether that residual risk is accepted."
 
 - id: DQ-058
   ref: GAP-07
@@ -1660,7 +1668,9 @@
       title: "No enabling switch: the E-stop is the operator's only stop; MOVE is entered by a command and stays active"
       detail: "Simpler pendant. Cost: a wrong command runs until the E-stop; every stop is a fall onto the tether; an assessor will ask why manual operation has no enabling device."
   sources: ["ISO 10218-1:2025 §5 (manual mode, enabling device), to be checked", "DQ-005, DQ-008 (decided)", "WP-C-04 SF-08, SF-13", "WP-C-01 §5 (modes)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-04 v0.7 SF-08 (a three-position enabling switch on the pendant: motion in M3 only while held; release or panic-grip commands the controlled descent); WP-C-01 §5 M3; WP-S-05 §2; the pendant row of the bench-equipment change record", at: 2026-10-21}
 
 - id: DQ-059
   ref: GAP-00
@@ -1689,7 +1699,10 @@
       title: "No date; G1 when the hang test has happened"
       detail: "No slip to report. Cost: no plan, and nothing for the reviewer to schedule against."
   sources: ["DQ-023, DQ-030, DQ-035, DQ-045 (decided)", "WP-M-03 §5", "WP-M-07 (skeleton)"]
-  status: open
+  status: applied
+  answer: {choice: B, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-03 §5 (G1 targeted for the end of June 2027); WP-M-07 §3", at: 2026-10-21}
+  note: "Not the recommendation: end of June 2027 rather than March. Consistent with no robot unit yet (DQ-056 C)."
 
 - id: DQ-060
   ref: GAP-33
@@ -1719,7 +1732,9 @@
       title: "CC BY 4.0 (no share-alike)"
       detail: "Most permissive. Cost: derived analyses need not stay open, which breaks the reciprocity the fork inherited."
   sources: ["README (maintainer and upstream attribution)", "CONTRIBUTING §Licensing", "HARDWARE-LICENSE.txt, SOFTWARE-LICENSE.txt", "concept package README (licensing)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "LICENSE-RECORD.md (CC BY-SA 4.0 for the record; GPL-2.0 for the tools); README attribution paragraph; CONTRIBUTING §Licensing; concept-package README; WP-P-04 §2", at: 2026-10-21}
 
 - id: DQ-061
   ref: GAP-00
@@ -1746,7 +1761,9 @@
       title: "No visitors while the rail is powered"
       detail: "Simplest rule. Cost: nobody sees the robot move except the two people running it; demonstrations wait for a later envelope."
   sources: ["WP-C-02 §2, §3 T-07", "WP-V-07 §2 C-4", "DQ-022, DQ-041, DQ-051, DQ-052 (decided)"]
-  status: open
+  status: applied
+  answer: {choice: A, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-C-02 v0.5 §2 OE-1 people column and §3 T-07 (at most two briefed visitors behind a second line beyond the swing radius, never during fall tests); WP-V-07 v0.7 condition C-4; WP-O-02 §2", at: 2026-10-21}
 
 - id: DQ-062
   ref: GAP-30
@@ -1772,7 +1789,10 @@
       title: "Your decision alone, always"
       detail: "No delay. Cost: the operator clears their own anomalies; GAP-30 and GAP-32 stay open in substance."
   sources: ["WP-M-02 §9", "WP-V-07 §6", "gap assessment GAP-30, GAP-32", "DQ-029 (decided)"]
-  status: open
+  status: applied
+  answer: {choice: B, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-M-02 v0.5 §9 and WP-V-07 §6 (the safety manager lifts a stop alone, always; the issue states that no independent step exists); WP-P-03 §2", at: 2026-10-21}
+  note: "Not the recommendation: the lead alone lifts a stop. GAP-30 and GAP-32 stay open in substance; the record says so on every anomaly issue."
 
 - id: DQ-063
   ref: GAP-16
@@ -1800,7 +1820,10 @@
       title: "Rust for the safety layer"
       detail: "Memory safety by construction. Cost: no coding standard an assessor expects, a toolchain qualification argument to write, and fewer reviewers who read it."
   sources: ["WP-W-01 §2 (environment)", "ISO 13849-1:2023 §7 (software), to be checked", "DQ-023 (decided)"]
-  status: open
+  status: applied
+  answer: {choice: B, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-W-01 v0.2 §2 (Rust for the safety layer; a coding standard and a toolchain qualification argument to write, WP-P-07); WP-W-05 seed", at: 2026-10-21}
+  note: "Not the recommendation: Rust. A reversible technical choice the lead overrode; the record adds the toolchain qualification and coding-standard work this costs (WP-P-07, WP-W-01)."
 
 - id: DQ-064
   ref: GAP-14
@@ -1826,6 +1849,278 @@
       title: "Wait for the supplier's or upstream's documentation"
       detail: "A warranted interface. Cost: no firmware and no powered test until an unknown date."
   sources: ["electrical/README.md (CAN ports, actuators)", "electrical/wiring/wiring.yaml", "DQ-023, DQ-047 (decided or open)", "WP-M-10 (skeleton)"]
+  status: applied
+  answer: {choice: B, via: inbox, at: 2026-10-21}
+  applied: {ref: "asimov-v1 claude/happy-sagan-hl6agy", record: "WP-W-01 §4, WP-W-03 §2 and WP-M-10 §3 (the firmware waits for the actuators' protocol documentation; no observation or reverse-engineering of the bus); WP-M-07 §2 risk", at: 2026-10-21}
+  note: "Not the recommendation: wait for documentation. The minimal firmware of DQ-023 A cannot be written until the actuator protocol is documented by the supplier or upstream (DQ-047); the schedule risk is registered."
+
+- id: DQ-065
+  ref: GAP-00
+  question: "When upstream's DIY kit becomes orderable, do we order one for the record (target price 15,000 USD), or does the record stay design-only until a unit comes another way?"
+  context: >-
+    You said no robot unit exists yet (DQ-056 C). Without one there is no hang test, no fall campaign, no measured
+    mass or centre of gravity, and G1 (now targeted for June 2027, DQ-059 B) closes on simulation values at best.
+    Upstream announced kit shipping for summer 2026; the record does not know whether orders are open. A kit is the
+    configuration the whole case describes; a budget of that size is yours alone to commit.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-C-01 §1.1 (the unit); WP-M-03 §4 budget and §5 dates; every test work product; DQ-030 (G1 after the hang test)"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  options:
+    - key: A
+      recommended: true
+      title: "Yes: order one kit as soon as orders open, with the kit revision recorded as the hardware baseline; until it arrives the record works on the design"
+      detail: "The record gets the robot it describes. Cost: the kit price, delivery time, and the bench equipment to go with it (DQ-035 A)."
+    - key: B
+      title: "Not now: the record stays design-only through G1; a unit is reconsidered at G1"
+      detail: "No spend. Cost: G1 passes on analysis alone, the fall-arrest budget rests on simulation, and the hold point is never exercised."
+    - key: C
+      title: "A partial build instead: the motion control board, two or three actuators and one leg, bought or made separately, for the firmware and the clamp tests"
+      detail: "Cheaper and sooner. Cost: no whole-robot test; the fall campaign and the mass measurement wait for a unit anyway."
+  sources: ["DQ-056, DQ-059 (decided)", "README (DIY kit, price, shipping)", "WP-M-03 §5", "gap assessment GAP-03"]
+  status: open
+
+- id: DQ-066
+  ref: GAP-16
+  question: "Do we buy a Radxa CM5 with a carrier now, so the Rust firmware can be developed and tested on its real target before any robot exists?"
+  context: >-
+    You chose Rust for the safety layer (DQ-063 B), chose to wait for the actuators' protocol documentation before
+    talking CAN (DQ-064 B), and have no robot unit (DQ-056 C). What can be built now is the layer itself: the
+    watchdog, the mode machine, the clamps and the E-stop input, against the MuJoCo model and a CAN loopback. A CM5
+    with a carrier costs in the low hundreds and gives the real-time behaviour, the toolchain and the hardware
+    watchdog the record needs evidence about; a laptop gives none of that.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-W-01 §2 target; WP-W-08 bench; WP-P-07 toolchain qualification; WP-M-03 §4"
+  gate: G2
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Yes: one CM5 with a carrier that exposes CAN, the real-time Linux of WP-W-01, and a CAN loopback on the bench"
+      detail: "The firmware's timing, watchdog and toolchain are shown on the real target before a robot exists. Cost: low hundreds; a bench spot."
+    - key: B
+      title: "Not yet: develop on a laptop against the MuJoCo model until a unit exists"
+      detail: "No spend. Cost: no evidence about real-time behaviour, the hardware watchdog or the cross-toolchain until much later."
+  sources: ["DQ-023, DQ-063, DQ-064 (decided)", "electrical/README.md (motion control board)", "WP-W-01 §2"]
+  status: open
+
+- id: DQ-067
+  ref: GAP-19
+  question: "Do you accept, for the laboratory, that any device on the household or office network can reach the robot's API until the SL 2 controls are built and verified?"
+  context: >-
+    You chose the household network over a dedicated one (DQ-057 B). Until authentication, integrity and the idle
+    lock of SL 2 (DQ-012 A) exist in software the fork controls and WP-V-06 has tested them, every device on that
+    network can send commands to the robot's API, and the threat assessment has to rate that as reachable by anyone
+    with the Wi-Fi password. In the laboratory the compensation is procedural: the robot is powered only during a
+    session, on the tether, with the wired pendant in hand. That is a residual risk you accept, not one the record
+    can argue away.
+  reversibility: revisit
+  decider: lead
+  blocks: "WP-C-07 §2 threat scenarios; WP-C-03 §8 residual risk; WP-K-03 cybersecurity case; WP-V-07 condition C-6"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  options:
+    - key: A
+      recommended: true
+      title: "Accept for OE-1 only: the robot is powered only during a session, on the tether, with the pendant in hand; the Wi-Fi password is changed before the first session and known to the two people in the room; recorded as a residual risk until WP-V-06 passes"
+      detail: "The network stays as it is and the exposure is bounded by the session. Cost: a residual risk in the cybersecurity case an assessor will read first; a password rotation before the first session."
+    - key: B
+      title: "Do not accept: revert to a dedicated network (DQ-057 A) before the first powered test"
+      detail: "Removes the exposure. Cost: a small router and the change of DQ-057."
+  sources: ["DQ-012, DQ-057 (decided)", "gap assessment GAP-19", "WP-C-07 (skeleton)", "WP-V-07 §2 C-6"]
+  status: open
+
+- id: DQ-068
+  ref: GAP-03
+  question: "With no robot unit, is G1 held on the record alone after all, with the mass, centre of gravity and fall data carried as conditions into P2 (reversing DQ-030), or does G1 wait for a unit?"
+  context: >-
+    You decided G1 is held after the first hang test (DQ-030 A) and then that no unit exists (DQ-056 C) with G1
+    targeted for June 2027 (DQ-059 B). The two fit only if a unit arrives by spring. If it does not, G1 either waits
+    indefinitely or is held on the record with the measurements as conditions, which is what option B of DQ-030
+    was. The question is which you prefer when June comes without a robot.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-03 §5; the G1 gate record; WP-C-01 OI-1; DQ-030"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  options:
+    - key: A
+      recommended: true
+      title: "If no unit exists by the target, hold G1 on the record with the measurements as conditions into P2; otherwise keep DQ-030 A"
+      detail: "A gate in June either way, honest about what it rests on. Cost: a second conditional gate if the unit is late."
+    - key: B
+      title: "G1 waits for a unit, whenever that is"
+      detail: "The concept closes on measured numbers. Cost: no gate date; the plan has nothing to slip against."
+  sources: ["DQ-030, DQ-056, DQ-059 (decided)", "WP-M-00 §2 (G1 exit criteria)", "G0 gate record (conditions)"]
+  status: open
+
+- id: DQ-069
+  ref: GAP-00
+  question: "What is the overall budget cap for the first item through G1: equipment, spares, a possible kit, compute for the firmware and any paid review?"
+  context: >-
+    The register now holds several purchases you approved or are asked about: the bench equipment as one order
+    (DQ-035 A, low thousands), spares for the fall campaign (DQ-026 A), a kit (DQ-065, around 15,000 USD), a CM5
+    (DQ-066, low hundreds), standards later (DQ-013 A) and perhaps paid review hours (DQ-029 C declined). A cap lets
+    the project plan order them and tells the record which decisions are money-limited rather than safety-limited.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-03 §4 budget; WP-M-07 funding risk; the order of purchases"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  options:
+    - key: A
+      recommended: true
+      title: "Two tiers: up to 5,000 USD for the bench equipment, spares and compute, approved now; the kit as a separate decision when orders open (DQ-065)"
+      detail: "The bench can be bought without waiting for the kit question. Cost: the number is a cap, not a plan; quotes still go in the change record."
+    - key: B
+      title: "One cap of 25,000 USD for everything through G1, kit included"
+      detail: "One decision. Cost: commits the kit price before orders exist."
+    - key: C
+      title: "No cap; each purchase asked separately"
+      detail: "Maximum control. Cost: a register question per receipt."
+  sources: ["DQ-026, DQ-035 (decided)", "DQ-065, DQ-066 (open)", "WP-M-03 §4", "the bench-equipment change record"]
+  status: open
+
+- id: DQ-070
+  ref: GAP-00
+  question: "Are you the test operator of record as well as the safety manager, with both roles in the plan under your name, or does the operator role wait for someone else?"
+  context: >-
+    The hold point names a test operator trained per WP-M-04 and a safety manager who approves the procedure and
+    lifts stops (now alone, DQ-062 B). With one person both are you; the plan can say so, which makes the
+    self-approval visible, or leave the operator role TBD, which means no powered test until someone else is
+    trained. The question only matters once a unit exists, but the roles table is read at every gate.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-02 §3.1 roles; WP-M-04 competence record; WP-V-07 condition C-8"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Yes: you are the test operator of record, trained per WP-M-04 with the training recorded, and the safety manager; the plan states the dual role as an interim limitation"
+      detail: "Honest and workable. Cost: one more line in the interim-limitation note; an assessor will note the operator approves their own procedure."
+    - key: B
+      title: "The operator role stays TBD until a second trained person exists"
+      detail: "Separation of roles. Cost: no powered test by you alone with an observer, ever, under this plan."
+  sources: ["WP-M-02 §3.1, §3.3", "WP-M-04 (skeleton)", "DQ-011, DQ-022, DQ-052, DQ-062 (decided)"]
+  status: open
+
+- id: DQ-071
+  ref: GAP-13
+  question: "Is the G1 review of the machine-learning classification (ML-R1) performed by the recruited reviewer at I1 like the confirmation reviews, or left unperformed until an ML-competent reviewer exists?"
+  context: >-
+    ML-R1 at G1 reviews the classification of the locomotion policy and the insufficiency analysis (WP-M-06 §7).
+    With the policy a functional component and a black box (DQ-006 A, DQ-050 A) the review is short: it checks that
+    no safety function rests on it and that the clamps bound it. You allowed the recruited reviewer to perform the
+    confirmation reviews at I1 as a deviation (DQ-055 A); ML-R1 can follow the same rule or wait for someone with
+    learned-control experience.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-06 §7 and §9; WP-M-09 §5; the G1 gate record"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Same rule as DQ-055: the recruited reviewer performs ML-R1 at I1 as a recorded deviation; repeated when an ML-competent reviewer exists"
+      detail: "The short review gets done. Cost: the reviewer may lack learned-control experience; the record says so."
+    - key: B
+      title: "Unperformed until an ML-competent reviewer exists"
+      detail: "The right competence. Cost: one more unperformed measure at G1."
+  sources: ["WP-M-06 §7, §9", "DQ-006, DQ-050, DQ-055 (decided)", "WP-M-09 §5"]
+  status: open
+
+- id: DQ-072
+  ref: GAP-02
+  question: "Does the record keep dated copies of the upstream manual pages it relies on (the safety, electrical and mode pages), or only links?"
+  context: >-
+    The record quotes upstream's manual for the firmware behaviour, the modes and the kit contents, and the manual's
+    pages change without notice; its safety and quick-start pages are not even published yet (GAP-02). A dated copy
+    in the record lets a reviewer see what the fork relied on at each baseline; it is also a copy of someone else's
+    text, which upstream's documentation licence may or may not allow. Links alone keep the record clean and make
+    every quotation unverifiable a year later.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-M-10 §2; WP-P-01 configuration items; WP-P-04 §2; the baseline records"
+  gate: G1
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "Dated copies of the pages relied on, kept under the baseline record as configuration items, with their source URL and retrieval date, if upstream's documentation licence permits; links only where it does not"
+      detail: "Every quotation stays checkable. Cost: a licence check of upstream's documentation; a folder of snapshots to maintain per baseline."
+    - key: B
+      title: "Links and quotations only"
+      detail: "Nothing copied. Cost: a changed or removed page leaves the record's quotation unverifiable."
+  sources: ["gap assessment GAP-02", "WP-M-10 §2", "WP-P-01 §2", "CLAUDE.md (quote upstream, do not restate)"]
+  status: open
+
+- id: DQ-073
+  ref: GAP-09
+  question: "Is the second IMU for the fall-detection cross-check a BNO08x-class sensor with its own fusion core on SPI, or a second LSM6DSV on a separate bus?"
+  context: >-
+    You decided on a second IMU of a different type on a separate supply (DQ-034 A). A sensor with its own fusion
+    core (BNO08x class) gives an independent attitude estimate, which is the diverse second channel the argument
+    wants, and the board already exposes an external IMU connector; a second LSM6DSV is the same silicon and the
+    same failure modes, cheaper but not diverse. This is a reversible technical choice, so the record goes ahead
+    with the recommendation unless you object.
+  reversibility: easy
+  decider: claude
+  blocks: "WP-H-02 §3; WP-S-03 §3; WP-C-04 SF-23"
+  gate: G2
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-10-28
+  options:
+    - key: A
+      recommended: true
+      title: "A BNO08x-class IMU with its own fusion core on the external IMU connector, on a separate supply rail"
+      detail: "Diverse silicon and an independent attitude estimate. Cost: a breakout board and a driver in the safety layer."
+    - key: B
+      title: "A second LSM6DSV on a separate bus"
+      detail: "Same driver, cheaper. Cost: common silicon and common failure modes; weaker CCF argument."
+  sources: ["DQ-034 (decided)", "electrical/README.md (LSM6DSV, external IMU connector)", "DFMEA FM-12", "ISO 13849-1:2023 Annex F (CCF, diversity), to be checked"]
+  status: open
+
+- id: DQ-074
+  ref: GAP-16
+  question: "Which Rust coding rules does the safety layer follow: the Safety-Critical Rust Consortium's coding guidelines with clippy's strictest lints in CI, or no formal rule set?"
+  context: >-
+    You chose Rust for the safety layer (DQ-063 B). ISO 13849-1 §7 expects a coding standard, and an assessor will
+    ask for one by name. The Safety-Critical Rust Consortium publishes coding guidelines modelled on MISRA; clippy
+    can enforce a strict lint set in CI; the Ferrocene language specification gives the language a written
+    definition. Adopting them costs discipline now and gives the toolchain-qualification argument (WP-P-07)
+    something to cite; without them the record has to write its own rule set.
+  reversibility: easy
+  decider: lead
+  blocks: "WP-W-01 §3 guidelines; WP-P-07 tool qualification; WP-W-06 unit verification"
+  gate: G2
+  asked: 2026-10-21
+  batch: 7
+  proceed_after: 2026-11-04
+  options:
+    - key: A
+      recommended: true
+      title: "The Safety-Critical Rust Consortium coding guidelines as the rule set, clippy pedantic and restriction lints enforced in CI, the Ferrocene specification cited as the language definition; deviations recorded per rule"
+      detail: "A named standard an assessor can read. Cost: the guidelines are young and change; a deviation record from day one."
+    - key: B
+      title: "No formal rule set: idiomatic Rust, clippy defaults, review"
+      detail: "Less friction. Cost: nothing to cite for ISO 13849-1 §7; the record writes its own rules later."
+  sources: ["DQ-063 (decided)", "WP-W-01 §3", "ISO 13849-1:2023 §7 (software), to be checked", "WP-P-07 (skeleton)"]
   status: open
 
 - id: DQ-017

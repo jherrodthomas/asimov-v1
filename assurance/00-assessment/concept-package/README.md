@@ -39,5 +39,5 @@ record supersedes them work product by work product and this note says how.
 
 ## Licensing
 
-Upstream hardware is CERN-OHL-S-2.0 and upstream software GPL-2.0. The package and the record are derivative
-analytical works of the upstream sources and are released under the same licences.
+Upstream hardware is CERN-OHL-S-2.0 and upstream software GPL-2.0. The package was published under those licences
+and stays so; the record that supersedes it is under CC BY-SA 4.0 ([LICENSE-RECORD.md](../../../LICENSE-RECORD.md), DQ-060 A).
