@@ -1,0 +1,121 @@
+# Source: WP-K-01 Safety Case (§10, open items). Machine-readable copy; WP-K-01 remains the reviewed document.
+
+- id: ACT-001
+  kind: action
+  title: "Weigh the robot, measure the centre of gravity and bound the fall energy"
+  description: "Weigh the robot, measure the centre of gravity and bound the fall energy; source WP-C-01 OI-1"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G1.2, G2.4, G4.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-1
+  source_revision: "3d4ec9d"
+
+- id: ACT-002
+  kind: action
+  title: "Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005)"
+  description: "Decide the safe state of the biped: controlled descent, hold, or power removal (DQ-005); source WP-C-04 OI-1"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G1.2, G1.6]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-2
+  source_revision: "3d4ec9d"
+
+- id: ACT-003
+  kind: action
+  title: "Decide whether the learned locomotion policy may carry SF-01 (DQ-006)"
+  description: "Decide whether the learned locomotion policy may carry SF-01 (DQ-006); source WP-C-04 OI-2"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G1.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-3
+  source_revision: "3d4ec9d"
+
+- id: ACT-004
+  kind: action
+  title: "Obtain or design the E-stop architecture: devices, receiver, contactors, stop category (DQ-008)"
+  description: "Obtain or design the E-stop architecture: devices, receiver, contactors, stop category (DQ-008); source WP-C-04 OI-3"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G1.8]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-4
+  source_revision: "3d4ec9d"
+
+- id: ACT-005
+  kind: action
+  title: "Obtain actuator, encoder and board reliability data from upstream or the suppliers"
+  description: "Obtain actuator, encoder and board reliability data from upstream or the suppliers; source WP-M-10 OI-1"
+  lifecycle_status: open
+  needed_by: G2
+  related_claims: [G1]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-5
+  source_revision: "3d4ec9d"
+
+- id: ACT-006
+  kind: action
+  title: "Reviewer with build or operating experience confirms every rating in WP-C-03"
+  description: "Reviewer with build or operating experience confirms every rating in WP-C-03; source WP-C-03 OI-2"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G4.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-6
+  source_revision: "3d4ec9d"
+
+- id: ACT-007
+  kind: action
+  title: "Port the 120 requirements and 139 test cases of the concept package into WP-S-02 and WP-V-01"
+  description: "Port the 120 requirements and 139 test cases of the concept package into WP-S-02 and WP-V-01; source WP-S-02 OI-1"
+  lifecycle_status: open
+  needed_by: G2
+  related_claims: [G1]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-7
+  source_revision: "3d4ec9d"
+
+- id: ACT-008
+  kind: action
+  title: "Set the battery policy: certified pack list and BMS handshake interlock (DQ-009)"
+  description: "Set the battery policy: certified pack list and BMS handshake interlock (DQ-009); source WP-C-01 OI-2"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G1.10, G2.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-8
+  source_revision: "3d4ec9d"
+
+- id: ACT-009
+  kind: action
+  title: "Specify the tether and gantry of OE-1 and record them as the complementary measure (DQ-007)"
+  description: "Specify the tether and gantry of OE-1 and record them as the complementary measure (DQ-007); source WP-V-07 OI-1"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G2.4]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-9
+  source_revision: "3d4ec9d"
+
+- id: ACT-010
+  kind: action
+  title: "Get the manual's safety, quick-start and BOM pages published, or write the information for use"
+  description: "Get the manual's safety, quick-start and BOM pages published, or write the information for use; source WP-O-03 OI-1"
+  lifecycle_status: open
+  needed_by: G1
+  related_claims: [G2.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_ref: OI-10
+  source_revision: "3d4ec9d"

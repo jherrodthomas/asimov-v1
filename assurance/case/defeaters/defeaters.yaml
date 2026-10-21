@@ -1,0 +1,376 @@
+# Source: WP-K-01 Safety Case (§7, defeaters). One defeater per gap-assessment finding GAP-01 to GAP-34.
+# Machine-readable copy; WP-K-01 remains the reviewed document.
+
+- id: DF-01
+  kind: defeater
+  title: "Adequacy-of-risk-reduction record absent for 18 of the 32 hazards"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-01"
+  lifecycle_status: open
+  gaps: [GAP-01]
+  related_claims: [G0, G4.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-02
+  kind: defeater
+  title: "Information for use not published; the manual's safety, quick-start and BOM pages return 404"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-02"
+  lifecycle_status: open
+  gaps: [GAP-02]
+  related_claims: [G2.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-03
+  kind: defeater
+  title: "No tip-over or stability analysis; the fall energy of the 35 kg body is unbounded"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-03"
+  lifecycle_status: open
+  gaps: [GAP-03]
+  related_claims: [G1.1, G1.2, G2.4]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-04
+  kind: defeater
+  title: "No structural fatigue or material evidence: hip-yoke fillet, 7075 substitution, SLM porosity"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-04"
+  lifecycle_status: open
+  gaps: [GAP-04]
+  related_claims: [G2.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-05
+  kind: defeater
+  title: "Force, pressure and energy contact limits not declared"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-05"
+  lifecycle_status: open
+  gaps: [GAP-05]
+  related_claims: [G1.4, G1.12]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-06
+  kind: defeater
+  title: "Joint speed, torque and momentum limits not declared; the MuJoCo ctrlrange values are the only published limits"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-06"
+  lifecycle_status: open
+  gaps: [GAP-06]
+  related_claims: [G1.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-07
+  kind: defeater
+  title: "E-stop architecture undocumented: no device, receiver or contactor in the electrical record"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-07"
+  lifecycle_status: open
+  gaps: [GAP-07]
+  related_claims: [G1.8]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-08
+  kind: defeater
+  title: "No power distribution board, fuse table, disconnection device or battery in the repository"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-08"
+  lifecycle_status: open
+  gaps: [GAP-08]
+  related_claims: [G1.7, G2.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-09
+  kind: defeater
+  title: "Single-fault tolerance (Category 3) not implemented for any safety function"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-09"
+  lifecycle_status: open
+  gaps: [GAP-09]
+  related_claims: [G1.1, G1.6, G1.8]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-10
+  kind: defeater
+  title: "The safe state of the biped is undefined: DAMP drops the robot and no controlled-descent function exists"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-10"
+  lifecycle_status: open
+  gaps: [GAP-10]
+  related_claims: [G1.2, G1.6]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-11
+  kind: defeater
+  title: "Wireless E-stop link: no surveillance, latency, fail-safe or re-arm behaviour documented"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-11"
+  lifecycle_status: open
+  gaps: [GAP-11]
+  related_claims: [G1.8]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-12
+  kind: defeater
+  title: "The battery is user-supplied with no compliance gate and no BMS interlock"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-12"
+  lifecycle_status: open
+  gaps: [GAP-12]
+  related_claims: [G1.10, G2.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-13
+  kind: defeater
+  title: "Bipedal stability (SF-01) is allocated to an unreleased learned locomotion policy with no independent safeguard specified"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-13"
+  lifecycle_status: open
+  gaps: [GAP-13]
+  related_claims: [G1.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-14
+  kind: defeater
+  title: "MTTFD, DC and CCF figures absent; no actuator or board reliability data from upstream"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-14"
+  lifecycle_status: open
+  gaps: [GAP-14]
+  related_claims: [G1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-15
+  kind: defeater
+  title: "No validation plan or test report exists for any safety function"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-15"
+  lifecycle_status: open
+  gaps: [GAP-15]
+  related_claims: [G1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-16
+  kind: defeater
+  title: "No firmware or motion-control software in any public repository"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-16"
+  lifecycle_status: open
+  gaps: [GAP-16]
+  related_claims: [G1.6, G1.13, G1.14, G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-17
+  kind: defeater
+  title: "The locomotion policy is unreleased; its training, simulation-to-real evidence and behaviour are undefined"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-17"
+  lifecycle_status: open
+  gaps: [GAP-17]
+  related_claims: [G1.1, G1.5]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-18
+  kind: defeater
+  title: "The Asimov API contract is pre-1.0 and unstable"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-18"
+  lifecycle_status: open
+  gaps: [GAP-18]
+  related_claims: [G3.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-19
+  kind: defeater
+  title: "The tele-operation authentication scheme is not documented"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-19"
+  lifecycle_status: open
+  gaps: [GAP-19]
+  related_claims: [G3.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-20
+  kind: defeater
+  title: "The wireless E-stop link and the UART debug port have no documented protection"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-20"
+  lifecycle_status: open
+  gaps: [GAP-20]
+  related_claims: [G1.8, G3.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-21
+  kind: defeater
+  title: "The simulation model is the only dynamics data and is not pinned to any hardware revision"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-21"
+  lifecycle_status: open
+  gaps: [GAP-21]
+  related_claims: [G1.1, G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-22
+  kind: defeater
+  title: "The CAN harness depends on DIY crimp quality and termination with no acceptance criterion"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-22"
+  lifecycle_status: open
+  gaps: [GAP-22]
+  related_claims: [G1.6, G4.4]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-23
+  kind: defeater
+  title: "No under-voltage lockout or power-good specification; mid-stride power loss goes unflagged"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-23"
+  lifecycle_status: open
+  gaps: [GAP-23]
+  related_claims: [G1.2, G2.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-24
+  kind: defeater
+  title: "No mechanical BOM, torque table or threadlocker specification in the repository"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-24"
+  lifecycle_status: open
+  gaps: [GAP-24]
+  related_claims: [G2.1, G4.4]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-25
+  kind: defeater
+  title: "No stator thermistor cut-off or head-shell thermal validation documented"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-25"
+  lifecycle_status: open
+  gaps: [GAP-25]
+  related_claims: [G1.9]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-26
+  kind: defeater
+  title: "Guarding gaps at the waist and neck yaw unverified against ISO 13857"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-26"
+  lifecycle_status: open
+  gaps: [GAP-26]
+  related_claims: [G2.1]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-27
+  kind: defeater
+  title: "Records of test, calibration and nonconformance are not maintained"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-27"
+  lifecycle_status: open
+  gaps: [GAP-27]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-28
+  kind: defeater
+  title: "Design review and design verification records are absent"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-28"
+  lifecycle_status: open
+  gaps: [GAP-28]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-29
+  kind: defeater
+  title: "Production process controls are undeclared for the DIY-kit assembly"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-29"
+  lifecycle_status: open
+  gaps: [GAP-29]
+  related_claims: [G4.4]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-30
+  kind: defeater
+  title: "No nonconformance procedure"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-30"
+  lifecycle_status: open
+  gaps: [GAP-30]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-31
+  kind: defeater
+  title: "No internal audit or monitoring"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-31"
+  lifecycle_status: open
+  gaps: [GAP-31]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-32
+  kind: defeater
+  title: "No corrective-action system"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-32"
+  lifecycle_status: open
+  gaps: [GAP-32]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-33
+  kind: defeater
+  title: "The concept-phase package is unreviewed, AI-assisted and outside the record's conventions"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-33"
+  lifecycle_status: open
+  gaps: [GAP-33]
+  related_claims: [G0, G4.2]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: DF-34
+  kind: defeater
+  title: "Process capability estimated at CL0 for every engineering process"
+  description: "Closure route: gap assessment §10 priority actions; see GAP-34"
+  lifecycle_status: open
+  gaps: [GAP-34]
+  related_claims: [G4.3]
+  baseline: BL-001
+  source: WP-K-01
+  source_revision: "3d4ec9d"

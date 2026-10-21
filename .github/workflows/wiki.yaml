@@ -1,0 +1,92 @@
+name: wiki
+
+# The GitHub wiki is a mirror of wiki/ on main. Pages are written and reviewed in the repository by
+# pull request; this workflow checks them on every pull request and, on every push to main, builds them
+# with tools/wiki/build_wiki.py and pushes the result to the wiki repository (<owner>/<repo>.wiki.git).
+# The wiki is never edited in place: the next sync would overwrite the edit.
+#
+# Both triggers run on every change, not only one that touches wiki/: a pull request that moves or
+# renames a file the pages link to must fail here, not break the wiki after merge, and the Session log,
+# the sync stamp and the infographics are read from the checkout, so they are current only if every
+# merge syncs. The check takes seconds; the publish pushes nothing when the pages are unchanged.
+#
+# One-time setup: the wiki repository exists only after a first page has been created from the
+# repository's Wiki tab. Until then the publish job fails at "Clone the wiki" and says so.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wiki-${{ github.event_name == 'pull_request' && github.head_ref || 'publish' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  check:
+    name: build and check the pages
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        fetch-depth: 300   # merge history for the Session log page
+    - name: Build tool unit tests (and a check of wiki/)
+      run: python3 -m unittest discover -s tools/wiki -p 'test_*.py' -v
+    - name: Build the pages (page links, repository links, sync stamp)
+      run: >
+        python3 tools/wiki/build_wiki.py --out build/wiki
+        --repo "${{ github.repository }}" --branch "${{ github.base_ref || github.ref_name }}"
+        --commit "${{ github.sha }}"
+    - uses: actions/upload-artifact@v4
+      with:
+        name: wiki
+        path: build/wiki
+
+  publish:
+    name: publish to the GitHub wiki
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write   # the wiki repository is written with the same token as the main one
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        fetch-depth: 300
+    - name: Build the pages
+      run: >
+        python3 tools/wiki/build_wiki.py --out build/wiki
+        --repo "${{ github.repository }}" --branch "${{ github.ref_name }}" --commit "${{ github.sha }}"
+    - name: Clone the wiki
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        if ! git clone --quiet "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.wiki.git" build/wiki-repo; then
+          echo "::error::Could not clone ${GITHUB_REPOSITORY}.wiki.git. Create the wiki once from the repository's Wiki tab (any first page), then re-run this workflow."
+          exit 1
+        fi
+    - name: Replace the wiki content and push when it changed
+      run: |
+        set -e
+        find build/wiki-repo -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+        cp -R build/wiki/. build/wiki-repo/
+        cd build/wiki-repo
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        if git diff --cached --quiet; then
+          echo "The wiki already matches wiki/ at ${GITHUB_SHA::7}; nothing to push."
+          exit 0
+        fi
+        git commit --quiet -m "Sync wiki/ from ${GITHUB_REPOSITORY}@${GITHUB_SHA::7}"
+        git push --quiet
+        echo "Pushed the wiki at ${GITHUB_SHA::7}."

@@ -1,0 +1,127 @@
+# Concept phase (gate G1). Format: assurance/process/README.md §3.
+# Clause references are read from the WP-M-00 register row of each produced work product. `inputs` are
+# the work products an activity needs before it can finish; iteration between activities is modelled
+# as an interface (interfaces.yaml), not as an input.
+
+- id: CON-01
+  kind: activity
+  phase: G1
+  lane: joint
+  name: "Define the robot and its limits"
+  produces: [WP-C-01]
+  inputs: [WP-M-01, WP-M-11]
+- id: CON-02
+  kind: activity
+  phase: G1
+  lane: risk
+  name: "Specify the operating envelopes and tasks"
+  produces: [WP-C-02]
+  inputs: [WP-C-01]
+- id: CON-03
+  kind: activity
+  phase: G1
+  lane: risk
+  name: "Analyse human-robot interaction, contact limits and foreseeable misuse"
+  produces: [WP-C-06]
+  inputs: [WP-C-01, WP-C-02]
+- id: CON-04
+  kind: activity
+  phase: G1
+  lane: risk
+  name: "Hazard identification and risk assessment"
+  produces: [WP-C-03]
+  inputs: [WP-C-01, WP-C-02, WP-C-06]
+- id: CON-05
+  kind: activity
+  phase: G1
+  lane: srpcs
+  name: "Specify the safety functions and their required PL"
+  produces: [WP-C-04]
+  inputs: [WP-C-03, WP-C-06]
+- id: CON-06
+  kind: activity
+  phase: G1
+  lane: risk
+  name: "Analyse functional insufficiencies of perception and the locomotion policy"
+  produces: [WP-C-10]
+  inputs: [WP-C-02, WP-C-03]
+- id: CON-07
+  kind: activity
+  phase: G1
+  lane: risk
+  name: "Risk reduction concept"
+  produces: [WP-C-05]
+  inputs: [WP-C-03, WP-C-04, WP-C-10]
+- id: CON-08
+  kind: activity
+  phase: G1
+  lane: cs
+  name: "Cybersecurity threat and risk assessment"
+  produces: [WP-C-07]
+  inputs: [WP-C-01, WP-C-03]
+- id: CON-09
+  kind: activity
+  phase: G1
+  lane: cs
+  name: "Cybersecurity requirements and security level target"
+  produces: [WP-C-08]
+  inputs: [WP-C-04, WP-C-07]
+- id: CON-10
+  kind: activity
+  phase: G1
+  lane: ml
+  name: "Define the ML components and their safety requirements"
+  produces: [WP-C-09]
+  inputs: [WP-C-04, WP-C-10]
+- id: CON-11
+  kind: activity
+  phase: G1
+  lane: joint
+  name: "Test operations hold point"
+  produces: [WP-V-07]
+  inputs: [WP-C-01, WP-C-02, WP-C-03]
+- id: CON-12
+  kind: activity
+  phase: G1
+  lane: joint
+  name: "Record the hazard log and the argument structure"
+  produces: [WP-T-01, WP-K-01]
+  inputs: [WP-C-03, WP-C-04, WP-C-05, WP-C-08, WP-C-09]
+
+# Confirmation measures planned for G1 (WP-M-06 §9).
+- id: CR-02
+  kind: review
+  phase: G1
+  name: "Confirmation review of the risk assessment"
+  covers: [WP-C-03, WP-C-01, WP-C-06]
+  independence: I3
+- id: CR-03@G1
+  kind: review
+  phase: G1
+  name: "Confirmation review of the safety plan (re-confirm after the risk assessment)"
+  covers: [WP-M-02, WP-M-01, WP-M-06]
+  independence: I3
+- id: CR-04
+  kind: review
+  phase: G1
+  name: "Confirmation review of the safety functions, PLr and risk reduction concept"
+  covers: [WP-C-04, WP-C-05]
+  independence: I3
+- id: FSA-I1
+  kind: review
+  phase: G1
+  name: "Interim functional safety assessment"
+  covers: [WP-C-01, WP-C-03, WP-C-04, WP-C-05]
+  independence: I3
+- id: CS-I1
+  kind: review
+  phase: G1
+  name: "Interim cybersecurity review (threat assessment, requirements, links to the hazard list)"
+  covers: [WP-C-07, WP-C-08]
+  independence: external
+- id: ML-R1
+  kind: review
+  phase: G1
+  name: "Review of the ML classification and the insufficiency analysis"
+  covers: [WP-C-09, WP-C-10]
+  independence: I3-equivalent

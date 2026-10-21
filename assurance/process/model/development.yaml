@@ -1,0 +1,174 @@
+# Hardware and software development phase (gate G3). Format: assurance/process/README.md §3.
+
+- id: DEV-01
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software development environment and guidelines"
+  produces: [WP-W-01]
+  inputs: [WP-M-02, WP-P-01]
+- id: DEV-02
+  kind: activity
+  phase: G3
+  lane: joint
+  name: "Tool classification and qualification"
+  produces: [WP-P-07]
+  inputs: [WP-W-01, WP-M-02]
+- id: DEV-03
+  kind: activity
+  phase: G3
+  lane: hw
+  name: "Hardware safety requirements"
+  produces: [WP-H-01]
+  inputs: [WP-S-02, WP-S-03, WP-S-05]
+- id: DEV-04
+  kind: activity
+  phase: G3
+  lane: hw
+  name: "Electrical and safety-chain design"
+  produces: [WP-H-02]
+  inputs: [WP-H-01, WP-S-04]
+- id: DEV-05
+  kind: activity
+  phase: G3
+  lane: hw
+  name: "Electrical and battery safety"
+  produces: [WP-H-05]
+  inputs: [WP-H-02]
+- id: DEV-06
+  kind: activity
+  phase: G3
+  lane: hw
+  name: "Qualification of safety components"
+  produces: [WP-H-07]
+  inputs: [WP-H-01, WP-H-02, WP-M-10]
+- id: DEV-07
+  kind: activity
+  phase: G3
+  lane: srpcs
+  name: "Hardware failure analysis and fault lists"
+  produces: [WP-H-03]
+  inputs: [WP-H-02, WP-A-01]
+- id: DEV-08
+  kind: activity
+  phase: G3
+  lane: srpcs
+  name: "Reliability data and PL calculation"
+  produces: [WP-H-04]
+  inputs: [WP-H-03, WP-H-07, WP-A-03]
+- id: DEV-09
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software safety requirements"
+  produces: [WP-W-02]
+  inputs: [WP-S-02, WP-S-05, WP-A-04]
+- id: DEV-10
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software architecture"
+  produces: [WP-W-03]
+  inputs: [WP-W-02, WP-S-05, WP-A-05]
+- id: DEV-11
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software safety analysis"
+  produces: [WP-W-04]
+  inputs: [WP-W-03]
+- id: DEV-12
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Safety parameters and configuration data"
+  produces: [WP-W-09]
+  inputs: [WP-S-04, WP-W-03]
+- id: DEV-13
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software unit design and implementation"
+  produces: [WP-W-05]
+  inputs: [WP-W-01, WP-W-03, WP-W-04, WP-W-09]
+- id: DEV-14
+  kind: activity
+  phase: G3
+  lane: sw
+  name: "Software unit verification"
+  produces: [WP-W-06]
+  inputs: [WP-W-05, WP-P-07]
+- id: DEV-15
+  kind: activity
+  phase: G3
+  lane: ml
+  name: "ML engineering of the locomotion policy"
+  produces: [WP-W-10]
+  inputs: [WP-C-09, WP-W-03]
+- id: DEV-16
+  kind: activity
+  phase: G3
+  lane: cs
+  name: "Cybersecurity implementation and verification"
+  produces: [WP-W-11]
+  inputs: [WP-C-08, WP-S-07, WP-W-09, WP-W-05]
+- id: DEV-17
+  kind: activity
+  phase: G3
+  lane: joint
+  name: "Qualification of software components"
+  produces: [WP-P-08]
+  inputs: [WP-W-03, WP-M-10]
+- id: DEV-18
+  kind: activity
+  phase: G3
+  lane: joint
+  name: "Proven-in-use evaluation"
+  produces: [WP-P-09]
+  inputs: [WP-M-10, WP-P-08]
+- id: DEV-19
+  kind: activity
+  phase: G3
+  lane: joint
+  name: "Update the hazard log and the safety case"
+  produces: []
+  updates: [WP-T-01, WP-K-01]
+  inputs: [WP-H-04, WP-W-06, WP-W-11]
+
+# Confirmation measures planned for G3 (WP-M-06 §9).
+- id: CR-06@G3
+  kind: review
+  phase: G3
+  name: "Confirmation review of the hardware and software safety analyses"
+  covers: [WP-H-03, WP-W-04]
+  independence: I3
+- id: CR-07
+  kind: review
+  phase: G3
+  name: "Confirmation review of the PL calculation"
+  covers: [WP-H-04]
+  independence: I3
+- id: CR-08
+  kind: review
+  phase: G3
+  name: "Confirmation review of the safety component qualification"
+  covers: [WP-H-07]
+  independence: I3
+- id: CR-09
+  kind: review
+  phase: G3
+  name: "Confirmation review of the tool qualification"
+  covers: [WP-P-07]
+  independence: I2
+- id: CR-10
+  kind: review
+  phase: G3
+  name: "Confirmation review of the software component qualification"
+  covers: [WP-P-08]
+  independence: I2
+- id: ML-R2
+  kind: review
+  phase: G3
+  name: "Review of the ML engineering evidence"
+  covers: [WP-W-10]
+  independence: I3-equivalent

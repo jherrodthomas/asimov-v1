@@ -1,0 +1,58 @@
+name: Problem report
+description: A defect, an anomaly during testing, or a finding against a work product (WP-P-03 problem resolution)
+labels: ["problem", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for development, review and test findings.
+        **Security vulnerabilities:** do not open a public issue. Use the private report link on the
+        "New issue" page instead.
+        **Injury or property damage:** make everyone safe first, then file this report and tick the last box.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety triage
+      description: Tick every box that applies. Any ticked box makes this a safety anomaly, triaged within one working day, and stops testing until the safety manager lifts the stop (WP-M-02 §9, WP-V-07 §6).
+      options:
+        - label: Unexpected or uncommanded motion occurred
+        - label: A stop (E-stop, protective stop, watchdog) did not happen or was late
+        - label: A pre-session check of WP-V-07 failed
+        - label: The robot touched a person or an object, or someone was hurt
+
+  - type: dropdown
+    id: configuration
+    attributes:
+      label: Configuration
+      options:
+        - CFG-001 kit robot, tethered and bench-powered, with the WP-V-07 bench equipment (reference configuration)
+        - CFG-001 kit robot without the gantry, wired E-stop or bench supply (outside the hold point)
+        - CFG-002 battery and policy robot
+        - Simulation / bench / CI only
+        - Other (say which in the description)
+    validations:
+      required: true
+
+  - type: input
+    id: baseline
+    attributes:
+      label: Baseline
+      description: Commit or tag of this repository and of any firmware, API or policy repository involved.
+      placeholder: asimov-v1@3d4ec9d
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened
+      description: What happened, what you expected, and how to reproduce it. For a finding against a work product, name the work product and section.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, the test log entry, photos, the firmware version topic, battery voltage.

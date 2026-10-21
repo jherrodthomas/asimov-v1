@@ -1,0 +1,61 @@
+# Operation phase (gate G6). Format: assurance/process/README.md §3.
+# WP-M-06 §9 plans no confirmation measure at G6. Operation closes the lifecycle: field findings are
+# routed back into earlier work products through the WP-O-04 "Feeding the analyses" table (FB-nn).
+
+- id: OPS-01
+  kind: activity
+  phase: G6
+  lane: joint
+  name: "Field monitoring and incident reporting"
+  produces: [WP-O-04]
+  inputs: [WP-P-03, WP-O-01, WP-O-02, WP-O-03, WP-K-06]
+- id: OPS-02
+  kind: activity
+  phase: G6
+  lane: cs
+  name: "Cybersecurity incident response, vulnerability management and updates"
+  produces: [WP-O-05]
+  inputs: [WP-P-02, WP-P-03, WP-C-07, WP-S-07, WP-W-11, WP-V-06, WP-P-10, WP-O-04]
+
+- id: FB-01
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-C-03, WP-A-01]
+  finding: "Potential safety function failure or fault in the field"
+  anchors: ["WP-O-04:| Potential safety function failure or fault in the field |"]
+- id: FB-02
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-C-10, WP-V-08]
+  finding: "New performance limit or triggering condition"
+  anchors: ["WP-O-04:| New performance limit or triggering condition |"]
+- id: FB-03
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-C-06, WP-O-03]
+  finding: "New misuse pattern"
+  anchors: ["WP-O-04:| New misuse pattern |"]
+- id: FB-04
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-W-10, WP-C-09]
+  finding: "Learned-component anomaly"
+  anchors: ["WP-O-04:| Learned-component anomaly |"]
+- id: FB-05
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-C-02, WP-C-03]
+  finding: "Operating-environment limit found not to hold"
+  anchors: ["WP-O-04:| Operating-environment limit found not to hold |"]
+- id: FB-06
+  kind: feedback
+  phase: G6
+  source: WP-O-04
+  targets: [WP-K-01]
+  finding: "Counter-evidence to the safety case"
+  anchors: ["WP-O-04:| Counter-evidence to the safety case |"]

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="dash-t dash-d">
+  <title id="dash-t">Asimov v1 assurance Living Safety Case dashboard</title>
+  <desc id="dash-d">Assurance state Development. Baseline BL-001 at 3d4ec9d. 29 safety claims registered, 0 with accepted supporting evidence. 22 evidence items: 0 available, 15 partial, 7 missing; 15 require review. 10 open assurance actions, 34 open defeaters. 1 evaluated configuration(s), 0 assurance-supported.</desc>
+  <defs>
+    <linearGradient id="dash-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/>
+    </linearGradient>
+    <linearGradient id="dash-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="999" height="599" rx="22" fill="url(#dash-bg)" stroke="#D3DDE2"/>
+  <rect x="40" y="0" width="920" height="3" fill="url(#dash-gold)"/>
+  <g font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="40" y="56" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">LIVING SAFETY CASE</text>
+    <text x="40" y="96" font-size="30" font-weight="700" fill="#122026" text-anchor="start">Recorded assurance state</text>
+    <text x="40" y="126" font-size="16" font-weight="400" fill="#4E6A73" text-anchor="start">Every figure is counted from the structured records in assurance/case.</text>
+    <rect x="824" y="38" width="136" height="31" rx="15.5" fill="#1F6FD0" fill-opacity="0.12" stroke="#1F6FD0"/>
+    <text x="892.0" y="56" font-size="15" font-weight="600" fill="#1F6FD0" text-anchor="middle" letter-spacing="1.2">DEVELOPMENT</text>
+    <text x="960" y="100" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="end">Baseline BL-001 · 3d4ec9d · under development</text>
+    <text x="960" y="124" font-size="15" font-weight="400" fill="#8A9AA2" text-anchor="end">Records digest d9cd5af97b39</text>
+    <rect x="40" y="160" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="40" y="182" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="62" y="218" font-size="44" font-weight="700" fill="#122026" text-anchor="start">29</text>
+    <text x="62" y="250" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Safety claims</text>
+    <text x="62" y="272" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">registered in the argument</text>
+    <rect x="274" y="160" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="274" y="182" width="3" height="38" rx="1.5" fill="#D4821A"/>
+    <text x="296" y="218" font-size="44" font-weight="700" fill="#122026" text-anchor="start">0</text>
+    <text x="296" y="250" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Claims with accepted</text>
+    <text x="296" y="272" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">supporting evidence</text>
+    <rect x="508" y="160" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="508" y="182" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="530" y="218" font-size="44" font-weight="700" fill="#122026" text-anchor="start">22</text>
+    <text x="530" y="250" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Evidence items</text>
+    <text x="530" y="272" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">15 drafted · 7 missing</text>
+    <rect x="742" y="160" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="742" y="182" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="764" y="218" font-size="44" font-weight="700" fill="#122026" text-anchor="start">15</text>
+    <text x="764" y="250" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Evidence to review</text>
+    <text x="764" y="272" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">drafted, not yet accepted</text>
+    <rect x="40" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="40" y="326" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="62" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">10</text>
+    <text x="62" y="394" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Open actions</text>
+    <text x="62" y="416" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">safety-case open items</text>
+    <rect x="274" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="274" y="326" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="296" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">34</text>
+    <text x="296" y="394" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Open defeaters</text>
+    <text x="296" y="416" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">known counter-evidence</text>
+    <rect x="508" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="508" y="326" width="3" height="38" rx="1.5" fill="#1F6FD0"/>
+    <text x="530" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">1</text>
+    <text x="530" y="394" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Evaluated</text>
+    <text x="530" y="416" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">robot configurations</text>
+    <rect x="742" y="304" width="218" height="128" rx="14" fill="#EDF2F4" stroke="#D3DDE2"/>
+    <rect x="742" y="326" width="3" height="38" rx="1.5" fill="#D4821A"/>
+    <text x="764" y="362" font-size="44" font-weight="700" fill="#122026" text-anchor="start">0</text>
+    <text x="764" y="394" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Assurance-supported</text>
+    <text x="764" y="416" font-size="14" font-weight="400" fill="#4E6A73" text-anchor="start">robot configurations</text>
+    <text x="40" y="460" font-size="16" font-weight="600" fill="#122026" text-anchor="start">Evidence status</text>
+    <text x="960" y="460" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="end">22 items</text>
+    <defs><clipPath id="bar40476"><rect x="40" y="476" width="920" height="14" rx="7.0"/></clipPath></defs>
+    <g clip-path="url(#bar40476)">
+    <rect x="40" y="476" width="920" height="14" rx="7.0" fill="#FFFFFF" stroke="#D3DDE2"/>
+    <rect x="40.0" y="476" width="627.3" height="14" fill="#1F6FD0"/>
+    <rect x="667.3" y="476" width="292.7" height="14" fill="#8A9AA2"/>
+    </g>
+    <rect x="40" y="506" width="12" height="12" rx="3" fill="#2C9A58"/>
+    <text x="60" y="517" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="start">Available and accepted  0</text>
+    <rect x="340" y="506" width="12" height="12" rx="3" fill="#1F6FD0"/>
+    <text x="360" y="517" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="start">Drafted (partial)  15</text>
+    <rect x="640" y="506" width="12" height="12" rx="3" fill="#8A9AA2"/>
+    <text x="660" y="517" font-size="15" font-weight="400" fill="#4E6A73" text-anchor="start">Not yet performed  7</text>
+    <text x="40" y="568" font-size="14" font-weight="400" fill="#8A9AA2" text-anchor="start">Represents recorded engineering evidence and review state. Not a certification or approval for unsupervised operation.</text>
+  </g>
+</svg>

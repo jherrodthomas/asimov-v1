@@ -1,0 +1,64 @@
+name: assurance
+
+# Assurance record checks: the Living Safety Case records and their dashboard, the decision register and
+# its figure, the folder indexes generated from the work product register, the integrated process model
+# and its maps and gate skeletons, the README figures, relative links and Markdown tables. Read-only: the job never writes to the repository.
+# Generated files are committed by contributors and this job fails if they are out of date.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: assurance-${{ github.event_name == 'push' && github.run_id || github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: records, register, process model, figures, links, tables
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - name: PyYAML for the decision register (every other tool is standard library only)
+      run: python3 -m pip install --quiet pyyaml
+    - name: Living Safety Case records are valid, the validator tests pass, the dashboard and README blocks are current
+      run: |
+        python3 assurance/case/tools/validate.py
+        python3 assurance/case/tools/test_case.py
+        python3 assurance/case/tools/generate_dashboard.py --check
+    - name: Decision register follows its lifecycle rules, the inbox page builds, the lifecycle figure is current (and their tests)
+      run: |
+        python3 assurance/01-management/decisions/check_decisions.py
+        python3 assurance/01-management/decisions/test_decisions.py
+        python3 assurance/01-management/decisions/fig_lifecycle.py --check
+        python3 assurance/01-management/decisions/test_fig_lifecycle.py
+        mkdir -p build && python3 assurance/01-management/decisions/build_inbox.py --out build/inbox.html
+    - name: Folder indexes match the work product register (and every registered file exists)
+      run: python3 assurance/tools/folder_index.py --check
+    - name: Integrated process model, maps, gate skeletons and swimlane figures (WP-P-11)
+      run: |
+        python3 assurance/process/tools/process_model.py --check
+        python3 assurance/process/tools/test_process_model.py
+        python3 assurance/process/tools/process_figures.py --check
+        python3 assurance/process/tools/test_process_figures.py
+    - name: README figures match their generator
+      run: |
+        python3 docs/assets/asimov/make_assets.py --check
+        python3 docs/assets/asimov/test_make_assets.py
+    - name: Relative links and Markdown tables (and the checker tests)
+      run: |
+        python3 assurance/tools/check_links.py
+        python3 assurance/tools/check_tables.py
+        python3 assurance/tools/test_checks.py

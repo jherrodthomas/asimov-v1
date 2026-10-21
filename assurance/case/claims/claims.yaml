@@ -1,0 +1,611 @@
+# Source: WP-K-01 Safety Case (§3, claims). Machine-readable copy; WP-K-01 remains the reviewed document.
+# Format: README.md. Lifecycle and review fields are set only through recorded reviews.
+
+- id: G0
+  kind: claim
+  title: "Asimov v1 in its laboratory envelope poses no unreasonable risk"
+  description: "The Asimov v1 robot of CFG-001, operated within the limits of WP-C-01 in the supervised, tethered laboratory envelope OE-1 of WP-C-02 by a trained operator, does not pose unreasonable risk to the people around it. The risk of every hazard in WP-C-03 is reduced to an acceptable level by the safety functions, the complementary measures (the tether and gantry among them) and the information for use."
+  parent: null
+  argument: null
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: []
+  related_requirements: []
+  related_assumptions: [AOU-01, AOU-02, AOU-03, AOU-04, AOU-05, AOU-06, AOU-07]
+  evidence_refs: [Sn-01, Sn-02, Sn-03, Sn-05, Sn-06]
+  defeaters: [DF-01, DF-33]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1
+  kind: claim
+  title: "The safety functions with a required Performance Level reach it"
+  description: "Each safety function of WP-C-03 §7 with a PLr, specified in WP-C-04, is broken into requirements (WP-S-02), implemented by a safety-related part of the control system at its PLr (WP-S-03, WP-H-03) and validated per ISO 13849-2."
+  parent: G0
+  argument: S0
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-01, H-02, H-04, H-06, H-22, H-23, H-24, H-28, H-30, H-31]
+  related_requirements: [SF-01, SF-02, SF-03, SF-04, SF-06, SF-08, SF-11, SF-13, SF-14, SF-15, SF-16, SF-20, SF-23, SF-24, SF-25]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-08, Sn-09]
+  defeaters: [DF-14, DF-15]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.1
+  kind: claim
+  title: "SF-01 bipedal stability is maintained at PL d"
+  description: "The robot keeps its balance while standing and moving within its limits; whether the learned locomotion policy may carry this function, or stability in OE-1 rests on the tether and gantry, is decision DQ-006."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-01, H-06, H-22]
+  related_requirements: [SF-01]
+  related_assumptions: [AOU-05]
+  evidence_refs: [Sn-04, Sn-18]
+  defeaters: [DF-03, DF-09, DF-13, DF-17, DF-21]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.2
+  kind: claim
+  title: "SF-02 fall arrest by controlled descent is implemented at PL d"
+  description: "An impending fall is detected from the IMU and arrested by a controlled descent before impact, within the budget of WP-S-04; the safe state of the biped is decision DQ-005."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-01, H-06, H-23, H-28]
+  related_requirements: [SF-02]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-11]
+  defeaters: [DF-03, DF-10, DF-23]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.3
+  kind: claim
+  title: "SF-03 joint torque and velocity limits are enforced at PL d"
+  description: "Each actuated joint enforces a software and hardware limited maximum torque and angular velocity, declared per joint and per operating envelope."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-02, H-04, H-24]
+  related_requirements: [SF-03]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-18]
+  defeaters: [DF-06]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.4
+  kind: claim
+  title: "SF-04 force-limited contact is implemented at PL d"
+  description: "Contact forces and pressures in collaborative regions stay within the body-region limits of ISO/TS 15066, measured, not simulated."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-02, H-04, H-24]
+  related_requirements: [SF-04]
+  related_assumptions: [AOU-06]
+  evidence_refs: [Sn-04, Sn-13]
+  defeaters: [DF-05]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.5
+  kind: claim
+  title: "SF-06 speed reduction in human-shared regions is implemented at PL c"
+  description: "A perception trigger reduces joint speeds when a person is in the shared region; what the camera cannot see bounds the claim (WP-C-10)."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-04]
+  related_requirements: [SF-06]
+  related_assumptions: []
+  evidence_refs: [Sn-04]
+  defeaters: [DF-17]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.6
+  kind: claim
+  title: "SF-08 safe stop on watchdog timeout or communication loss is implemented at PL d"
+  description: "Loss of the tele-operation heartbeat for 250 ms, a CAN bus-off or a control-loop deadline miss brings the robot to its safe state as a stop category 1 within 100 ms."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-28, H-31, H-06]
+  related_requirements: [SF-08]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-22]
+  defeaters: [DF-09, DF-10, DF-16, DF-22]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.7
+  kind: claim
+  title: "SF-11 overcurrent protection on each motor branch is implemented at PL c"
+  description: "A per-branch fuse and the motion control board's current sensing open a shorted branch within 50 ms."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-09]
+  related_requirements: [SF-11]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-17]
+  defeaters: [DF-08]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.8
+  kind: claim
+  title: "SF-13 emergency-stop link surveillance is implemented at PL d"
+  description: "The E-stop devices (a wired tether device in OE-1 and the kit's wireless device) remove motor power within 500 ms, the wireless link is surveilled by a heartbeat and fails safe on loss, and re-arming needs a deliberate action."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-11, H-28, H-01]
+  related_requirements: [SF-13]
+  related_assumptions: [AOU-01]
+  evidence_refs: [Sn-04, Sn-12]
+  defeaters: [DF-07, DF-09, DF-11, DF-20]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.9
+  kind: claim
+  title: "SF-14 stator over-temperature shutdown is implemented at PL c"
+  description: "Each actuator's stator temperature is monitored with a hardware backup; an excursion de-rates then stops the joint."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-12]
+  related_requirements: [SF-14]
+  related_assumptions: []
+  evidence_refs: [Sn-04]
+  defeaters: [DF-25]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.10
+  kind: claim
+  title: "SF-15 battery protection by the BMS is implemented at PL e"
+  description: "The pack has cell-level voltage, temperature and current protection, and the motor rails do not enable without a compliant BMS handshake on bus C5."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-13, H-23]
+  related_requirements: [SF-15]
+  related_assumptions: [AOU-02]
+  evidence_refs: [Sn-04]
+  defeaters: [DF-12]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.11
+  kind: claim
+  title: "SF-16 the audio limiter holds 80 dBA at 1 m (PL b)"
+  description: "A hardware clipping limiter and a firmware limit bound the speaker output."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-14]
+  related_requirements: [SF-16]
+  related_assumptions: []
+  evidence_refs: [Sn-04]
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.12
+  kind: claim
+  title: "SF-20 power-and-force limiting in collaborative mode is implemented at PL d"
+  description: "In OE-2 commanded contact forces do not exceed the ISO/TS 15066 limits; not claimed for OE-1 where nobody is within reach."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-24]
+  related_requirements: [SF-20]
+  related_assumptions: [AOU-06]
+  evidence_refs: [Sn-04, Sn-13]
+  defeaters: [DF-05]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.13
+  kind: claim
+  title: "SF-23 IMU plausibility and cross-check is implemented at PL d"
+  description: "The motion-control loop cross-checks IMU rate against acceleration integration and freshness, and rejects an implausible attitude estimate; a second IMU on a separate bus gives the second channel."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-30]
+  related_requirements: [SF-23]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-22]
+  defeaters: [DF-16]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.14
+  kind: claim
+  title: "SF-24 the scheduler watchdog and deadline monitor are implemented at PL d"
+  description: "A loop deadline observer backed by a hardware watchdog triggers the safe state within 100 ms of a missed deadline or a hang."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-31]
+  related_requirements: [SF-24]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-22]
+  defeaters: [DF-16]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G1.15
+  kind: claim
+  title: "SF-25 software joint limits inside the mechanical end-stops are implemented at PL c"
+  description: "Software limits at least 5° inboard of every mechanical end-stop; the end-stops themselves are the inherent measure."
+  parent: G1
+  argument: S1
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-32]
+  related_requirements: [SF-25]
+  related_assumptions: []
+  evidence_refs: [Sn-04, Sn-10]
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G2
+  kind: claim
+  title: "The complementary mechanical, electrical and procedural measures are implemented"
+  description: "The static and procedural measures of WP-C-04 (SF-05, SF-07, SF-09, SF-10, SF-12, SF-17, SF-18, SF-19) and the tether and gantry of OE-1 are in place and verified."
+  parent: G0
+  argument: S0
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-03, H-05, H-07, H-08, H-10, H-17, H-18, H-20]
+  related_requirements: []
+  related_assumptions: [AOU-03, AOU-04, AOU-05]
+  evidence_refs: []
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G2.1
+  kind: claim
+  title: "Structure, guarding and edges are as designed"
+  description: "Materials are certified 7075-T6, 316L and PA12, fasteners are torqued and locked, edges chamfered, the waist and neck yaw gaps are at most 4 mm, the hip yoke has a fatigue margin."
+  parent: G2
+  argument: S2
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-02, H-03, H-05, H-01]
+  related_requirements: []
+  related_assumptions: [AOU-03]
+  evidence_refs: [Sn-10, Sn-19]
+  defeaters: [DF-04, DF-24, DF-26]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G2.2
+  kind: claim
+  title: "Electrical isolation, protection and the battery are as designed"
+  description: "A lockable disconnector, per-branch fuses, insulation, under-voltage lockout and a compliant battery pack with its BMS are fitted and verified."
+  parent: G2
+  argument: S2
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-08, H-09, H-13, H-23]
+  related_requirements: []
+  related_assumptions: [AOU-02]
+  evidence_refs: [Sn-17]
+  defeaters: [DF-08, DF-12, DF-23]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G2.3
+  kind: claim
+  title: "Procedures and operating restrictions are in place and known to the people who need them"
+  description: "Two-person lift, dust protection, ESD-safe assembly, cable management, indoor-only operation and the residual risks are in the information for use and followed."
+  parent: G2
+  argument: S2
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-07, H-17, H-18, H-20, H-27]
+  related_requirements: []
+  related_assumptions: [AOU-05]
+  evidence_refs: [Sn-21]
+  defeaters: [DF-02]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G2.4
+  kind: claim
+  title: "The tether and gantry of OE-1 carry the fall hazard while no fall-arrest function exists"
+  description: "In OE-1 the robot is suspended from an overhead gantry by a tether sized for its mass, so that a loss of balance, a DAMP transition or a power loss cannot drop it onto a person or the floor (DQ-007)."
+  parent: G2
+  argument: S2
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-01, H-06, H-23, H-28]
+  related_requirements: []
+  related_assumptions: [AOU-01, AOU-05]
+  evidence_refs: [Sn-21]
+  defeaters: [DF-03]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G3
+  kind: claim
+  title: "The command path cannot defeat the safety functions"
+  description: "No participant on the tele-operation channel or the API can command motion beyond the safety limits or disable a safety function; the safety functions depend on no network interface."
+  parent: G0
+  argument: S0
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-29, H-28]
+  related_requirements: [SF-03, SF-13]
+  related_assumptions: [AOU-01]
+  evidence_refs: []
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G3.1
+  kind: claim
+  title: "Tele-operation and the API are authenticated, integrity-protected and bounded"
+  description: "The WebRTC channel uses DTLS and TLS 1.3, commands are bound to a session token with idle lock (SF-21, SF-22), every input the motion control board accepts is bounded, and the API contract is versioned."
+  parent: G3
+  argument: S3
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-29]
+  related_requirements: [SF-21, SF-22]
+  related_assumptions: []
+  evidence_refs: [Sn-20]
+  defeaters: [DF-18, DF-19, DF-20]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G4
+  kind: claim
+  title: "The evidence was produced under a controlled process"
+  description: "Every work product refers to a recorded baseline, hazards were identified completely, reviews have the required independence, verification is recorded and the kit build is controlled."
+  parent: G0
+  argument: S0
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: []
+  related_requirements: []
+  related_assumptions: []
+  evidence_refs: []
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G4.1
+  kind: claim
+  title: "A configuration baseline exists and the fork is pinned to it"
+  description: "BL-001 names the fork and upstream commits; the firmware, API and policy repositories join it when published; CI workflows and third-party sources are pinned."
+  parent: G4
+  argument: S4
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: []
+  related_requirements: []
+  related_assumptions: []
+  evidence_refs: [Sn-15]
+  defeaters: []
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G4.2
+  kind: claim
+  title: "Hazards are identified completely and rated"
+  description: "The ISO 12100 risk assessment WP-C-03 covers every function, mode and operating envelope of WP-C-01 and WP-C-02 and is confirmed by a reviewer with build or operating experience."
+  parent: G4
+  argument: S4
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-01, H-02, H-03, H-04, H-05, H-06, H-07, H-08, H-09, H-10, H-11, H-12, H-13, H-14, H-15, H-16, H-17, H-18, H-19, H-20, H-21, H-22, H-23, H-24, H-25, H-26, H-27, H-28, H-29, H-30, H-31, H-32]
+  related_requirements: []
+  related_assumptions: []
+  evidence_refs: [Sn-02, Sn-01, Sn-06]
+  defeaters: [DF-01, DF-33]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G4.3
+  kind: claim
+  title: "Verification and review evidence exists for the safety-related software and firmware"
+  description: "The motion-control safety layer has tests that run in CI, static analysis and reviewed records; safety-relevant changes carry an impact analysis; design reviews are recorded."
+  parent: G4
+  argument: S4
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: []
+  related_requirements: []
+  related_assumptions: []
+  evidence_refs: [Sn-22, Sn-16]
+  defeaters: [DF-16, DF-21, DF-27, DF-28, DF-30, DF-31, DF-32, DF-34]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"
+
+- id: G4.4
+  kind: claim
+  title: "The DIY-kit build is controlled"
+  description: "Material certificates, a harness acceptance test, a certified battery pack and the commissioning checks of WP-O-01 are required before a built unit enters OE-1."
+  parent: G4
+  argument: S4
+  lifecycle_status: draft
+  baseline: BL-001
+  configuration: CFG-001
+  related_hazards: [H-09, H-13, H-01]
+  related_requirements: []
+  related_assumptions: [AOU-02, AOU-03, AOU-04]
+  evidence_refs: [Sn-19]
+  defeaters: [DF-22, DF-24, DF-29]
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-K-01
+  source_revision: "3d4ec9d"

@@ -1,0 +1,96 @@
+{
+  "actions_open": 10,
+  "assurance_state": "Development",
+  "baseline": {
+    "id": "BL-001",
+    "lifecycle_status": "under-development",
+    "source_revision": "3d4ec9d",
+    "tag": null
+  },
+  "claims": {
+    "accepted": 0,
+    "registered": 29,
+    "undeveloped": 0,
+    "with_accepted_evidence": 0
+  },
+  "configurations": {
+    "assurance_supported": 0,
+    "evaluated": 1
+  },
+  "defeaters_open": 34,
+  "evidence": {
+    "accepted": 0,
+    "available": 0,
+    "awaiting_review": 15,
+    "missing": 7,
+    "partial": 15,
+    "registered": 22
+  },
+  "gates": {
+    "records": []
+  },
+  "lifecycle_areas": [
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 2,
+      "id": "safety-management",
+      "missing": 0,
+      "partial": 2,
+      "status": "In Progress",
+      "title": "Safety Management"
+    },
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 4,
+      "id": "hazard-analysis",
+      "missing": 0,
+      "partial": 4,
+      "status": "In Progress",
+      "title": "Hazard Analysis"
+    },
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 2,
+      "id": "safety-concepts",
+      "missing": 1,
+      "partial": 1,
+      "status": "In Progress",
+      "title": "Safety Concepts"
+    },
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 5,
+      "id": "technical-implementation",
+      "missing": 1,
+      "partial": 4,
+      "status": "In Progress",
+      "title": "Technical Implementation"
+    },
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 7,
+      "id": "verification-validation",
+      "missing": 5,
+      "partial": 2,
+      "status": "In Progress",
+      "title": "Verification and Validation"
+    },
+    {
+      "accepted": 0,
+      "available": 0,
+      "evidence": 2,
+      "id": "safety-case-review",
+      "missing": 0,
+      "partial": 2,
+      "status": "In Progress",
+      "title": "Safety Case and Review"
+    }
+  ],
+  "records_digest": "d9cd5af97b39",
+  "reviews": 0
+}

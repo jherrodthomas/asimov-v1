@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="726" viewBox="0 0 1000 726" role="img" aria-labelledby="ix-t ix-d">
+  <title id="ix-t">Cross-domain interfaces of the process model</title>
+  <desc id="ix-d">Cross-domain interfaces: IX-01 (G1, Safety-Security, documented) between WP-C-03 and WP-C-07; IX-02 (G1, Safety-Performance limits, open) between WP-C-04 and WP-C-10; IX-03 (G1, Safety-ML, open) between WP-C-04 and WP-C-09; IX-04 (G1, Environment-Interaction, documented) between WP-C-02 and WP-C-06; IX-05 (G2, Safety-Security, documented) between WP-S-03 and WP-S-07; IX-06 (G2, Control-Mechanical, documented) between WP-S-04 and WP-H-08; IX-07 (G3, Safety-Security, documented) between WP-W-09 and WP-W-11; IX-08 (G3, Software-Hardware, documented) between WP-W-03 and WP-H-02; IX-09 (G4, Test-Test, documented) between WP-V-02 and WP-V-03; IX-10 (G5, Safety-Security, documented) between WP-K-01 and WP-K-03; IX-11 (G5, Regulatory-ML, documented) between WP-K-02 and WP-K-07.</desc>
+  <defs>
+<linearGradient id="ix-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="ix-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="ix-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="ix-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="725" rx="22" fill="url(#ix-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#ix-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">CROSS-DOMAIN INTERFACES</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">Where one discipline's analysis depends on another's</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">11 interfaces · 2 open · each anchored to text in both work products</text>
+<text x="40" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">ID · PHASE</text>
+<text x="110" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">BETWEEN (PRODUCING LANE AND WORK PRODUCT)</text>
+<text x="640" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">PATTERN</text>
+<text x="840" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">STATUS</text>
+<text x="935" y="136" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#4E6A73" text-anchor="start" letter-spacing="1">DUE</text>
+<text x="40" y="164" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-01</text>
+<text x="40" y="179" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
+<rect x="110" y="154" width="163.25" height="18" rx="9" fill="#D4821A" fill-opacity="0.18"/>
+<text x="191.625" y="166.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment · WP-C-03</text>
+<path d="M277.25,163 L299.25,163" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="303.25" y="154" width="151.47" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="378.985" y="166.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity · WP-C-07</text>
+<text x="110" y="186" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Threat scenarios that can cause a hazard are rated against the hazard list; cyber-induced hazards…</text>
+<text x="640" y="164" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Security</text>
+<rect x="840" y="154" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="166.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="166" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
+<rect x="32" y="190" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
+<text x="40" y="210" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-02</text>
+<text x="40" y="225" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
+<rect x="110" y="200" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="212.24" y="212.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-C-04</text>
+<path d="M318.48,209 L340.48,209" fill="none" stroke="#D64535" stroke-width="1.6" stroke-dasharray="3 3"/>
+<rect x="344.48" y="200" width="163.25" height="18" rx="9" fill="#D4821A" fill-opacity="0.18"/>
+<text x="426.105" y="212.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment · WP-C-10</text>
+<text x="110" y="232" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims ar…</text>
+<text x="640" y="210" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Performance limits</text>
+<rect x="840" y="200" width="39.56" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="859.78" y="212.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">OPEN</text>
+<text x="935" y="212" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
+<text x="40" y="256" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-03</text>
+<text x="40" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
+<rect x="110" y="246" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="212.24" y="258.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-C-04</text>
+<path d="M318.48,255 L340.48,255" fill="none" stroke="#D64535" stroke-width="1.6" stroke-dasharray="3 3"/>
+<rect x="344.48" y="246" width="169.14" height="18" rx="9" fill="#C2399A" fill-opacity="0.18"/>
+<text x="429.05" y="258.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning · WP-C-09</text>
+<text x="110" y="278" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability i…</text>
+<text x="640" y="256" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-ML</text>
+<rect x="840" y="246" width="39.56" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="859.78" y="258.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">OPEN</text>
+<text x="935" y="258" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
+<rect x="32" y="282" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
+<text x="40" y="302" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-04</text>
+<text x="40" y="317" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G1</text>
+<rect x="110" y="292" width="163.25" height="18" rx="9" fill="#D4821A" fill-opacity="0.18"/>
+<text x="191.625" y="304.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment · WP-C-02</text>
+<path d="M277.25,301 L299.25,301" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="303.25" y="292" width="163.25" height="18" rx="9" fill="#D4821A" fill-opacity="0.18"/>
+<text x="384.875" y="304.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment · WP-C-06</text>
+<text x="110" y="324" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">People presence per operating envelope drives the interaction scenarios, the contact limits that…</text>
+<text x="640" y="302" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Environment-Interaction</text>
+<rect x="840" y="292" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="304.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="304" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G1</text>
+<text x="40" y="348" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-05</text>
+<text x="40" y="363" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G2</text>
+<rect x="110" y="338" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="212.24" y="350.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-S-03</text>
+<path d="M318.48,347 L340.48,347" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="344.48" y="338" width="151.47" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="420.215" y="350.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity · WP-S-07</text>
+<text x="110" y="370" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The safety chain is a zone with no conduit from the tele-operation network; no chain input is…</text>
+<text x="640" y="348" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Security</text>
+<rect x="840" y="338" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="350.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="350" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G2</text>
+<rect x="32" y="374" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
+<text x="40" y="394" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-06</text>
+<text x="40" y="409" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G2</text>
+<rect x="110" y="384" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="212.24" y="396.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-S-04</text>
+<path d="M318.48,393 L340.48,393" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="344.48" y="384" width="210.37" height="18" rx="9" fill="#2F6FD6" fill-opacity="0.18"/>
+<text x="449.665" y="396.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2F6FD6" text-anchor="middle">Electrical &amp; mechanical · WP-H-08</text>
+<text x="110" y="416" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The controlled descent the fall-arrest budget assumes must stay inside the fall energy and the…</text>
+<text x="640" y="394" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Control-Mechanical</text>
+<rect x="840" y="384" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="396.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="396" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G2</text>
+<text x="40" y="440" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-07</text>
+<text x="40" y="455" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G3</text>
+<rect x="110" y="430" width="122.02" height="18" rx="9" fill="#7A4BD6" fill-opacity="0.18"/>
+<text x="171.01" y="442.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7A4BD6" text-anchor="middle">Software · WP-W-09</text>
+<path d="M236.01999999999998,439 L258.02,439" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="262.02" y="430" width="151.47" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="337.755" y="442.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity · WP-W-11</text>
+<text x="110" y="462" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Safety parameters (joint limits, timeouts, PFL thresholds) are protected assets; their integrity is…</text>
+<text x="640" y="440" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Security</text>
+<rect x="840" y="430" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="442.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="442" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G3</text>
+<rect x="32" y="466" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
+<text x="40" y="486" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-08</text>
+<text x="40" y="501" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G3</text>
+<rect x="110" y="476" width="122.02" height="18" rx="9" fill="#7A4BD6" fill-opacity="0.18"/>
+<text x="171.01" y="488.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7A4BD6" text-anchor="middle">Software · WP-W-03</text>
+<path d="M236.01999999999998,485 L258.02,485" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="262.02" y="476" width="210.37" height="18" rx="9" fill="#2F6FD6" fill-opacity="0.18"/>
+<text x="367.205" y="488.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2F6FD6" text-anchor="middle">Electrical &amp; mechanical · WP-H-02</text>
+<text x="110" y="508" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The firmware reads chain diagnostics through the I/O of WP-S-05; those signals are informative and…</text>
+<text x="640" y="486" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Software-Hardware</text>
+<rect x="840" y="476" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="488.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="488" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G3</text>
+<text x="40" y="532" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-09</text>
+<text x="40" y="547" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G4</text>
+<rect x="110" y="522" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="212.24" y="534.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-V-02</text>
+<path d="M318.48,531 L340.48,531" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="344.48" y="522" width="204.48" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="446.72" y="534.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related control · WP-V-03</text>
+<text x="110" y="554" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The contact and speed limits validated in WP-V-03 depend on the controlled-descent time and the fall…</text>
+<text x="640" y="532" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Test-Test</text>
+<rect x="840" y="522" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="534.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="534" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G4</text>
+<rect x="32" y="558" width="936" height="46" rx="8" fill="#EDF2F4" fill-opacity="0.5"/>
+<text x="40" y="578" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-10</text>
+<text x="40" y="593" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G5</text>
+<rect x="110" y="568" width="104.35" height="18" rx="9" fill="#2C9A58" fill-opacity="0.18"/>
+<text x="162.175" y="580.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint · WP-K-01</text>
+<path d="M218.35,577 L240.35,577" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="244.35" y="568" width="151.47" height="18" rx="9" fill="#D64535" fill-opacity="0.18"/>
+<text x="320.085" y="580.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity · WP-K-03</text>
+<text x="110" y="600" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">The cybersecurity case is a branch of the safety case; claims that protect a safety function are…</text>
+<text x="640" y="578" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Safety-Security</text>
+<rect x="840" y="568" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="580.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="580" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G5</text>
+<text x="40" y="624" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">IX-11</text>
+<text x="40" y="639" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">G5</text>
+<rect x="110" y="614" width="104.35" height="18" rx="9" fill="#2C9A58" fill-opacity="0.18"/>
+<text x="162.175" y="626.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint · WP-K-02</text>
+<path d="M218.35,623 L240.35,623" fill="none" stroke="#0E8C83" stroke-width="1.6"/>
+<rect x="244.35" y="614" width="169.14" height="18" rx="9" fill="#C2399A" fill-opacity="0.18"/>
+<text x="328.92" y="626.42" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning · WP-K-07</text>
+<text x="110" y="646" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">One technical documentation serves the Machinery Regulation and, if the locomotion policy becomes a…</text>
+<text x="640" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#122026" text-anchor="start">Regulatory-ML</text>
+<rect x="840" y="614" width="74.9" height="18" rx="9" fill="#0E8C83" fill-opacity="0.18"/>
+<text x="877.45" y="626.42" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">DOCUMENTED</text>
+<text x="935" y="626" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#122026" text-anchor="start">G5</text>
+<text x="40" y="710" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Documented: both work products reference each other, not yet reviewed. Open: a recorded open item still has to settle it; the checker fails if an anchor disappears from either work product.</text>
+</svg>

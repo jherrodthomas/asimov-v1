@@ -1,0 +1,1 @@
+Mirrored from [`wiki/`](../wiki/README.md) on `{{BRANCH}}` at `{{SYNC_COMMIT}}`, {{SYNC_DATE}}. Pages are reviewed by pull request; the wiki is not edited in place. This wiki explains and links; safety claims and evidence live in the [assurance record](../assurance/README.md).

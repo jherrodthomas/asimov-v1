@@ -1,0 +1,117 @@
+# Cross-domain interfaces. Format: assurance/process/README.md §3.
+# An interface is a point where one discipline's analysis depends on another's. Each one is anchored to
+# text that already exists in the work products: an anchor `WP-x-nn:text` must occur verbatim in that
+# work product, so the model cannot claim a link the documents do not make.
+# status: documented = both sides reference each other, not yet reviewed;
+#         open = a recorded open item still has to settle it (named in open_item).
+
+- id: IX-01
+  kind: interface
+  phase: G1
+  between: [WP-C-03, WP-C-07]
+  pattern: "Safety-Security"
+  topic: "Threat scenarios that can cause a hazard are rated against the hazard list; cyber-induced hazards appear in the risk assessment"
+  anchors: ["WP-C-03:Cyber-induced hazards are analysed in WP-C-07", "WP-C-07:Safety impact is anchored to the hazard list of WP-C-03"]
+  status: documented
+  open_item: null
+  due: G1
+- id: IX-02
+  kind: interface
+  phase: G1
+  between: [WP-C-04, WP-C-10]
+  pattern: "Safety-Performance limits"
+  topic: "The fall-arrest function SF-02 and the speed-reduction function SF-06 have a PLr but their claims are bounded by what the IMU and the camera can detect and by the safe state the biped can reach"
+  anchors: ["WP-C-04:The perception trigger of SF-06 and the limits of SF-02 are bounded in WP-C-10", "WP-C-10:What the camera and the IMU cannot see bounds the claim SF-06 and SF-02 can make"]
+  status: open
+  open_item: "DQ-005 decides the safe state of the biped; until then SF-02 has no agreed safe state and WP-C-10 OI-2 bounds nothing"
+  due: G1
+- id: IX-03
+  kind: interface
+  phase: G1
+  between: [WP-C-04, WP-C-09]
+  pattern: "Safety-ML"
+  topic: "Whether the learned locomotion policy may carry the bipedal stability function SF-01, or stability in OE-1 rests on the tether and gantry with the policy as a functional component"
+  anchors: ["WP-C-04:The allocation of SF-01 to the learned locomotion policy is decided in WP-C-09 and DQ-006", "WP-C-09:SF-01 bipedal stability is the one safety function a learned component may carry; the position is decision DQ-006"]
+  status: open
+  open_item: "DQ-006: whether the learned locomotion policy may carry SF-01, or stability is claimed only through the tether and gantry of OE-1"
+  due: G1
+- id: IX-04
+  kind: interface
+  phase: G1
+  between: [WP-C-02, WP-C-06]
+  pattern: "Environment-Interaction"
+  topic: "People presence per operating envelope drives the interaction scenarios, the contact limits that apply and the misuse analysis"
+  anchors: ["WP-C-02:People presence per operating envelope is an input to the misuse analysis of WP-C-06", "WP-C-06:Operating envelopes and people presence are taken from WP-C-02"]
+  status: documented
+  open_item: null
+  due: G1
+- id: IX-05
+  kind: interface
+  phase: G2
+  between: [WP-S-03, WP-S-07]
+  pattern: "Safety-Security"
+  topic: "The safety chain is a zone with no conduit from the tele-operation network; no chain input is reachable from software or the network"
+  anchors: ["WP-S-03:no input of the safety chain is reachable from the network", "WP-S-07:The safety chain is a zone of its own with no conduit from the tele-operation network"]
+  status: documented
+  open_item: null
+  due: G2
+- id: IX-06
+  kind: interface
+  phase: G2
+  between: [WP-S-04, WP-H-08]
+  pattern: "Control-Mechanical"
+  topic: "The controlled descent the fall-arrest budget assumes must stay inside the fall energy and the tip-over margin the mechanical analysis gives"
+  anchors: ["WP-S-04:The controlled descent the budget assumes is bounded by the fall energy and tip-over margin of WP-H-08", "WP-H-08:The fall energy and the tip-over margin are inputs to the fall-arrest budget of WP-S-04"]
+  status: documented
+  open_item: null
+  due: G2
+- id: IX-07
+  kind: interface
+  phase: G3
+  between: [WP-W-09, WP-W-11]
+  pattern: "Safety-Security"
+  topic: "Safety parameters (joint limits, timeouts, PFL thresholds) are protected assets; their integrity is a cybersecurity requirement"
+  anchors: ["WP-W-09:Parameter integrity is a cybersecurity requirement verified in WP-W-11", "WP-W-11:Safety parameters of WP-W-09 are protected assets"]
+  status: documented
+  open_item: null
+  due: G3
+- id: IX-08
+  kind: interface
+  phase: G3
+  between: [WP-W-03, WP-H-02]
+  pattern: "Software-Hardware"
+  topic: "The firmware reads chain diagnostics through the I/O of WP-S-05; those signals are informative and never a channel of a safety function"
+  anchors: ["WP-W-03:The I/O semantics of WP-S-05 are the firmware's contract with the safety chain", "WP-H-02:Diagnostic signals from the chain to the firmware are informative only"]
+  status: documented
+  open_item: null
+  due: G3
+- id: IX-09
+  kind: interface
+  phase: G4
+  between: [WP-V-02, WP-V-03]
+  pattern: "Test-Test"
+  topic: "The contact and speed limits validated in WP-V-03 depend on the controlled-descent time and the fall energy measured in WP-V-02"
+  anchors: ["WP-V-02:The measured controlled-descent time and fall energy feed the contact limits validated in WP-V-03", "WP-V-03:Contact and speed limits are those of WP-S-04 at the measured descent and stop times of WP-V-02"]
+  status: documented
+  open_item: null
+  due: G4
+- id: IX-10
+  kind: interface
+  phase: G5
+  between: [WP-K-01, WP-K-03]
+  pattern: "Safety-Security"
+  topic: "The cybersecurity case is a branch of the safety case; claims that protect a safety function are referenced from the safety case"
+  anchors: ["WP-K-01:The cybersecurity branch of the argument is WP-K-03", "WP-K-03:Claims that protect a safety function are referenced from WP-K-01"]
+  status: documented
+  open_item: null
+  due: G5
+- id: IX-11
+  kind: interface
+  phase: G5
+  between: [WP-K-02, WP-K-07]
+  pattern: "Regulatory-ML"
+  topic: "One technical documentation serves the Machinery Regulation and, if the locomotion policy becomes a safety component, the AI Act"
+  anchors: ["WP-K-02:The AI Act record WP-K-07 shares this index", "WP-K-07:Technical documentation is held once"]
+  status: documented
+  open_item: null
+  due: G5

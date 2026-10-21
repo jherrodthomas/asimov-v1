@@ -1,0 +1,333 @@
+{
+  "$comment": "Schema of the Living Safety Case records in assurance/case. Read by assurance/case/tools/validate.py. Field types: text = non-empty string; text? = string or null; id = one identifier; id? = identifier or null; ids = list of identifiers; enum:<name> = value from enums; date = YYYY-MM-DD string; date? = the same or null; rev = git revision string (7 to 40 hex characters).",
+  "version": 1,
+  "enums": {
+    "claim_lifecycle": [
+      "draft",
+      "in-progress",
+      "review-required",
+      "accepted",
+      "blocked",
+      "withdrawn"
+    ],
+    "argument_lifecycle": [
+      "draft",
+      "review-required",
+      "accepted",
+      "withdrawn"
+    ],
+    "evidence_status": [
+      "missing",
+      "partial",
+      "available"
+    ],
+    "lifecycle_area": [
+      "safety-management",
+      "hazard-analysis",
+      "safety-concepts",
+      "technical-implementation",
+      "verification-validation",
+      "safety-case-review"
+    ],
+    "review_state": [
+      "not-reviewed",
+      "in-review",
+      "changes-requested",
+      "accepted",
+      "rejected"
+    ],
+    "open_closed": [
+      "open",
+      "closed"
+    ],
+    "gate": [
+      "G0",
+      "G1",
+      "G2",
+      "G3",
+      "G4",
+      "G5",
+      "G6"
+    ],
+    "classification": [
+      "upstream-compatible",
+      "fork-evaluated",
+      "assurance-supported"
+    ],
+    "evaluation_state": [
+      "not-started",
+      "in-progress",
+      "completed"
+    ],
+    "baseline_lifecycle": [
+      "under-development",
+      "frozen",
+      "superseded"
+    ],
+    "independence": [
+      "I0",
+      "I1",
+      "I2",
+      "I3"
+    ],
+    "review_outcome": [
+      "accepted",
+      "changes-requested",
+      "rejected"
+    ]
+  },
+  "trace_prefixes": {
+    "hazard_log": [
+      "H",
+      "HE",
+      "SF"
+    ],
+    "assumption": [
+      "AOU"
+    ],
+    "requirement": [
+      "SR",
+      "SF",
+      "TSR",
+      "SWSR",
+      "HWSR",
+      "CSR"
+    ]
+  },
+  "kinds": {
+    "claim": {
+      "dir": "claims",
+      "id_pattern": "^G[0-9]+(\\.[0-9]+)*$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "parent": "id?",
+        "argument": "id?",
+        "lifecycle_status": "enum:claim_lifecycle",
+        "baseline": "id",
+        "configuration": "id",
+        "related_hazards": "ids",
+        "related_requirements": "ids",
+        "related_assumptions": "ids",
+        "evidence_refs": "ids",
+        "defeaters": "ids",
+        "review_state": "enum:review_state",
+        "reviewer": "text?",
+        "review_date": "date?",
+        "review_ref": "id?",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "parent": [
+          "claim"
+        ],
+        "argument": [
+          "argument"
+        ],
+        "baseline": [
+          "baseline"
+        ],
+        "configuration": [
+          "configuration"
+        ],
+        "related_hazards": [
+          "trace:hazard_log"
+        ],
+        "related_requirements": [
+          "trace:requirement"
+        ],
+        "related_assumptions": [
+          "trace:assumption"
+        ],
+        "evidence_refs": [
+          "evidence"
+        ],
+        "defeaters": [
+          "defeater"
+        ],
+        "review_ref": [
+          "review"
+        ]
+      }
+    },
+    "argument": {
+      "dir": "arguments",
+      "id_pattern": "^S[0-9]+(\\.[0-9]+)*$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "claim": "id",
+        "subclaims": "ids",
+        "lifecycle_status": "enum:argument_lifecycle",
+        "baseline": "id",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "claim": [
+          "claim"
+        ],
+        "subclaims": [
+          "claim"
+        ],
+        "baseline": [
+          "baseline"
+        ]
+      }
+    },
+    "evidence": {
+      "dir": "evidence",
+      "id_pattern": "^Sn-[0-9]{2,3}$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "evidence_status": "enum:evidence_status",
+        "lifecycle_area": "enum:lifecycle_area",
+        "location": "text",
+        "related_claims": "ids",
+        "baseline": "id",
+        "configuration": "id",
+        "review_state": "enum:review_state",
+        "reviewer": "text?",
+        "review_date": "date?",
+        "review_ref": "id?",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "related_claims": [
+          "claim"
+        ],
+        "baseline": [
+          "baseline"
+        ],
+        "configuration": [
+          "configuration"
+        ],
+        "review_ref": [
+          "review"
+        ]
+      }
+    },
+    "defeater": {
+      "dir": "defeaters",
+      "id_pattern": "^DF-[0-9]{2,3}$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "lifecycle_status": "enum:open_closed",
+        "gaps": "ids",
+        "related_claims": "ids",
+        "baseline": "id",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "related_claims": [
+          "claim"
+        ],
+        "baseline": [
+          "baseline"
+        ]
+      }
+    },
+    "action": {
+      "dir": "actions",
+      "id_pattern": "^ACT-[0-9]{3}$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "lifecycle_status": "enum:open_closed",
+        "needed_by": "enum:gate",
+        "related_claims": "ids",
+        "baseline": "id",
+        "source": "text",
+        "source_ref": "text?",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "related_claims": [
+          "claim"
+        ],
+        "baseline": [
+          "baseline"
+        ]
+      }
+    },
+    "configuration": {
+      "dir": "configurations",
+      "id_pattern": "^CFG-[0-9]{3}$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "classification": "enum:classification",
+        "evaluation_state": "enum:evaluation_state",
+        "platform": "text",
+        "brand_safety_mode": "text",
+        "item_definition": "text",
+        "related_assumptions": "ids",
+        "related_claims": "ids",
+        "baseline": "id",
+        "review_state": "enum:review_state",
+        "reviewer": "text?",
+        "review_date": "date?",
+        "review_ref": "id?",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "related_assumptions": [
+          "trace:assumption"
+        ],
+        "related_claims": [
+          "claim"
+        ],
+        "baseline": [
+          "baseline"
+        ],
+        "review_ref": [
+          "review"
+        ]
+      }
+    },
+    "baseline": {
+      "dir": "baselines",
+      "id_pattern": "^BL-[0-9]{3}$",
+      "fields": {
+        "title": "text",
+        "description": "text",
+        "lifecycle_status": "enum:baseline_lifecycle",
+        "tag": "text?",
+        "source": "text",
+        "source_revision": "rev"
+      },
+      "refs": {}
+    },
+    "review": {
+      "dir": "reviews",
+      "id_pattern": "^REV-[0-9]{3}$",
+      "fields": {
+        "title": "text",
+        "reviewed_objects": "ids",
+        "reviewer": "text",
+        "independence": "enum:independence",
+        "review_date": "date",
+        "outcome": "enum:review_outcome",
+        "baseline": "id",
+        "record": "text",
+        "source_revision": "rev"
+      },
+      "refs": {
+        "reviewed_objects": [
+          "claim",
+          "evidence",
+          "configuration"
+        ],
+        "baseline": [
+          "baseline"
+        ]
+      }
+    }
+  }
+}

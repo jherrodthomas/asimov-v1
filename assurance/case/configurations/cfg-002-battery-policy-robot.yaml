@@ -1,0 +1,20 @@
+# Robot configuration records. One file per configuration.
+
+- id: CFG-002
+  kind: configuration
+  title: "Asimov v1 with a user-supplied battery and the upstream locomotion policy, free-standing (OE-2 candidate)"
+  description: "The robot upstream positions for sale: battery-powered, walking under its locomotion policy, operated through the Asimov API and app. Neither the policy nor the API is public at BL-001, so every statement about this configuration is a claim to verify, never evidence. It joins the claimed scope only through an impact analysis (WP-M-11) once the lead widens the item (DQ-002)."
+  classification: upstream-compatible
+  evaluation_state: not-started
+  platform: "upstream asimovinc/asimov-v1 roadmap items marked as upcoming (Asimov API, locomotion policy, mobile app)"
+  brand_safety_mode: "unknown"
+  item_definition: WP-C-01
+  related_assumptions: [AOU-01, AOU-02, AOU-05, AOU-06, AOU-07]
+  related_claims: [G0]
+  baseline: BL-001
+  review_state: not-reviewed
+  reviewer: null
+  review_date: null
+  review_ref: null
+  source: WP-C-01
+  source_revision: "3d4ec9d"

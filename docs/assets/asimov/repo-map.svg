@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="repo-t repo-d">
+  <title id="repo-t">Repository map: sources, record, generated outputs</title>
+  <desc id="repo-d">Repository map. Code: mechanical/, electrical/, sim-model/. Record folders: 00 assessment, 01 management, 02 concept, 03 system, 04 hardware, 05 software, 06 validation, 07 supporting, 08 analyses, 09 operation, 10 safety-case, process/ model, trace/ items, case/ records. Generated: README figures and status card, Living Safety Case dashboard, Process maps, swimlanes, gate skeletons, Folder indexes, Decision inbox page, GitHub wiki.</desc>
+  <defs>
+<linearGradient id="repo-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="repo-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="repo-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="639" rx="22" fill="url(#repo-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#repo-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">REPOSITORY MAP</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">The code, the record, and what is generated from it</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">one repository: the robot's sources and its record</text>
+<rect x="40" y="124" width="230" height="400" rx="14" fill="#F7FAFB" stroke="#D3DDE2" stroke-width="1"/>
+<text x="56" y="150" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="1.5">ROBOT SOURCES · UPSTREAM'S</text>
+<text x="56" y="170" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#4E6A73" text-anchor="start">Upstream's sources, changed by pull request</text>
+<rect x="54" y="188" width="202" height="70" rx="10" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="66" y="208" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#122026" text-anchor="start">mechanical/</text>
+<text x="66" y="225" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">CAD of the seven subassemblies,</text>
+<text x="66" y="238" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">structure, end-stops</text>
+<rect x="200" y="196" width="46" height="16" rx="8" fill="#D4821A" fill-opacity="0.9"/>
+<text x="223" y="207.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#122026" text-anchor="middle">SR-Q</text>
+<rect x="54" y="272" width="202" height="70" rx="10" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="66" y="292" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#122026" text-anchor="start">electrical/</text>
+<text x="66" y="309" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">Motion control board (KiCad),</text>
+<text x="66" y="322" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">harness, power and CAN</text>
+<rect x="200" y="280" width="46" height="16" rx="8" fill="#D64535" fill-opacity="0.9"/>
+<text x="223" y="291.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#122026" text-anchor="middle">SR-A</text>
+<rect x="54" y="356" width="202" height="70" rx="10" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="66" y="376" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11.5" font-weight="700" fill="#122026" text-anchor="start">sim-model/</text>
+<text x="66" y="393" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">MuJoCo model: masses, joint</text>
+<text x="66" y="406" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="400" fill="#4E6A73" text-anchor="start">ranges, control ranges</text>
+<rect x="200" y="364" width="46" height="16" rx="8" fill="#D4821A" fill-opacity="0.9"/>
+<text x="223" y="375.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="700" fill="#122026" text-anchor="middle">SR-Q</text>
+<text x="56" y="456" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Classes from the safety-relevant file list:</text>
+<text x="56" y="470" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">SR-A stop chain, boards, firmware safety layer,</text>
+<text x="56" y="484" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">SR-Q structure, model, policy and API, SR-T tooling.</text>
+<text x="56" y="508" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="600" fill="#D4821A" text-anchor="start">A change on one needs an impact record.</text>
+<path d="M276,324 L314,324" stroke="#D4821A" stroke-width="1.6" fill="none" marker-end="url(#repo-arrow)"/>
+<text x="295" y="312" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#D4821A" text-anchor="middle">impact</text>
+<rect x="320" y="124" width="356" height="400" rx="14" fill="#EDF2F4" stroke="#8FD8D1" stroke-width="1"/>
+<text x="336" y="150" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#0E8C83" text-anchor="start" letter-spacing="1.5">ASSURANCE/ · THE RECORD</text>
+<text x="336" y="170" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#4E6A73" text-anchor="start">assurance/ in lifecycle order; every file has a register row</text>
+<rect x="332" y="184" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">00</text>
+<text x="370" y="200" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">assessment</text>
+<text x="342" y="214" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">gaps, concept package</text>
+<rect x="500" y="184" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">01</text>
+<text x="538" y="200" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">management</text>
+<text x="510" y="214" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">strategy, plans, decisions</text>
+<rect x="332" y="228" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="244" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">02</text>
+<text x="370" y="244" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">concept</text>
+<text x="342" y="258" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">risk assessment, SF, PLr</text>
+<rect x="500" y="228" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="244" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">03</text>
+<text x="538" y="244" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">system</text>
+<text x="510" y="258" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">SRS, chain architecture</text>
+<rect x="332" y="272" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="288" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">04</text>
+<text x="370" y="288" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">hardware</text>
+<text x="342" y="302" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">chain, PL calculation</text>
+<rect x="500" y="272" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="288" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">05</text>
+<text x="538" y="288" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">software</text>
+<text x="510" y="302" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">safety layer, policy</text>
+<rect x="332" y="316" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="332" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">06</text>
+<text x="370" y="332" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">validation</text>
+<text x="342" y="346" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">tests, hold point</text>
+<rect x="500" y="316" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="332" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">07</text>
+<text x="538" y="332" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">supporting</text>
+<text x="510" y="346" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">CM, change, review</text>
+<rect x="332" y="360" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="376" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">08</text>
+<text x="370" y="376" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">analyses</text>
+<text x="342" y="390" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">FMEA, FTA, STPA</text>
+<rect x="500" y="360" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="376" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">09</text>
+<text x="538" y="376" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">operation</text>
+<text x="510" y="390" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">commissioning, field</text>
+<rect x="332" y="404" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="420" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">10</text>
+<text x="370" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">safety-case</text>
+<text x="342" y="434" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">case, tech file, gates</text>
+<rect x="500" y="404" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="420" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">process/</text>
+<text x="568" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">model</text>
+<text x="510" y="434" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">activities, lanes, gates</text>
+<rect x="332" y="448" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="342" y="464" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">trace/</text>
+<text x="387" y="464" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">items</text>
+<text x="342" y="478" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">hazards, SF, AoU</text>
+<rect x="500" y="448" width="158" height="38" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="510" y="464" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="start">case/</text>
+<text x="548.5" y="464" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">records</text>
+<text x="510" y="478" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="400" fill="#4E6A73" text-anchor="start">claims, evidence, defeaters</text>
+<text x="336" y="512" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Plus the decision register, the process model and the checks that CI runs.</text>
+<path d="M682,324 L720,324" stroke="#D4821A" stroke-width="1.6" fill="none" marker-end="url(#repo-arrow)"/>
+<text x="701" y="312" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9" font-weight="600" fill="#D4821A" text-anchor="middle">generate</text>
+<rect x="726" y="124" width="234" height="400" rx="14" fill="#F7FAFB" stroke="#D3DDE2" stroke-width="1"/>
+<text x="742" y="150" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="1.5">GENERATED · PUBLISHED</text>
+<text x="742" y="170" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#4E6A73" text-anchor="start">Never edited by hand</text>
+<rect x="738" y="186" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="203" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">README figures and status card</text>
+<text x="748" y="217" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">make_assets.py</text>
+<text x="748" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">docs/assets/asimov/</text>
+<rect x="738" y="240" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="257" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">Living Safety Case dashboard</text>
+<text x="748" y="271" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">generate_dashboard.py</text>
+<text x="748" y="282" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">docs/assets/assurance/</text>
+<rect x="738" y="294" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="311" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">Process maps, swimlanes, gate</text>
+<text x="748" y="325" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">process_model.py · process_figures.py</text>
+<text x="748" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">process/maps/ · gates/skeletons/</text>
+<rect x="738" y="348" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="365" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">Folder indexes</text>
+<text x="748" y="379" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">folder_index.py</text>
+<text x="748" y="390" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">assurance/*/README.md</text>
+<rect x="738" y="402" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="419" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">Decision inbox page</text>
+<text x="748" y="433" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">build_inbox.py</text>
+<text x="748" y="444" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">a private page for the lead</text>
+<rect x="738" y="456" width="210" height="46" rx="8" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="748" y="473" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#122026" text-anchor="start">GitHub wiki</text>
+<text x="748" y="487" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9" font-weight="400" fill="#0E8C83" text-anchor="start">build_wiki.py</text>
+<text x="748" y="498" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#7E949B" text-anchor="start">wiki/ mirrored on merge</text>
+<rect x="40" y="540" width="920" height="56" rx="12" fill="#F3F7F8" stroke="#D3DDE2" stroke-width="1"/>
+<text x="58" y="563" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">CI on every pull request</text>
+<text x="58" y="580" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">case validator and dashboard · decision register · folder indexes · process model, maps and swimlanes · README figures · links and tables · wiki build.</text>
+<text x="942" y="563" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="end">A passing run accepts nothing on its own: a claim is accepted only by a recorded review.</text>
+<text x="40" y="624" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7E949B" text-anchor="start">Source changes land under the change process; the record changes in the same pull request; every figure, map and page is regenerated from it.</text>
+</svg>

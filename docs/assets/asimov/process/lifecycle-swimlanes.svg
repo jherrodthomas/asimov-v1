@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="730" viewBox="0 0 1000 730" role="img" aria-labelledby="l0-t l0-d">
+  <title id="l0-t">The integrated lifecycle: disciplines by phase</title>
+  <desc id="l0-d">The integrated lifecycle as a lane-by-phase grid. Joint: G0 17, G1 3, G2 4, G3 4, G4 1, G5 6, G6 1; Risk assessment: G0 2, G1 5, G2 0, G3 0, G4 0, G5 2, G6 0; Safety-related control: G0 0, G1 1, G2 8, G3 2, G4 6, G5 1, G6 0; Electrical &amp; mechanical: G0 0, G1 0, G2 1, G3 4, G4 1, G5 0, G6 0; Software: G0 0, G1 0, G2 0, G3 7, G4 2, G5 0, G6 0; Cybersecurity: G0 1, G1 2, G2 1, G3 1, G4 0, G5 2, G6 1; Machine learning: G0 1, G1 1, G2 0, G3 1, G4 0, G5 1, G6 0; Independent confirmation: G0 0, G1 0, G2 0, G3 0, G4 0, G5 2, G6 0.</desc>
+  <defs>
+<linearGradient id="l0-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="l0-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="l0-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="l0-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="729" rx="22" fill="url(#l0-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#l0-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">INTEGRATED LIFECYCLE · L0</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">One lifecycle, seven gates, every discipline in the same phase</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">92 activities · 24 confirmation measures · 11 interfaces</text>
+<rect x="279" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="326" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P0 · G0</text>
+<text x="326" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">Governance</text>
+<rect x="379" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="426" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P1 · G1</text>
+<text x="426" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">Concept</text>
+<rect x="479" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="526" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P2 · G2</text>
+<text x="526" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">System design</text>
+<rect x="579" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="626" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P3 · G3</text>
+<text x="626" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">HW/SW…</text>
+<rect x="679" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="726" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P4 · G4</text>
+<text x="726" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">Integration an…</text>
+<rect x="779" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="826" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P5 · G5</text>
+<text x="826" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">Validation and…</text>
+<rect x="879" y="106" width="94" height="40" rx="8" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<text x="926" y="123" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#D4821A" text-anchor="middle">P6 · G6</text>
+<text x="926" y="138" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#122026" text-anchor="middle">Operation</text>
+<rect x="40" y="150" width="920" height="42" rx="6" fill="#EDF2F4" fill-opacity="0.6"/>
+<rect x="40" y="150" width="5" height="42" rx="2" fill="#2C9A58"/>
+<text x="56" y="169" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Joint</text>
+<text x="56" y="184" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas (acting)</text>
+<rect x="288" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="305" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="322" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="339" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="288" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<rect x="305" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<rect x="322" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<rect x="339" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<text x="366" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">17</text>
+<rect x="388" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="405" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="422" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<text x="466" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">3</text>
+<rect x="488" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="505" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="522" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="539" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<text x="566" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">4</text>
+<rect x="588" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="605" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="622" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="639" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<text x="666" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">4</text>
+<rect x="688" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<text x="766" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">1</text>
+<rect x="788" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="805" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="822" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="839" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<rect x="788" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<rect x="805" y="172" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.5"/>
+<text x="866" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">6</text>
+<rect x="888" y="159" width="12" height="9" rx="2" fill="#2C9A58" fill-opacity="0.85"/>
+<text x="966" y="177" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2C9A58" text-anchor="end">1</text>
+<rect x="40" y="196" width="920" height="42" rx="6" fill="#F7FAFB" fill-opacity="0.6"/>
+<rect x="40" y="196" width="5" height="42" rx="2" fill="#D4821A"/>
+<text x="56" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Risk assessment</text>
+<text x="56" y="230" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas (acting)</text>
+<rect x="288" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="305" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<text x="366" y="223" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D4821A" text-anchor="end">2</text>
+<rect x="388" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="405" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="422" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="439" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="388" y="218" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.5"/>
+<text x="466" y="223" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D4821A" text-anchor="end">5</text>
+<text x="526" y="223" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="626" y="223" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="726" y="223" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="788" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<rect x="805" y="205" width="12" height="9" rx="2" fill="#D4821A" fill-opacity="0.85"/>
+<text x="866" y="223" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D4821A" text-anchor="end">2</text>
+<text x="926" y="223" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="40" y="242" width="920" height="42" rx="6" fill="#EDF2F4" fill-opacity="0.6"/>
+<rect x="40" y="242" width="5" height="42" rx="2" fill="#0E8C83"/>
+<text x="56" y="261" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Safety-related control</text>
+<text x="56" y="276" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas (acting); additional…</text>
+<text x="326" y="269" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="388" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<text x="466" y="269" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#0E8C83" text-anchor="end">1</text>
+<rect x="488" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="505" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="522" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="539" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="488" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<rect x="505" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<rect x="522" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<rect x="539" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<text x="566" y="269" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#0E8C83" text-anchor="end">8</text>
+<rect x="588" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="605" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<text x="666" y="269" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#0E8C83" text-anchor="end">2</text>
+<rect x="688" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="705" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="722" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="739" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<rect x="688" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<rect x="705" y="264" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.5"/>
+<text x="766" y="269" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#0E8C83" text-anchor="end">6</text>
+<rect x="788" y="251" width="12" height="9" rx="2" fill="#0E8C83" fill-opacity="0.85"/>
+<text x="866" y="269" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#0E8C83" text-anchor="end">1</text>
+<text x="926" y="269" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="40" y="288" width="920" height="42" rx="6" fill="#F7FAFB" fill-opacity="0.6"/>
+<rect x="40" y="288" width="5" height="42" rx="2" fill="#2F6FD6"/>
+<text x="56" y="307" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Electrical &amp; mechanical</text>
+<text x="56" y="322" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">TBD (likely external)</text>
+<text x="326" y="315" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="426" y="315" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="488" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<text x="566" y="315" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2F6FD6" text-anchor="end">1</text>
+<rect x="588" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<rect x="605" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<rect x="622" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<rect x="639" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<text x="666" y="315" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2F6FD6" text-anchor="end">4</text>
+<rect x="688" y="297" width="12" height="9" rx="2" fill="#2F6FD6" fill-opacity="0.85"/>
+<text x="766" y="315" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#2F6FD6" text-anchor="end">1</text>
+<text x="826" y="315" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="926" y="315" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="40" y="334" width="920" height="42" rx="6" fill="#EDF2F4" fill-opacity="0.6"/>
+<rect x="40" y="334" width="5" height="42" rx="2" fill="#7A4BD6"/>
+<text x="56" y="353" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Software</text>
+<text x="56" y="368" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas; additional contributors…</text>
+<text x="326" y="361" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="426" y="361" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="526" y="361" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="588" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<rect x="605" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<rect x="622" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<rect x="639" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<rect x="588" y="356" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.5"/>
+<rect x="605" y="356" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.5"/>
+<rect x="622" y="356" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.5"/>
+<text x="666" y="361" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#7A4BD6" text-anchor="end">7</text>
+<rect x="688" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<rect x="705" y="343" width="12" height="9" rx="2" fill="#7A4BD6" fill-opacity="0.85"/>
+<text x="766" y="361" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#7A4BD6" text-anchor="end">2</text>
+<text x="826" y="361" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="926" y="361" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="40" y="380" width="920" height="42" rx="6" fill="#F7FAFB" fill-opacity="0.6"/>
+<rect x="40" y="380" width="5" height="42" rx="2" fill="#D64535"/>
+<text x="56" y="399" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Cybersecurity</text>
+<text x="56" y="414" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas (acting); permanent…</text>
+<rect x="288" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="366" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">1</text>
+<rect x="388" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<rect x="405" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="466" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">2</text>
+<rect x="488" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="566" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">1</text>
+<rect x="588" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="666" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">1</text>
+<text x="726" y="407" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="788" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<rect x="805" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="866" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">2</text>
+<rect x="888" y="389" width="12" height="9" rx="2" fill="#D64535" fill-opacity="0.85"/>
+<text x="966" y="407" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#D64535" text-anchor="end">1</text>
+<rect x="40" y="426" width="920" height="42" rx="6" fill="#EDF2F4" fill-opacity="0.6"/>
+<rect x="40" y="426" width="5" height="42" rx="2" fill="#C2399A"/>
+<text x="56" y="445" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Machine learning</text>
+<text x="56" y="460" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">Jherrod Thomas (acting); permanent…</text>
+<rect x="288" y="435" width="12" height="9" rx="2" fill="#C2399A" fill-opacity="0.85"/>
+<text x="366" y="453" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#C2399A" text-anchor="end">1</text>
+<rect x="388" y="435" width="12" height="9" rx="2" fill="#C2399A" fill-opacity="0.85"/>
+<text x="466" y="453" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#C2399A" text-anchor="end">1</text>
+<text x="526" y="453" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="588" y="435" width="12" height="9" rx="2" fill="#C2399A" fill-opacity="0.85"/>
+<text x="666" y="453" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#C2399A" text-anchor="end">1</text>
+<text x="726" y="453" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="788" y="435" width="12" height="9" rx="2" fill="#C2399A" fill-opacity="0.85"/>
+<text x="866" y="453" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#C2399A" text-anchor="end">1</text>
+<text x="926" y="453" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="40" y="472" width="920" height="42" rx="6" fill="#F7FAFB" fill-opacity="0.6"/>
+<rect x="40" y="472" width="5" height="42" rx="2" fill="#A88A00"/>
+<text x="56" y="491" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#122026" text-anchor="start">Independent confirmation</text>
+<text x="56" y="506" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="start">TBD (DQ-010 open; recommended: not for…</text>
+<text x="326" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="426" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="526" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="626" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="726" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<rect x="788" y="481" width="12" height="9" rx="2" fill="#A88A00" fill-opacity="0.85"/>
+<rect x="805" y="481" width="12" height="9" rx="2" fill="#A88A00" fill-opacity="0.85"/>
+<text x="866" y="499" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="15" font-weight="800" fill="#A88A00" text-anchor="end">2</text>
+<text x="926" y="499" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#7E949B" text-anchor="middle">·</text>
+<text x="40" y="546" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#4E6A73" text-anchor="start">Confirmation measures at the gate</text>
+<text x="40" y="572" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#4E6A73" text-anchor="start">Cross-domain interfaces (open)</text>
+<text x="40" y="614" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#4E6A73" text-anchor="start">Gates</text>
+<text x="326" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">2</text>
+<text x="326" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">·</text>
+<polygon points="326.0,601 335.0,610 326.0,619 317.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="326" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G0</text>
+<path d="M338.0,610 L414.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="426" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">6</text>
+<text x="426" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">4 (2)</text>
+<polygon points="426.0,601 435.0,610 426.0,619 417.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="426" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G1</text>
+<path d="M438.0,610 L514.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="526" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">4</text>
+<text x="526" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">2 (0)</text>
+<polygon points="526.0,601 535.0,610 526.0,619 517.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="526" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G2</text>
+<path d="M538.0,610 L614.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="626" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">6</text>
+<text x="626" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">2 (0)</text>
+<polygon points="626.0,601 635.0,610 626.0,619 617.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="626" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G3</text>
+<path d="M638.0,610 L714.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="726" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">1</text>
+<text x="726" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">1 (0)</text>
+<polygon points="726.0,601 735.0,610 726.0,619 717.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="726" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G4</text>
+<path d="M738.0,610 L814.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="826" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">5</text>
+<text x="826" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">2 (0)</text>
+<polygon points="826.0,601 835.0,610 826.0,619 817.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="826" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G5</text>
+<path d="M838.0,610 L914.0,610" fill="none" stroke="#8FD8D1" stroke-width="1.2"/>
+<text x="926" y="546" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">·</text>
+<text x="926" y="572" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="12" font-weight="700" fill="#7E949B" text-anchor="middle">·</text>
+<polygon points="926.0,601 935.0,610 926.0,619 917.0,610" fill="#8FD8D1" stroke="#0E8C83" stroke-width="1.2"/>
+<text x="926" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#0E8C83" text-anchor="middle">G6</text>
+<path d="M926.0,622 C926.0,676 426.0,676 426.0,624" fill="none" stroke="#D4821A" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#l0-arrow-amber)"/>
+<text x="676" y="686" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#D4821A" text-anchor="middle">6 feedback routes (FB-01…FB-06): findings from operation re-open the concept phase</text>
+<text x="40" y="714" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#7E949B" text-anchor="start">Each cell is the number of activities the lane performs in the phase. Gates, roles and exit criteria are read from WP-M-00 and WP-M-02; nothing here is typed by hand.</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" role="img" aria-labelledby="std-t std-d">
+  <title id="std-t">Standards-informed engineering framework</title>
+  <desc id="std-d">Standards the engineering framework draws on. ISO 12100 (Risk assessment and reduction): What could hurt someone, and how much risk reduction does it need? ISO 10218-1 / -2 · TS 15066 (Industrial and collaborative robots): Which safety functions must a robot have, and how hard may it touch? ISO 13482 (Personal care robots): What does a robot that shares space with people have to show? ISO 13849-1 / -2 (Safety-related parts of control systems): How reliable must the control system be, and how is that shown? IEC 60204-1 · ISO 13850 · IEC 62133-2 (Electrical equipment, emergency stop, battery): Is the electrical installation safe, does the E-stop work, is the battery safe? IEC 62443-4-1 / -4-2 (Cybersecurity): What if someone attacks it over the tele-operation link? ISO/IEC TR 5469 (AI in safety functions): How far can the learned locomotion policy be trusted? UL 4600 · Machinery Reg. (Safety case and conformity): Is the whole argument convincing, and what does the law require? Aligned practices, not a claim of compliance.</desc>
+  <defs>
+<linearGradient id="std-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="std-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="799" rx="22" fill="url(#std-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#std-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">STANDARDS-INFORMED ENGINEERING</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">One question per standard</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">Aligned practices, not a compliance claim</text>
+<rect x="40" y="124" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="142" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">ISO 12100</text>
+<text x="64" y="176" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Risk assessment and reduction</text>
+<text x="330" y="154" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">What could hurt someone, and how much risk reduction does it need?</text>
+<text x="330" y="176" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Machine limits, hazard identification, risk estimation, the three-step method</text>
+<rect x="40" y="204" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="222" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="234" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">ISO 10218-1 / -2 · TS 15066</text>
+<text x="64" y="256" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Industrial and collaborative robots</text>
+<text x="330" y="234" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">Which safety functions must a robot have, and how hard may it touch?</text>
+<text x="330" y="256" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Emergency stop, protective stop, speed and separation, power and force limits, collaborative modes</text>
+<rect x="40" y="284" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="302" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="314" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">ISO 13482</text>
+<text x="64" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Personal care robots</text>
+<text x="330" y="314" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">What does a robot that shares space with people have to show?</text>
+<text x="330" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Hazard catalogue for mobile servant robots, stability and falls, contact, verification and validation in §7</text>
+<rect x="40" y="364" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="382" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="394" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">ISO 13849-1 / -2</text>
+<text x="64" y="416" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Safety-related parts of control systems</text>
+<text x="330" y="394" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">How reliable must the control system be, and how is that shown?</text>
+<text x="330" y="416" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Required Performance Level, categories, MTTFD, DCavg, CCF, validation</text>
+<rect x="40" y="444" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="462" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="474" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">IEC 60204-1 · ISO 13850 · IEC 62133-2</text>
+<text x="64" y="496" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Electrical equipment, emergency stop, battery</text>
+<text x="330" y="474" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">Is the electrical installation safe, does the E-stop work, is the battery safe?</text>
+<text x="330" y="496" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Supply disconnection, overcurrent, stop categories, E-stop devices, lithium-ion cell and pack safety</text>
+<rect x="40" y="524" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="542" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="554" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">IEC 62443-4-1 / -4-2</text>
+<text x="64" y="576" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Cybersecurity</text>
+<text x="330" y="554" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">What if someone attacks it over the tele-operation link?</text>
+<text x="330" y="576" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Secure development lifecycle, zones and conduits, security level target</text>
+<rect x="40" y="604" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="622" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="634" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">ISO/IEC TR 5469</text>
+<text x="64" y="656" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">AI in safety functions</text>
+<text x="330" y="634" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">How far can the learned locomotion policy be trusted?</text>
+<text x="330" y="656" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Technology classes, usage levels; here: whether balance may rest on a learned component is a decision</text>
+<rect x="40" y="684" width="920" height="70" rx="14" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="702" width="3" height="34" rx="1.5" fill="#D4821A"/>
+<text x="64" y="714" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#D4821A" text-anchor="start">UL 4600 · Machinery Reg.</text>
+<text x="64" y="736" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#4E6A73" text-anchor="start">Safety case and conformity</text>
+<text x="330" y="714" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#122026" text-anchor="start">Is the whole argument convincing, and what does the law require?</text>
+<text x="330" y="736" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#4E6A73" text-anchor="start">Claims, evidence, defeaters; Annex III requirements, Annex I Part A for learned safety behaviour, Annex IV technical file</text>
+<text x="40" y="786" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#7E949B" text-anchor="start">Every clause reference is marked to be checked against a licensed copy; how each standard is used is WP-M-01 §4.</text>
+</svg>

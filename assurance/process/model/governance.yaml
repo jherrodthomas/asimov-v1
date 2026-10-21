@@ -1,0 +1,166 @@
+# Governance phase (gate G0). Format: assurance/process/README.md §3.
+# G0 produces the plans and procedures that every later phase reads from. The order follows how the
+# plans describe themselves: impact analysis of the inherited baseline, the strategy and the regulatory
+# route, the safety plan, the discipline plans, the supporting procedures, the register and this model.
+
+- id: GOV-01
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Impact analysis of the inherited Asimov v1 baseline and the concept-phase package"
+  produces: [WP-M-11]
+  inputs: []
+- id: GOV-02
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Assurance strategy and lifecycle tailoring"
+  produces: [WP-M-01]
+  inputs: [WP-M-11]
+- id: GOV-03
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Regulatory conformity strategy"
+  produces: [WP-M-13]
+  inputs: [WP-M-01]
+- id: GOV-04
+  kind: activity
+  phase: G0
+  lane: risk
+  name: "Functional safety plan"
+  produces: [WP-M-02]
+  inputs: [WP-M-01, WP-M-13]
+- id: GOV-05
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Organisation rules, safety culture and competence"
+  produces: [WP-M-04]
+  inputs: [WP-M-02]
+- id: GOV-06
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Quality management and QA plan"
+  produces: [WP-M-05]
+  inputs: [WP-M-02, WP-M-04]
+- id: GOV-07
+  kind: activity
+  phase: G0
+  lane: risk
+  name: "Confirmation measures plan"
+  produces: [WP-M-06]
+  inputs: [WP-M-01, WP-M-02, WP-M-05, WP-M-13]
+- id: GOV-08
+  kind: activity
+  phase: G0
+  lane: cs
+  name: "Cybersecurity plan"
+  produces: [WP-M-08]
+  inputs: [WP-M-01, WP-M-04, WP-M-11]
+- id: GOV-09
+  kind: activity
+  phase: G0
+  lane: ml
+  name: "Machine-learning safety plan"
+  produces: [WP-M-09]
+  inputs: [WP-M-01, WP-M-08, WP-M-11, WP-M-13]
+- id: GOV-10
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Upstream and supplier management"
+  produces: [WP-M-10]
+  inputs: [WP-M-01, WP-M-11]
+- id: GOV-11
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Configuration management plan and safety-relevant file list"
+  produces: [WP-P-01]
+  inputs: [WP-M-02, WP-M-10]
+- id: GOV-12
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Change management"
+  produces: [WP-P-02]
+  inputs: [WP-P-01, WP-M-11]
+- id: GOV-13
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Problem resolution"
+  produces: [WP-P-03]
+  inputs: [WP-M-02, WP-P-02]
+- id: GOV-14
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Documentation management"
+  produces: [WP-P-04]
+  inputs: [WP-M-13, WP-P-01]
+- id: GOV-15
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Verification and review procedure"
+  produces: [WP-P-05]
+  inputs: [WP-M-06, WP-P-04]
+- id: GOV-16
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Requirements management and traceability procedure"
+  produces: [WP-P-06]
+  inputs: [WP-P-04, WP-P-05]
+- id: GOV-17
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Project risk management"
+  produces: [WP-M-07]
+  inputs: [WP-M-01, WP-M-02]
+- id: GOV-18
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Project plan"
+  produces: [WP-M-03]
+  inputs: [WP-M-02, WP-M-06, WP-M-07]
+- id: GOV-19
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Process capability baseline"
+  produces: [WP-M-12]
+  inputs: [WP-M-02, WP-P-01, WP-P-02, WP-P-03, WP-P-05]
+- id: GOV-20
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Work product register"
+  produces: [WP-M-00]
+  inputs: [WP-M-01, WP-M-02, WP-M-06, WP-M-13]
+- id: GOV-21
+  kind: activity
+  phase: G0
+  lane: joint
+  name: "Integrated process model and maps"
+  produces: [WP-P-11]
+  inputs: [WP-M-00, WP-M-02, WP-M-06]
+
+# Confirmation measures planned for G0 (WP-M-06 §9).
+- id: CR-01
+  kind: review
+  phase: G0
+  name: "Confirmation review of the impact analysis"
+  covers: [WP-M-11]
+  independence: I3
+- id: CR-03@G0
+  kind: review
+  phase: G0
+  name: "Confirmation review of the safety plan and tailoring"
+  covers: [WP-M-02, WP-M-01, WP-M-06]
+  independence: I3

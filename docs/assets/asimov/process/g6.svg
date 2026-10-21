@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="696" viewBox="0 0 1000 696" role="img" aria-labelledby="p6-t p6-d">
+  <title id="p6-t">G6 Operation: integrated process map</title>
+  <desc id="p6-d">Process map of phase G6 Operation: OPS-01 Field monitoring and incident reporting (Joint, after nothing); OPS-02 Cybersecurity incident response, vulnerability management and updates (Cybersecurity, after OPS-01).</desc>
+  <defs>
+<linearGradient id="p6-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="p6-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="p6-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="p6-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="695" rx="22" fill="url(#p6-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#p6-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">PROCESS MAP · G6 · L1</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">P6 Operation: who does what, in what order</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">2 activities · 0 confirmation measures · 0 interfaces</text>
+<rect x="43" y="118" width="454" height="288" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="43" y="118" width="454" height="4" rx="2" fill="#2C9A58"/>
+<text x="270" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint</text>
+<text x="270" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="503" y="118" width="454" height="288" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="503" y="118" width="454" height="4" rx="2" fill="#D64535"/>
+<text x="730" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity</text>
+<text x="730" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting); permanent holder TBD</text>
+<path d="M270.0,264.0 C270.0,278.0 730.0,278.0 730.0,290.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p6-arrow)"/>
+<rect x="51" y="184" width="438" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="192" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">OPS-01</text>
+<text x="62" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Field monitoring and incident reporting</text>
+<rect x="62" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">O-04</text>
+<rect x="511" y="292" width="438" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="511" y="300" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="522" y="308" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">OPS-02</text>
+<text x="522" y="323" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity incident response, vulnerability management and updates</text>
+<rect x="522" y="354" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="539.6" y="363.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">O-05</text>
+<text x="40" y="420" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="1.5">FEEDBACK INTO EARLIER PHASES</text>
+<text x="40" y="438" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-01  Potential safety function failure or fault in the field  →  WP-C-03, WP-A-01</text>
+<text x="40" y="458" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-02  New performance limit or triggering condition  →  WP-C-10, WP-V-08</text>
+<text x="40" y="478" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-03  New misuse pattern  →  WP-C-06, WP-O-03</text>
+<text x="40" y="498" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-04  Learned-component anomaly  →  WP-W-10, WP-C-09</text>
+<text x="40" y="518" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-05  Operating-environment limit found not to hold  →  WP-C-02, WP-C-03</text>
+<text x="40" y="538" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">FB-06  Counter-evidence to the safety case  →  WP-K-01</text>
+<rect x="40" y="558" width="920" height="64" rx="12" fill="#8FD8D1" fill-opacity="0.3"/>
+<rect x="40" y="558" width="920" height="64" rx="12" fill="none" stroke="#0E8C83" stroke-width="1"/>
+<text x="58" y="582" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#0E8C83" text-anchor="start">G6 · Operation gate</text>
+<text x="58" y="600" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">Exit: Field monitoring, incident response and update processes running</text>
+<text x="40" y="668" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Arrows are work-product inputs: an activity cannot finish before the one above it. Chips name the work products produced, coloured by register status (grey skeleton, amber draft,</text>
+<text x="40" y="681" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">green approved). Dotted links are cross-domain interfaces; red means a recorded open item still has to settle it.</text>
+</svg>

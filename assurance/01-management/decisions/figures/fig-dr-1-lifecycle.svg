@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="726" viewBox="0 0 640 726" role="img" aria-labelledby="t d">
+<title id="t">Decision register: lifecycle of a question</title>
+<desc id="d">Lifecycle of a decision-register entry. queued: Recorded but not asked yet (moved by Claude); open: Asked (moved by Claude, when asking); answered: The project lead picked an option (on the inbox page or in chat) (moved by Claude, when copying the answer in); assumed: No answer by proceed_after (moved by Claude); applied: The change is made (moved by Claude); withdrawn: The question no longer applies (moved by Claude). Transitions: queued to open when asked, in a batch of ten; open to answered when the lead picks an option; open to assumed when no answer by proceed_after; answered to applied when change made; assumed to applied when change made; any state to withdrawn. Assumed is allowed only for easy questions. A hard question is never assumed and never applied without an answer from the lead.</desc>
+<style>
+svg { --bg:#ffffff; --ink:#0b0b0b; --ink2:#52514e; --ink3:#8a8984; --grid:#e3e2de; --card:#f7f7f5;
+      --blue:#2a78d6; --blue-bg:#e9f1fb; --amb:#c98500; --amb-bg:#fdf4dc; --ok:#2e9e6a; --ok-bg:#e6f5ec; }
+@media (prefers-color-scheme: dark) {
+  svg { --bg:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --ink3:#8d8c85; --grid:#33322f; --card:#232321;
+        --blue:#3987e5; --blue-bg:#16273c; --amb:#eda100; --amb-bg:#3a2f12; --ok:#3fb97d; --ok-bg:#15301f; }
+}
+.bg { fill:var(--bg); }
+.h { font:600 21px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; fill:var(--ink); }
+.tb { font:600 15px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; fill:var(--ink); }
+.t2 { font:13px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; fill:var(--ink2); }
+.ta { font:600 13px -apple-system,'Segoe UI',Helvetica,Arial,sans-serif; fill:var(--amb); }
+.hair { stroke:var(--grid); stroke-width:1; }
+.queued { fill:var(--bg); stroke:var(--ink3); stroke-width:1.4; stroke-dasharray:6 4; }
+.open { fill:var(--amb-bg); stroke:var(--amb); stroke-width:2; }
+.answered, .assumed { fill:var(--blue-bg); stroke:var(--blue); stroke-width:1.6; }
+.applied { fill:var(--ok-bg); stroke:var(--ok); stroke-width:1.6; }
+.withdrawn { fill:var(--card); stroke:var(--ink3); stroke-width:1.2; }
+.rule { fill:var(--amb-bg); stroke:var(--amb); stroke-width:1.4; stroke-dasharray:6 4; }
+.f-ink2 { fill:var(--ink2); }
+.arr { stroke:var(--ink2); stroke-width:1.6; fill:none; }
+.arrd { stroke:var(--ink3); stroke-width:1.6; fill:none; stroke-dasharray:5 4; }
+</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="f-ink2"/></marker></defs>
+<rect class="bg" width="640" height="726"/>
+<text x="24" y="34" class="h">A question's path through the register</text>
+<text x="24" y="56" class="t2">From the Lifecycle table of this page; who moves each state in the last line</text>
+<line x1="24" y1="70" x2="616" y2="70" class="hair"/>
+<rect x="24" y="88" width="592" height="72" rx="8" class="queued"/>
+<text x="36" y="110" class="tb">queued</text>
+<text x="36" y="130" class="t2">Recorded but not asked yet</text>
+<text x="36" y="147" class="t2">Moved by: Claude</text>
+<path d="M320.0 162 V198" class="arr" marker-end="url(#a)"/>
+<text x="330" y="184" class="t2">asked, in a batch of ten</text>
+<rect x="24" y="200" width="592" height="72" rx="8" class="open"/>
+<text x="36" y="222" class="tb">open</text>
+<text x="36" y="242" class="t2">Asked</text>
+<text x="36" y="259" class="ta">Moved by: Claude, when asking</text>
+<path d="M166 274 V320" class="arr" marker-end="url(#a)"/>
+<text x="156" y="294" class="t2" text-anchor="end">the lead picks an option</text>
+<path d="M474 274 V320" class="arr" marker-end="url(#a)"/>
+<text x="464" y="294" class="t2" text-anchor="end">no answer by proceed_after</text>
+<text x="464" y="311" class="ta" text-anchor="end">easy questions only</text>
+<rect x="24" y="322" width="284" height="106" rx="8" class="answered"/>
+<text x="36" y="344" class="tb">answered</text>
+<text x="36" y="364" class="t2">The project lead picked an option (on</text>
+<text x="36" y="381" class="t2">the inbox page or in chat)</text>
+<text x="36" y="398" class="t2">Moved by: Claude, when copying the</text>
+<text x="36" y="415" class="t2">answer in</text>
+<rect x="332" y="322" width="284" height="72" rx="8" class="assumed"/>
+<text x="344" y="344" class="tb">assumed</text>
+<text x="344" y="364" class="t2">No answer by proceed_after</text>
+<text x="344" y="381" class="t2">Moved by: Claude</text>
+<path d="M166 430 V448 H308 V472" class="arr" marker-end="url(#a)"/>
+<path d="M474 430 V448 H332 V472" class="arr" marker-end="url(#a)"/>
+<text x="342" y="466" class="t2">change made</text>
+<rect x="24" y="474" width="592" height="72" rx="8" class="applied"/>
+<text x="36" y="496" class="tb">applied</text>
+<text x="36" y="516" class="t2">The change is made</text>
+<text x="36" y="533" class="t2">Moved by: Claude</text>
+<rect x="24" y="562" width="592" height="72" rx="8" class="withdrawn"/>
+<text x="36" y="584" class="tb">withdrawn</text>
+<text x="36" y="604" class="t2">The question no longer applies</text>
+<text x="36" y="621" class="t2">Moved by: Claude</text>
+<text x="604" y="584" class="t2" text-anchor="end">from any state</text>
+<rect x="24" y="650" width="592" height="60" rx="8" class="rule"/>
+<text x="40" y="676" class="tb">A hard question is never assumed and never applied without an</text>
+<text x="40" y="696" class="tb">answer from the lead.</text>
+</svg>

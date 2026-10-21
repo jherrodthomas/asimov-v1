@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1378" viewBox="0 0 1000 1378" role="img" aria-labelledby="p5-t p5-d">
+  <title id="p5-t">G5 Validation and release: integrated process map</title>
+  <desc id="p5-d">Process map of phase G5 Validation and release: REL-01 Assembly, installation and commissioning instructions (DIY-kit build) (Joint, after nothing); REL-02 Operation, maintenance and decommissioning (Joint, after nothing); REL-03 Information for use, markings and warnings (Risk assessment, after REL-02); REL-04 Safety validation on the robot (Safety-related control, after nothing); REL-05 Unknown scenarios and field trials (Risk assessment, after REL-04); REL-06 Cybersecurity validation and penetration testing (Cybersecurity, after nothing); REL-07 Cybersecurity case (Cybersecurity, after REL-06); REL-08 Release management and baseline procedure (Joint, after nothing); REL-09 Technical documentation index (Joint, after REL-03, REL-04); REL-10 AI Act conformity record (Machine learning, after REL-09); REL-11 Complete the safety case (Joint, after REL-05, REL-07, REL-09); REL-12 Functional safety assessment (Independent confirmation, after REL-11); REL-13 Cybersecurity assessment (Independent confirmation, after REL-07); REL-14 Release record and declaration of conformity draft (Joint, after REL-08, REL-12, REL-13).</desc>
+  <defs>
+<linearGradient id="p5-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F3F7F8"/></linearGradient>
+<linearGradient id="p5-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A8650F"/><stop offset="0.5" stop-color="#F2A33A"/><stop offset="1" stop-color="#A8650F"/></linearGradient>
+<marker id="p5-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4E6A73"/></marker>
+<marker id="p5-arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#D4821A"/></marker>
+  </defs>
+<rect x="0.5" y="0.5" width="999" height="1377" rx="22" fill="url(#p5-bg)" stroke="#D3DDE2"/>
+<rect x="40" y="0" width="920" height="3" fill="url(#p5-amber)"/>
+<text x="40" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#D4821A" text-anchor="start" letter-spacing="3">PROCESS MAP · G5 · L1</text>
+<text x="40" y="94" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#122026" text-anchor="start">P5 Validation and release: who does what, in what order</text>
+<text x="960" y="56" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#4E6A73" text-anchor="end">14 activities · 5 confirmation measures · 2 interfaces</text>
+<rect x="43" y="118" width="147.333" height="1044" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="43" y="118" width="147.333" height="4" rx="2" fill="#2C9A58"/>
+<text x="116.667" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#2C9A58" text-anchor="middle">Joint</text>
+<text x="116.667" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="196.333" y="118" width="147.333" height="1044" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="196.333" y="118" width="147.333" height="4" rx="2" fill="#D4821A"/>
+<text x="270" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D4821A" text-anchor="middle">Risk assessment</text>
+<text x="270" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting)</text>
+<rect x="349.667" y="118" width="147.333" height="1044" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="349.667" y="118" width="147.333" height="4" rx="2" fill="#0E8C83"/>
+<text x="423.333" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0E8C83" text-anchor="middle">Safety-related…</text>
+<text x="423.333" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<rect x="503" y="118" width="147.333" height="1044" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="503" y="118" width="147.333" height="4" rx="2" fill="#D64535"/>
+<text x="576.667" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#D64535" text-anchor="middle">Cybersecurity</text>
+<text x="576.667" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<rect x="656.333" y="118" width="147.333" height="1044" rx="10" fill="#EDF2F4" fill-opacity="0.55"/>
+<rect x="656.333" y="118" width="147.333" height="4" rx="2" fill="#C2399A"/>
+<text x="730" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#C2399A" text-anchor="middle">Machine learning</text>
+<text x="730" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">Jherrod Thomas (acting);…</text>
+<rect x="809.667" y="118" width="147.333" height="1044" rx="10" fill="#F7FAFB" fill-opacity="0.55"/>
+<rect x="809.667" y="118" width="147.333" height="4" rx="2" fill="#A88A00"/>
+<text x="883.333" y="142" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#A88A00" text-anchor="middle">Independent…</text>
+<text x="883.333" y="158" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="middle">TBD (DQ-010 open;…</text>
+<path d="M116.7,372.0 C116.7,440.0 270.0,440.0 270.0,506.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M423.3,264.0 C423.3,440.0 270.0,440.0 270.0,614.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M576.7,264.0 L576.7,506.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M270.0,588.0 C270.0,656.0 116.7,656.0 116.7,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M423.3,264.0 C423.3,494.0 116.7,494.0 116.7,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M116.7,804.0 C116.7,818.0 730.0,818.0 730.0,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M270.0,696.0 C270.0,764.0 116.7,764.0 116.7,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M576.7,588.0 C576.7,710.0 116.7,710.0 116.7,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M116.7,804.0 L116.7,830.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M116.7,912.0 C116.7,926.0 883.3,926.0 883.3,938.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M576.7,588.0 C576.7,656.0 883.3,656.0 883.3,722.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M116.7,480.0 L116.7,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M883.3,1020.0 C883.3,1034.0 116.7,1034.0 116.7,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<path d="M883.3,804.0 C883.3,926.0 116.7,926.0 116.7,1046.0" fill="none" stroke="#4E6A73" stroke-width="1.3" marker-end="url(#p5-arrow)"/>
+<rect x="51" y="184" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="192" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-01</text>
+<text x="62" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Assembly,</text>
+<text x="62" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">installation and</text>
+<text x="62" y="241" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">commissioning…</text>
+<rect x="62" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">O-01</text>
+<rect x="51" y="292" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="300" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="308" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-02</text>
+<text x="62" y="323" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Operation,</text>
+<text x="62" y="336" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">maintenance and</text>
+<text x="62" y="349" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">decommissioning</text>
+<rect x="62" y="354" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="363.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">O-02</text>
+<rect x="204.333" y="508" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="204.333" y="516" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="215.333" y="524" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">REL-03</text>
+<text x="215.333" y="539" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Information for</text>
+<text x="215.333" y="552" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">use, markings and</text>
+<text x="215.333" y="565" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">warnings</text>
+<rect x="215.333" y="570" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="232.933" y="579.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">O-03</text>
+<rect x="357.667" y="184" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="357.667" y="192" width="3" height="64" rx="1.5" fill="#0E8C83"/>
+<text x="368.667" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="start">REL-04</text>
+<text x="368.667" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Safety validation</text>
+<text x="368.667" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">on the robot</text>
+<rect x="368.667" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="386.267" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-01</text>
+<rect x="204.333" y="616" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="204.333" y="624" width="3" height="64" rx="1.5" fill="#D4821A"/>
+<text x="215.333" y="632" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D4821A" text-anchor="start">REL-05</text>
+<text x="215.333" y="647" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Unknown scenarios</text>
+<text x="215.333" y="660" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">and field trials</text>
+<rect x="215.333" y="678" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="232.933" y="687.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-08</text>
+<rect x="511" y="184" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="511" y="192" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="522" y="200" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">REL-06</text>
+<text x="522" y="215" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity</text>
+<text x="522" y="228" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">validation and</text>
+<text x="522" y="241" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">penetration testing</text>
+<rect x="522" y="246" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="539.6" y="255.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">V-06</text>
+<rect x="511" y="508" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="511" y="516" width="3" height="64" rx="1.5" fill="#D64535"/>
+<text x="522" y="524" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#D64535" text-anchor="start">REL-07</text>
+<text x="522" y="539" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity case</text>
+<rect x="522" y="570" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="539.6" y="579.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-03</text>
+<rect x="51" y="400" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="408" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="416" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-08</text>
+<text x="62" y="431" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Release management</text>
+<text x="62" y="444" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">and baseline</text>
+<text x="62" y="457" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">procedure</text>
+<rect x="62" y="462" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="471.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">P-10</text>
+<rect x="51" y="724" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="732" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-09</text>
+<text x="62" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Technical</text>
+<text x="62" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">documentation index</text>
+<rect x="62" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-02</text>
+<rect x="664.333" y="832" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="664.333" y="840" width="3" height="64" rx="1.5" fill="#C2399A"/>
+<text x="675.333" y="848" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#C2399A" text-anchor="start">REL-10</text>
+<text x="675.333" y="863" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">AI Act conformity</text>
+<text x="675.333" y="876" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">record</text>
+<rect x="675.333" y="894" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="692.933" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-07</text>
+<rect x="51" y="832" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="840" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="848" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-11</text>
+<text x="62" y="863" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Complete the safety</text>
+<text x="62" y="876" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">case</text>
+<rect x="62" y="894" width="35.2" height="13" rx="6.5" fill="#F2A33A" fill-opacity="0.9"/>
+<text x="79.6" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-01</text>
+<rect x="101.2" y="894" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="118.8" y="903.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">T-01</text>
+<rect x="817.667" y="940" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="817.667" y="948" width="3" height="64" rx="1.5" fill="#A88A00"/>
+<text x="828.667" y="956" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#A88A00" text-anchor="start">REL-12</text>
+<text x="828.667" y="971" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Functional safety</text>
+<text x="828.667" y="984" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">assessment</text>
+<rect x="828.667" y="1002" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="846.267" y="1011.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-04</text>
+<rect x="817.667" y="724" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="817.667" y="732" width="3" height="64" rx="1.5" fill="#A88A00"/>
+<text x="828.667" y="740" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#A88A00" text-anchor="start">REL-13</text>
+<text x="828.667" y="755" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Cybersecurity</text>
+<text x="828.667" y="768" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">assessment</text>
+<rect x="828.667" y="786" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="846.267" y="795.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-05</text>
+<rect x="51" y="1048" width="131.333" height="80" rx="9" fill="#FFFFFF" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="51" y="1056" width="3" height="64" rx="1.5" fill="#2C9A58"/>
+<text x="62" y="1064" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#2C9A58" text-anchor="start">REL-14</text>
+<text x="62" y="1079" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">Release record and</text>
+<text x="62" y="1092" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">declaration of</text>
+<text x="62" y="1105" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500" fill="#122026" text-anchor="start">conformity draft</text>
+<rect x="62" y="1110" width="35.2" height="13" rx="6.5" fill="#C9D4D9" fill-opacity="0.9"/>
+<text x="79.6" y="1119.5" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="8.5" font-weight="700" fill="#122026" text-anchor="middle">K-06</text>
+<path d="M116.7,872.0 L576.7,548.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="326.167" y="701" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="346.667" y="713" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-10</text>
+<path d="M116.7,764.0 L730.0,872.0" fill="none" stroke="#0E8C83" stroke-width="1.2" stroke-dasharray="3 4"/>
+<rect x="402.833" y="809" width="41" height="16" rx="8" fill="#FFFFFF" stroke="#0E8C83" stroke-width="1"/>
+<text x="423.333" y="821" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="9.5" font-weight="700" fill="#0E8C83" text-anchor="middle">IX-11</text>
+<rect x="40" y="1162" width="920" height="62" rx="10" fill="#EDF2F4" stroke="#D3DDE2" stroke-width="1"/>
+<rect x="40" y="1162" width="5" height="62" rx="2" fill="#A88A00"/>
+<text x="56" y="1182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#A88A00" text-anchor="start" letter-spacing="1.5">INDEPENDENT CONFIRMATION AT THIS GATE</text>
+<text x="948" y="1182" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#4E6A73" text-anchor="end">TBD (DQ-010 open; recommended: not for now, every I3 measure unscheduled)</text>
+<rect x="56" y="1194" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="95" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CR-12 · I3</text>
+<rect x="142" y="1194" width="78" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="181" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">FSA-F · I3</text>
+<rect x="228" y="1194" width="115.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="285.6" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">CS-A1 · external</text>
+<rect x="351.2" y="1194" width="146.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="424.3" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">ML-R3 · I3-equivalent</text>
+<rect x="505.4" y="1194" width="140" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="575.4" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">NB-1 · notified body</text>
+<rect x="653.4" y="1194" width="53.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="680" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">REL-12</text>
+<rect x="714.6" y="1194" width="53.2" height="18" rx="9" fill="#A88A00" fill-opacity="0.18"/>
+<text x="741.2" y="1206.6" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace" font-size="10" font-weight="700" fill="#A88A00" text-anchor="middle">REL-13</text>
+<rect x="40" y="1240" width="920" height="64" rx="12" fill="#8FD8D1" fill-opacity="0.3"/>
+<rect x="40" y="1240" width="920" height="64" rx="12" fill="none" stroke="#0E8C83" stroke-width="1"/>
+<text x="58" y="1264" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="800" fill="#0E8C83" text-anchor="start">G5 · Validation and release gate</text>
+<text x="58" y="1282" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">Exit: Safety validation on the robot, cybersecurity validation, safety case, functional safety assessment and technical documentation complete; release</text>
+<text x="58" y="1295" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#122026" text-anchor="start">record signed</text>
+<text x="40" y="1350" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">Arrows are work-product inputs: an activity cannot finish before the one above it. Chips name the work products produced, coloured by register status (grey skeleton, amber draft,</text>
+<text x="40" y="1363" font-family="Inter, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#7E949B" text-anchor="start">green approved). Dotted links are cross-domain interfaces; red means a recorded open item still has to settle it.</text>
+</svg>
