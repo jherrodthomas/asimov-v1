@@ -1,4 +1,4 @@
-![Asimov v1, the open-source bipedal humanoid by Asimov Inc.: a 1.2 m, 35 kg robot with 25 actuated joints, photographed standing.](../assets/asimov-v1.jpg)
+![Asimov v1 assurance. An open humanoid. Engineered for safety. Upstream's photograph of the robot, a dark humanoid with a camera in its chest against an orange background, beside the project name and the standards it follows.](../docs/assets/asimov/hero.svg)
 
 # Asimov v1 assurance, explained
 

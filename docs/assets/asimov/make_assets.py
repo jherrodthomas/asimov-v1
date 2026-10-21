@@ -179,87 +179,46 @@ def heading(x, label, title, right=""):
 
 # ------------------------------------------------------------------ hero
 
-def robot_emblem(cx, cy, s=1.0):
-  """A geometric biped on a tether: gantry beam and rope, head with camera, torso, two arms, two legs, a red E-stop pendant."""
-  g = []
-  # fall radius on the floor
-  g.append(f'<ellipse cx="{cx:g}" cy="{cy + 150 * s:g}" rx="{200 * s:g}" ry="{44 * s:g}" fill="{C["cyan"]}" fill-opacity="0.06" stroke="{C["cyan"]}" stroke-opacity="0.55" stroke-width="1.6" stroke-dasharray="8 6"/>')
-  g.append(f'<ellipse cx="{cx:g}" cy="{cy + 150 * s:g}" rx="{70 * s:g}" ry="{16 * s:g}" fill="{C["cyan"]}" fill-opacity="0.08" stroke="{C["cyan"]}" stroke-opacity="0.8" stroke-width="1.6"/>')
-  # gantry beam and tether
-  g.append(f'<rect x="{cx - 170 * s:g}" y="{cy - 232 * s:g}" width="{340 * s:g}" height="{12 * s:g}" rx="3" fill="#36515B" stroke="{C["stroke"]}"/>')
-  g.append(f'<rect x="{cx - 14 * s:g}" y="{cy - 220 * s:g}" width="{28 * s:g}" height="{14 * s:g}" rx="3" fill="{C["amber"]}"/>')
-  g.append(f'<line x1="{cx:g}" y1="{cy - 206 * s:g}" x2="{cx:g}" y2="{cy - 108 * s:g}" stroke="{C["cyan"]}" stroke-width="{3 * s:g}" stroke-dasharray="6 4"/>')
-  g.append(f'<path d="M{cx - 22 * s:g},{cy - 92 * s:g} L{cx:g},{cy - 108 * s:g} L{cx + 22 * s:g},{cy - 92 * s:g}" fill="none" stroke="{C["cyan"]}" stroke-width="{3 * s:g}"/>')
-  # head with camera
-  g.append(f'<rect x="{cx - 26 * s:g}" y="{cy - 176 * s:g}" width="{52 * s:g}" height="{48 * s:g}" rx="{14 * s:g}" fill="#2B4A54" stroke="{C["cyan"]}"/>')
-  g.append(f'<rect x="{cx - 16 * s:g}" y="{cy - 162 * s:g}" width="{32 * s:g}" height="{12 * s:g}" rx="6" fill="{C["cyan"]}" fill-opacity="0.9"/>')
-  g.append(f'<rect x="{cx - 8 * s:g}" y="{cy - 128 * s:g}" width="{16 * s:g}" height="{14 * s:g}" fill="#A9C4CB"/>')
-  # torso
-  g.append(f'<rect x="{cx - 40 * s:g}" y="{cy - 114 * s:g}" width="{80 * s:g}" height="{120 * s:g}" rx="{18 * s:g}" fill="url(#hero-body)" stroke="{C["amber_lo"]}" stroke-width="1.5"/>')
-  g.append(f'<rect x="{cx - 24 * s:g}" y="{cy - 90 * s:g}" width="{48 * s:g}" height="{8 * s:g}" rx="4" fill="{C["bg2"]}" fill-opacity="0.4"/>')
-  g.append(f'<rect x="{cx - 24 * s:g}" y="{cy - 74 * s:g}" width="{48 * s:g}" height="{8 * s:g}" rx="4" fill="{C["bg2"]}" fill-opacity="0.4"/>')
-  # waist
-  g.append(f'<rect x="{cx - 30 * s:g}" y="{cy + 6 * s:g}" width="{60 * s:g}" height="{18 * s:g}" rx="6" fill="#36515B" stroke="{C["stroke"]}"/>')
-  # arms
-  for side in (-1, 1):
-    sx = cx + side * 40 * s
-    g.append(f'<path d="M{sx:g},{cy - 96 * s:g} L{sx + side * 34 * s:g},{cy - 36 * s:g} L{sx + side * 48 * s:g},{cy + 26 * s:g}" fill="none" stroke="#A9C4CB" stroke-width="{13 * s:g}" stroke-linecap="round" stroke-linejoin="round"/>')
-    g.append(f'<path d="M{sx:g},{cy - 96 * s:g} L{sx + side * 34 * s:g},{cy - 36 * s:g} L{sx + side * 48 * s:g},{cy + 26 * s:g}" fill="none" stroke="{C["panel"]}" stroke-width="{6 * s:g}" stroke-linecap="round" stroke-linejoin="round"/>')
-    g.append(f'<circle cx="{sx + side * 34 * s:g}" cy="{cy - 36 * s:g}" r="{7 * s:g}" fill="{C["amber"]}"/>')
-    g.append(f'<rect x="{sx + side * 48 * s - 9 * s:g}" y="{cy + 22 * s:g}" width="{18 * s:g}" height="{22 * s:g}" rx="4" fill="#A9C4CB"/>')
-  # legs
-  for side in (-1, 1):
-    hx = cx + side * 18 * s
-    g.append(f'<path d="M{hx:g},{cy + 22 * s:g} L{hx + side * 6 * s:g},{cy + 84 * s:g} L{hx + side * 2 * s:g},{cy + 144 * s:g}" fill="none" stroke="#A9C4CB" stroke-width="{16 * s:g}" stroke-linecap="round" stroke-linejoin="round"/>')
-    g.append(f'<path d="M{hx:g},{cy + 22 * s:g} L{hx + side * 6 * s:g},{cy + 84 * s:g} L{hx + side * 2 * s:g},{cy + 144 * s:g}" fill="none" stroke="{C["panel"]}" stroke-width="{8 * s:g}" stroke-linecap="round" stroke-linejoin="round"/>')
-    g.append(f'<circle cx="{hx + side * 6 * s:g}" cy="{cy + 84 * s:g}" r="{7 * s:g}" fill="{C["amber"]}"/>')
-    g.append(f'<rect x="{hx + side * 2 * s - 14 * s + (side * 6 * s):g}" y="{cy + 140 * s:g}" width="{34 * s:g}" height="{12 * s:g}" rx="4" fill="#36515B" stroke="{C["stroke"]}"/>')
-  # the operator's E-stop pendant, on a lead to the right
-  g.append(f'<path d="M{cx + 200 * s:g},{cy + 96 * s:g} C{cx + 150 * s:g},{cy + 60 * s:g} {cx + 110 * s:g},{cy + 50 * s:g} {cx + 40 * s:g},{cy - 30 * s:g}" fill="none" stroke="{C["red"]}" stroke-opacity="0.6" stroke-width="2"/>')
-  g.append(f'<rect x="{cx + 178 * s:g}" y="{cy + 88 * s:g}" width="{44 * s:g}" height="{30 * s:g}" rx="8" fill="#2B4A54" stroke="{C["stroke"]}"/>')
-  g.append(f'<circle cx="{cx + 200 * s:g}" cy="{cy + 103 * s:g}" r="{9 * s:g}" fill="{C["red"]}" stroke="#7A2A22" stroke-width="2"/>')
-  g.append(f'<circle cx="{cx + 200 * s:g}" cy="{cy + 103 * s:g}" r="{14 * s:g}" fill="none" stroke="{C["amber_hi"]}" stroke-width="1.2"/>')
-  return "\n".join(g)
+PHOTO = ROOT / "assets" / "asimov-v1.jpg"   # upstream's own photograph of the robot (CERN-OHL-S-2.0)
 
 
 def hero_svg():
+  """The banner the lead chose on 2026-10-21: a dark panel with the title and the standards on the left, upstream's
+  photograph of the robot on the right. The photograph is embedded as a data URI because GitHub does not load
+  external images referenced from inside an SVG."""
+  import base64
   w, h = 1280, 520
+  photo = base64.b64encode(PHOTO.read_bytes()).decode("ascii") if PHOTO.exists() else ""
   defs = "\n".join([
-    f'<radialGradient id="hero-bg" cx="0.72" cy="0.45" r="0.95"><stop offset="0" stop-color="#D9EEF0"/><stop offset="0.55" stop-color="{C["bg1"]}"/><stop offset="1" stop-color="{C["bg2"]}"/></radialGradient>',
-    f'<linearGradient id="hero-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{C["amber_hi"]}"/><stop offset="1" stop-color="{C["amber_lo"]}"/></linearGradient>',
-    f'<linearGradient id="hero-amber" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{C["amber_lo"]}"/><stop offset="0.5" stop-color="{C["amber_hi"]}"/><stop offset="1" stop-color="{C["amber_lo"]}"/></linearGradient>',
-    f'<linearGradient id="hero-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{C["cyan"]}" stop-opacity="0"/><stop offset="1" stop-color="{C["cyan"]}" stop-opacity="0.3"/></linearGradient>',
+    '<linearGradient id="hero-fade" x1="0" y1="0" x2="1" y2="0">'
+    '<stop offset="0" stop-color="#0F1A1F"/><stop offset="0.40" stop-color="#0F1A1F"/>'
+    '<stop offset="0.52" stop-color="#0F1A1F" stop-opacity="0.85"/><stop offset="0.72" stop-color="#0F1A1F" stop-opacity="0"/></linearGradient>',
     '<clipPath id="hero-frame"><rect width="1280" height="520" rx="24"/></clipPath>',
   ])
-  body = ['<g clip-path="url(#hero-frame)">', f'<rect width="{w}" height="{h}" fill="url(#hero-bg)"/>']
-  # floor grid in perspective, vanishing point right of centre
-  vx, vy = 980, 300
-  for i in range(-9, 13):
-    body.append(f'<line x1="{vx}" y1="{vy}" x2="{vx + i * 170}" y2="{h}" stroke="url(#hero-fade)" stroke-width="1"/>')
-  for k in range(1, 9):
-    y = vy + (h - vy) * (k / 8) ** 1.9
-    half = (y - vy) * 7.5
-    body.append(f'<line x1="{vx - half:g}" y1="{y:g}" x2="{vx + half:g}" y2="{y:g}" stroke="{C["cyan"]}" stroke-opacity="{0.05 + 0.03 * k:.2f}" stroke-width="1"/>')
-  body.append(f'<line x1="660" y1="{vy}" x2="{w}" y2="{vy}" stroke="{C["cyan"]}" stroke-opacity="0.25"/>')
-  # emblem
-  body.append(robot_emblem(990, 270, 1.0))
+  body = ['<g clip-path="url(#hero-frame)">', f'<rect width="{w}" height="{h}" fill="#0F1A1F"/>']
+  if photo:
+    body.append(f'<image x="{int(w * 0.38)}" y="0" width="{w - int(w * 0.38)}" height="{h}" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,{photo}"/>')
+  body.append(f'<rect width="{w}" height="{h}" fill="url(#hero-fade)"/>')
   # title block
   body.append(text(72, 150, "ASIMOV V1 ASSURANCE", 18, C["amber"], 700, extra=' letter-spacing="6"'))
-  body.append(text(72, 218, "An open humanoid.", 52, C["text"], 800, extra=' letter-spacing="-1"'))
+  body.append(text(72, 218, "An open humanoid.", 52, "#FFFFFF", 800, extra=' letter-spacing="-1"'))
   body.append(text(72, 278, "Engineered for safety.", 52, C["amber"], 800, extra=' letter-spacing="-1"'))
   lines = wrap("The engineering assurance record for a safety-assured fork of the Asimov v1 humanoid: robot risk assessment, a deterministic safety layer and a hardwired stop chain with a Performance Level target, and a safety case published as it is built.", 560, 17)
   for i, ln in enumerate(lines):
-    body.append(text(72, 320 + i * 25, ln, 17, C["muted"]))
-  x = 72
+    body.append(text(72, 320 + i * 25, ln, 17, "#C9D6DB"))
+  x, y = 72, 404
   for chip in CHIPS:
     cw = 11 + len(chip) * 8.2
-    body.append(rect(x, 404, cw, 30, C["panel"], r=15, stroke=C["stroke"]))
-    body.append(text(x + cw / 2, 424, chip, 13, C["text"], 600, anchor="middle", family=MONO))
+    if x + cw > 72 + 600:
+      x, y = 72, y + 40
+    body.append(rect(x, y, cw, 30, "#FFFFFF", r=15, stroke="#FFFFFF", opacity=0.08))
+    body.append(rect(x, y, cw, 30, "none", r=15, stroke="#FFFFFF", opacity=0.28))
+    body.append(text(x + cw / 2, y + 20, chip, 13, "#E8F0F2", 600, anchor="middle", family=MONO))
     x += cw + 10
-  body.append(text(72, 474, "Standards-informed engineering · no compliance claimed · nothing approved for operation around people", 13, C["dim"]))
+  body.append(text(72, y + 64, "Standards-informed engineering · no compliance claimed · nothing approved for operation around people", 13, "#7E949B"))
   body.append("</g>")
-  desc = ("Asimov v1 assurance banner: a geometric biped in amber hanging from a gantry on a cyan tether, with a camera head, a red emergency-stop pendant on a lead and a dashed fall radius on a "
-          "perspective floor grid, beside the project name and the tagline " + TAGLINE + " Chips name the standards: " + ", ".join(CHIPS) + ".")
+  desc = ("Asimov v1 assurance banner: upstream's photograph of the robot, a dark humanoid with a camera in its chest against an orange background, on the right of a dark panel "
+          "that carries the project name and the tagline " + TAGLINE + " Chips name the standards: " + ", ".join(CHIPS) + ".")
   return svg(w, h, "hero", "Asimov v1 assurance: " + TAGLINE, desc, defs, "\n".join(body))
 
 

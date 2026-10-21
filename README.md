@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/asimov/hero.svg" width="100%" alt="Asimov v1 assurance. An open humanoid. Engineered for safety. Upstream's photograph of the robot, a dark humanoid with a camera in its chest against an orange background, beside the project name and the standards it follows.">
+</p>
+
 # Asimov v1: Open-Source Humanoid Robot
 
 > [!IMPORTANT]
